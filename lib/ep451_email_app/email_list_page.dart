@@ -26,6 +26,9 @@ class _EmailListPageState extends State<EmailListPage> {
             right: 24,
             bottom: 24,
             child: Container(
+              height: 84,
+              width: 84,
+              color: Colors.grey[400],
               
             ),
           )

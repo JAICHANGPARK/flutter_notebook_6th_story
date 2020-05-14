@@ -19,7 +19,33 @@ class EmailListPage extends StatefulWidget {
 class _EmailListPageState extends State<EmailListPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

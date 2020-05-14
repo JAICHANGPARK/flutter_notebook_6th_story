@@ -68,6 +68,11 @@ class _EmailListPageState extends State<EmailListPage> {
                         )
                       ]
                   ),
+                  child: Center(
+                    child: AnimatedIcon(progress: null,
+                      
+                    ),
+                  ),
                 )
               ],
             ),

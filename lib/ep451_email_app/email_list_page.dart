@@ -20,11 +20,18 @@ class EmailListPage extends StatefulWidget {
 class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderStateMixin {
 
   AnimationController controller;
+  Animation<double> _animation;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     controller = AnimationController(vsync: this);
+    _animation = Tween(begin: 0.0, end: 1.0).animate(controller)..addListener(() {
+      setState(() {
+
+      });
+    });
   }
   @override
   Widget build(BuildContext context) {
@@ -77,9 +84,14 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                       ]
                   ),
                   child: Center(
-                    child: AnimatedIcon(progress:controller,
-                      icon: AnimatedIcons.menu_home,
-                      
+                    child:
+                    IconButton(
+                      onPressed: (){
+                        controller.forward();
+                      },
+                      icon: AnimatedIcon(progress:controller,
+                        icon: AnimatedIcons.menu_home,
+                      ),
                     ),
                   ),
                 )

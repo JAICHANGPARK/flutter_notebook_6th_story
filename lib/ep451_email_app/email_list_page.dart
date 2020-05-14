@@ -51,10 +51,16 @@ class _EmailListPageState extends State<EmailListPage> {
           Positioned(
             left: 16,
             right: 16,
-            top: 24,
+            top: 32,
             child: Row(
               children: [
-                
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                )
               ],
             ),
           )

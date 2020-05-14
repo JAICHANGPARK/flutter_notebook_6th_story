@@ -40,7 +40,7 @@ class _EmailListPageState extends State<EmailListPage> {
                 ]
               ),
               child: Center(
-                child: Text('CHAT'),
+                child: Text('CHAT', style: ,),
               ),
 
 

@@ -17,7 +17,9 @@ class EmailListPage extends StatefulWidget {
   _EmailListPageState createState() => _EmailListPageState();
 }
 
-class _EmailListPageState extends State<EmailListPage> {
+class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderStateMixin {
+
+  AnimationController controller;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +71,8 @@ class _EmailListPageState extends State<EmailListPage> {
                       ]
                   ),
                   child: Center(
-                    child: AnimatedIcon(progress: null,
+                    child: AnimatedIcon(progress: 0,
+                      icon: AnimatedIcons.menu_home,
                       
                     ),
                   ),

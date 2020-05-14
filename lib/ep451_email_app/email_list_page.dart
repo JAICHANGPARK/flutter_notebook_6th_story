@@ -23,7 +23,11 @@ class _EmailListPageState extends State<EmailListPage> {
       body: Stack(
         children: [
           Positioned(
-            right: 0,
+            right: 24,
+            bottom: 24,
+            child: Container(
+              
+            ),
           )
         ],
       ),

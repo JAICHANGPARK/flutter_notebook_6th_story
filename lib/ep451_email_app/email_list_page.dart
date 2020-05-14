@@ -94,6 +94,13 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                       ),
                     ),
                   ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text("Inbox",style: GoogleFonts.anton(
+                    fontSize: 24,
+                    letterSpacing: 1
+                  ),),
                 )
               ],
             ),

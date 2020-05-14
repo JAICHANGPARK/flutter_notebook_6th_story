@@ -35,7 +35,7 @@ class _EmailListPageState extends State<EmailListPage> {
                   BoxShadow(
                     color: Colors.black,
                     spreadRadius: 3,
-                    offset: 
+                    offset: Offset(0,2)
                   )
                 ]
               ),

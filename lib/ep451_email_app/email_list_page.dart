@@ -21,6 +21,12 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
 
   AnimationController controller;
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    controller = AnimationController(vsync: this);
+  }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -71,7 +77,7 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                       ]
                   ),
                   child: Center(
-                    child: AnimatedIcon(progress: 0,
+                    child: AnimatedIcon(progress:controller,
                       icon: AnimatedIcons.menu_home,
                       
                     ),

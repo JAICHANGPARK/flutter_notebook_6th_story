@@ -29,7 +29,7 @@ class _EmailListPageState extends State<EmailListPage> {
               height: 84,
               width: 84,
               decoration: BoxDecoration(
-                color: Colors.grey[400],
+                color: Colors.grey[200],
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
@@ -38,6 +38,9 @@ class _EmailListPageState extends State<EmailListPage> {
                     offset: Offset(0,2)
                   )
                 ]
+              ),
+              child: Center(
+                child: Text('CHAT'),
               ),
 
 

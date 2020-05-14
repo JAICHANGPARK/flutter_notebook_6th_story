@@ -46,8 +46,16 @@ class _EmailListPageState extends State<EmailListPage> {
                   fontSize: 20
                 ),),
               ),
-
-
+            ),
+          ),
+          Positioned(
+            left: 16,
+            right: 16,
+            top: 24,
+            child: Row(
+              children: [
+                
+              ],
             ),
           )
         ],

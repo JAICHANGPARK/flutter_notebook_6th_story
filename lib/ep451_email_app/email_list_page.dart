@@ -20,7 +20,13 @@ class _EmailListPageState extends State<EmailListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Stack(
+        children: [
+          Positioned(
+            right: 0,
+          )
+        ],
+      ),
     );
   }
 }

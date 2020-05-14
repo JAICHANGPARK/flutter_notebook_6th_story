@@ -59,6 +59,7 @@ class _EmailListPageState extends State<EmailListPage> {
                   width: 48,
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    shape: BoxShape.circle
                   ),
                 )
               ],

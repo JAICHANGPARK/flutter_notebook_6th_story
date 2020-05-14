@@ -28,10 +28,18 @@ class _EmailListPageState extends State<EmailListPage> {
             child: Container(
               height: 84,
               width: 84,
-
               decoration: BoxDecoration(
                 color: Colors.grey[400],
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    spreadRadius: 3,
+                    offset: 
+                  )
+                ]
               ),
+
 
             ),
           )

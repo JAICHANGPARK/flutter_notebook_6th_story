@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class EmailApp extends StatelessWidget {
   @override
@@ -40,7 +41,10 @@ class _EmailListPageState extends State<EmailListPage> {
                 ]
               ),
               child: Center(
-                child: Text('CHAT', style: ,),
+                child: Text('CHAT', style: GoogleFonts.anton(
+                  letterSpacing: 2,
+                  fontSize: 20
+                ),),
               ),
 
 

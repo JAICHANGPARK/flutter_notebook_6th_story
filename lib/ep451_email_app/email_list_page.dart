@@ -113,7 +113,8 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
             bottom: 0,
             child: ListView.builder(itemBuilder: (context, index){
               
-              return Slidable(actionPane: SlidableBehindActionPane(),);
+              return Slidable(actionPane: SlidableBehindActionPane(), child: Container(height: 84,
+              color: Colors.red,),);
             })
             ),
           

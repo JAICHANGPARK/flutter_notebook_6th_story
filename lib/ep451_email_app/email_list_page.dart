@@ -52,8 +52,8 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                     child: Slidable(
                       actionPane: SlidableBehindActionPane(
                       ),
-                      direction: ,
-                      actions: [
+
+                      secondaryActions: [
                         IconSlideAction(
                           color: Colors.grey,
                           caption: "DELETE",

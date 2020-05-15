@@ -64,6 +64,25 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                       child: Container(
                         height: 100,
                         color: Colors.white,
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.black,
+                            ),
+                            Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Dreamwalker"),
+                                    Text("${DateTime.now().hour}:${DateTime.now().minute}")
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   );

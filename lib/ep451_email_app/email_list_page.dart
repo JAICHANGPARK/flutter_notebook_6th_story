@@ -68,11 +68,13 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
+                              flex:2,
                               child: CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.black,
                               ),
                             ),
+
                             Expanded(
                               flex: 10,
                               child: Column(

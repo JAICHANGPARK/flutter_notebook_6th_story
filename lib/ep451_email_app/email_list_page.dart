@@ -104,6 +104,14 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                 )
               ],
             ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 84,
+            bottom: 0,
+            child: ListView.builder(itemBuilder: (context, index){})
+            ),
           )
         ],
       ),

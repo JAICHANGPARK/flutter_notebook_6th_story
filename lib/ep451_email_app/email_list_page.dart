@@ -47,12 +47,24 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                 top: 100,
                 bottom: 0,
                 child: ListView.builder(itemBuilder: (context, index) {
-                  return Slidable(
-                    actionPane: SlidableBehindActionPane(),
-                    child: Container(
-                      height: 94,
-                      color: Colors.white,
-                      margin: EdgeInsets.only(bottom: 8),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Slidable(
+                      actionPane: SlidableBehindActionPane(
+                      ),
+                      direction: ,
+                      actions: [
+                        IconSlideAction(
+                          color: Colors.grey,
+                          caption: "DELETE",
+                          icon: Icons.clear,
+
+                        )
+                      ],
+                      child: Container(
+                        height: 94,
+                        color: Colors.white,
+                      ),
                     ),
                   );
                 })),

@@ -62,7 +62,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                         )
                       ],
                       child: Container(
-                        height: 94,
+                        height: 100,
                         color: Colors.white,
                       ),
                     ),

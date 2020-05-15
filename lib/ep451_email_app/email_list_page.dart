@@ -68,7 +68,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
-                              flex:2,
+                              flex:3,
                               child: CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.black,
@@ -89,6 +89,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                     ],
                                   ),
                                   Text("Introducing Flutter Development Skill"),
+                                  Text("Dreamwalker is the Dream add the Walker")
                                 ],
                               ),
                             )

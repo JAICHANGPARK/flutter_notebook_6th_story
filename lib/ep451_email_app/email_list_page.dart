@@ -78,7 +78,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                             Expanded(
                               flex: 10,
                               child: Column(
-                                
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Row(

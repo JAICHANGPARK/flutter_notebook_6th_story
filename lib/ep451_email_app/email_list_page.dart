@@ -87,7 +87,6 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                     IconButton(
                       onPressed: (){
                         isClicked = !isClicked;
-
                         isClicked ? controller.forward() : controller.reverse();
                       },
                       icon: AnimatedIcon(progress:controller,

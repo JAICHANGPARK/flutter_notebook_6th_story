@@ -39,6 +39,17 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
       body: Stack(
         children: [
           Positioned(
+              left: 0,
+              right: 0,
+              top: 100,
+              bottom: 0,
+              child: ListView.builder(itemBuilder: (context, index){
+
+                return Slidable(actionPane: SlidableBehindActionPane(), child: Container(height: 94,
+                  color: Colors.red, margin: EdgeInsets.only(bottom: 8),),);
+              })
+          ),
+          Positioned(
             right: 24,
             bottom: 24,
             child: Container(
@@ -106,17 +117,7 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
               ],
             ),
           ),
-          Positioned(
-            left: 0,
-            right: 0,
-            top: 84,
-            bottom: 0,
-            child: ListView.builder(itemBuilder: (context, index){
-              
-              return Slidable(actionPane: SlidableBehindActionPane(), child: Container(height: 84,
-              color: Colors.red,),);
-            })
-            ),
+
           
         ],
       ),

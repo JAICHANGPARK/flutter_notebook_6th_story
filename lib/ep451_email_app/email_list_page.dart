@@ -7,7 +7,7 @@ class EmailApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/" : (context) =>  EmailListPage(),
+        "/": (context) => EmailListPage(),
       },
     );
   }
@@ -18,27 +18,26 @@ class EmailListPage extends StatefulWidget {
   _EmailListPageState createState() => _EmailListPageState();
 }
 
-class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderStateMixin {
-
+class _EmailListPageState extends State<EmailListPage> with SingleTickerProviderStateMixin {
   AnimationController controller;
   Animation<double> _animation;
   bool isClicked = false;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     controller = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
-    _animation = Tween(begin: 0.0, end: 1.0).animate(controller)..addListener(() {
-      setState(() {
+    _animation = Tween(begin: 0.0, end: 1.0).animate(controller)
+      ..addListener(() {
+        setState(() {});
       });
-    });
   }
+
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(
-        accentColor: Colors.grey[100]
-      ),
+      data: ThemeData(accentColor: Colors.grey[100]),
       child: Scaffold(
         body: Stack(
           children: [
@@ -47,11 +46,16 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                 right: 0,
                 top: 100,
                 bottom: 0,
-                child: ListView.builder(itemBuilder: (context, index){
-                  return Slidable(actionPane: SlidableBehindActionPane(), child: Container(height: 94,
-                    color: Colors.red, margin: EdgeInsets.only(bottom: 8),),);
-                })
-            ),
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Slidable(
+                    actionPane: SlidableBehindActionPane(),
+                    child: Container(
+                      height: 94,
+                      color: Colors.white,
+                      margin: EdgeInsets.only(bottom: 8),
+                    ),
+                  );
+                })),
             Positioned(
               right: 24,
               bottom: 24,
@@ -59,21 +63,14 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                 height: 84,
                 width: 84,
                 decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      spreadRadius: 3,
-                      offset: Offset(0,2)
-                    )
-                  ]
-                ),
+                    color: Colors.grey[200],
+                    shape: BoxShape.circle,
+                    boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 3, offset: Offset(0, 2))]),
                 child: Center(
-                  child: Text('CHAT', style: GoogleFonts.anton(
-                    letterSpacing: 2,
-                    fontSize: 20
-                  ),),
+                  child: Text(
+                    'CHAT',
+                    style: GoogleFonts.anton(letterSpacing: 2, fontSize: 20),
+                  ),
                 ),
               ),
             ),
@@ -87,24 +84,17 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                     height: 42,
                     width: 42,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.black,
-                              spreadRadius: 2,
-                              offset: Offset(0,2)
-                          )
-                        ]
-                    ),
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 2, offset: Offset(0, 2))]),
                     child: Center(
-                      child:
-                      IconButton(
-                        onPressed: (){
+                      child: IconButton(
+                        onPressed: () {
                           isClicked = !isClicked;
                           isClicked ? controller.forward() : controller.reverse();
                         },
-                        icon: AnimatedIcon(progress:controller,
+                        icon: AnimatedIcon(
+                          progress: controller,
                           icon: AnimatedIcons.menu_close,
                         ),
                       ),
@@ -112,44 +102,17 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Text("Inbox",style: GoogleFonts.anton(
-                      fontSize: 24,
-                      letterSpacing: 1
-                    ),),
+                    child: Text(
+                      "Inbox",
+                      style: GoogleFonts.anton(fontSize: 24, letterSpacing: 1),
+                    ),
                   )
                 ],
               ),
             ),
-
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

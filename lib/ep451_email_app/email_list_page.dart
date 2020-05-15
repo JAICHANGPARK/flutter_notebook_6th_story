@@ -63,6 +63,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                       ],
                       child: Container(
                         height: 100,
+                        padding: EdgeInsets.only(top: 4, bottom: 4, left: 8, right: 16),
                         color: Colors.white,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,

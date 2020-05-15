@@ -26,7 +26,7 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
   void initState() {
     // TODO: implement initState
     super.initState();
-    controller = AnimationController(vsync: this);
+    controller = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
     _animation = Tween(begin: 0.0, end: 1.0).animate(controller)..addListener(() {
       setState(() {
 

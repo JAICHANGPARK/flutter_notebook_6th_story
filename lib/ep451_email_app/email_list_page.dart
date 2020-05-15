@@ -90,8 +90,7 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                         controller.forward();
                       },
                       icon: AnimatedIcon(progress:controller,
-                        icon: AnimatedIcons.arrow_menu,
-
+                        icon: AnimatedIcons.menu_close,
                       ),
                     ),
                   ),

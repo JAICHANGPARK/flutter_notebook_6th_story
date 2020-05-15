@@ -65,6 +65,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                         height: 100,
                         color: Colors.white,
                         child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
                               child: CircleAvatar(
@@ -73,7 +74,9 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                               ),
                             ),
                             Expanded(
+                              flex: 10,
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

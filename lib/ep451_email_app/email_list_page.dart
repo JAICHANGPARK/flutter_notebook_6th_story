@@ -21,7 +21,7 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
 
   AnimationController controller;
   Animation<double> _animation;
-
+  bool isClicked = false;
   @override
   void initState() {
     // TODO: implement initState
@@ -29,7 +29,6 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
     controller = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
     _animation = Tween(begin: 0.0, end: 1.0).animate(controller)..addListener(() {
       setState(() {
-
       });
     });
   }
@@ -87,7 +86,9 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
                     child:
                     IconButton(
                       onPressed: (){
-                        controller.forward();
+                        isClicked = !isClicked;
+
+                        isClicked ? controller.forward() : controller.reverse();
                       },
                       icon: AnimatedIcon(progress:controller,
                         icon: AnimatedIcons.menu_close,

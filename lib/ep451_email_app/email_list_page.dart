@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class EmailApp extends StatelessWidget {
@@ -110,9 +111,12 @@ class _EmailListPageState extends State<EmailListPage>with SingleTickerProviderS
             right: 0,
             top: 84,
             bottom: 0,
-            child: ListView.builder(itemBuilder: (context, index){})
+            child: ListView.builder(itemBuilder: (context, index){
+              
+              return Slidable(actionPane: SlidableBehindActionPane(),);
+            })
             ),
-          )
+          
         ],
       ),
     );

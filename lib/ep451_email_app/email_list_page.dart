@@ -50,15 +50,15 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Slidable(
-                      actionPane: SlidableBehindActionPane(
-                      ),
-
+                      actionPane: SlidableBehindActionPane(),
                       secondaryActions: [
                         IconSlideAction(
                           color: Colors.grey,
                           caption: "DELETE",
                           icon: Icons.clear,
-
+                          onTap: () {
+                            print("deleted");
+                          },
                         )
                       ],
                       child: Container(

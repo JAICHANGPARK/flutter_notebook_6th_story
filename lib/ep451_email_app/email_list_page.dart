@@ -78,6 +78,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                             Expanded(
                               flex: 10,
                               child: Column(
+                                
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Row(
@@ -86,7 +87,8 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                       Text("Dreamwalker"),
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],
-                                  )
+                                  ),
+                                  Text("Introducing Flutter Development Skill"),
                                 ],
                               ),
                             )

@@ -45,13 +45,33 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Container(
-              height: 280,
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(16)
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: Container(
+                height: 280,
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(16)
+                ),
               ),
+            ),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Text("Dreamwalker"),
+                    Container(
+                      height: 32,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+                      ),
+                    )
+                  ],
+                )
+              ],
             )
           ],
         ),

@@ -114,7 +114,7 @@ class _ProfilePageState extends State<ProfilePage> {
               children: [
                 Container(
                 decoration: BoxDecoration(
-                  color: Colors.blueGrey,
+                  color: Colors.grey[200],
                 ),),
                 Container(color: Colors.blueGrey,),
                 Container(color: Colors.blueGrey,),

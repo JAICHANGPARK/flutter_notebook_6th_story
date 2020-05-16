@@ -28,6 +28,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: Center(
                       child: IconButton(
                         onPressed: () {
+                          Navigator.pop(context);
                         },
                         icon: Icon(
                           Icons.clear

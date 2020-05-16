@@ -106,58 +106,61 @@ class _ProfilePageState extends State<ProfilePage> {
 
             Container(
               height: 200,
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: GridView.count(crossAxisCount: 2,
-              shrinkWrap: true,
-              mainAxisSpacing: 8,
-              crossAxisSpacing: 8,
-              children: [
-                Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  borderRadius: BorderRadius.circular(16),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      offset: Offset(1,2)
-                    )
-                  ]
-                ),),
-                Container(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: GridView.count(crossAxisCount: 2,
+                shrinkWrap: true,
+                mainAxisSpacing: 8,
+                crossAxisSpacing: 8,
+                children: [
+                  Container(
                   decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(1,2)
-                        )
-                      ]
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        offset: Offset(1,2)
+                      )
+                    ]
                   ),),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(1,2)
-                        )
-                      ]
-                  ),),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(1,2)
-                        )
-                      ]
-                  ),),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(1,2)
+                          )
+                        ]
+                    ),),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(1,2)
+                          )
+                        ]
+                    ),),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black,
+                              offset: Offset(1,2)
+                          )
+                        ]
+                    ),),
 
-              ],),
+                ],),
+              ),
             )
 
           ],

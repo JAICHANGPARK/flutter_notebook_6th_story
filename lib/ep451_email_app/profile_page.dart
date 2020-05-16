@@ -60,34 +60,31 @@ class _ProfilePageState extends State<ProfilePage> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Dreamwalker",style: GoogleFonts.anton(
-                        fontSize: 20,
-                        letterSpacing: 2
-                      ),),
-                      Container(
-                        height: 32,
-                        width: 84,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black,
-                              offset: Offset(1,4)
-                            )
-                          ]
-                        ),
-                        child: Center(
-                          child: Text("Following",style: GoogleFonts.montserrat(),),
-                        ),
-                      )
-                    ],
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Dreamwalker",style: GoogleFonts.anton(
+                      fontSize: 20,
+                      letterSpacing: 2
+                    ),),
+                    Container(
+                      height: 32,
+                      width: 84,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(1,4)
+                          )
+                        ]
+                      ),
+                      child: Center(
+                        child: Text("Following",style: GoogleFonts.montserrat(),),
+                      ),
+                    )
+                  ],
                 ),
                 Text("Developer")
               ],

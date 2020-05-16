@@ -95,7 +95,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   Text("Developer")
                 ],
               ),
-            )
+            ),
+            Text("Attachment"),
+
           ],
         ),
       ),

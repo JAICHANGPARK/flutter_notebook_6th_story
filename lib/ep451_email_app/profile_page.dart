@@ -123,9 +123,39 @@ class _ProfilePageState extends State<ProfilePage> {
                     )
                   ]
                 ),),
-                Container(color: Colors.blueGrey,),
-                Container(color: Colors.blueGrey,),
-                Container(color: Colors.blueGrey,)
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(1,2)
+                        )
+                      ]
+                  ),),
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(1,2)
+                        )
+                      ]
+                  ),),
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(1,2)
+                        )
+                      ]
+                  ),),
 
               ],),
             )

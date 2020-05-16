@@ -100,9 +100,20 @@ class _ProfilePageState extends State<ProfilePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Text("Attachment",style: GoogleFonts.montserrat(
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
               ),),
             ),
+
+            GridView.count(crossAxisCount: 2,
+            shrinkWrap: true,
+            childAspectRatio: 1.2,
+            children: [
+              Container(color: Colors.blueGrey,),
+              Container(color: Colors.blueGrey,),
+              Container(color: Colors.blueGrey,),
+              Container(color: Colors.blueGrey,)
+
+            ],)
 
           ],
         ),

@@ -40,13 +40,33 @@ class _ProfilePageState extends State<ProfilePage> {
                       "Profile",
                       style: GoogleFonts.anton(fontSize: 24, letterSpacing: 1),
                     ),
-                  )
+                  ),
+
                 ],
               ),
             ),
+            Container(
+              height: 280,
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -65,7 +65,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Dreamwalker",style: GoogleFonts.anton(
-                        fontSize: 18,
+                        fontSize: 20,
                         letterSpacing: 2
                       ),),
                       Container(

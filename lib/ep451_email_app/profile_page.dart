@@ -76,7 +76,8 @@ class _ProfilePageState extends State<ProfilePage> {
                           borderRadius: BorderRadius.circular(8),
                           boxShadow: [
                             BoxShadow(
-                              
+                              color: Colors.black,
+                              offset: Offset(1,4)
                             )
                           ]
                         ),

@@ -84,7 +84,9 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("Dreamwalker"),
+                                      Text("Dreamwalker",style: GoogleFonts.anton(
+                                        fontWeight: FontWeight.bold
+                                      ),),
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],
                                   ),

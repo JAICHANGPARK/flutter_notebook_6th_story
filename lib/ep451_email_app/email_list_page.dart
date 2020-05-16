@@ -90,8 +90,11 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],
                                   ),
-                                  Text("Introducing Flutter Development Skill"),
-                                  Text("Dreamwalker is the Dream add the Walker")
+                                  Text("Introducing Flutter Development Skill",
+                                  style: ,),
+                                  Text("Dreamwalker is the Dream add the Walker",style: GoogleFonts.montserrat(
+                                    color: Colors.grey,fontSize: 12
+                                  ),)
                                 ],
                               ),
                             )

@@ -104,16 +104,20 @@ class _ProfilePageState extends State<ProfilePage> {
               ),),
             ),
 
-            GridView.count(crossAxisCount: 2,
-            shrinkWrap: true,
-            childAspectRatio: 1.2,
-            children: [
-              Container(color: Colors.blueGrey,),
-              Container(color: Colors.blueGrey,),
-              Container(color: Colors.blueGrey,),
-              Container(color: Colors.blueGrey,)
+            Container(
+              height: 120,
+              child: GridView.count(crossAxisCount: 2,
+              shrinkWrap: true,
+              mainAxisSpacing: 8,
+              crossAxisSpacing: 8,
+              children: [
+                Container(color: Colors.blueGrey,),
+                Container(color: Colors.blueGrey,),
+                Container(color: Colors.blueGrey,),
+                Container(color: Colors.blueGrey,)
 
-            ],)
+              ],),
+            )
 
           ],
         ),

@@ -106,6 +106,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
             Container(
               height: 120,
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: GridView.count(crossAxisCount: 2,
               shrinkWrap: true,
               mainAxisSpacing: 8,

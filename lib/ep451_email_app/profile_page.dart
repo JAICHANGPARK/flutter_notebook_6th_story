@@ -12,6 +12,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 16),
@@ -96,7 +97,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Text("Attachment"),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Text("Attachment",style: GoogleFonts.montserrat(
+                fontWeight: FontWeight.bold
+              ),),
+            ),
 
           ],
         ),

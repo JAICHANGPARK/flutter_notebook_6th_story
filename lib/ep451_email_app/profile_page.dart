@@ -72,7 +72,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         height: 32,
                         width: 84,
                         decoration: BoxDecoration(
-                          color: Colors.grey[400],
+                          color: Colors.grey[300],
                           borderRadius: BorderRadius.circular(8),
                           boxShadow: [
                             BoxShadow(
@@ -81,6 +81,10 @@ class _ProfilePageState extends State<ProfilePage> {
                             )
                           ]
                         ),
+                        child: Center(
+                          child: Text("Following",style: GoogleFonts.montserrat(),),
+                        ),
+
                       )
                     ],
                   ),

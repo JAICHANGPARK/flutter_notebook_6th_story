@@ -112,7 +112,9 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
               bottom: 24,
               child: GestureDetector(
                 onTap: (){
-                  
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context)=>ProfilePage()
+                  ))
                 },
                 child: Container(
                   height: 84,

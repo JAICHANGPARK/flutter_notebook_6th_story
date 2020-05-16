@@ -47,8 +47,10 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             Container(
               height: 280,
+              margin: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.black,
+                borderRadius: BorderRadius.circular(16)
               ),
             )
           ],

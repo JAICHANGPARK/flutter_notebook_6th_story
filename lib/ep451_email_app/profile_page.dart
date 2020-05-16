@@ -47,6 +47,16 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             Container(
               height: 280,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/open-peeps-sheet.png",
+                    scale: 9,
+                  ),
+                  fit: BoxFit.cover
+                )
+              ),
             )
           ],
         ),

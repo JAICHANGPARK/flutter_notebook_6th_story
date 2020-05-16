@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'profile_page.dart';
+
 class EmailApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -84,20 +86,23 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("Dreamwalker",style: GoogleFonts.anton(
-                                        fontWeight: FontWeight.bold,
-                                        letterSpacing: 1.2
-                                      ),),
+                                      Text(
+                                        "Dreamwalker",
+                                        style: GoogleFonts.anton(fontWeight: FontWeight.bold, letterSpacing: 1.2),
+                                      ),
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],
                                   ),
-                                  Text("Introducing Flutter Development Skill",
-                                  style: GoogleFonts.montserrat(
-                                    fontSize: 12,
-                                  ),),
-                                  Text("Dreamwalker is the Dream add the Walker",style: GoogleFonts.montserrat(
-                                    color: Colors.grey,fontSize: 12
-                                  ),)
+                                  Text(
+                                    "Introducing Flutter Development Skill",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Dreamwalker is the Dream add the Walker",
+                                    style: GoogleFonts.montserrat(color: Colors.grey, fontSize: 12),
+                                  )
                                 ],
                               ),
                             )
@@ -111,10 +116,8 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
               right: 24,
               bottom: 24,
               child: GestureDetector(
-                onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context)=>ProfilePage()
-                  ))
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProfilePage()));
                 },
                 child: Container(
                   height: 84,

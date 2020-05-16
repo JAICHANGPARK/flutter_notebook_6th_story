@@ -85,13 +85,15 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text("Dreamwalker",style: GoogleFonts.anton(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
                                       ),),
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],
                                   ),
                                   Text("Introducing Flutter Development Skill",
-                                  style: ,),
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 12,
+                                  ),),
                                   Text("Dreamwalker is the Dream add the Walker",style: GoogleFonts.montserrat(
                                     color: Colors.grey,fontSize: 12
                                   ),)

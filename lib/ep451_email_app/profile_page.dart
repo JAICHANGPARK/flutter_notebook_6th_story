@@ -84,11 +84,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         child: Center(
                           child: Text("Following",style: GoogleFonts.montserrat(),),
                         ),
-
                       )
                     ],
                   ),
-                )
+                ),
+                Text("Developer")
               ],
             )
           ],

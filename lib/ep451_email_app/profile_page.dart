@@ -53,7 +53,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(16)
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                    image: NetworkImage("https://www.manuelalangella.com/wp-content/uploads/2020/03/Asset-41.png"),
+
+                  )
                 ),
               ),
             ),

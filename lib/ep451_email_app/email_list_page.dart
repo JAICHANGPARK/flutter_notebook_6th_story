@@ -110,17 +110,22 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
             Positioned(
               right: 24,
               bottom: 24,
-              child: Container(
-                height: 84,
-                width: 84,
-                decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    shape: BoxShape.circle,
-                    boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 3, offset: Offset(0, 2))]),
-                child: Center(
-                  child: Text(
-                    'CHAT',
-                    style: GoogleFonts.anton(letterSpacing: 2, fontSize: 20),
+              child: GestureDetector(
+                onTap: (){
+                  
+                },
+                child: Container(
+                  height: 84,
+                  width: 84,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      shape: BoxShape.circle,
+                      boxShadow: [BoxShadow(color: Colors.black, spreadRadius: 3, offset: Offset(0, 2))]),
+                  child: Center(
+                    child: Text(
+                      'CHAT',
+                      style: GoogleFonts.anton(letterSpacing: 2, fontSize: 20),
+                    ),
                   ),
                 ),
               ),

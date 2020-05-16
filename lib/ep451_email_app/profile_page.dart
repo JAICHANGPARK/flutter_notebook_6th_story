@@ -59,17 +59,30 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             Column(
               children: [
-                Row(
-                  children: [
-                    Text("Dreamwalker"),
-                    Container(
-                      height: 32,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.grey
-                      ),
-                    )
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Dreamwalker",style: GoogleFonts.anton(
+                        fontSize: 18,
+                        letterSpacing: 2
+                      ),),
+                      Container(
+                        height: 32,
+                        width: 84,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[400],
+                          borderRadius: BorderRadius.circular(8),
+                          boxShadow: [
+                            BoxShadow(
+                              
+                            )
+                          ]
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             )

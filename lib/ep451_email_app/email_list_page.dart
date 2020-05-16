@@ -86,6 +86,7 @@ class _EmailListPageState extends State<EmailListPage> with SingleTickerProvider
                                     children: [
                                       Text("Dreamwalker",style: GoogleFonts.anton(
                                         fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.2
                                       ),),
                                       Text("${DateTime.now().hour}:${DateTime.now().minute}")
                                     ],

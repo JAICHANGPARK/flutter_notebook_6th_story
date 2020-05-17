@@ -66,6 +66,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
 
                                     decoration: BoxDecoration(
                                       color: Colors.purple[400],
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                        bottomLeft: Radius.circular(8),
+                                        bottomRight: Radius.circular(32),
+                                      ),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.black.withOpacity(0.1),
+                                              spreadRadius: 2,
+                                              blurRadius: 3,
+                                              offset: Offset(2,4)
+                                          )
+                                        ]
                                     ),
                                   ),
                                 ),

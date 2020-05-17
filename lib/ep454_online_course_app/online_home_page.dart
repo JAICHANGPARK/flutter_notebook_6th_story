@@ -40,7 +40,9 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                         fontSize: 24,letterSpacing: 2,
                         color: Colors.blueGrey,
                       ),),
+                    SizedBox(height: 8,),
                     Container(
+                      margin: EdgeInsets.only(top: 16, bottom: 16),
                       height: 140,
                       child: Placeholder(),
                     )

@@ -30,9 +30,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        icon: Icon(
-                          Icons.clear
-                        ),
+                        icon: Icon(Icons.clear),
                       ),
                     ),
                   ),
@@ -43,24 +41,20 @@ class _ProfilePageState extends State<ProfilePage> {
                       style: GoogleFonts.anton(fontSize: 24, letterSpacing: 1),
                     ),
                   ),
-
                 ],
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 24),
               child: Container(
                 height: 280,
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(16),
-                  image: DecorationImage(
-                    image: NetworkImage("https://www.manuelalangella.com/wp-content/uploads/2020/03/Asset-41.png"),
-
-                  )
-                ),
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(16),
+                    image: DecorationImage(
+                      image: NetworkImage("https://www.manuelalangella.com/wp-content/uploads/2020/03/Asset-41.png"),
+                    )),
               ),
             ),
             Padding(
@@ -71,25 +65,22 @@ class _ProfilePageState extends State<ProfilePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Dreamwalker",style: GoogleFonts.anton(
-                        fontSize: 20,
-                        letterSpacing: 2
-                      ),),
+                      Text(
+                        "Dreamwalker",
+                        style: GoogleFonts.anton(fontSize: 20, letterSpacing: 2),
+                      ),
                       Container(
                         height: 32,
                         width: 84,
                         decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black,
-                              offset: Offset(1,4)
-                            )
-                          ]
-                        ),
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 4))]),
                         child: Center(
-                          child: Text("Following",style: GoogleFonts.montserrat(),),
+                          child: Text(
+                            "Following",
+                            style: GoogleFonts.montserrat(),
+                          ),
                         ),
                       )
                     ],
@@ -100,89 +91,55 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              child: Text("Attachment",style: GoogleFonts.montserrat(
-                fontWeight: FontWeight.bold,
-              ),),
+              child: Text(
+                "Attachment",
+                style: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-
             Container(
               height: 200,
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: GridView.count(crossAxisCount: 2,
-                shrinkWrap: true,
-                mainAxisSpacing: 8,
-                crossAxisSpacing: 8,
-                children: [
-                  Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black,
-                        offset: Offset(1,2)
-                      )
-                    ]
-                  ),),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.black,
-                              offset: Offset(1,2)
-                          )
-                        ]
-                    ),),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.black,
-                              offset: Offset(1,2)
-                          )
-                        ]
-                    ),),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.black,
-                              offset: Offset(1,2)
-                          )
-                        ]
-                    ),),
-
-                ],),
+                child: GridView.count(
+                  crossAxisCount: 2,
+                  shrinkWrap: true,
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2))]),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2))]),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2))]),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[200],
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [BoxShadow(color: Colors.black, offset: Offset(1, 2))]),
+                    ),
+                  ],
+                ),
               ),
             )
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

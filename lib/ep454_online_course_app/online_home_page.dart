@@ -26,7 +26,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
+                    Text("Welcome back, Dreamwalker!"),
+                    Text("Continue learning")
                 ],
               ),
             ),

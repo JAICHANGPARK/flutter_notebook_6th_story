@@ -30,7 +30,11 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                      Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(),),
+                      Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(
+                        fontSize: 18,
+                        color: Colors.blueGrey,
+                        fontWeight: FontWeight.w300
+                      ),),
                       Text("Continue learning", style: GoogleFonts.oswald(),)
                   ],
                 ),

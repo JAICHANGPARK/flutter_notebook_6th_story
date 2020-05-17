@@ -14,14 +14,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
           children: [
             Expanded(
               flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.menu),
+                  Icon(Icons.search)
+                ],
+              )
+            ),
+            Expanded(
+              flex: 6,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 1,
-              child: Placeholder(),
-            ),
-            Expanded(
-              flex: 1,
+              flex: 10,
               child: Placeholder(),
             )
 

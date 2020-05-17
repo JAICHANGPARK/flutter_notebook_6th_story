@@ -66,7 +66,16 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   child: Container(
                                     color: Colors.orange,
                                   ),
-                                )
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    color: Colors.green[500],
+                                  ),
+                                ),
                               ],
                             ),
                           ),

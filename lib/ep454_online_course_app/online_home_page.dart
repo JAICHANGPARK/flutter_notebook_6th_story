@@ -25,12 +25,15 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                 )),
             Expanded(
               flex: 6,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                    Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(),),
-                    Text("Continue learning", style: GoogleFonts.oswald(),)
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                      Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(),),
+                      Text("Continue learning", style: GoogleFonts.oswald(),)
+                  ],
+                ),
               ),
             ),
             Expanded(

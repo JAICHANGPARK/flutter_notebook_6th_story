@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OnlineHomePage extends StatefulWidget {
   @override
@@ -27,8 +28,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                    Text("Welcome back, Dreamwalker!"),
-                    Text("Continue learning")
+                    Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(),),
+                    Text("Continue learning", style: GoogleFonts.oswald(),)
                 ],
               ),
             ),

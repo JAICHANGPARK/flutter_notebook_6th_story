@@ -30,24 +30,32 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                      Text("Welcome back, Dreamwalker!", style: GoogleFonts.oswald(
-                        fontSize: 18,
-                        color: Colors.blueGrey,
-                        fontWeight: FontWeight.w300
-                      ),),
-                      Text("Continue learning", style: GoogleFonts.oxygen(
+                    Text(
+                      "Welcome back, Dreamwalker!",
+                      style: GoogleFonts.oswald(fontSize: 18, color: Colors.blueGrey, fontWeight: FontWeight.w300),
+                    ),
+                    Text(
+                      "Continue learning",
+                      style: GoogleFonts.oxygen(
                         fontWeight: FontWeight.bold,
-                        fontSize: 24,letterSpacing: 2,
+                        fontSize: 24,
+                        letterSpacing: 2,
                         color: Colors.blueGrey,
-                      ),),
-                    SizedBox(height: 8,),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Container(
-                      margin: EdgeInsets.only(top: 16, bottom: 16),
-                      height: 140,
+                      height: 160,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          Container()
+                          Container(
+                            margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
+                            width: MediaQuery.of(context).size.width / 1.5,
+                            color: Colors.red,
+                          )
                         ],
                       ),
                     )
@@ -65,21 +73,3 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -82,7 +82,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       ),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.black.withOpacity(0.2)
+                                          color: Colors.black.withOpacity(0.1),
+                                          spreadRadius: 2,
+                                          blurRadius: 3,
+                                          offset: Offset(2,4)
                                         )
                                       ]
                                     ),

@@ -14,12 +14,15 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
           children: [
             Expanded(
               flex: 1,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.menu),
-                  Icon(Icons.search)
-                ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(Icons.menu),
+                    Icon(Icons.search)
+                  ],
+                ),
               )
             ),
             Expanded(

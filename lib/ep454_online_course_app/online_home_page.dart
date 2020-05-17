@@ -9,10 +9,16 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            )
 
-        ],
+          ],
+        ),
       ),
     );
   }

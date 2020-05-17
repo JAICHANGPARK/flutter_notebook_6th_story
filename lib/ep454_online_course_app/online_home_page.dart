@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -62,6 +63,45 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   right: 0,
                                   bottom: 0,
                                   child: Container(
+                                    color: Colors.purple[400],
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    decoration: BoxDecoration(
+                                      color: Colors.pink[200],
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                        bottomLeft: Radius.circular(8),
+                                        bottomRight: Radius.circular(24),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.black.withOpacity(0.2)
+                                        )
+                                      ]
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
+                            width: MediaQuery.of(context).size.width / 1.5,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 8,
+                                  top: 8,
+                                  right: 0,
+                                  bottom: 0,
+                                  child: Container(
                                     color: Colors.orange,
                                   ),
                                 ),
@@ -77,11 +117,6 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                               ],
                             ),
                           ),
-                          Container(
-                            margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
-                            width: MediaQuery.of(context).size.width / 1.5,
-                            color: Colors.red,
-                          )
                         ],
                       ),
                     )

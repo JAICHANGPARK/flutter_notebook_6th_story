@@ -39,7 +39,11 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 24,letterSpacing: 2,
                         color: Colors.blueGrey,
-                      ),)
+                      ),),
+                    Container(
+                      height: 140,
+                      child: Placeholder(),
+                    )
                   ],
                 ),
               ),

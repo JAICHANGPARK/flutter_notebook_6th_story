@@ -55,6 +55,24 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                             margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
                             width: MediaQuery.of(context).size.width / 1.5,
                             color: Colors.red,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  child: Container(
+                                    height: 100,
+                                    width: 100,
+                                    color: Colors.pink[500],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 16, bottom: 16, right: 16),
+                            width: MediaQuery.of(context).size.width / 1.5,
+                            color: Colors.red,
                           )
                         ],
                       ),

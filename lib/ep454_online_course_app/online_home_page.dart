@@ -63,7 +63,6 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   right: 0,
                                   bottom: 0,
                                   child: Container(
-
                                     decoration: BoxDecoration(
                                       color: Colors.indigo[200],
                                       borderRadius: BorderRadius.only(
@@ -74,10 +73,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       ),
                                         boxShadow: [
                                           BoxShadow(
-                                              color: Colors.indigoAccent.withOpacity(0.1),
-                                              spreadRadius: 2,
-                                              blurRadius: 3,
-                                              offset: Offset(2,4)
+                                              color: Colors.indigo[500],
+                                              spreadRadius: -8,
+                                              blurRadius: 16,
+                                              offset: Offset(0,8)
                                           )
                                         ]
                                     ),

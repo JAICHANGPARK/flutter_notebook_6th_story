@@ -23,7 +23,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                 )),
             Expanded(
               flex: 6,
-              child: Column(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+
+                ],
+              ),
             ),
             Expanded(
               flex: 10,
@@ -35,3 +40,21 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

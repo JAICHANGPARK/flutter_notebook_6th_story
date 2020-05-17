@@ -121,7 +121,23 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   right: 0,
                                   bottom: 0,
                                   child: Container(
-                                    color: Colors.orange,
+                                    decoration: BoxDecoration(
+                                        color: Colors.orange[200],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(4),
+                                          bottomRight: Radius.circular(32),
+                                        ),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.orange[500],
+                                              spreadRadius: -8,
+                                              blurRadius: 16,
+                                              offset: Offset(0,8)
+                                          )
+                                        ]
+                                    ),
                                   ),
                                 ),
                                 Positioned(
@@ -130,7 +146,23 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   child: Container(
                                     height: 100,
                                     width: 100,
-                                    color: Colors.green[500],
+                                    decoration: BoxDecoration(
+                                        color: Colors.green[400],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8),
+                                          topRight: Radius.circular(8),
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(24),
+                                        ),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.black.withOpacity(0.1),
+                                              spreadRadius: 2,
+                                              blurRadius: 3,
+                                              offset: Offset(2,4)
+                                          )
+                                        ]
+                                    ),
                                   ),
                                 ),
                               ],

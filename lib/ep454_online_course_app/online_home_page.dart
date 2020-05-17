@@ -11,6 +11,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
                 flex: 1,

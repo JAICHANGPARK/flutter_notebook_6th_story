@@ -35,7 +35,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                         color: Colors.blueGrey,
                         fontWeight: FontWeight.w300
                       ),),
-                      Text("Continue learning", style: GoogleFonts.oswald(),)
+                      Text("Continue learning", style: GoogleFonts.oxygen(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,letterSpacing: 2
+                      ),)
                   ],
                 ),
               ),

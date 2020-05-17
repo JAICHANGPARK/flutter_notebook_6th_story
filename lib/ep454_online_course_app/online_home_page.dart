@@ -8,6 +8,12 @@ class OnlineHomePage extends StatefulWidget {
 class _OnlineHomePageState extends State<OnlineHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }

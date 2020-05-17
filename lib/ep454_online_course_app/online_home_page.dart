@@ -57,13 +57,14 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                             color: Colors.red,
                             child: Stack(
                               children: [
+
                                 Positioned(
-                                  left: 0,
-                                  top: 0,
+                                  left: 8,
+                                  top: 8,
+                                  right: 0,
+                                  bottom: 0,
                                   child: Container(
-                                    height: 100,
-                                    width: 100,
-                                    color: Colors.pink[500],
+                                    color: Colors.orange,
                                   ),
                                 )
                               ],

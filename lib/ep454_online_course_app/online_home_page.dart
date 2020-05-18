@@ -218,8 +218,17 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       Positioned(
                                         top: 0,
                                         left: 0,
-                                        right: 24,
-                                        bottom: 38,
+                                        right: 16,
+                                        bottom: 24,
+                                        child: Container(
+                                          color: Colors.green,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        top: 0,
+                                        left: 0,
+                                        right: 16,
+                                        bottom: 24,
                                         child: Container(
                                           color: Colors.green,
                                         ),

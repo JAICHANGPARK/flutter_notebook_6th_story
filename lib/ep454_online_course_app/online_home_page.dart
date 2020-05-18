@@ -233,8 +233,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                           gradient: LinearGradient(
                                             colors: [
                                               Colors.yellow,
-                                              Colors.deepOrange,
-                                              Colors.red,
+                                              Colors.red[500],
                                             ],
                                             begin: Alignment.topRight
                                           ),

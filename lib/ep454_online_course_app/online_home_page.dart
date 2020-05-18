@@ -211,7 +211,22 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Placeholder(),
+                                child: Container(
+                                  margin: EdgeInsets.all(16),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 0,
+                                        right: 24,
+                                        bottom: 38,
+                                        child: Container(
+                                          color: Colors.green,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
                               ),
                               Expanded(
                                 child: Placeholder(),
@@ -220,7 +235,16 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                           ),
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                child: Placeholder(),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),

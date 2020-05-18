@@ -183,7 +183,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                     flex: 1,
                     child: Row(
                       children: [
-                        
+                        Text("Category"),
+                        Text("See All")
                       ],
                     ),
                   ),

@@ -220,7 +220,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       )
                                     ]
                                   ),
-                                  margin: EdgeInsets.all(16),
+                                  margin: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                   child: Stack(
                                     children: [
                                       Positioned(

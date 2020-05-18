@@ -212,12 +212,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                             children: [
                               Expanded(
                                 child: Container(
+                                  decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(.2),
+                                        blurRadius: 3
+                                      )
+                                    ]
+                                  ),
                                   margin: EdgeInsets.all(16),
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        top: 0,
-                                        left: 0,
+                                        top: 4,
+                                        left: 4,
                                         right: 0,
                                         bottom: 0,
                                         child: Container(
@@ -230,7 +238,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         right: 16,
                                         bottom: 24,
                                         child: Container(
-                                          color: Colors.green,
+                                          color: Colors.white,
                                         ),
                                       )
                                     ],

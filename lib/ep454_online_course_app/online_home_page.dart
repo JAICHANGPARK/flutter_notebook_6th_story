@@ -235,7 +235,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               Colors.yellow,
                                               Colors.red[500],
                                             ],
-                                            begin: Alignment.topRight
+                                            begin: Alignment.topRight,
+                                              end: Alignment.bottomLeft
                                           ),
                                             borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(24),

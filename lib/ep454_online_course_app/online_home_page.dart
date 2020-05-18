@@ -231,6 +231,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.red,
+                                            borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(24),
+                                                topRight: Radius.circular(4),
+                                                bottomLeft: Radius.circular(4),
+                                                bottomRight: Radius.circular(24)
+                                            )
                                         ),
                                         ),
                                       ),

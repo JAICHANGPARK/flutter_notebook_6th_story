@@ -215,7 +215,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   decoration: BoxDecoration(
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.black.withOpacity(.2),
+                                        color: Colors.black.withOpacity(.05),
                                         blurRadius: 3
                                       )
                                     ]
@@ -230,7 +230,14 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         bottom: 0,
                                         child: Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.red,
+                                          gradient: LinearGradient(
+                                            colors: [
+                                              Colors.yellow,
+                                              Colors.deepOrange,
+                                              Colors.red,
+                                            ],
+                                            begin: Alignment.topRight
+                                          ),
                                             borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(24),
                                                 topRight: Radius.circular(4),

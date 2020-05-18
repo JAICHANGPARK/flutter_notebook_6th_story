@@ -185,18 +185,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Category", style: GoogleFonts.oxygen(
                             fontSize: 28,
                             color: Colors.blueGrey,
                             fontWeight: FontWeight.bold,
                           ),),
-                          Text("See All", style:GoogleFonts.oxygen(
-                            fontSize: 14,
-                            color: Colors.blueGrey,
-                            fontWeight: FontWeight.bold
-                          ),)
+                          Center(
+                            child: Text("See All", style:GoogleFonts.oxygen(
+                              fontSize: 14,
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.bold
+                            ),),
+                          )
                         ],
                       ),
                     ),
@@ -211,6 +213,9 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                               Expanded(
                                 child: Placeholder(),
                               ),
+                              Expanded(
+                                child: Placeholder(),
+                              )
                             ],
                           ),
                         ),

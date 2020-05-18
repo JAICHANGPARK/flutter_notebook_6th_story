@@ -64,22 +64,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   bottom: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.indigo[200],
-                                      borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(4),
-                                        topRight: Radius.circular(4),
-                                        bottomLeft: Radius.circular(4),
-                                        bottomRight: Radius.circular(32),
-                                      ),
+                                        color: Colors.indigo[200],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(4),
+                                          topRight: Radius.circular(4),
+                                          bottomLeft: Radius.circular(4),
+                                          bottomRight: Radius.circular(32),
+                                        ),
                                         boxShadow: [
                                           BoxShadow(
                                               color: Colors.indigo[500],
                                               spreadRadius: -8,
                                               blurRadius: 16,
-                                              offset: Offset(0,8)
-                                          )
-                                        ]
-                                    ),
+                                              offset: Offset(0, 8))
+                                        ]),
                                   ),
                                 ),
                                 Positioned(
@@ -89,22 +87,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                     height: 100,
                                     width: 100,
                                     decoration: BoxDecoration(
-                                      color: Colors.pink[200],
-                                      borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(8),
-                                        topRight: Radius.circular(8),
-                                        bottomLeft: Radius.circular(8),
-                                        bottomRight: Radius.circular(24),
-                                      ),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.black.withOpacity(0.1),
-                                          spreadRadius: 2,
-                                          blurRadius: 3,
-                                          offset: Offset(2,4)
-                                        )
-                                      ]
-                                    ),
+                                        color: Colors.pink[200],
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8),
+                                          topRight: Radius.circular(8),
+                                          bottomLeft: Radius.circular(8),
+                                          bottomRight: Radius.circular(24),
+                                        ),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.black.withOpacity(0.1),
+                                              spreadRadius: 2,
+                                              blurRadius: 3,
+                                              offset: Offset(2, 4))
+                                        ]),
                                   ),
                                 ),
                               ],
@@ -134,10 +130,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               color: Colors.orange[500],
                                               spreadRadius: -8,
                                               blurRadius: 16,
-                                              offset: Offset(0,8)
-                                          )
-                                        ]
-                                    ),
+                                              offset: Offset(0, 8))
+                                        ]),
                                   ),
                                 ),
                                 Positioned(
@@ -159,10 +153,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               color: Colors.black.withOpacity(0.1),
                                               spreadRadius: 2,
                                               blurRadius: 3,
-                                              offset: Offset(2,4)
-                                          )
-                                        ]
-                                    ),
+                                              offset: Offset(2, 4))
+                                        ]),
                                   ),
                                 ),
                               ],
@@ -187,17 +179,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Category", style: GoogleFonts.oxygen(
-                            fontSize: 28,
-                            color: Colors.blueGrey,
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          Center(
-                            child: Text("See All", style:GoogleFonts.oxygen(
-                              fontSize: 14,
+                          Text(
+                            "Category",
+                            style: GoogleFonts.oxygen(
+                              fontSize: 28,
                               color: Colors.blueGrey,
-                              fontWeight: FontWeight.bold
-                            ),),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Center(
+                            child: Text(
+                              "See All",
+                              style:
+                                  GoogleFonts.oxygen(fontSize: 14, color: Colors.blueGrey, fontWeight: FontWeight.bold),
+                            ),
                           )
                         ],
                       ),
@@ -213,72 +208,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                               Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.black.withOpacity(.05),
-                                        blurRadius: 3
-                                      )
-                                    ]
-                                  ),
-                                  margin: EdgeInsets.symmetric(horizontal: 18, vertical: 8),
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        top: 4,
-                                        left: 4,
-                                        right: 0,
-                                        bottom: 0,
-                                        child: Container(
-                                        decoration: BoxDecoration(
-                                          gradient: LinearGradient(
-                                            colors: [
-                                              Colors.yellow,
-                                              Colors.red[500],
-                                            ],
-                                            begin: Alignment.topRight,
-                                              end: Alignment.bottomLeft
-                                          ),
-                                            borderRadius: BorderRadius.only(
-                                                topLeft: Radius.circular(24),
-                                                topRight: Radius.circular(4),
-                                                bottomLeft: Radius.circular(4),
-                                                bottomRight: Radius.circular(24)
-                                            )
-                                        ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        top: 0,
-                                        left: 0,
-                                        right: 16,
-                                        bottom: 24,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(24),
-                                              topRight: Radius.circular(4),
-                                              bottomLeft: Radius.circular(4),
-                                              bottomRight: Radius.circular(24)
-                                            )
-
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.black.withOpacity(.05),
-                                            blurRadius: 3
-                                        )
-                                      ]
-                                  ),
+                                      boxShadow: [BoxShadow(color: Colors.black.withOpacity(.05), blurRadius: 3)]),
                                   margin: EdgeInsets.symmetric(horizontal: 18, vertical: 8),
                                   child: Stack(
                                     children: [
@@ -289,21 +219,15 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         bottom: 0,
                                         child: Container(
                                           decoration: BoxDecoration(
-                                              gradient: LinearGradient(
-                                                  colors: [
-                                                    Colors.yellow[400],
-                                                    Colors.green[500],
-                                                  ],
-                                                  begin: Alignment.topRight,
-                                                end: Alignment.bottomLeft
-                                              ),
+                                              gradient: LinearGradient(colors: [
+                                                Colors.yellow,
+                                                Colors.red[500],
+                                              ], begin: Alignment.topRight, end: Alignment.bottomLeft),
                                               borderRadius: BorderRadius.only(
                                                   topLeft: Radius.circular(24),
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
-                                                  bottomRight: Radius.circular(24)
-                                              )
-                                          ),
+                                                  bottomRight: Radius.circular(24))),
                                         ),
                                       ),
                                       Positioned(
@@ -318,10 +242,51 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topLeft: Radius.circular(24),
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
-                                                  bottomRight: Radius.circular(24)
-                                              )
-
-                                          ),
+                                                  bottomRight: Radius.circular(24))),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      boxShadow: [BoxShadow(color: Colors.black.withOpacity(.05), blurRadius: 3)]),
+                                  margin: EdgeInsets.symmetric(horizontal: 18, vertical: 8),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        top: 4,
+                                        left: 4,
+                                        right: 0,
+                                        bottom: 0,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              gradient: LinearGradient(colors: [
+                                                Colors.yellow[400],
+                                                Colors.green[500],
+                                              ], begin: Alignment.topRight, end: Alignment.bottomLeft),
+                                              borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(24),
+                                                  topRight: Radius.circular(4),
+                                                  bottomLeft: Radius.circular(4),
+                                                  bottomRight: Radius.circular(24))),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        top: 0,
+                                        left: 0,
+                                        right: 16,
+                                        bottom: 24,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(24),
+                                                  topRight: Radius.circular(4),
+                                                  bottomLeft: Radius.circular(4),
+                                                  bottomRight: Radius.circular(24))),
                                         ),
                                       )
                                     ],

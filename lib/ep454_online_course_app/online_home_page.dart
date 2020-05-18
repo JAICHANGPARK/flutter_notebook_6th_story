@@ -182,9 +182,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                   Expanded(
                     flex: 1,
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Category", style: GoogleFonts.oxygen(),),
-                        Text("See All")
+                        Text("See All", style:GoogleFonts.oxygen(),)
                       ],
                     ),
                   ),

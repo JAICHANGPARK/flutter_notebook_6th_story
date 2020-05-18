@@ -229,7 +229,9 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         right: 0,
                                         bottom: 0,
                                         child: Container(
+                                        decoration: BoxDecoration(
                                           color: Colors.red,
+                                        ),
                                         ),
                                       ),
                                       Positioned(

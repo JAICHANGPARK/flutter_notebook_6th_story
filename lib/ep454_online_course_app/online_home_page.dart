@@ -238,7 +238,14 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         right: 16,
                                         bottom: 24,
                                         child: Container(
-                                          color: Colors.white,
+
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.all(
+                                              
+                                            )
+
+                                          ),
                                         ),
                                       )
                                     ],

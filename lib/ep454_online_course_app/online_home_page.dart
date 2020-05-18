@@ -181,12 +181,24 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Category", style: GoogleFonts.oxygen(),),
-                        Text("See All", style:GoogleFonts.oxygen(),)
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text("Category", style: GoogleFonts.oxygen(
+                            fontSize: 28,
+                            color: Colors.blueGrey,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Text("See All", style:GoogleFonts.oxygen(
+                            fontSize: 14,
+                            color: Colors.blueGrey,
+                            fontWeight: FontWeight.bold
+                          ),)
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(

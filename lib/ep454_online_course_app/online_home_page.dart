@@ -191,7 +191,16 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                   ),
                   Expanded(
                     flex: 8,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),

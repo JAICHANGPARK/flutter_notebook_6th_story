@@ -314,8 +314,8 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                               gradient: LinearGradient(colors: [
-                                                Colors.yellow[400],
-                                                Colors.green[500],
+                                                Colors.purple[400],
+                                                Colors.blue[500],
                                               ], begin: Alignment.topRight, end: Alignment.bottomLeft),
                                               borderRadius: BorderRadius.only(
                                                   topLeft: Radius.circular(24),

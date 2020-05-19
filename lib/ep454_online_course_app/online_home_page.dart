@@ -116,7 +116,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("ANIMATION"),
+                                        Text("ANIMATION",style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),),
                                         Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,
                                         height: 64,)
                                       ],

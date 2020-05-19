@@ -100,6 +100,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
 
                                                       ),),
                                                       Row(
+
                                                         children: [
                                                           Container(
                                                             height: 8,
@@ -122,6 +123,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
 
                                                             ),
                                                           ),
+                                                          SizedBox(width: 8,),
                                                           Text("64%", style: TextStyle(
                                                             color: Colors.white
                                                           ),)

@@ -93,6 +93,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                 child: Padding(
                                                   padding: const EdgeInsets.all(8.0),
                                                   child: Column(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Text("My Progress", style: TextStyle(

@@ -473,7 +473,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
                                           child: Align(
-                                            child: ,
+                                            alignment: ,
+                                            child: Text("12 courses", style: TextStyle(
+                                              color: Colors.white
+                                            ),),
                                           ),
                                         ),
                                       ),

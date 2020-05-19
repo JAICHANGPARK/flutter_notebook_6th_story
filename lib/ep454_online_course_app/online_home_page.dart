@@ -96,54 +96,62 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Text("My Progress", style: TextStyle(
-                                                        color: Colors.white,
-
-                                                      ),),
+                                                      Text(
+                                                        "My Progress",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
                                                       Row(
-
                                                         children: [
                                                           Container(
                                                             height: 8,
                                                             width: 100,
                                                             decoration: BoxDecoration(
-                                                              color: Colors.white,
-                                                              borderRadius: BorderRadius.circular(8)
-                                                            ),
+                                                                color: Colors.white,
+                                                                borderRadius: BorderRadius.circular(8)),
                                                             padding: EdgeInsets.all(2),
                                                             child: Stack(
                                                               children: [
                                                                 Container(
                                                                   width: 84,
                                                                   decoration: BoxDecoration(
-                                                                      color: Colors.deepPurpleAccent[200],
+                                                                    color: Colors.deepPurpleAccent[200],
                                                                     borderRadius: BorderRadius.circular(4),
                                                                   ),
                                                                 ),
                                                               ],
-
                                                             ),
                                                           ),
-                                                          SizedBox(width: 8,),
-                                                          Text("64%", style: TextStyle(
-                                                            color: Colors.white
-                                                          ),)
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(
+                                                            "64%",
+                                                            style: TextStyle(color: Colors.white),
+                                                          )
                                                         ],
                                                       ),
                                                       Row(
                                                         children: [
-                                                          Icon(Icons.ac_unit, size: 15,
-                                                          color: Colors.white,),
-                                                          Text("Skilled",style: TextStyle(
-                                                            fontSize: 12,
-                                                            color: Colors.white
-                                                          ),),
-                                                          Icon(Icons.timer, size: 15,
-                                                            color: Colors.white,),
-                                                          Text("6 hour left",style: TextStyle(
-                                                              fontSize: 12,
-                                                              color: Colors.white
-                                                          ),)
+                                                          Icon(
+                                                            Icons.ac_unit,
+                                                            size: 15,
+                                                            color: Colors.white,
+                                                          ),
+                                                          Text(
+                                                            "Skilled",
+                                                            style: TextStyle(fontSize: 12, color: Colors.white),
+                                                          ),
+                                                          Icon(
+                                                            Icons.timer,
+                                                            size: 15,
+                                                            color: Colors.white,
+                                                          ),
+                                                          Text(
+                                                            "6 hour left",
+                                                            style: TextStyle(fontSize: 12, color: Colors.white),
+                                                          )
                                                         ],
                                                       )
                                                     ],
@@ -158,11 +166,15 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                             padding: const EdgeInsets.only(left: 8),
                                             child: Row(
                                               children: [
-                                                Icon(Icons.timer,size: 15, color: Colors.white,),
-                                                Text("Next Lesson 02. Intro to Lottie Files", style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: Colors.white
-                                                ),)
+                                                Icon(
+                                                  Icons.timer,
+                                                  size: 15,
+                                                  color: Colors.white,
+                                                ),
+                                                Text(
+                                                  "Next Lesson 02. Intro to Lottie Files",
+                                                  style: TextStyle(fontSize: 12, color: Colors.white),
+                                                )
                                               ],
                                             ),
                                           ),
@@ -197,12 +209,18 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("ANIMATION",style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                        ),),
-                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,
-                                        height: 64,)
+                                        Text(
+                                          "ANIMATION",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Image.network(
+                                          "https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",
+                                          fit: BoxFit.cover,
+                                          height: 64,
+                                        )
                                       ],
                                     ),
                                   ),
@@ -254,20 +272,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Text("My Progress", style: TextStyle(
-                                                        color: Colors.white,
-
-                                                      ),),
+                                                      Text(
+                                                        "My Progress",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
                                                       Row(
-
                                                         children: [
                                                           Container(
                                                             height: 8,
                                                             width: 100,
                                                             decoration: BoxDecoration(
                                                                 color: Colors.white,
-                                                                borderRadius: BorderRadius.circular(8)
-                                                            ),
+                                                                borderRadius: BorderRadius.circular(8)),
                                                             padding: EdgeInsets.all(2),
                                                             child: Stack(
                                                               children: [
@@ -279,29 +297,37 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                                   ),
                                                                 ),
                                                               ],
-
                                                             ),
                                                           ),
-                                                          SizedBox(width: 8,),
-                                                          Text("64%", style: TextStyle(
-                                                              color: Colors.white
-                                                          ),)
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(
+                                                            "64%",
+                                                            style: TextStyle(color: Colors.white),
+                                                          )
                                                         ],
                                                       ),
                                                       Row(
                                                         children: [
-                                                          Icon(Icons.ac_unit, size: 15,
-                                                            color: Colors.white,),
-                                                          Text("Skilled",style: TextStyle(
-                                                              fontSize: 12,
-                                                              color: Colors.white
-                                                          ),),
-                                                          Icon(Icons.timer, size: 15,
-                                                            color: Colors.white,),
-                                                          Text("6 hour left",style: TextStyle(
-                                                              fontSize: 12,
-                                                              color: Colors.white
-                                                          ),)
+                                                          Icon(
+                                                            Icons.ac_unit,
+                                                            size: 15,
+                                                            color: Colors.white,
+                                                          ),
+                                                          Text(
+                                                            "Skilled",
+                                                            style: TextStyle(fontSize: 12, color: Colors.white),
+                                                          ),
+                                                          Icon(
+                                                            Icons.timer,
+                                                            size: 15,
+                                                            color: Colors.white,
+                                                          ),
+                                                          Text(
+                                                            "6 hour left",
+                                                            style: TextStyle(fontSize: 12, color: Colors.white),
+                                                          )
                                                         ],
                                                       )
                                                     ],
@@ -316,11 +342,15 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                             padding: const EdgeInsets.only(left: 8),
                                             child: Row(
                                               children: [
-                                                Icon(Icons.timer,size: 15, color: Colors.white,),
-                                                Text("Next Lesson 02. Intro to Lottie Files", style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.white
-                                                ),)
+                                                Icon(
+                                                  Icons.timer,
+                                                  size: 15,
+                                                  color: Colors.white,
+                                                ),
+                                                Text(
+                                                  "Next Lesson 02. Intro to Lottie Files",
+                                                  style: TextStyle(fontSize: 12, color: Colors.white),
+                                                )
                                               ],
                                             ),
                                           ),
@@ -355,12 +385,18 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("HEALING",style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                        ),),
-                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,
-                                          height: 64,)
+                                        Text(
+                                          "HEALING",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Image.network(
+                                          "https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",
+                                          fit: BoxFit.cover,
+                                          height: 64,
+                                        )
                                       ],
                                     ),
                                   ),
@@ -436,6 +472,9 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          child: Align(
+                                            child: ,
+                                          ),
                                         ),
                                       ),
                                       Positioned(
@@ -452,9 +491,17 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
                                           child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
-                                              Text("UX DESIGN", ),
-                                              Image.network("https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
+                                              Text(
+                                                "UX DESIGN",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Image.network(
+                                                  "https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
                                             ],
                                           ),
                                         ),

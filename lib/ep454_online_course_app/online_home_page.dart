@@ -155,7 +155,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         ),
                                         Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: const EdgeInsets.only(left: 8),
                                             child: Row(
                                               children: [
                                                 Icon(Icons.timer,size: 15, color: Colors.white,),

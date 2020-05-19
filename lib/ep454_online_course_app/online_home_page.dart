@@ -111,12 +111,14 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               blurRadius: 3,
                                               offset: Offset(2, 4))
                                         ]),
+                                    padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text("ANIMATION"),
-                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,)
+                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,
+                                        height: 64,)
                                       ],
                                     ),
                                   ),

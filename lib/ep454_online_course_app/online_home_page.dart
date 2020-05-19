@@ -89,8 +89,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                 child: Placeholder(),
                                               ),
                                               Expanded(
-                                                flex: 1,
-                                                child: Placeholder(),
+                                                flex: 3,
+                                                child: Column(
+                                                  children: [
+                                                    Text("My Progress")
+                                                  ],
+                                                ),
                                               )
                                             ],
                                           ),

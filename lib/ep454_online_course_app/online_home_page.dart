@@ -113,9 +113,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         ]),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      
                                       children: [
                                         Text("ANIMATION"),
-                                        Container()
+                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,)
                                       ],
                                     ),
                                   ),

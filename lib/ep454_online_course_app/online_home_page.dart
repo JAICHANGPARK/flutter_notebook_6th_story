@@ -103,9 +103,17 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                             color: Colors.white,
                                                             borderRadius: BorderRadius.circular(8)
                                                           ),
-                                                          child: Container(
-                                                            width: 80,
-                                                            decoration: BoxDecoration(),
+                                                          padding: EdgeInsets.all(2),
+                                                          child: Stack(
+                                                            children: [
+                                                              Container(
+                                                                width: 64,
+                                                                decoration: BoxDecoration(
+                                                                    color: Colors.deepPurpleAccent[200]
+                                                                ),
+                                                              ),
+                                                            ],
+                                                            
                                                           ),
                                                         ),
                                                         Text("64%", style: TextStyle(

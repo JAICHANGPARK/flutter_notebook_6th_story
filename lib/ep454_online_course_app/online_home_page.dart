@@ -90,38 +90,45 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               ),
                                               Expanded(
                                                 flex: 3,
-                                                child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text("My Progress"),
-                                                    Row(
-                                                      children: [
-                                                        Container(
-                                                          height: 8,
-                                                          width: 120,
-                                                          decoration: BoxDecoration(
-                                                            color: Colors.white,
-                                                            borderRadius: BorderRadius.circular(8)
-                                                          ),
-                                                          padding: EdgeInsets.all(2),
-                                                          child: Stack(
-                                                            children: [
-                                                              Container(
-                                                                width: 64,
-                                                                decoration: BoxDecoration(
-                                                                    color: Colors.deepPurpleAccent[200]
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("My Progress", style: TextStyle(
+                                                        color: Colors.white,
+
+                                                      ),),
+                                                      Row(
+                                                        children: [
+                                                          Container(
+                                                            height: 8,
+                                                            width: 100,
+                                                            decoration: BoxDecoration(
+                                                              color: Colors.white,
+                                                              borderRadius: BorderRadius.circular(8)
+                                                            ),
+                                                            padding: EdgeInsets.all(2),
+                                                            child: Stack(
+                                                              children: [
+                                                                Container(
+                                                                  width: 84,
+                                                                  decoration: BoxDecoration(
+                                                                      color: Colors.deepPurpleAccent[200],
+                                                                    borderRadius: BorderRadius.circular(4),
+                                                                  ),
                                                                 ),
-                                                              ),
-                                                            ],
-                                                            
+                                                              ],
+
+                                                            ),
                                                           ),
-                                                        ),
-                                                        Text("64%", style: TextStyle(
-                                                          color: Colors.white
-                                                        ),)
-                                                      ],
-                                                    )
-                                                  ],
+                                                          Text("64%", style: TextStyle(
+                                                            color: Colors.white
+                                                          ),)
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
                                                 ),
                                               )
                                             ],

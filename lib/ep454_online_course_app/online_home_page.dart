@@ -137,8 +137,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                             fontSize: 12,
                                                             color: Colors.white
                                                           ),),
-                                                          Icon(Icons.timer),
-                                                          Text("6 hour left")
+                                                          Icon(Icons.timer, size: 15,
+                                                            color: Colors.white,),
+                                                          Text("6 hour left",style: TextStyle(
+                                                              fontSize: 12,
+                                                              color: Colors.white
+                                                          ),)
                                                         ],
                                                       )
                                                     ],

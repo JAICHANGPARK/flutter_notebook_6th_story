@@ -222,7 +222,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   bottom: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                        color: Colors.indigo[200],
+                                        color: Colors.orange[200],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -231,7 +231,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         ),
                                         boxShadow: [
                                           BoxShadow(
-                                              color: Colors.indigo[500],
+                                              color: Colors.orange[500],
                                               spreadRadius: -8,
                                               blurRadius: 16,
                                               offset: Offset(0, 8))
@@ -336,7 +336,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                     height: 100,
                                     width: 100,
                                     decoration: BoxDecoration(
-                                        color: Colors.pink[200],
+                                        color: Colors.green[200],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(8),
                                           topRight: Radius.circular(8),
@@ -355,7 +355,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("ANIMATION",style: TextStyle(
+                                        Text("HEALING",style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.white,
                                         ),),

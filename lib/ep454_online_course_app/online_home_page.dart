@@ -608,6 +608,13 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          padding: EdgeInsets.only(bottom: 4, left: 16),
+                                          child: Align(
+                                            alignment: Alignment.bottomLeft,
+                                            child: Text("14 courses", style: TextStyle(
+                                                color: Colors.white
+                                            ),),
+                                          ),
                                         ),
                                       ),
                                       Positioned(
@@ -666,6 +673,13 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          padding: EdgeInsets.only(bottom: 4, left: 16),
+                                          child: Align(
+                                            alignment: Alignment.bottomLeft,
+                                            child: Text("9 courses", style: TextStyle(
+                                                color: Colors.white
+                                            ),),
+                                          ),
                                         ),
                                       ),
                                       Positioned(

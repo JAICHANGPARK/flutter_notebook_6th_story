@@ -222,7 +222,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                   bottom: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                        color: Colors.orange[200],
+                                        color: Colors.indigo[200],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(4),
                                           topRight: Radius.circular(4),
@@ -231,11 +231,102 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                         ),
                                         boxShadow: [
                                           BoxShadow(
-                                              color: Colors.orange[500],
+                                              color: Colors.indigo[500],
                                               spreadRadius: -8,
                                               blurRadius: 16,
                                               offset: Offset(0, 8))
                                         ]),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          flex: 4,
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                flex: 2,
+                                                child: Container(),
+                                              ),
+                                              Expanded(
+                                                flex: 3,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("My Progress", style: TextStyle(
+                                                        color: Colors.white,
+
+                                                      ),),
+                                                      Row(
+
+                                                        children: [
+                                                          Container(
+                                                            height: 8,
+                                                            width: 100,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors.white,
+                                                                borderRadius: BorderRadius.circular(8)
+                                                            ),
+                                                            padding: EdgeInsets.all(2),
+                                                            child: Stack(
+                                                              children: [
+                                                                Container(
+                                                                  width: 84,
+                                                                  decoration: BoxDecoration(
+                                                                    color: Colors.deepPurpleAccent[200],
+                                                                    borderRadius: BorderRadius.circular(4),
+                                                                  ),
+                                                                ),
+                                                              ],
+
+                                                            ),
+                                                          ),
+                                                          SizedBox(width: 8,),
+                                                          Text("64%", style: TextStyle(
+                                                              color: Colors.white
+                                                          ),)
+                                                        ],
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Icon(Icons.ac_unit, size: 15,
+                                                            color: Colors.white,),
+                                                          Text("Skilled",style: TextStyle(
+                                                              fontSize: 12,
+                                                              color: Colors.white
+                                                          ),),
+                                                          Icon(Icons.timer, size: 15,
+                                                            color: Colors.white,),
+                                                          Text("6 hour left",style: TextStyle(
+                                                              fontSize: 12,
+                                                              color: Colors.white
+                                                          ),)
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(left: 8),
+                                            child: Row(
+                                              children: [
+                                                Icon(Icons.timer,size: 15, color: Colors.white,),
+                                                Text("Next Lesson 02. Intro to Lottie Files", style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.white
+                                                ),)
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Positioned(
@@ -245,7 +336,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                     height: 100,
                                     width: 100,
                                     decoration: BoxDecoration(
-                                        color: Colors.green[400],
+                                        color: Colors.pink[200],
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(8),
                                           topRight: Radius.circular(8),
@@ -259,6 +350,19 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               blurRadius: 3,
                                               offset: Offset(2, 4))
                                         ]),
+                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text("ANIMATION",style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),),
+                                        Image.network("https://assets-ouch.icons8.com/thumb/805/53e1fb0f-07c0-415b-a2b6-b178acdc55bc.png",fit: BoxFit.cover,
+                                          height: 64,)
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

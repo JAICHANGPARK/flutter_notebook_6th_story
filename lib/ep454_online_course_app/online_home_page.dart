@@ -101,6 +101,11 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                           width: 120,
                                                           decoration: BoxDecoration(
                                                             color: Colors.white,
+                                                            borderRadius: BorderRadius.circular(8)
+                                                          ),
+                                                          child: Container(
+                                                            width: 80,
+                                                            decoration: BoxDecoration(),
                                                           ),
                                                         ),
                                                         Text("64%", style: TextStyle(

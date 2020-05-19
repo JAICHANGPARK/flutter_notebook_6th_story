@@ -101,6 +101,11 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               blurRadius: 3,
                                               offset: Offset(2, 4))
                                         ]),
+                                    child: Column(
+                                      children: [
+                                        
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

@@ -154,7 +154,18 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Row(
+                                              children: [
+                                                Icon(Icons.timer,size: 15, color: Colors.white,),
+                                                Text("Next Lesson 02. Intro to Lottie Files", style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white
+                                                ),)
+                                              ],
+                                            ),
+                                          ),
                                         )
                                       ],
                                     ),

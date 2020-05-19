@@ -451,6 +451,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          child: Column(
+                                            children: [
+                                              Text("UX DESIGN", ),
+                                              Image.network("https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],

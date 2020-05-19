@@ -552,6 +552,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Text(
+                                                "FINANCE",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Image.network(
+                                                  "https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],
@@ -602,6 +616,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Text(
+                                                "WEB DESIGN",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Image.network(
+                                                  "https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],
@@ -646,6 +674,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                   topRight: Radius.circular(4),
                                                   bottomLeft: Radius.circular(4),
                                                   bottomRight: Radius.circular(24))),
+                                          child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Text(
+                                                "UX DESIGN",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Image.network(
+                                                  "https://assets-ouch.icons8.com/thumb/428/88b57de6-38b6-4086-887e-93f181f27ec7.png")
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],

@@ -102,8 +102,12 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               offset: Offset(2, 4))
                                         ]),
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        
+                                        Text("ANIMATION"),
+                                        Container(
+
+                                        )
                                       ],
                                     ),
                                   ),

@@ -128,6 +128,18 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                             color: Colors.white
                                                           ),)
                                                         ],
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Icon(Icons.ac_unit, size: 15,
+                                                          color: Colors.white,),
+                                                          Text("Skilled",style: TextStyle(
+                                                            fontSize: 12,
+                                                            color: Colors.white
+                                                          ),),
+                                                          Icon(Icons.timer),
+                                                          Text("6 hour left")
+                                                        ],
                                                       )
                                                     ],
                                                   ),

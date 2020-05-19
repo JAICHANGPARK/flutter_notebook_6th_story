@@ -78,6 +78,16 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               blurRadius: 16,
                                               offset: Offset(0, 8))
                                         ]),
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Placeholder(),
+                                        ),
+                                        Expanded(
+                                          child: Placeholder(),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Positioned(
@@ -105,9 +115,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("ANIMATION"),
-                                        Container(
-
-                                        )
+                                        Container()
                                       ],
                                     ),
                                   ),

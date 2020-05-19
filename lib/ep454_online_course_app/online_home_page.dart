@@ -91,8 +91,20 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                               Expanded(
                                                 flex: 3,
                                                 child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text("My Progress")
+                                                    Text("My Progress"),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          height: 8,
+                                                          width: 120,
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.white,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )
                                                   ],
                                                 ),
                                               )

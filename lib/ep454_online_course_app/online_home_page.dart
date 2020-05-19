@@ -678,7 +678,7 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
                                               Text(
-                                                "UX DESIGN",
+                                                "ROBOTICS",
                                                 style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,

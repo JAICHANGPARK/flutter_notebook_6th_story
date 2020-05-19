@@ -102,7 +102,10 @@ class _OnlineHomePageState extends State<OnlineHomePage> {
                                                           decoration: BoxDecoration(
                                                             color: Colors.white,
                                                           ),
-                                                        )
+                                                        ),
+                                                        Text("64%", style: TextStyle(
+                                                          color: Colors.white
+                                                        ),)
                                                       ],
                                                     )
                                                   ],

@@ -13,9 +13,7 @@ class _BreathWidgetState extends State<BreathWidget> {
     return Center(
       child: CustomPaint(
         painter: BreathePainter(
-          CurvedAnimation(
-            
-          )
+
         ),
       ),
     );

@@ -38,7 +38,7 @@ class BreathePainter extends CustomPainter {
       final indexAngle = (i * pi / count * 2);
       final angle = indexAngle + (pi * 1.5 * animation.value);
       final offset = Offset(sin(angle), cos(angle)) * radius * 0.985;
-      
+      canvas.drawCircle(center + (offset * animation.value), radius, circlePaint);
     }
   }
 

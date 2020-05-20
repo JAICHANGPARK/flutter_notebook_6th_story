@@ -11,7 +11,9 @@ class _BreathePageState extends State<BreathePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(),
+      body: Center(
+        child: BreathWidget(),
+      ),
     );
   }
 }

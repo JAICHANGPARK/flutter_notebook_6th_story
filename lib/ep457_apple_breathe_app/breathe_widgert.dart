@@ -16,16 +16,17 @@ class _BreathWidgetState extends State<BreathWidget> {
   }
 }
 
-
-class BreathePainter extends CustomPainter{
+class BreathePainter extends CustomPainter {
+  BreathePainter(this.animation, {this.count = 6, this.color})
+      : circlePaint = Paint()
+          ..color = Colors.blue
+          ..blendMode = BlendMode.modulate,
+        super(repaint: animation);
 
   final Animation<double> animation;
   final int count;
   final Paint circlePaint;
   final Color color;
-
-
-  BreathePainter(this.animation, this.count, this.circlePaint, this.color);
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -37,5 +38,4 @@ class BreathePainter extends CustomPainter{
     // TODO: implement shouldRepaint
     throw UnimplementedError();
   }
-
 }

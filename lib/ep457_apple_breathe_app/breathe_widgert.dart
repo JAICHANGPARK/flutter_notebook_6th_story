@@ -8,6 +8,25 @@ class BreathWidget extends StatefulWidget {
 class _BreathWidgetState extends State<BreathWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: CustomPaint(
+        painter: BreathePainter(),
+      ),
+    );
   }
+}
+
+
+class BreathePainter extends CustomPainter{
+  @override
+  void paint(Canvas canvas, Size size) {
+    // TODO: implement paint
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    // TODO: implement shouldRepaint
+    throw UnimplementedError();
+  }
+
 }

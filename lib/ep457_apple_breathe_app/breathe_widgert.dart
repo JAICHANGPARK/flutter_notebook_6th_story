@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class BreathWidget extends StatefulWidget {
@@ -30,12 +32,37 @@ class BreathePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
+    final center = size.center(Offset.zero);
+    final radius = (size.shortestSide * 0.25) * animation.value;
+    for(int i = 0; i < count; i++){
+      final indexAngle = (i * pi / count * 2);
+    }
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    throw UnimplementedError();
+  bool shouldRepaint(BreathePainter oldDelegate) {
+      return animation != oldDelegate.animation;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

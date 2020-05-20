@@ -36,6 +36,9 @@ class BreathePainter extends CustomPainter {
     final radius = (size.shortestSide * 0.25) * animation.value;
     for(int i = 0; i < count; i++){
       final indexAngle = (i * pi / count * 2);
+      final angle = indexAngle + (pi * 1.5 * animation.value);
+      final offset = Offset(sin(angle), cos(angle)) * radius * 0.985;
+      
     }
   }
 

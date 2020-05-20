@@ -12,7 +12,11 @@ class _BreathWidgetState extends State<BreathWidget> {
   Widget build(BuildContext context) {
     return Center(
       child: CustomPaint(
-        painter: BreathePainter(),
+        painter: BreathePainter(
+          CurvedAnimation(
+            
+          )
+        ),
       ),
     );
   }

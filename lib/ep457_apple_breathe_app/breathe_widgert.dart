@@ -18,6 +18,15 @@ class _BreathWidgetState extends State<BreathWidget> {
 
 
 class BreathePainter extends CustomPainter{
+
+  final Animation<double> animation;
+  final int count;
+  final Paint circlePaint;
+  final Color color;
+
+
+  BreathePainter(this.animation, this.count, this.circlePaint, this.color);
+
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint

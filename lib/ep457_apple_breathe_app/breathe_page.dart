@@ -9,6 +9,6 @@ class BreathePage extends StatefulWidget {
 class _BreathePageState extends State<BreathePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

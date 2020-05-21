@@ -74,3 +74,13 @@ class BreathePainter extends CustomPainter {
     return animation != oldDelegate.animation;
   }
 }
+
+
+
+
+
+
+
+
+
+

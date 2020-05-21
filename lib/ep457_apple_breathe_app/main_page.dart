@@ -6,6 +6,8 @@ class BreatheApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       home: BreathePage(),
     );
   }

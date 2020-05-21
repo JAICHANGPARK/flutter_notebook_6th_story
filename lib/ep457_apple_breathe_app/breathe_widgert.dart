@@ -37,9 +37,10 @@ class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderS
           CurvedAnimation(
             parent: _animationController,
             curve: Curves.easeOutQuart,
-            reverseCurve:
-          )
+            reverseCurve:Curves.easeOutQuart,
+          ),
         ),
+        size: Size.infinite,
       ),
     );
   }

@@ -12,6 +12,15 @@ class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderS
   AnimationController _animationController;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _animationController = AnimationController(duration: Duration(seconds: 3), vsync: this)..repeat(
+      reverse: true
+    );
+  }
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: CustomPaint(

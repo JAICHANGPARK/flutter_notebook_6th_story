@@ -8,7 +8,9 @@ class BreathWidget extends StatefulWidget {
 }
 
 class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderStateMixin{
-  
+
+  AnimationController _animationController;
+
   @override
   Widget build(BuildContext context) {
     return Center(

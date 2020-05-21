@@ -20,6 +20,15 @@ class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderS
       reverse: true
     );
   }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _animationController.dispose();
+    super.dispose();
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(

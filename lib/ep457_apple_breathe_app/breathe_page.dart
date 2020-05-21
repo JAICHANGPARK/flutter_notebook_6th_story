@@ -12,8 +12,9 @@ class _BreathePageState extends State<BreathePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Center(
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         child: BreathWidget(),
       ),
     );

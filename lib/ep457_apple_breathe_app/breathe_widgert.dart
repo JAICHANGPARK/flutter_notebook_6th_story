@@ -7,7 +7,8 @@ class BreathWidget extends StatefulWidget {
   _BreathWidgetState createState() => _BreathWidgetState();
 }
 
-class _BreathWidgetState extends State<BreathWidget> {
+class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderStateMixin{
+  
   @override
   Widget build(BuildContext context) {
     return Center(

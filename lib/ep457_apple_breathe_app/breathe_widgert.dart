@@ -34,7 +34,11 @@ class _BreathWidgetState extends State<BreathWidget>  with SingleTickerProviderS
     return Center(
       child: CustomPaint(
         painter: BreathePainter(
-
+          CurvedAnimation(
+            parent: _animationController,
+            curve: Curves.easeOutQuart,
+            reverseCurve:
+          )
         ),
       ),
     );

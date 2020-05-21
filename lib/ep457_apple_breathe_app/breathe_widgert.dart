@@ -26,20 +26,18 @@ class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        height: 280,
-        width: 280,
-        child: CustomPaint(
-          painter: BreathePainter(
-            CurvedAnimation(
-              parent: _animationController,
-              curve: Curves.easeOutQuart,
-              reverseCurve: Curves.easeOutQuart,
-            ),
+    return Container(
+      height: 240,
+      width: 240,
+      child: CustomPaint(
+        painter: BreathePainter(
+          CurvedAnimation(
+            parent: _animationController,
+            curve: Curves.easeOutQuart,
+            reverseCurve: Curves.easeOutQuart,
           ),
-          size: Size.infinite,
         ),
+        size: Size.infinite,
       ),
     );
   }
@@ -49,7 +47,7 @@ class BreathePainter extends CustomPainter {
   BreathePainter(this.animation, {this.count = 6, this.color})
       : circlePaint = Paint()
           ..color = Colors.greenAccent
-          ..blendMode = BlendMode.modulate,
+          ..blendMode = BlendMode.softLight,
         super(repaint: animation);
 
   final Animation<double> animation;

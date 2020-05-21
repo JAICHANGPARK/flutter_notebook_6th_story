@@ -48,7 +48,7 @@ class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderSt
 class BreathePainter extends CustomPainter {
   BreathePainter(this.animation, {this.count = 6, this.color})
       : circlePaint = Paint()
-          ..color = Colors.blue
+          ..color = Colors.greenAccent
           ..blendMode = BlendMode.modulate,
         super(repaint: animation);
 

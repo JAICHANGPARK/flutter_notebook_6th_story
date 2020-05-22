@@ -27,6 +27,19 @@ class _BreathePageState extends State<BreathePage> {
         showDialog(context: context, builder: (context){
           return AlertDialog(
            content: Text("Time out"),
+            actions: [
+              ButtonBar(
+                children: [
+                  FlatButton(
+                    child: Text("OK"),
+                    onPressed: (){
+                      Navigator.of(context).pop();
+                      Navigator.of(context).pop();
+                    },
+                  )
+                ],
+              )
+            ],
           );
         });
       }

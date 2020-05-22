@@ -45,7 +45,7 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
           ),
           OutlineButton(
             color: Colors.greenAccent,
-            child: Text("Start"),
+            child: Text("Start",style: Theme.of(context).textTheme.headline5,),
             onPressed: () {  },)
         ],
       ),

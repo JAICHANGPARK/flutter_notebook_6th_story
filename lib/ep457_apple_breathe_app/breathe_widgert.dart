@@ -14,7 +14,7 @@ class BreathWidget extends StatefulWidget {
 
 class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderStateMixin {
   AnimationController _animationController;
-  Timer _timer;
+
   Future initVibration()async{
     if(await Vibration.hasVibrator()){
       print("Has Vibration");

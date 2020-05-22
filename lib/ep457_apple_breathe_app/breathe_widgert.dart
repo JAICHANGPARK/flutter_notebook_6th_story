@@ -27,8 +27,6 @@ class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240,
-      width: 240,
       child: CustomPaint(
         painter: BreathePainter(
           CurvedAnimation(

@@ -21,6 +21,10 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
               width: 240,
               child: SleekCircularSlider(
                 appearance: CircularSliderAppearance(
+                  customColors: CustomSliderColors(
+                    trackColor: Colors.teal,
+                    progressBarColor: Colors.greenAccent
+                  ),
                   customWidths: CustomSliderWidths(progressBarWidth: 8,handlerSize: 20),
                   infoProperties: InfoProperties(
                     modifier: (v)=> v.ceil().toInt().toString(),

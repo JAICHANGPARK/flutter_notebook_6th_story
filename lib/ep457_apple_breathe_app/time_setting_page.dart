@@ -13,24 +13,27 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Set Breathe Time"),
+          Text("Set Breathe Time",style: Theme.of(context).textTheme.headline3,),
           SizedBox(height: 38,),
           Center(
-            child: SleekCircularSlider(
-
-              appearance: CircularSliderAppearance(
-                customWidths: CustomSliderWidths(progressBarWidth: 8,handlerSize: 20),
-                infoProperties: InfoProperties(
-                  modifier: (v)=> v.ceil().toInt().toString(),
-                  mainLabelStyle: TextStyle(
-                    color: Colors.white,
-                    fontSize: 64
+            child: Container(
+              height: 380,
+              width: 240,
+              child: SleekCircularSlider(
+                appearance: CircularSliderAppearance(
+                  customWidths: CustomSliderWidths(progressBarWidth: 8,handlerSize: 20),
+                  infoProperties: InfoProperties(
+                    modifier: (v)=> v.ceil().toInt().toString(),
+                    mainLabelStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 64
+                    )
                   )
-                )
+                ),
+                onChange: (d){
+                  print(d);
+                },
               ),
-              onChange: (d){
-                print(d);
-              },
             ),
           ),
         ],

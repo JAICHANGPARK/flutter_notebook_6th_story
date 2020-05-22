@@ -20,6 +20,9 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
               height: 380,
               width: 240,
               child: SleekCircularSlider(
+                min: 1,
+                max: 30,
+                initialValue: 10,
                 appearance: CircularSliderAppearance(
                   customColors: CustomSliderColors(
                     trackColor: Colors.teal,
@@ -40,6 +43,10 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
               ),
             ),
           ),
+          OutlineButton(
+            color: Colors.greenAccent,
+            child: Text("Start"),
+            onPressed: () {  },)
         ],
       ),
     );

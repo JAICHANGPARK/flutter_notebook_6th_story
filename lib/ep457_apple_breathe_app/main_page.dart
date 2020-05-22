@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'breathe_page.dart';
+import 'time_setting_page.dart';
 
 class BreatheApp extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class BreatheApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      home: BreathePage(),
+      home: TimeSettingPage(),
     );
   }
 }

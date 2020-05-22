@@ -5,7 +5,8 @@ import 'package:vibration/vibration.dart';
 
 class BreathWidget extends StatefulWidget {
 
-
+  final int time;
+  BreathWidget({this.time});
   @override
   _BreathWidgetState createState() => _BreathWidgetState();
 }

@@ -17,7 +17,7 @@ class _BreathePageState extends State<BreathePage> {
       body: Container(
         child: AspectRatio(
           aspectRatio: 0.75,
-            child: BreathWidget()),
+            child: BreathWidget(time: widget.time,)),
       ),
     );
   }

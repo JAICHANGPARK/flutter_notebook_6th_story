@@ -13,9 +13,9 @@ class _BreathePageState extends State<BreathePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: BreathWidget(),
+        child: AspectRatio(
+          aspectRatio: 0.75,
+            child: BreathWidget()),
       ),
     );
   }

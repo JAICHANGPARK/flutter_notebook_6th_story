@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep457_apple_breathe_app/breathe_page.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 class TimeSettingPage extends StatefulWidget {
@@ -45,8 +46,12 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
           ),
           OutlineButton(
             color: Colors.greenAccent,
-            child: Text("Start",style: Theme.of(context).textTheme.headline5,),
-            onPressed: () {  },)
+            child: Text("Start".toUpperCase(),style: Theme.of(context).textTheme.headline5,),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context)=>BreathePage()
+              ));
+            },)
         ],
       ),
     );

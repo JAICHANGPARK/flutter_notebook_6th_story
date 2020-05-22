@@ -4,6 +4,8 @@ import 'breathe_widgert.dart';
 
 
 class BreathePage extends StatefulWidget {
+  final int time;
+  BreathePage({this.time});
   @override
   _BreathePageState createState() => _BreathePageState();
 }

@@ -8,6 +8,7 @@ class TimeSettingPage extends StatefulWidget {
 }
 
 class _TimeSettingPageState extends State<TimeSettingPage> {
+  int _time = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +41,9 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
                 ),
                 onChange: (d){
                   print(d);
+                  setState(() {
+                    _time = d.toInt();
+                  });
                 },
               ),
             ),
@@ -49,7 +53,7 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
             child: Text("Start".toUpperCase(),style: Theme.of(context).textTheme.headline5,),
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(
-                builder: (context)=>BreathePage()
+                builder: (context)=>BreathePage(time: _time,)
               ));
             },)
         ],

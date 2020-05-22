@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -13,17 +14,19 @@ class BreathWidget extends StatefulWidget {
 
 class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderStateMixin {
   AnimationController _animationController;
-
+  Timer _timer;
   Future initVibration()async{
     if(await Vibration.hasVibrator()){
       print("Has Vibration");
       Vibration.vibrate(pattern: [100,100,200,200,300,300,400,400,500,500,]);
     }
   }
+
   @override
   void initState() {
     // TODO: implement initState
     initVibration();
+    _timer = Timer(Duration(minutes: widget.time))
     super.initState();
     _animationController = AnimationController(duration: Duration(seconds: 5), vsync: this)..repeat(reverse: true);
   }

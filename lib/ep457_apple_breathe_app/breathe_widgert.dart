@@ -26,7 +26,9 @@ class _BreathWidgetState extends State<BreathWidget> with SingleTickerProviderSt
   void initState() {
     // TODO: implement initState
     initVibration();
-    _timer = Timer(Duration(minutes: widget.time))
+    _timer = Timer(Duration(minutes: widget.time), (){
+
+    });
     super.initState();
     _animationController = AnimationController(duration: Duration(seconds: 5), vsync: this)..repeat(reverse: true);
   }

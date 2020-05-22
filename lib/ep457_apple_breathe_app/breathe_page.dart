@@ -11,6 +11,18 @@ class BreathePage extends StatefulWidget {
 }
 
 class _BreathePageState extends State<BreathePage> {
+  Timer _timer;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      setState(() {
+
+      });
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

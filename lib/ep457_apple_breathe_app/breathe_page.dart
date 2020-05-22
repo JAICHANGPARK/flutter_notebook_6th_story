@@ -22,10 +22,26 @@ class _BreathePageState extends State<BreathePage> {
     super.initState();
 
     _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      if(widget.time * 60 == _timeCounter){
+        _timer.cancel();
+        showDialog(context: context, builder: (context){
+          return AlertDialog(
+           content: Text("Time out"),
+          );
+        });
+      }
       setState(() {
         _timeCounter++;
       });
     });
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _timer?.cancel();
+    _timer = null;
+    super.dispose();
+
   }
   @override
   Widget build(BuildContext context) {
@@ -37,7 +53,7 @@ class _BreathePageState extends State<BreathePage> {
               aspectRatio: 0.75,
                 child: BreathWidget(time: widget.time,)),
           ),
-          Text("${_timeCounter.toString()}")
+          Text("${DateTime.now().toString().substring(10, 19)}", style: Theme.of(context).textTheme.headline2,)
         ],
       ),
     );

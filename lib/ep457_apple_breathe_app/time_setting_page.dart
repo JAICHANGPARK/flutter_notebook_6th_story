@@ -14,6 +14,7 @@ class _TimeSettingPageState extends State<TimeSettingPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("Set Breathe Time"),
+          SizedBox(height: 38,),
           Center(
             child: SleekCircularSlider(
 

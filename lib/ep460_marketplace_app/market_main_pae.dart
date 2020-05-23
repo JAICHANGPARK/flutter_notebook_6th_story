@@ -18,39 +18,41 @@ class _MarketMainpageState extends State<MarketMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            flex: 1,
-            child: Container(
-              child: Column(
-                children: [
-                  Expanded(
-                    child: Container(),
-                  ),
-                  Expanded(
-                    child: Placeholder(),
-                  )
-                ],
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 1,
+              child: Container(
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Container(),
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                    )
+                  ],
+                ),
               ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 1,
-            child: Placeholder(color: Colors.black),
-          ),
-          Expanded(
-            flex: 1,
-            child: Placeholder(
-              color: Colors.red,
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
             ),
-          )
-        ],
+            Expanded(
+              flex: 1,
+              child: Placeholder(color: Colors.black),
+            ),
+            Expanded(
+              flex: 1,
+              child: Placeholder(
+                color: Colors.red,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

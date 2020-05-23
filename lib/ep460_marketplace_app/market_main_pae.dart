@@ -19,11 +19,17 @@ class _MarketMainpageState extends State<MarketMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             flex: 1,
             child: Container(
+              color: Colors.yellow,
+              child: Column(
+                children: [
 
+                ],
+              ),
             ),
           ),
           Expanded(

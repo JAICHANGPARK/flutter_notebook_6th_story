@@ -45,27 +45,30 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       ),
                     ),
                     Expanded(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("01/02"),
-                              Text("Information",style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24
-                              ),)
-                            ],
-                          ),
-                          Container(
-                            height: 16,
-                            width: 100,
-                            child: Placeholder(),
-                          )
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("01/02"),
+                                Text("Information",style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24
+                                ),)
+                              ],
+                            ),
+                            Container(
+                              height: 16,
+                              width: 100,
+                              child: Placeholder(),
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],

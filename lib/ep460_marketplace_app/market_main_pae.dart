@@ -96,6 +96,21 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                         backgroundColor: Colors.black,
                                       ),
                                     ),
+                                  ),
+                                  Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      width: 16,
+                                      decoration:BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle,
+                                          border: Border.all()
+                                      ),
+                                      padding: EdgeInsets.all(2),
+
+                                    ),
                                   )
 
                                 ],

@@ -48,6 +48,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       child: Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("01/02"),
                               Text("Information",style: TextStyle(
@@ -65,7 +66,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
             ),
             Expanded(
               flex: 1,
-              child: Placeholder(),
+              child: Container(
+                color: Colors.black,
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
+              ),
             ),
             Expanded(
               flex: 1,

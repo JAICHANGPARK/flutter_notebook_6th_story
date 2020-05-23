@@ -4,7 +4,7 @@ class MarketPlaceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      body: MarketMainPage(),
+      home: MarketMainPage(),
     );
   }
 }

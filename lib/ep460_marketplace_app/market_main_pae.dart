@@ -17,6 +17,6 @@ class MarketMainPage extends StatefulWidget {
 class _MarketMainpageState extends State<MarketMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

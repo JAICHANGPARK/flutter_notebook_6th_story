@@ -31,7 +31,16 @@ class _MarketMainpageState extends State<MarketMainPage> {
                 child: Column(
                   children: [
                     Expanded(
-                      child: Container(),
+                      child: Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(Icons.keyboard_arrow_left),
+                            Text("CHECKOUT"),
+                            Icon(Icons.menu),
+                          ],
+                        ),
+                      ),
                     ),
                     Expanded(
                       child: Placeholder(),

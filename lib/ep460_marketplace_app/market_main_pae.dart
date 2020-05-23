@@ -18,7 +18,44 @@ class _MarketMainpageState extends State<MarketMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      body: Column(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Placeholder(),
+          )
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

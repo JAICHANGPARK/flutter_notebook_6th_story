@@ -92,7 +92,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                         border: Border.all()
                                       ),
                                       padding: EdgeInsets.all(3),
-                                      child: CircleAvatar(radius: 4,),
+                                      child: CircleAvatar(
+                                        backgroundColor: Colors.black,
+                                      ),
                                     ),
                                   )
 

@@ -56,6 +56,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 fontSize: 24
                               ),)
                             ],
+                          ),
+                          Container(
+                            height: 16,
+                            width: 100,
+                            child: Placeholder(),
                           )
                         ],
                       ),
@@ -70,7 +75,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                 color: Colors.black,
                 child: Row(
                   children: [
-                    
+
                   ],
                 ),
               ),

@@ -45,7 +45,19 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       ),
                     ),
                     Expanded(
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text("01/02"),
+                              Text("Information",style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24
+                              ),)
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),

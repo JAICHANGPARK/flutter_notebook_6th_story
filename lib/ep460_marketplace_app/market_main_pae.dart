@@ -30,9 +30,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
           ),
           Expanded(
             flex: 1,
-            child: Placeholder(
-              color:Colors.black
-            ),
+            child: Placeholder(color: Colors.black),
           ),
           Expanded(
             flex: 1,
@@ -45,33 +43,3 @@ class _MarketMainpageState extends State<MarketMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

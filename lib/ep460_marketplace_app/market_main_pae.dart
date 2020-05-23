@@ -68,7 +68,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                             ),
                             Container(
                               height: 16,
-                              width: 84,
+                              width: 72,
                               child: Stack(
                                 children: [
                                   Positioned(
@@ -91,7 +91,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                         shape: BoxShape.circle,
                                         border: Border.all()
                                       ),
-                                      padding: EdgeInsets.all(3),
+                                      padding: EdgeInsets.all(2),
                                       child: CircleAvatar(
                                         backgroundColor: Colors.black,
                                       ),

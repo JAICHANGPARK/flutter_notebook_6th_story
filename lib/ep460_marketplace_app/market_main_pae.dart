@@ -38,7 +38,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Icon(Icons.keyboard_arrow_left),
-                            Text("CHECKOUT"),
+                            Text("CHECKOUT", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),),
                             Icon(Icons.menu),
                           ],
                         ),
@@ -55,7 +57,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("01/02"),
+                                Text("01/02", style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),),
                                 Text("Information",style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 24

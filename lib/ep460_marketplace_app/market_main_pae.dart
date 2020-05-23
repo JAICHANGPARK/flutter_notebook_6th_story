@@ -141,8 +141,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
             ),
             Expanded(
               flex: 1,
-              child: Placeholder(
-                color: Colors.red,
+              child: Container(
+                color: Colors.pink[600],
+                child: Center(
+                  child: Text("NEXT STEP",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),),
+                ),
               ),
             )
           ],

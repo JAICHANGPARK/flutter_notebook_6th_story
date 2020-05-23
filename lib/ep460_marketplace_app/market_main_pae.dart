@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MarketPlaceApp extends StatelessWidget {
@@ -32,6 +33,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                   children: [
                     Expanded(
                       child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

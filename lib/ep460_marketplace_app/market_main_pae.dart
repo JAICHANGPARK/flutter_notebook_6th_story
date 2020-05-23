@@ -23,6 +23,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
           Expanded(
             flex: 1,
             child: Placeholder(),
+          ),
+          Expanded(
+            flex: 1,
+            child: Placeholder(),
+          ),
+          Expanded(
+            flex: 1,
+            child: Placeholder(),
           )
         ],
       ),

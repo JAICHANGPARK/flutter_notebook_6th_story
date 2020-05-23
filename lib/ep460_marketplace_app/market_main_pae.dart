@@ -69,7 +69,20 @@ class _MarketMainpageState extends State<MarketMainPage> {
                             Container(
                               height: 16,
                               width: 100,
-                              child: Placeholder(),
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    top: 6,
+                                    bottom: 6,
+                                    left: 0,
+                                    right: 0,
+                                    child: Container(
+                                      color: Colors.grey,
+                                    ),
+                                  )
+
+                                ],
+                              ),
                             )
                           ],
                         ),

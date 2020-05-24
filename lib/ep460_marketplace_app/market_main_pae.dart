@@ -142,7 +142,10 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    Text("\$42.00",style: TextStyle(
+                      
+                    ),)
                   ],
                 ),
               ),

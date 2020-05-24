@@ -171,7 +171,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           borderRadius: BorderRadius.circular(8)
                         ),
                         child: ExpansionTile(
-                          title: Text("Delivery address"),
+                          title: Text("Delivery address".toUpperCase(), style: TextStyle(
+                            fontWeight: FontWeight.bold
+                          ),),
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),

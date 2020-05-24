@@ -26,9 +26,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
             Expanded(
               flex: 1,
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.yellow
-                ),
+                decoration: BoxDecoration(color: Colors.yellow),
                 child: Column(
                   children: [
                     Expanded(
@@ -38,9 +36,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Icon(Icons.keyboard_arrow_left),
-                            Text("CHECKOUT", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),),
+                            Text(
+                              "CHECKOUT",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             Icon(Icons.menu),
                           ],
                         ),
@@ -57,13 +58,16 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("01/02", style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),),
-                                Text("Information",style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 24
-                                ),)
+                                Text(
+                                  "01/02",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "Information",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                )
                               ],
                             ),
                             Container(
@@ -86,11 +90,8 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                     bottom: 0,
                                     child: Container(
                                       width: 16,
-                                      decoration:BoxDecoration(
-                                        color: Colors.white,
-                                        shape: BoxShape.circle,
-                                        border: Border.all()
-                                      ),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white, shape: BoxShape.circle, border: Border.all()),
                                       padding: EdgeInsets.all(2),
                                       child: CircleAvatar(
                                         backgroundColor: Colors.black,
@@ -103,16 +104,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                     bottom: 0,
                                     child: Container(
                                       width: 16,
-                                      decoration:BoxDecoration(
-                                          color: Colors.white,
-                                          shape: BoxShape.circle,
-                                          border: Border.all()
-                                      ),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white, shape: BoxShape.circle, border: Border.all()),
                                       padding: EdgeInsets.all(2),
-
                                     ),
                                   )
-
                                 ],
                               ),
                             )
@@ -129,9 +125,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
               child: Container(
                 color: Colors.black,
                 child: Row(
-                  children: [
-
-                  ],
+                  children: [],
                 ),
               ),
             ),
@@ -144,10 +138,13 @@ class _MarketMainpageState extends State<MarketMainPage> {
               child: Container(
                 color: Colors.pink[600],
                 child: Center(
-                  child: Text("NEXT STEP",style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),),
+                  child: Text(
+                    "NEXT STEP",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
             )

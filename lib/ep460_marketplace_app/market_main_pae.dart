@@ -207,7 +207,10 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 children: [
                                   Expanded(
                                     child: Placeholder(),
-                                  )
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
                                 ],
                               ),
                             )

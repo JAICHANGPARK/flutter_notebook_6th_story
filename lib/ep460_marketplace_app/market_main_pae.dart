@@ -182,8 +182,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       ),
                       Container(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-
+                            Text("Payment info".toUpperCase()),
                           ],
                         ),
                       )

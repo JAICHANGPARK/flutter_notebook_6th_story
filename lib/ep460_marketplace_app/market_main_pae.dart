@@ -164,6 +164,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         decoration: BoxDecoration(

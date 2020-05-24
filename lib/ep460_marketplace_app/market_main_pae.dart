@@ -125,7 +125,16 @@ class _MarketMainpageState extends State<MarketMainPage> {
               child: Container(
                 color: Colors.black,
                 child: Row(
-                  children: [],
+                  children: [
+                    Column(
+                      children: [
+                        Text("Order summary".toUpperCase(), style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),)
+                      ],
+                    )
+                  ],
                 ),
               ),
             ),

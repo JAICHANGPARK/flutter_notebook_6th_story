@@ -220,19 +220,22 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   ],
                                 ),
                               ),
-                              Text.rich(TextSpan(
-                                children:[
-                                  TextSpan(
-                                    text: "Name On Card",
-                                  ),
-                                  TextSpan(
-                                    text: "*",
+                              Text.rich(TextSpan(children: [
+                                TextSpan(
+                                    text: "Name On Card ",
                                     style: TextStyle(
-                                      color: Colors.red
-                                    )
+                                      color: Colors.grey,
+                                    )),
+                                TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                              ])),
+                              Container(
+                                height: 42,
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder()
                                   )
-                                ]
-                              ))
+                                ),
+                              )
                             ],
                           ),
                         )

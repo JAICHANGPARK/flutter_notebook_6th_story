@@ -235,6 +235,35 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                     border: OutlineInputBorder()
                                   )
                                 ),
+                              ),
+                              Text.rich(TextSpan(children: [
+                                TextSpan(
+                                    text: "Name On Card ",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    )),
+                                TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                              ])),
+                              Container(
+                                height: 42,
+                                child: TextField(
+                                    decoration: InputDecoration(
+                                        border: OutlineInputBorder()
+                                    )
+                                ),
+                              ),
+                              Container(
+                                height: 64,
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Placeholder(),
+                                    ),
+                                    Expanded(
+                                      child: Placeholder(),
+                                    ),
+                                  ],
+                                ),
                               )
                             ],
                           ),

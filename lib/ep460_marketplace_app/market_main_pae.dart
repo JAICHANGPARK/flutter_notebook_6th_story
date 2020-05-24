@@ -184,6 +184,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                         ),
                       ),
                       Container(
+                        
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(),
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

@@ -295,7 +295,10 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   setState(() {
                                     _isSelected = value;
                                   });
+
                               },
+
+                                title: Text("Billing address is the same as shipping address"),
 
                               )
                             ],

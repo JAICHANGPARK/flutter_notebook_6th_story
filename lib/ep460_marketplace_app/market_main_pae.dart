@@ -16,6 +16,7 @@ class MarketMainPage extends StatefulWidget {
 }
 
 class _MarketMainpageState extends State<MarketMainPage> {
+  bool _isSelected  = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -290,7 +291,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 ),
                               ),
                               CheckboxListTile(
-                                value: ,
+                                value: _isSelected, onChanged: (bool value) {
+                                  setState(() {
+                                    _isSelected = value;
+                                  });
+                              },
+
                               )
                             ],
                           ),

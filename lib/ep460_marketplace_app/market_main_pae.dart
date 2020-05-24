@@ -230,11 +230,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               ])),
                               Container(
                                 height: 42,
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder()
-                                  )
-                                ),
+                                child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                               ),
                               Text.rich(TextSpan(children: [
                                 TextSpan(
@@ -246,11 +242,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               ])),
                               Container(
                                 height: 42,
-                                child: TextField(
-                                    decoration: InputDecoration(
-                                        border: OutlineInputBorder()
-                                    )
-                                ),
+                                child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                               ),
                               Container(
                                 height: 64,
@@ -270,11 +262,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           ])),
                                           Container(
                                             height: 42,
-                                            child: TextField(
-                                                decoration: InputDecoration(
-                                                    border: OutlineInputBorder()
-                                                )
-                                            ),
+                                            child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                                           ),
                                         ],
                                       ),

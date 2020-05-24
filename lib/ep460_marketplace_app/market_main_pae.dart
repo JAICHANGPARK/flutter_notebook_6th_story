@@ -147,7 +147,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                    ),)
+                    ),),
+                    IconButton(
+                      icon: Icon(Icons.keyboard_arrow_down),
+                      onPressed: (){},
+                    )
                   ],
                 ),
               ),

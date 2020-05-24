@@ -132,16 +132,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Order summary".toUpperCase(), style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),),
-                          Text("2 item in your cart", style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 13
-
-                          ),)
+                          Text(
+                            "Order summary".toUpperCase(),
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
+                          Text(
+                            "2 item in your cart",
+                            style: TextStyle(color: Colors.white, fontSize: 13),
+                          )
                         ],
                       ),
                     )

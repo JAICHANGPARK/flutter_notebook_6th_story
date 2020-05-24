@@ -200,6 +200,16 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 Icon(Icons.lock, size: 13,),
                                 Text("100% secure payment")
                               ],
+                            ),
+                            Container(
+                              height: 42,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),

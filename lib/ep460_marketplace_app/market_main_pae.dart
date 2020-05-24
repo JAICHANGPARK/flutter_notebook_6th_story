@@ -144,7 +144,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       ),
                     ),
                     Text("\$42.00",style: TextStyle(
-                      
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),)
                   ],
                 ),

@@ -121,7 +121,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
               ),
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Container(
                 color: Colors.black,
                 child: Row(

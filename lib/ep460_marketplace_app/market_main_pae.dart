@@ -144,14 +144,17 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       ),
                     ),
                     Spacer(),
-                    Text("\$42.00",style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),),
+                    Text(
+                      "\$42.00",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     IconButton(
                       icon: Icon(Icons.keyboard_arrow_down),
-                      onPressed: (){},
+                      onPressed: () {},
                       color: Colors.white,
                     )
                   ],
@@ -159,69 +162,84 @@ class _MarketMainpageState extends State<MarketMainPage> {
               ),
             ),
             Expanded(
-              flex: 14,
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: ExpansionTile(
-                          title: Text("Delivery address".toUpperCase(), style: TextStyle(
-                            fontWeight: FontWeight.bold
-                          ),),
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: TextField(),
-                            )
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 16,),
-                      Container(
-                        height: MediaQuery.of(context).size.height / 2.2,
-                        width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Payment info".toUpperCase()),
-                            Row(
-                              children: [
-                                Icon(Icons.lock, size: 13,),
-                                Text("100% secure payment")
-                              ],
+                flex: 14,
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(8)),
+                          child: ExpansionTile(
+                            title: Text(
+                              "Delivery address".toUpperCase(),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
-                            Container(
-                              height: 42,
-                              child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: TextField(),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 2.2,
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Payment info".toUpperCase()),
+                              Row(
                                 children: [
-                                  Expanded(
-                                    child: Placeholder(),
+                                  Icon(
+                                    Icons.lock,
+                                    size: 13,
                                   ),
-                                  Expanded(
-                                    child: Placeholder(),
-                                  ),
+                                  Text("100% secure payment")
                                 ],
                               ),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
+                              Container(
+                                height: 42,
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Placeholder(),
+                                    ),
+                                    Expanded(
+                                      child: Placeholder(),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text.rich(TextSpan(
+                                children:[
+                                  TextSpan(
+                                    text: "Name On Card",
+                                  ),
+                                  TextSpan(
+                                    text: "*",
+                                    style: TextStyle(
+                                      color: Colors.red
+                                    )
+                                  )
+                                ]
+                              ))
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
-                ),
-              )
-            ),
+                )),
             Expanded(
               flex: 2,
               child: Container(

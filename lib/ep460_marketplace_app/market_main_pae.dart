@@ -181,7 +181,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                         ),
                       ),
                       Container(
-                        
+                        child: Column(
+                          children: [
+
+                          ],
+                        ),
                       )
                     ],
                   ),

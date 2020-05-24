@@ -268,10 +268,29 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                       ),
                                     ),
                                     Expanded(
-                                      child: Placeholder(),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text.rich(TextSpan(children: [
+                                            TextSpan(
+                                                text: "Name On Card ",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                )),
+                                            TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                                          ])),
+                                          Container(
+                                            height: 42,
+                                            child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
+                              ),
+                              CheckboxListTile(
+                                value: ,
                               )
                             ],
                           ),

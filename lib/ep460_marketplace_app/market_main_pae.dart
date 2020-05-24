@@ -161,18 +161,28 @@ class _MarketMainpageState extends State<MarketMainPage> {
             Expanded(
               flex: 14,
               child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(),
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: ExpansionTile(
-                        title: Text("Delivery address"),
-                      ),
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: ExpansionTile(
+                          title: Text("Delivery address"),
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: TextField(),
+                            )
+                          ],
+                        ),
+
+                      )
+                    ],
+                  ),
                 ),
               )
             ),

@@ -183,8 +183,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           ],
                         ),
                       ),
+                      SizedBox(height: 16,),
                       Container(
-                        
+                        height: MediaQuery.of(context).size.height / 2.2,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(),

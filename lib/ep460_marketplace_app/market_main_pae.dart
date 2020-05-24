@@ -24,7 +24,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              flex: 1,
+              flex: 4,
               child: Container(
                 decoration: BoxDecoration(color: Colors.yellow),
                 child: Column(

@@ -127,6 +127,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                 child: Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Order summary".toUpperCase(), style: TextStyle(
                           color: Colors.white,

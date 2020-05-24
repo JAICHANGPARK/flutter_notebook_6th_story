@@ -132,7 +132,8 @@ class _MarketMainpageState extends State<MarketMainPage> {
                         Text("Order summary".toUpperCase(), style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold
-                        ),)
+                        ),),
+                        Text("2 item in your cart")
                       ],
                     )
                   ],

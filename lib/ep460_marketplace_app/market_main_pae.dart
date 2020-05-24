@@ -16,7 +16,8 @@ class MarketMainPage extends StatefulWidget {
 }
 
 class _MarketMainpageState extends State<MarketMainPage> {
-  bool _isSelected  = false;
+  bool _isSelected = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -291,15 +292,13 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 ),
                               ),
                               CheckboxListTile(
-                                value: _isSelected, onChanged: (bool value) {
+                                value: _isSelected,
+                                onChanged: (bool value) {
                                   setState(() {
                                     _isSelected = value;
                                   });
-
-                              },
-
+                                },
                                 title: Text("Billing address is the same as shipping address"),
-
                               )
                             ],
                           ),

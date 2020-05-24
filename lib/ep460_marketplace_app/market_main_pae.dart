@@ -169,6 +169,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
@@ -298,7 +299,10 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                     _isSelected = value;
                                   });
                                 },
-                                title: Text("Billing address is the same as shipping address"),
+                                title: Text("Billing address is the same as shipping address",style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),),
                               )
                             ],
                           ),

@@ -186,6 +186,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                       SizedBox(height: 16,),
                       Container(
                         height: MediaQuery.of(context).size.height / 2.2,
+                        width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(),
@@ -194,6 +195,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Payment info".toUpperCase()),
+                            Row(
+                              children: [
+                                Icon(Icons.lock, size: 13,),
+                                Text("100% secure payment")
+                              ],
+                            )
                           ],
                         ),
                       )

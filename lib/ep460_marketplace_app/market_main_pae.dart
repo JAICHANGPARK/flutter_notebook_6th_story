@@ -151,6 +151,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                     IconButton(
                       icon: Icon(Icons.keyboard_arrow_down),
                       onPressed: (){},
+                      color: Colors.white,
                     )
                   ],
                 ),

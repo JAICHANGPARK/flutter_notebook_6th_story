@@ -217,9 +217,10 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   children: [
                                     Expanded(
                                       child: Container(
+                                        margin: EdgeInsets.symmetric(horizontal: 8),
                                         decoration: BoxDecoration(
                                           color: Colors.black,
-                                          borderRadius: BorderRadius.circular(16)
+                                          borderRadius: BorderRadius.circular(36)
                                         ),
                                       ),
                                     ),

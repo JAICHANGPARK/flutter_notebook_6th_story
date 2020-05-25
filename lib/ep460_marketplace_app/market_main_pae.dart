@@ -322,7 +322,15 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                               height: 42,
                                               margin: EdgeInsets.only(top: 4, bottom: 4, right: 4),
                                               child:
-                                                  TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                                  TextField(decoration: InputDecoration(border: OutlineInputBorder(),
+
+                                                    enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(color: Colors.black)
+                                                    ),
+                                                    focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(color: Colors.black)
+                                                    ),
+                                                  )),
                                             ),
                                           ],
                                         ),

@@ -211,23 +211,27 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   Text("100% secure payment")
                                 ],
                               ),
-                              Container(
-                                height: 42,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        margin: EdgeInsets.symmetric(horizontal: 8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.black,
-                                          borderRadius: BorderRadius.circular(36)
+
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 42,
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          margin: EdgeInsets.symmetric(horizontal: 8),
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius: BorderRadius.circular(36)
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: Placeholder(),
-                                    ),
-                                  ],
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                               Text.rich(TextSpan(children: [

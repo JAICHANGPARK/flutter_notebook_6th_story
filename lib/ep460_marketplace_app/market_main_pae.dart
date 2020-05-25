@@ -269,6 +269,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               ])),
                               Container(
                                 height: 42,
+                                margin: EdgeInsets.only(top: 4,bottom: 4),
                                 child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                               ),
                               Text.rich(TextSpan(children: [

@@ -296,7 +296,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           children: [
                                             Text.rich(TextSpan(children: [
                                               TextSpan(
-                                                  text: "Name On Card ",
+                                                  text: "Expiration Date ",
                                                   style: TextStyle(
                                                     color: Colors.grey,
                                                   )),

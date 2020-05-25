@@ -201,14 +201,21 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Payment info".toUpperCase()),
+                              Text("Payment info".toUpperCase(), style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),),
                               Row(
                                 children: [
                                   Icon(
                                     Icons.lock,
                                     size: 13,
                                   ),
-                                  Text("100% secure payment")
+                                  Padding(
+                                    padding: const EdgeInsets.all(2.0),
+                                    child: Text("100% secure payment",style: TextStyle(
+                                      fontSize: 12,
+                                    ),),
+                                  )
                                 ],
                               ),
                               Padding(

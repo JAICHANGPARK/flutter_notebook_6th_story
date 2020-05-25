@@ -215,7 +215,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 child: Row(
                                   children: [
                                     Expanded(
-                                      child: Placeholder(),
+                                      child: Container(
+                                        decoration: BoxDecoration(),
+                                      ),
                                     ),
                                     Expanded(
                                       child: Placeholder(),

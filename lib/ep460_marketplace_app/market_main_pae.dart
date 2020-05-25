@@ -288,7 +288,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                     child: TextField(
                                       decoration: InputDecoration(
                                           hintText: "4444-4444-4444",
-                                          border: OutlineInputBorder(),
+                                          enabledBorder: OutlineInputBorder(
+                                            borderSide: BorderSide(color: Colors.black)
+                                          ),
+                                          border: OutlineInputBorder(
+
+                                          ),
                                           suffix: Icon(Icons.credit_card)),
                                     ),
                                   ),

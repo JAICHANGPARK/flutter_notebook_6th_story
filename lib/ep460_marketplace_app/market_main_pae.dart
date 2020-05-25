@@ -201,9 +201,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Payment info".toUpperCase(), style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),),
+                              Text(
+                                "Payment info".toUpperCase(),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Row(
                                 children: [
                                   Icon(
@@ -212,14 +215,17 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(2.0),
-                                    child: Text("100% secure payment",style: TextStyle(
-                                      fontSize: 12,
-                                    ),),
+                                    child: Text(
+                                      "100% secure payment",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                   )
                                 ],
                               ),
                               Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 16),
+                                padding: const EdgeInsets.symmetric(vertical: 12),
                                 child: Container(
                                   height: 42,
                                   child: Row(
@@ -230,9 +236,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           decoration: BoxDecoration(
                                               color: Colors.black, borderRadius: BorderRadius.circular(36)),
                                           child: Center(
-                                            child: Text("CREDIT CARD", style: TextStyle(
-                                              color: Colors.white,
-                                            ),),
+                                            child: Text(
+                                              "CREDIT CARD",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                           ),
                                         ),
                                       ),

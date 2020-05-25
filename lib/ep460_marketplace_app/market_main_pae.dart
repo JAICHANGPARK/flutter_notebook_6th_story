@@ -198,153 +198,155 @@ class _MarketMainpageState extends State<MarketMainPage> {
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(),
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Payment info".toUpperCase(),
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.lock,
-                                    size: 13,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Payment info".toUpperCase(),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(2.0),
-                                    child: Text(
-                                      "100% secure payment",
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                      ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.lock,
+                                      size: 13,
                                     ),
-                                  )
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 12),
-                                child: Container(
-                                  height: 42,
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          margin: EdgeInsets.symmetric(horizontal: 8),
-                                          decoration: BoxDecoration(
-                                              color: Colors.black, borderRadius: BorderRadius.circular(36)),
-                                          child: Center(
-                                            child: Text(
-                                              "CREDIT CARD",
-                                              style: TextStyle(
-                                                color: Colors.white,
+                                    Padding(
+                                      padding: const EdgeInsets.all(2.0),
+                                      child: Text(
+                                        "100% secure payment",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 12),
+                                  child: Container(
+                                    height: 42,
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.symmetric(horizontal: 8),
+                                            decoration: BoxDecoration(
+                                                color: Colors.black, borderRadius: BorderRadius.circular(36)),
+                                            child: Center(
+                                              child: Text(
+                                                "CREDIT CARD",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
                                               ),
                                             ),
                                           ),
                                         ),
+                                        Expanded(
+                                          child: Container(
+                                            margin: EdgeInsets.symmetric(horizontal: 8),
+                                            decoration: BoxDecoration(
+                                                border: Border.all(), borderRadius: BorderRadius.circular(36)),
+                                            child: Center(
+                                              child: Text("PAYPAL"),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Text.rich(TextSpan(children: [
+                                  TextSpan(
+                                      text: "Name On Card ",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      )),
+                                  TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                                ])),
+                                Container(
+                                  height: 42,
+                                  margin: EdgeInsets.only(top: 4,bottom: 4),
+                                  child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                ),
+                                Text.rich(TextSpan(children: [
+                                  TextSpan(
+                                      text: "Name On Card ",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      )),
+                                  TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                                ])),
+                                Container(
+                                  height: 42,
+                                  child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                ),
+                                Container(
+                                  height: 64,
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text.rich(TextSpan(children: [
+                                              TextSpan(
+                                                  text: "Name On Card ",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  )),
+                                              TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                                            ])),
+                                            Container(
+                                              height: 42,
+                                              child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
-                                        child: Container(
-                                          margin: EdgeInsets.symmetric(horizontal: 8),
-                                          decoration: BoxDecoration(
-                                              border: Border.all(), borderRadius: BorderRadius.circular(36)),
-                                          child: Center(
-                                            child: Text("PAYPAL"),
-                                          ),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text.rich(TextSpan(children: [
+                                              TextSpan(
+                                                  text: "Name On Card ",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  )),
+                                              TextSpan(text: "*", style: TextStyle(color: Colors.red))
+                                            ])),
+                                            Container(
+                                              height: 42,
+                                              child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ],
                                   ),
                                 ),
-                              ),
-                              Text.rich(TextSpan(children: [
-                                TextSpan(
-                                    text: "Name On Card ",
+                                CheckboxListTile(
+                                  value: _isSelected,
+                                  onChanged: (bool value) {
+                                    setState(() {
+                                      _isSelected = value;
+                                    });
+                                  },
+                                  title: Text(
+                                    "Billing address is the same as shipping address",
                                     style: TextStyle(
+                                      fontSize: 12,
                                       color: Colors.grey,
-                                    )),
-                                TextSpan(text: "*", style: TextStyle(color: Colors.red))
-                              ])),
-                              Container(
-                                height: 42,
-                                margin: EdgeInsets.only(top: 4,bottom: 4),
-                                child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
-                              ),
-                              Text.rich(TextSpan(children: [
-                                TextSpan(
-                                    text: "Name On Card ",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                    )),
-                                TextSpan(text: "*", style: TextStyle(color: Colors.red))
-                              ])),
-                              Container(
-                                height: 42,
-                                child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
-                              ),
-                              Container(
-                                height: 64,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text.rich(TextSpan(children: [
-                                            TextSpan(
-                                                text: "Name On Card ",
-                                                style: TextStyle(
-                                                  color: Colors.grey,
-                                                )),
-                                            TextSpan(text: "*", style: TextStyle(color: Colors.red))
-                                          ])),
-                                          Container(
-                                            height: 42,
-                                            child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
-                                          ),
-                                        ],
-                                      ),
                                     ),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text.rich(TextSpan(children: [
-                                            TextSpan(
-                                                text: "Name On Card ",
-                                                style: TextStyle(
-                                                  color: Colors.grey,
-                                                )),
-                                            TextSpan(text: "*", style: TextStyle(color: Colors.red))
-                                          ])),
-                                          Container(
-                                            height: 42,
-                                            child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              CheckboxListTile(
-                                value: _isSelected,
-                                onChanged: (bool value) {
-                                  setState(() {
-                                    _isSelected = value;
-                                  });
-                                },
-                                title: Text(
-                                  "Billing address is the same as shipping address",
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.grey,
                                   ),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],

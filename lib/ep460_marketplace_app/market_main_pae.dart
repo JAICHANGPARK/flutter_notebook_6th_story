@@ -223,7 +223,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           decoration: BoxDecoration(
                                               color: Colors.black, borderRadius: BorderRadius.circular(36)),
                                           child: Center(
-                                            child: Text("CREDIT CARD"),
+                                            child: Text("CREDIT CARD", style: TextStyle(
+                                              color: Colors.white,
+                                            ),),
                                           ),
                                         ),
                                       ),

@@ -291,7 +291,11 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(color: Colors.black)
                                           ),
+                                          focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(color: Colors.black)
+                                          ),
                                           border: OutlineInputBorder(
+                                              borderSide: BorderSide(color: Colors.black),
 
                                           ),
                                           suffix: Icon(Icons.credit_card)),

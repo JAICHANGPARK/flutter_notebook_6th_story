@@ -284,9 +284,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 Container(
                                   height: 42,
                                   margin: EdgeInsets.only(top: 4, bottom: 4),
-                                  child: TextField(
-                                      decoration:
-                                          InputDecoration(hintText: "4444-4444-4444", border: OutlineInputBorder())),
+                                  child: Center(
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                          hintText: "4444-4444-4444",
+                                          border: OutlineInputBorder(),
+                                          suffix: Icon(Icons.credit_card)),
+                                    ),
+                                  ),
                                 ),
                                 Container(
                                   height: 72,

@@ -211,7 +211,6 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   Text("100% secure payment")
                                 ],
                               ),
-
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 16),
                                 child: Container(
@@ -222,9 +221,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                         child: Container(
                                           margin: EdgeInsets.symmetric(horizontal: 8),
                                           decoration: BoxDecoration(
-                                            color: Colors.black,
-                                            borderRadius: BorderRadius.circular(36)
-                                          ),
+                                              color: Colors.black, borderRadius: BorderRadius.circular(36)),
                                         ),
                                       ),
                                       Expanded(

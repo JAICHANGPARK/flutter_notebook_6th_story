@@ -191,6 +191,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                           height: 16,
                         ),
                         Container(
+                          padding: EdgeInsets.all(8),
                           height: MediaQuery.of(context).size.height / 2.2,
                           width: MediaQuery.of(context).size.width,
                           decoration: BoxDecoration(

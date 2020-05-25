@@ -287,7 +287,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                   child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                                 ),
                                 Container(
-                                  height: 64,
+                                  height: 72,
                                   child: Row(
                                     children: [
                                       Expanded(
@@ -304,7 +304,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                             ])),
                                             Container(
                                               height: 42,
-                                              margin: EdgeInsets.only(top: 4,bottom: 4),
+                                              margin: EdgeInsets.only(top: 4,bottom: 4, right: 4),
                                               child: TextField(decoration: InputDecoration(border: OutlineInputBorder())),
                                             ),
                                           ],

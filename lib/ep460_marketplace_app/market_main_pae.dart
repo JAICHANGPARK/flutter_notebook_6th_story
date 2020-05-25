@@ -228,7 +228,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                         child: Container(
                                           margin: EdgeInsets.symmetric(horizontal: 8),
                                           decoration: BoxDecoration(
-                                          border: Border.all(),
+                                          border: Border.all(),borderRadius: BorderRadius.circular(36)
 
                                           )
                                         ),

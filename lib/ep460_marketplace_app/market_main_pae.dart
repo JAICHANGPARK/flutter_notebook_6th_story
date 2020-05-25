@@ -222,6 +222,9 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                           margin: EdgeInsets.symmetric(horizontal: 8),
                                           decoration: BoxDecoration(
                                               color: Colors.black, borderRadius: BorderRadius.circular(36)),
+                                          child: Center(
+                                            child: Text("CREDIT CARD"),
+                                          ),
                                         ),
                                       ),
                                       Expanded(

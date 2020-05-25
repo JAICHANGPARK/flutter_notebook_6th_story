@@ -213,7 +213,7 @@ class _MarketMainpageState extends State<MarketMainPage> {
                               ),
 
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(vertical: 16),
                                 child: Container(
                                   height: 42,
                                   child: Row(

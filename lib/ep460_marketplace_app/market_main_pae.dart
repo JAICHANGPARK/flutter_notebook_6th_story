@@ -226,12 +226,13 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                       ),
                                       Expanded(
                                         child: Container(
-                                            margin: EdgeInsets.symmetric(horizontal: 8),
-                                            decoration: BoxDecoration(
-                                                border: Border.all(), borderRadius: BorderRadius.circular(36)),
-                                        child: Center(
-                                          child:Text("PAYPAL"),
-                                        ),),
+                                          margin: EdgeInsets.symmetric(horizontal: 8),
+                                          decoration: BoxDecoration(
+                                              border: Border.all(), borderRadius: BorderRadius.circular(36)),
+                                          child: Center(
+                                            child: Text("PAYPAL"),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),

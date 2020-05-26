@@ -27,8 +27,40 @@ class NeumorphicButton extends StatefulWidget {
 }
 
 class _NeumorphicButtonState extends State<NeumorphicButton> {
+  bool _isPressed = false;
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return GestureDetector(
+      onTapDown: _onTap,
+      child: Container(),
+    );
+  }
+
+  void _onTap(TapDownDetails details){
+    setState(() {
+      _isPressed = true;
+    });
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

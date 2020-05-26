@@ -271,11 +271,12 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                 Container(
                                   height: 42,
                                   margin: EdgeInsets.only(top: 4, bottom: 4),
-                                  child: TextField(decoration: InputDecoration( border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
-                                    enabledBorder:
-                                    OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
-                                    focusedBorder:
-                                    OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),)),
+                                  child: TextField(
+                                      decoration: InputDecoration(
+                                    border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
+                                    enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
+                                    focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
+                                  )),
                                 ),
                                 Text.rich(TextSpan(children: [
                                   TextSpan(
@@ -349,12 +350,14 @@ class _MarketMainpageState extends State<MarketMainPage> {
                                             Container(
                                               height: 42,
                                               margin: EdgeInsets.only(top: 4, bottom: 4, left: 4),
-                                              child:
-                                                  TextField(decoration: InputDecoration( border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
-                                                    enabledBorder:
+                                              child: TextField(
+                                                  decoration: InputDecoration(
+                                                border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
+                                                enabledBorder:
                                                     OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
-                                                    focusedBorder:
-                                                    OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),)),
+                                                focusedBorder:
+                                                    OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
+                                              )),
                                             ),
                                           ],
                                         ),

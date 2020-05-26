@@ -29,12 +29,25 @@ class WashingMachineMainPage extends StatefulWidget {
 }
 
 class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
+  
+  Widget TopBar(){
+    return Container(
+      margin: EdgeInsets.fromLTRB(left, top, right, bottom),
+    )
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Container(
       color: CustomColors.primaryColor,
       child: Scaffold(
-
+      backgroundColor: CustomColors.primaryColor,
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(100),
+          child: SafeArea(
+            child: Top,
+          ),
+        ),
       ),
     );
   }

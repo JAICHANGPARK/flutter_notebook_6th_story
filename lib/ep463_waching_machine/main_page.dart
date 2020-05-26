@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
+import 'package:provider/provider.dart';
 
 class WashingMachineApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: WashingMachineMainPage(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context)=> ServiceLocator.get<ThemeProvider>(),
+        )
+      ],
+      child: MaterialApp(
+        home: WashingMachineMainPage(),
+      ),
     );
   }
 }

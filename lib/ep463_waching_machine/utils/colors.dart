@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 
+import '../service_locator.dart';
+
 
 class CustomColors {
   static bool get isDarkMode =>

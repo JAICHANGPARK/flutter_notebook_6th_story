@@ -11,7 +11,16 @@ class NeumorphicButton extends StatefulWidget {
   final bool disabled;
 
   NeumorphicButton(
-  { Key key, this.pressed, this.width, this.height, this.child, this.margin, this.onTap, this.color, this.disabled});
+      {Key key,
+      this.pressed,
+      this.width = 54.0,
+      this.height = 54.0,
+      @required this.child,
+      this.margin,
+      this.onTap,
+      this.color,
+      this.disabled})
+      : super(key: key);
 
   @override
   _NeumorphicButtonState createState() => _NeumorphicButtonState();

@@ -32,8 +32,13 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
   
   Widget TopBar(){
     return Container(
-      margin: EdgeInsets.fromLTRB(left, top, right, bottom),
-    )
+      margin: EdgeInsets.fromLTRB(GLOBAL_EDGE_MARGIN_VALUE, DRAWER_BUTTON_MARGIN_TOP, 18, 10),
+      child: Row(
+        children: [
+          
+        ],
+      ),
+    );
   }
   
   @override
@@ -45,7 +50,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(100),
           child: SafeArea(
-            child: Top,
+            child: TopBar(),
           ),
         ),
       ),

@@ -35,7 +35,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
       margin: EdgeInsets.fromLTRB(GLOBAL_EDGE_MARGIN_VALUE, DRAWER_BUTTON_MARGIN_TOP, 18, 10),
       child: Row(
         children: [
-          
+
         ],
       ),
     );

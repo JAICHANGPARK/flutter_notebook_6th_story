@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 
 
 class CustomColors {
   static bool get isDarkMode =>
-      ServiceLocator.get<ThemeViewModel>()?.darkMode ?? false;
+      ServiceLocator.get<ThemeProvider>()?.darkMode ?? false;
 
   static Color get primaryColor =>
       isDarkMode ? _primaryColorDark : _primaryColorLight;

@@ -17,7 +17,9 @@ class WashingMachineMainPage extends StatefulWidget {
 class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
 

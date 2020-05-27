@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/inner_shadow_decorator.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
 
 class NeumorphicContainer extends StatelessWidget {
@@ -22,7 +24,13 @@ class NeumorphicContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     BorderRadius defaultRadius = BorderRadius.circular(NEUMORPHIC_DEFAULT_RADIUS);
-    
+    InnerShadowDecoration defaultForegroundDecoration = InnerShadowDecoration(
+      colors: pressed == true ?
+          [
+            CustomColors.containerInnerShadowTop,
+            CustomColors.CustomColors.containerInnerShadowBottom,
+          ]
+    )
     return Container();
   }
 }

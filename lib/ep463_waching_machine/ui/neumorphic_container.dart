@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/inner_shadow_decorator.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
@@ -53,24 +55,21 @@ class NeumorphicContainer extends StatelessWidget {
         margin: margin,
         duration: const Duration(milliseconds: 150),
         padding: pressed ?? const EdgeInsets.all(8),
-        foregroundDecoration: disableForegroundDecoration != true ?
-        foregroundDecoration ?? defaultForegroundDecoration : null,
+        foregroundDecoration:
+            disableForegroundDecoration != true ? foregroundDecoration ?? defaultForegroundDecoration : null,
         decoration: decoration ??
-        BoxDecoration(
-          borderRadius: borderRadius ?? defaultRadius,
-          border:  border,
-          
-        ),
+            BoxDecoration(
+                borderRadius: borderRadius ?? defaultRadius,
+                border: border,
+                color: pressed == true ? CustomColors.containerPressed : color ?? CustomColors.container,
+            boxShadow: pressed == true ? null : [
+              BoxShadow
+            ]),
+
       ),
     );
   }
 }
-
-
-
-
-
-
 
 
 

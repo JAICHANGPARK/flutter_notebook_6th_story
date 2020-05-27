@@ -51,6 +51,16 @@ class NeumorphicContainer extends StatelessWidget {
         width: width,
         height: height,
         margin: margin,
+        duration: const Duration(milliseconds: 150),
+        padding: pressed ?? const EdgeInsets.all(8),
+        foregroundDecoration: disableForegroundDecoration != true ?
+        foregroundDecoration ?? defaultForegroundDecoration : null,
+        decoration: decoration ??
+        BoxDecoration(
+          borderRadius: borderRadius ?? defaultRadius,
+          border:  border,
+          
+        ),
       ),
     );
   }

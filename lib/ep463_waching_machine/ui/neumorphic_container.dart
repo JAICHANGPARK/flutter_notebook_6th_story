@@ -17,25 +17,45 @@ class NeumorphicContainer extends StatelessWidget {
   final bool disableForegroundDecoration;
   final bool disabled;
 
-
-  NeumorphicContainer({this.pressed, this.width, this.height, this.child, this.margin, this.color, this.borderRadius,
-    this.border, this.decoration, this.foregroundDecoration, this.disableForegroundDecoration, this.disabled});
+  NeumorphicContainer(
+      {this.pressed,
+      this.width,
+      this.height,
+      this.child,
+      this.margin,
+      this.color,
+      this.borderRadius,
+      this.border,
+      this.decoration,
+      this.foregroundDecoration,
+      this.disableForegroundDecoration,
+      this.disabled});
 
   @override
   Widget build(BuildContext context) {
     BorderRadius defaultRadius = BorderRadius.circular(NEUMORPHIC_DEFAULT_RADIUS);
     InnerShadowDecoration defaultForegroundDecoration = InnerShadowDecoration(
-        colors: pressed == true ?
-        [
-          CustomColors.containerInnerShadowTop, CustomColors.containerInnerShadowBottom,
-        ] : [
-          CustomColors.container,
-          CustomColors.container,
-        ], borderRadius: borderRadius ?? defaultRadius;
+        colors: pressed == true
+            ? [
+                CustomColors.containerInnerShadowTop,
+                CustomColors.containerInnerShadowBottom,
+              ]
+            : [
+                CustomColors.container,
+                CustomColors.container,
+              ],
+        borderRadius: borderRadius ?? defaultRadius);
+    return Opacity(
+      opacity: disabled == true ? .5 : 1,
+      child: AnimatedContainer(
+        width: width,
+        height: height,
+        margin: margin,
+      ),
     );
-    return Container();
   }
 }
+
 
 
 

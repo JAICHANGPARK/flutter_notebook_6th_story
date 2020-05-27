@@ -27,8 +27,7 @@ class NeumorphicContainer extends StatelessWidget {
     InnerShadowDecoration defaultForegroundDecoration = InnerShadowDecoration(
       colors: pressed == true ?
           [
-            CustomColors.containerInnerShadowTop,
-            CustomColors.CustomColors.containerInnerShadowBottom,
+            CustomColors.containerInnerShadowTop, CustomColors.containerInnerShadowBottom,
           ]
     )
     return Container();

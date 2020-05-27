@@ -74,7 +74,11 @@ class NeumorphicContainer extends StatelessWidget {
                 color: CustomColors.containerInnerShadowBottom,
               )
             ]),
-
+        child: ClipRRect(
+          clipBehavior: Clip.antiAlias,
+          borderRadius: borderRadius ?? defaultRadius,
+          child: child,
+        ),
       ),
     );
   }

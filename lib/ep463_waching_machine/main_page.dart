@@ -39,8 +39,13 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
             NeumorphicIconButton(
               icon: Icon(Icons.settings,
               color: CustomColors.icon,),
+              onTap: (){
+                showModalBottomSheet(context: context,
+                    backgroundColor: Colors.transparent,
+                    builder: (context) => Container());
+              },
             ),
-          
+
         ],
       ),
     );

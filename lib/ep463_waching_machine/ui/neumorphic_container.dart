@@ -7,7 +7,7 @@ class NeumorphicContainer extends StatelessWidget {
   final bool pressed;
   final double width;
   final double height;
-  final  Widget child;
+  final Widget child;
   final EdgeInsetsGeometry margin;
   final Color color;
   final BorderRadius borderRadius;
@@ -25,11 +25,14 @@ class NeumorphicContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     BorderRadius defaultRadius = BorderRadius.circular(NEUMORPHIC_DEFAULT_RADIUS);
     InnerShadowDecoration defaultForegroundDecoration = InnerShadowDecoration(
-      colors: pressed == true ?
-          [
-            CustomColors.containerInnerShadowTop, CustomColors.containerInnerShadowBottom,
-          ]
-    )
+        colors: pressed == true ?
+        [
+          CustomColors.containerInnerShadowTop, CustomColors.containerInnerShadowBottom,
+        ] : [
+          CustomColors.container,
+          CustomColors.container,
+        ], borderRadius: borderRadius ?? defaultRadius;
+    );
     return Container();
   }
 }

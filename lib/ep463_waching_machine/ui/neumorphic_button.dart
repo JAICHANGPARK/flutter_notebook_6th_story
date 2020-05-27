@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
 
 class NeumorphicButton extends StatefulWidget {
   final bool pressed;
@@ -33,7 +34,15 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: _onTap,
-      child: Container(),
+      child: NeumorphicContainer(
+        pressed:  widget.pressed ?? _isPressed,
+        width:  widget.width,
+        height: widget.height,
+        child: widget.child,
+        margin: widget.margin,
+        color: widget.color,
+        disabled: widget.disabled,
+      ),
     );
   }
 
@@ -41,7 +50,23 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
     setState(() {
       _isPressed = true;
     });
+    if(widget.onTap != null && widget.disabled != true){
+      widget.onTap();
+    }
   }
+  void _onTapUp(TapDownDetails details){
+    setState(() {
+      _isPressed = false;
+    });
+
+  }
+  void _onTapCancel(TapDownDetails details){
+    setState(() {
+      _isPressed = false;
+    });
+
+  }
+
 }
 
 

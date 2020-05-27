@@ -12,7 +12,7 @@ class WashingMachineApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context)=> ServiceLocator.get<ThemeProvider>(),
+          create: (context) => ServiceLocator.get<ThemeProvider>(),
         )
       ],
       child: MaterialApp(
@@ -30,33 +30,32 @@ class WashingMachineMainPage extends StatefulWidget {
 }
 
 class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
-  
-  Widget TopBar(){
+  Widget TopBar() {
     return Container(
       margin: EdgeInsets.fromLTRB(GLOBAL_EDGE_MARGIN_VALUE, DRAWER_BUTTON_MARGIN_TOP, 18, 10),
       child: Row(
         children: [
-            NeumorphicIconButton(
-              icon: Icon(Icons.settings,
-              color: CustomColors.icon,),
-              onTap: (){
-                showModalBottomSheet(context: context,
-                    backgroundColor: Colors.transparent,
-                    builder: (context) => Container());
-              },
+          NeumorphicIconButton(
+            icon: Icon(
+              Icons.settings,
+              color: CustomColors.icon,
             ),
-
+            onTap: () {
+              showModalBottomSheet(
+                  context: context, backgroundColor: Colors.transparent, builder: (context) => Container());
+            },
+          ),
         ],
       ),
     );
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(
       color: CustomColors.primaryColor,
       child: Scaffold(
-      backgroundColor: CustomColors.primaryColor,
+        backgroundColor: CustomColors.primaryColor,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(100),
           child: SafeArea(
@@ -67,28 +66,3 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

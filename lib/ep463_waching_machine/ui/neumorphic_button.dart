@@ -34,6 +34,8 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: _onTap,
+      onTapUp: _onTapUp,
+      onTapCancel: _onTapCancel,
       child: NeumorphicContainer(
         pressed:  widget.pressed ?? _isPressed,
         width:  widget.width,
@@ -54,13 +56,13 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
       widget.onTap();
     }
   }
-  void _onTapUp(TapDownDetails details){
+  void _onTapUp(TapUpDetails details){
     setState(() {
       _isPressed = false;
     });
 
   }
-  void _onTapCancel(TapDownDetails details){
+  void _onTapCancel(){
     setState(() {
       _isPressed = false;
     });

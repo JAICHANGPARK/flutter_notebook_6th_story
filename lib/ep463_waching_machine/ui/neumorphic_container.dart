@@ -63,7 +63,16 @@ class NeumorphicContainer extends StatelessWidget {
                 border: border,
                 color: pressed == true ? CustomColors.containerPressed : color ?? CustomColors.container,
             boxShadow: pressed == true ? null : [
-              BoxShadow
+              BoxShadow(
+                blurRadius: 10,
+                offset: const Offset(-6, -6),
+                color: CustomColors.containerInnerShadowTop,
+              ),
+              BoxShadow(
+                blurRadius: 10,
+                offset: const Offset(-6, -6),
+                color: CustomColors.containerInnerShadowBottom,
+              )
             ]),
 
       ),

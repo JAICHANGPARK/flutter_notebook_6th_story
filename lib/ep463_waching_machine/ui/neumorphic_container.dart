@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
 
 class NeumorphicContainer extends StatelessWidget {
   final bool pressed;
@@ -20,6 +21,27 @@ class NeumorphicContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    BorderRadius defaultRadius = BorderRadius.circular(NEUMORPHIC_DEFAULT_RADIUS);
+    
     return Container();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

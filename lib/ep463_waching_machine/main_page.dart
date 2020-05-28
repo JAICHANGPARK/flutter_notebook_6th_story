@@ -100,7 +100,11 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 25,),
-                        Text("Smart Washing",style: ,),
+                        Text("Smart Washing",style: TextStyle(
+                          fontSize: 28,
+                          color: CustomColors.primaryTextColor,
+                          fontWeight: FontWeight.w800,
+                        ),),
                         SizedBox(height: 2,),
                         Text("Machine"),
                         SizedBox(height: 70,),

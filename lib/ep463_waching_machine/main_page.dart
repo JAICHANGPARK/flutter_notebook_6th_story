@@ -69,9 +69,6 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
   }
 }
 
-
-
-
 class TimerPanel extends StatefulWidget {
   @override
   _TimelinePanelState createState() => _TimelinePanelState();
@@ -84,33 +81,10 @@ class _TimelinePanelState extends State<TimerPanel> {
       width: 115,
       height: 52,
       pressed: true,
-      border: Border.all(),
+      border: Border.all(color: CustomColors.timerPanelBorder, width: 2),
+      child: Center(
+        child: Text("11:11"),
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

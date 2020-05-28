@@ -71,6 +71,14 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
             child: TopBar(),
           ),
         ),
+        drawerScrimColor: Colors.black.withAlpha(50),
+        drawer: ClipRRect(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(45),
+            bottomRight: Radius.circular(45)
+          ),
+          child: Drawer(),
+        ),
       ),
     );
   }

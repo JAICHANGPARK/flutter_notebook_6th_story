@@ -62,42 +62,47 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: CustomColors.primaryColor,
-      child: Scaffold(
-        backgroundColor: CustomColors.primaryColor,
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100),
-          child: SafeArea(
-            child: TopBar(),
-          ),
-        ),
-        drawerScrimColor: Colors.black.withAlpha(50),
-        drawer: ClipRRect(
-          borderRadius: BorderRadius.only(topRight: Radius.circular(45), bottomRight: Radius.circular(45)),
-          child: Drawer(
-            child: WaterDrawer(),
-          ),
-        ),
-        body: SingleChildScrollView(
-          child: Container(
-            child: Stack(
-              children: [
-                Positioned(
-                  right: 0,
-                  child: Transform.translate(offset: Offset(100, 120),
-                  child: Container(
-                    width: 300,
-                    height: 300,
-                    color: Colors.blue,
-                  ),),
-                )
-              ],
+    return Consumer<ThemeProvider>(
+      builder: (context, value, _){
+        return Container(
+          color: CustomColors.primaryColor,
+          child: Scaffold(
+            backgroundColor: CustomColors.primaryColor,
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(100),
+              child: SafeArea(
+                child: TopBar(),
+              ),
+            ),
+            drawerScrimColor: Colors.black.withAlpha(50),
+            drawer: ClipRRect(
+              borderRadius: BorderRadius.only(topRight: Radius.circular(45), bottomRight: Radius.circular(45)),
+              child: Drawer(
+                child: WaterDrawer(),
+              ),
+            ),
+            body: SingleChildScrollView(
+              child: Container(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      right: 0,
+                      child: Transform.translate(offset: Offset(100, 120),
+                        child: Container(
+                          width: 300,
+                          height: 300,
+                          color: Colors.blue,
+                        ),),
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
-        ),
-      ),
+        );
+      },
     );
+
   }
 }
 

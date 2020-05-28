@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
@@ -70,13 +71,23 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
 
 
 
+class TimelinePanel extends StatefulWidget {
+  @override
+  _TimelinePanelState createState() => _TimelinePanelState();
+}
 
-class TimelinePanel extends StatelessWidget {
+class _TimelinePanelState extends State<TimelinePanel> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return NeumorphicContainer(
+      width: 115,
+      height: 52,
+      pressed: true,
+      border: Border.all(),
+    );
   }
 }
+
 
 
 

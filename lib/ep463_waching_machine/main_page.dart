@@ -63,7 +63,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
   @override
   Widget build(BuildContext context) {
     return Consumer<ThemeProvider>(
-      builder: (context, value, _){
+      builder: (context, value, _) {
         return Container(
           color: CustomColors.primaryColor,
           child: Scaffold(
@@ -87,12 +87,14 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                   children: [
                     Positioned(
                       right: 0,
-                      child: Transform.translate(offset: Offset(100, 120),
+                      child: Transform.translate(
+                        offset: Offset(100, 120),
                         child: Container(
                           width: 300,
                           height: 300,
                           color: Colors.blue,
-                        ),),
+                        ),
+                      ),
                     )
                   ],
                 ),
@@ -102,7 +104,6 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
         );
       },
     );
-
   }
 }
 

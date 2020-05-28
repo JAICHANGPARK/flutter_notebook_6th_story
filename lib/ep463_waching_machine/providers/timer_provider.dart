@@ -37,6 +37,16 @@ class TimerProvider with ChangeNotifier {
     _countdownTimer.listen((event) => notifyListeners());
   }
 
+  resume() {
+    start(_pausedRemaining);
+  }
+
+  pause() {
+    _pausedRemaining = remaining;
+    _countdownTimer?.cancel();
+    notifyListeners();
+  }
+
   reset({bool callNofityListeners}) {
     _pausedRemaining = null;
     _countdownTimer?.cancel();

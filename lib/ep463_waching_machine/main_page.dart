@@ -164,7 +164,27 @@ class _TimelinePanelState extends State<TimerPanel> {
 
 
 
+class _FunctionButtonsList extends StatelessWidget {
 
+  @override
+  Widget build(BuildContext context) {
+    var margin = EdgeInsets.only(bottom: 28);
+    return Column();
+  }
+}
+
+
+class _Indicator extends StatefulWidget {
+  @override
+  __IndicatorState createState() => __IndicatorState();
+}
+
+class __IndicatorState extends State<_Indicator> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
 
 
 

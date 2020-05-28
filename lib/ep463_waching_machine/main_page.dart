@@ -113,11 +113,14 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                           ),),
                         ),
                         SizedBox(height: 2,),
-                        Text("Machine",style: TextStyle(
-                        fontSize: 26,
-                        color: CustomColors.primaryTextColor,
-                        fontWeight: FontWeight.w400,
-                        ),),
+                        Padding(
+                          padding: margin,
+                          child: Text("Machine",style: TextStyle(
+                          fontSize: 26,
+                          color: CustomColors.primaryTextColor,
+                          fontWeight: FontWeight.w400,
+                          ),),
+                        ),
                         SizedBox(height: 70,),
                       ],
                     )

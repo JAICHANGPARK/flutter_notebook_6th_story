@@ -86,7 +86,11 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                 Positioned(
                   right: 0,
                   child: Transform.translate(offset: Offset(100, 120),
-                  child: Placeholder(),),
+                  child: Container(
+                    width: 300,
+                    height: 300,
+                    color: Colors.blue,
+                  ),),
                 )
               ],
             ),

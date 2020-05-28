@@ -95,6 +95,16 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                           color: Colors.blue,
                         ),
                       ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 25,),
+                        Text("Smart Washing",style: ,),
+                        SizedBox(height: 2,),
+                        Text("Machine"),
+                        SizedBox(height: 70,),
+                      ],
                     )
                   ],
                 ),

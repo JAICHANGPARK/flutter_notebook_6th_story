@@ -46,6 +46,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                   context: context, backgroundColor: Colors.transparent, builder: (context) => Container());
             },
           ),
+          TimerPanel(),
         ],
       ),
     );
@@ -71,12 +72,12 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
 
 
 
-class TimelinePanel extends StatefulWidget {
+class TimerPanel extends StatefulWidget {
   @override
   _TimelinePanelState createState() => _TimelinePanelState();
 }
 
-class _TimelinePanelState extends State<TimelinePanel> {
+class _TimelinePanelState extends State<TimerPanel> {
   @override
   Widget build(BuildContext context) {
     return NeumorphicContainer(

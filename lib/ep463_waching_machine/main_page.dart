@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/timer_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
@@ -15,6 +16,9 @@ class WashingMachineApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => ServiceLocator.get<ThemeProvider>(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ServiceLocator.get<TimerProvider>(),
         )
       ],
       child: MaterialApp(

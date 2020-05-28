@@ -18,7 +18,8 @@ class TimerProvider with ChangeNotifier {
     }
     return _countdownTimer?.isRunning == true ? _countdownTimer.remaining : Duration.zero;
   }
-  String get remainingString{
+
+  String get remainingString {
     int totalSeconds = remaining.inSeconds;
     int minutes = (totalSeconds / 60).floor();
     int second = totalSeconds % 60;
@@ -26,26 +27,22 @@ class TimerProvider with ChangeNotifier {
     String secondsString = second > 9 ? second.toString() : "0$second";
     return '$minutesString:$secondsString';
   }
+
+  start(Duration duration) {
+    if (duration == null) {
+      return;
+    }
+    reset(callNofityListeners: true);
+    _countdownTimer = CountdownTimer(duration, Duration(seconds: 1));
+    _countdownTimer.listen((event) => notifyListeners());
+  }
+
+  reset({bool callNofityListeners}) {
+    _pausedRemaining = null;
+    _countdownTimer?.cancel();
+
+    if (callNofityListeners == true) {
+      notifyListeners();
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

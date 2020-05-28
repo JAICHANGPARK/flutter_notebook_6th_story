@@ -71,6 +71,12 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
 
 
 
+class TimelinePanel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
 
 
 

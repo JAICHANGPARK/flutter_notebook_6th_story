@@ -37,6 +37,10 @@ class WashingMachineMainPage extends StatefulWidget {
 }
 
 class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
+  static const margin = EdgeInsets.only(
+    left: GLOBAL_EDGE_MARGIN_VALUE,
+  );
+
   Widget TopBar() {
     return Container(
       margin: EdgeInsets.fromLTRB(GLOBAL_EDGE_MARGIN_VALUE, DRAWER_BUTTON_MARGIN_TOP, 18, 10),
@@ -100,11 +104,14 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 25,),
-                        Text("Smart Washing",style: TextStyle(
-                          fontSize: 28,
-                          color: CustomColors.primaryTextColor,
-                          fontWeight: FontWeight.w800,
-                        ),),
+                        Padding(
+                          padding:margin,
+                          child: Text("Smart Washing",style: TextStyle(
+                            fontSize: 28,
+                            color: CustomColors.primaryTextColor,
+                            fontWeight: FontWeight.w800,
+                          ),),
+                        ),
                         SizedBox(height: 2,),
                         Text("Machine",style: TextStyle(
                         fontSize: 26,

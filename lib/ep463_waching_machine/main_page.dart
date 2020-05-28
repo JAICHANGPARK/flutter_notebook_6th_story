@@ -7,6 +7,7 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_cont
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/water_drawer.dart';
 import 'package:provider/provider.dart';
 
 class WashingMachineApp extends StatelessWidget {
@@ -74,7 +75,20 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
         drawerScrimColor: Colors.black.withAlpha(50),
         drawer: ClipRRect(
           borderRadius: BorderRadius.only(topRight: Radius.circular(45), bottomRight: Radius.circular(45)),
-          child: Drawer(),
+          child: Drawer(
+            child: WaterDrawer(),
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Container(
+            child: Stack(
+              children: [
+                Positioned(
+                  
+                )
+              ],
+            ),
+          ),
         ),
       ),
     );

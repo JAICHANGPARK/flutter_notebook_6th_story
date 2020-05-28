@@ -90,7 +90,16 @@ class _TimelinePanelState extends State<TimerPanel> {
       pressed: true,
       border: Border.all(color: CustomColors.timerPanelBorder, width: 2),
       child: Center(
-        child: Text("11:11"),
+        child: Consumer<TimerProvider>(
+          builder: (context, value, _){
+            return Text(value.remainingString, style: TextStyle(
+              color: CustomColors.secondaryTextColor,
+              letterSpacing: 3,
+              fontSize: 22
+            ),);
+          },
+
+        ),
       ),
     );
   }

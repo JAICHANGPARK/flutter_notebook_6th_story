@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
@@ -35,6 +36,8 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
     return Container(
       margin: EdgeInsets.fromLTRB(GLOBAL_EDGE_MARGIN_VALUE, DRAWER_BUTTON_MARGIN_TOP, 18, 10),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           NeumorphicIconButton(
             icon: Icon(

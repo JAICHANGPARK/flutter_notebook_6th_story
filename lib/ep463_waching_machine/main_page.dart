@@ -84,7 +84,9 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
             child: Stack(
               children: [
                 Positioned(
-                  
+                  right: 0,
+                  child: Transform.translate(offset: Offset(100, 120),
+                  child: Placeholder(),),
                 )
               ],
             ),

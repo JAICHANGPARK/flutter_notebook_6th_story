@@ -34,6 +34,10 @@ class MainProvider with ChangeNotifier{
   ModeItemModel _selectedMode;
 
   double get waterValue => _waterValue;
+  set waterValue(double d){
+    _waterValue = d;
+    notifyListeners();
+  }
 }
 
 

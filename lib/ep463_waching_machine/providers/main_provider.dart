@@ -68,7 +68,10 @@ class MainProvider with ChangeNotifier {
   stop(){
     var wachingMachineController = ServiceLocator.get<WashingMachineController>();
     var timerProvider = ServiceLocator.get<TimerProvider>();
-    
+    wachingMachineController.setAngularVelocity(0, seconds: 3);
+    _modeStatus = ModeStatus.notStarted;
+    timerProvider.reset(callNofityListeners: true);
+    notifyListeners();
   }
 
 }

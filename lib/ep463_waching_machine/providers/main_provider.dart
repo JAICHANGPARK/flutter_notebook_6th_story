@@ -86,7 +86,7 @@ class MainProvider with ChangeNotifier {
       Timer.periodic(Duration(seconds: !wachingMachineController.hasBalls() ? 2 : 0), (timer) {
         timer.cancel();
         if(modeStatus != ModeStatus.running) return;
-        wachingMachineController.setAngularVelocity(-15, seconds: 7)
+        wachingMachineController.setAngularVelocity(-15, seconds: 7);
       });
       
     }

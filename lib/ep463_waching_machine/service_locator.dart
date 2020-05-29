@@ -10,8 +10,8 @@ class ServiceLocator {
   static init() {
     getIt.registerSingleton<ThemeProvider>(ThemeProvider());
     getIt.registerSingleton<TimerProvider>(TimerProvider());
-    getIt.registerSingleton(WashingMachineController(ballsCount: 16));
-    getIt.registerSingleton(SettingsProvider());
+    getIt.registerSingleton<WashingMachineController>(WashingMachineController(ballsCount: 16));
+    getIt.registerSingleton<SettingsProvider>(SettingsProvider());
   }
 
   static T get<T>() {

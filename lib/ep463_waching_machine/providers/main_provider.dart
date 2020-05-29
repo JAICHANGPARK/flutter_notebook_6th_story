@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/enums/enum_mode_status.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/models/mode_item_model.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/timer_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
 
 
 
@@ -37,6 +39,24 @@ class MainProvider with ChangeNotifier{
   set waterValue(double d){
     _waterValue = d;
     notifyListeners();
+  }
+
+  ModeItemModel get  selectedMode=>_selectedMode;
+  ModeStatus get modeStatus => _modeStatus;
+
+  selectMode(ModeItemModel mode){
+    if(mode == _selectedMode){
+      return;
+    }
+    if(_modeStatus == ModeStatus.running){
+      return ;
+    }
+    _selectedMode = mode;
+    _modeStatus = ModeStatus.notStarted;
+    var timerVM = ServiceLocator.get<TimerProvider>();
+    timerVM.reset(callNofityListeners: true);
+    notifyListeners();
+    
   }
 }
 

@@ -72,6 +72,10 @@ class MainProvider with ChangeNotifier {
       _modeStatus = ModeStatus.paused;
       timerProvider.pause();
       wachingMachineController.setAngularVelocity(0, seconds: 1);
+    }else if(modeStatus ==ModeStatus.paused){
+      _modeStatus = ModeStatus.running;
+      timerProvider.resume();
+      wachingMachineController.setAngularVelocity(0, seconds: 1);
     }
 
   }

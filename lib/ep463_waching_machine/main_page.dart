@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/main_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/timer_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
@@ -20,6 +22,12 @@ class WashingMachineApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => ServiceLocator.get<TimerProvider>(),
+        ),
+        ChangeNotifierProvider(
+          create: (context)=> ServiceLocator.get<MainProvider>(),
+        ),
+        ChangeNotifierProvider(
+          create: (context)=> ServiceLocator.get<SettingsProvider>(),
         )
       ],
       child: MaterialApp(
@@ -103,25 +111,41 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 25,),
-                        Padding(
-                          padding:margin,
-                          child: Text("Smart Washing",style: TextStyle(
-                            fontSize: 28,
-                            color: CustomColors.primaryTextColor,
-                            fontWeight: FontWeight.w800,
-                          ),),
+                        SizedBox(
+                          height: 25,
                         ),
-                        SizedBox(height: 2,),
                         Padding(
                           padding: margin,
-                          child: Text("Machine",style: TextStyle(
-                          fontSize: 26,
-                          color: CustomColors.primaryTextColor,
-                          fontWeight: FontWeight.w400,
-                          ),),
+                          child: Text(
+                            "Smart Washing",
+                            style: TextStyle(
+                              fontSize: 28,
+                              color: CustomColors.primaryTextColor,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
                         ),
-                        SizedBox(height: 70,),
+                        SizedBox(
+                          height: 2,
+                        ),
+                        Padding(
+                          padding: margin,
+                          child: Text(
+                            "Machine",
+                            style: TextStyle(
+                              fontSize: 26,
+                              color: CustomColors.primaryTextColor,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 70,
+                        ),
+                        Padding(
+                          padding: margin,
+                          child: _FunctionButtonsList(),
+                        )
                       ],
                     )
                   ],
@@ -162,17 +186,25 @@ class _TimelinePanelState extends State<TimerPanel> {
   }
 }
 
-
-
 class _FunctionButtonsList extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     var margin = EdgeInsets.only(bottom: 28);
-    return Column();
+    return Consumer<MainProvider>(
+      builder: (context, value, _) {
+        return Column(
+          children: [
+            NeumorphicIconButton(
+              margin: margin,
+              icon: Icon(Icons.power_settings_new),
+              color: CustomColors.icon,
+            )
+          ],
+        );
+      },
+    );
   }
 }
-
 
 class _Indicator extends StatefulWidget {
   @override
@@ -192,27 +224,3 @@ class _ModeList extends StatelessWidget {
     return Container();
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

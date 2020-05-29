@@ -217,6 +217,17 @@ class _Indicator extends StatefulWidget {
 }
 
 class __IndicatorState extends State<_Indicator>  with SingleTickerProviderStateMixin{
+  AnimationController _controller;
+  Animation _colorTween;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 700);
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Container();

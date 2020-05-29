@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/enums/enum_mode_status.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/main_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
@@ -194,10 +195,18 @@ class _FunctionButtonsList extends StatelessWidget {
       builder: (context, value, _) {
         return Column(
           children: [
+            Padding(
+              padding: margin,
+              child: _Indicator(
+                color: value?.selectedMode?.color,
+                blink: value?.modeStatus == ModeStatus.running,
+              ),
+            ),
             NeumorphicIconButton(
               margin: margin,
               icon: Icon(Icons.power_settings_new),
               color: CustomColors.icon,
+              onTap: () => value.stop(),
             )
           ],
         );
@@ -224,10 +233,7 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
   void initState() {
     // TODO: implement initState
     super.initState();
-    _controller = AnimationController(
-        vsync: this,
-        duration: Duration(milliseconds: 700)
-    );
+    _controller = AnimationController(vsync: this, duration: Duration(milliseconds: 700));
   }
 
   @override
@@ -236,21 +242,19 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
       width: 28,
       height: 28,
       padding: EdgeInsets.all(8.5),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50),
-          color: CustomColors.indicatorBackground,
-          boxShadow: [
-            BoxShadow(
-                blurRadius: 10,
-                offset: -Offset(6, 6),
-                color: CustomColors.containerShadowTop
-            ),
-            BoxShadow(
-                blurRadius: 10,
-                offset: Offset(6, 6),
-                color: CustomColors.containerShadowBottom
-            )
-          ]
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(50), color: CustomColors.indicatorBackground, boxShadow: [
+        BoxShadow(blurRadius: 10, offset: -Offset(6, 6), color: CustomColors.containerShadowTop),
+        BoxShadow(blurRadius: 10, offset: Offset(6, 6), color: CustomColors.containerShadowBottom)
+      ]),
+      child: AnimatedBuilder(
+        animation: _colorTween,
+        builder: (context, child) {
+          return Container(
+            alignment: Alignment.center,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(50), color: _colorTween.value),
+          );
+        },
       ),
     );
   }

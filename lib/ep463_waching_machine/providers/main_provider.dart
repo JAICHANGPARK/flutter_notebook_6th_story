@@ -63,36 +63,36 @@ class MainProvider with ChangeNotifier {
     ServiceLocator.get<WashingMachineController>().setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
   }
 
-  runOrPause(){
-    if(selectedMode == null) return;
+  runOrPause() {
+    if (selectedMode == null) return;
 
     var wachingMachineController = ServiceLocator.get<WashingMachineController>();
     var timerProvider = ServiceLocator.get<TimerProvider>();
 
-    if(modeStatus == ModeStatus.running){
+    if (modeStatus == ModeStatus.running) {
       _modeStatus = ModeStatus.paused;
       timerProvider.pause();
       wachingMachineController.setAngularVelocity(0, seconds: 1);
-    }else if(modeStatus ==ModeStatus.paused){
+    } else if (modeStatus == ModeStatus.paused) {
       _modeStatus = ModeStatus.running;
       wachingMachineController.setAngularVelocity(-15, seconds: 7);
       timerProvider.resume();
-    }else if(modeStatus == ModeStatus.notStarted){
+    } else if (modeStatus == ModeStatus.notStarted) {
       _modeStatus = ModeStatus.running;
-      if(wachingMachineController.hasBalls()){
+      if (wachingMachineController.hasBalls()) {
         wachingMachineController.initializeBalls();
       }
       timerProvider.start(Duration(minutes: selectedMode.minutes));
       Timer.periodic(Duration(seconds: !wachingMachineController.hasBalls() ? 2 : 0), (timer) {
         timer.cancel();
-        if(modeStatus != ModeStatus.running) return;
+        if (modeStatus != ModeStatus.running) return;
         wachingMachineController.setAngularVelocity(-15, seconds: 7);
       });
-      
     }
-
+    notifyListeners();
   }
-  stop(){
+
+  stop() {
     var wachingMachineController = ServiceLocator.get<WashingMachineController>();
     var timerProvider = ServiceLocator.get<TimerProvider>();
     wachingMachineController.setAngularVelocity(0, seconds: 3);
@@ -100,24 +100,4 @@ class MainProvider with ChangeNotifier {
     timerProvider.reset(callNofityListeners: true);
     notifyListeners();
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

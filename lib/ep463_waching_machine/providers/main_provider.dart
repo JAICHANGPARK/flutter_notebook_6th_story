@@ -9,7 +9,9 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.da
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
 
 class MainProvider with ChangeNotifier {
-  MainProvider() {}
+  MainProvider() {
+    selectMode(nodes.first);
+  }
 
   List<ModeItemModel> nodes = const [
     ModeItemModel(

@@ -7,5 +7,5 @@ class ModeItemModel{
   final int minutes;
   final Color color;
 
-  ModeItemModel({this.name, this.minutes, this.color});
+  const ModeItemModel({this.name, this.minutes, this.color});
 }

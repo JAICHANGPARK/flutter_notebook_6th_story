@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
@@ -56,6 +57,7 @@ class MainProvider with ChangeNotifier{
     var timerVM = ServiceLocator.get<TimerProvider>();
     timerVM.reset(callNofityListeners: true);
     notifyListeners();
+    int sign = Random().nextBool() ? 1: -1;
     
   }
 }

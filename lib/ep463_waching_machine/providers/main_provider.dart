@@ -6,13 +6,10 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/enums/enum_mode_st
 import 'package:flutternotebook6thstory/ep463_waching_machine/models/mode_item_model.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/timer_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
 
-
-
-class MainProvider with ChangeNotifier{
-  MainProvider(){
-
-  }
+class MainProvider with ChangeNotifier {
+  MainProvider() {}
 
   List<ModeItemModel> nodes = const [
     ModeItemModel(
@@ -37,48 +34,29 @@ class MainProvider with ChangeNotifier{
   ModeItemModel _selectedMode;
 
   double get waterValue => _waterValue;
-  set waterValue(double d){
+
+  set waterValue(double d) {
     _waterValue = d;
     notifyListeners();
   }
 
-  ModeItemModel get  selectedMode=>_selectedMode;
+  ModeItemModel get selectedMode => _selectedMode;
+
   ModeStatus get modeStatus => _modeStatus;
 
-  selectMode(ModeItemModel mode){
-    if(mode == _selectedMode){
+  selectMode(ModeItemModel mode) {
+    if (mode == _selectedMode) {
       return;
     }
-    if(_modeStatus == ModeStatus.running){
-      return ;
+    if (_modeStatus == ModeStatus.running) {
+      return;
     }
     _selectedMode = mode;
     _modeStatus = ModeStatus.notStarted;
     var timerVM = ServiceLocator.get<TimerProvider>();
     timerVM.reset(callNofityListeners: true);
     notifyListeners();
-    int sign = Random().nextBool() ? 1: -1;
-    
+    int sign = Random().nextBool() ? 1 : -1;
+    ServiceLocator.get<WashingMachineController>().setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

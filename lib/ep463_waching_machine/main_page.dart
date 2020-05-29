@@ -230,7 +230,22 @@ class __IndicatorState extends State<_Indicator>  with SingleTickerProviderState
   }
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: 28,
+      height: 28,
+      padding: EdgeInsets.all(8.5),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(50),
+        color: CustomColors.indicatorBackground,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            offset: -Offset(6,6),
+            color: CustomColors.containerShadowTop
+          )
+        ]
+      ),
+    );
   }
 }
 

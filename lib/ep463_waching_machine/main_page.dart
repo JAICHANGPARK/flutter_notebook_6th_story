@@ -24,10 +24,10 @@ class WashingMachineApp extends StatelessWidget {
           create: (context) => ServiceLocator.get<TimerProvider>(),
         ),
         ChangeNotifierProvider(
-          create: (context)=> ServiceLocator.get<MainProvider>(),
+          create: (context) => ServiceLocator.get<MainProvider>(),
         ),
         ChangeNotifierProvider(
-          create: (context)=> ServiceLocator.get<SettingsProvider>(),
+          create: (context) => ServiceLocator.get<SettingsProvider>(),
         )
       ],
       child: MaterialApp(
@@ -216,18 +216,20 @@ class _Indicator extends StatefulWidget {
   __IndicatorState createState() => __IndicatorState();
 }
 
-class __IndicatorState extends State<_Indicator>  with SingleTickerProviderStateMixin{
+class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation _colorTween;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _controller = AnimationController(
-      vsync: this,
-      duration: Duration(milliseconds: 700);
+        vsync: this,
+        duration: Duration(milliseconds: 700)
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -235,15 +237,20 @@ class __IndicatorState extends State<_Indicator>  with SingleTickerProviderState
       height: 28,
       padding: EdgeInsets.all(8.5),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(50),
-        color: CustomColors.indicatorBackground,
-        boxShadow: [
-          BoxShadow(
-            blurRadius: 10,
-            offset: -Offset(6,6),
-            color: CustomColors.containerShadowTop
-          )
-        ]
+          borderRadius: BorderRadius.circular(50),
+          color: CustomColors.indicatorBackground,
+          boxShadow: [
+            BoxShadow(
+                blurRadius: 10,
+                offset: -Offset(6, 6),
+                color: CustomColors.containerShadowTop
+            ),
+            BoxShadow(
+                blurRadius: 10,
+                offset: Offset(6, 6),
+                color: CustomColors.containerShadowBottom
+            )
+          ]
       ),
     );
   }

@@ -103,8 +103,8 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                       child: Transform.translate(
                         offset: Offset(100, 120),
                         child: Container(
-                          width: 300,
-                          height: 300,
+                          width: 380,
+                          height: 380,
                           color: Colors.blue,
                         ),
                       ),
@@ -234,10 +234,19 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
     // TODO: implement initState
     super.initState();
     _controller = AnimationController(vsync: this, duration: Duration(milliseconds: 700));
+    setupAnimation();
   }
 
   void setupAnimation(){
-    
+    Color startColor = CustomColors.primaryTextColor.withAlpha(150);
+    Color endColor = CustomColors.primaryTextColor.withAlpha(150);
+    if(widget.color != null) startColor= widget.color;
+
+    _controller.reset();
+    _colorTween = ColorTween(begin: startColor, end:  endColor).animate(_controller);
+    if(widget.blink == true){
+      _controller.repeat(reverse: true);
+    }
   }
   @override
   void dispose() {

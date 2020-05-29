@@ -207,11 +207,16 @@ class _FunctionButtonsList extends StatelessWidget {
 }
 
 class _Indicator extends StatefulWidget {
+  final Color color;
+  final bool blink;
+
+  _Indicator({this.color, this.blink});
+
   @override
   __IndicatorState createState() => __IndicatorState();
 }
 
-class __IndicatorState extends State<_Indicator> {
+class __IndicatorState extends State<_Indicator>  with SingleTickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Container();

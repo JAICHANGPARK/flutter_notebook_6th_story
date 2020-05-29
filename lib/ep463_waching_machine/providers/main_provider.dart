@@ -63,6 +63,16 @@ class MainProvider with ChangeNotifier {
   }
 
   runOrPause(){
+    if(selectedMode == null) return;
+
+    var wachingMachineController = ServiceLocator.get<WashingMachineController>();
+    var timerProvider = ServiceLocator.get<TimerProvider>();
+
+    if(modeStatus == ModeStatus.running){
+      _modeStatus = ModeStatus.paused;
+      timerProvider.pause();
+      wachingMachineController.setAngularVelocity(0, seconds: 1);
+    }
 
   }
   stop(){

@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 
 
 import '../service_locator.dart';
@@ -17,7 +18,7 @@ class WashingMachineController {
 
   double get drumAngle => physic?.whirlpoolCoreBody?.getAngle() ?? 0.0;
   double get radius => _radius;
-  bool get devMode => ServiceLocator.get<SettingsViewModel>()?.devMode;
+  bool get devMode => ServiceLocator.get<SettingsProvider>()?.devMode;
   PaintCallback onNeedPaint;
 
   double _radius;

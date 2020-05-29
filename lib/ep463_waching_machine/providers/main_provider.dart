@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/enums/enum_mode_status.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/models/mode_item_model.dart';
 
 
@@ -27,6 +28,12 @@ class MainProvider with ChangeNotifier{
       color: Color.fromRGBO(253, 133, 253, 1),
     ),
   ];
+
+  double _waterValue = 680.0;
+  ModeStatus _modeStatus = ModeStatus.notStarted;
+  ModeItemModel _selectedMode;
+
+  double get waterValue => _waterValue;
 }
 
 

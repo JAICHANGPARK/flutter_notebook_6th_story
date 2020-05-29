@@ -61,4 +61,33 @@ class MainProvider with ChangeNotifier {
     int sign = Random().nextBool() ? 1 : -1;
     ServiceLocator.get<WashingMachineController>().setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
   }
+
+  runOrPause(){
+
+  }
+  stop(){
+    var wachingMachineController = ServiceLocator.get<WashingMachineController>();
+    var timerProvider = ServiceLocator.get<TimerProvider>();
+    
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

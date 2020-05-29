@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'dart:ui';
 
@@ -74,8 +75,20 @@ class MainProvider with ChangeNotifier {
       wachingMachineController.setAngularVelocity(0, seconds: 1);
     }else if(modeStatus ==ModeStatus.paused){
       _modeStatus = ModeStatus.running;
+      wachingMachineController.setAngularVelocity(-15, seconds: 7);
       timerProvider.resume();
-      wachingMachineController.setAngularVelocity(0, seconds: 1);
+    }else if(modeStatus == ModeStatus.notStarted){
+      _modeStatus = ModeStatus.running;
+      if(wachingMachineController.hasBalls()){
+        wachingMachineController.initializeBalls();
+      }
+      timerProvider.start(Duration(minutes: selectedMode.minutes));
+      Timer.periodic(Duration(seconds: !wachingMachineController.hasBalls() ? 2 : 0), (timer) {
+        timer.cancel();
+        if(modeStatus != ModeStatus.running) return;
+        wachingMachineController.setAngularVelocity(-15, seconds: 7)
+      });
+      
     }
 
   }

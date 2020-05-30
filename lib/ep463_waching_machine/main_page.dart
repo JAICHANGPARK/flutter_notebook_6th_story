@@ -383,7 +383,15 @@ class _ModeTile extends StatelessWidget {
           children: [
             _ModeTileIndicator(
               color: indicatorColor,
-            )
+            ),
+            Expanded(
+              child: Container(),
+            ),
+            Text(name, style: TextStyle(
+              fontSize: 16,
+              color: CustomColors.primaryTextColor,
+              fontWeight: FontWeight.w700,
+            ),)
           ],
         ),
       ),

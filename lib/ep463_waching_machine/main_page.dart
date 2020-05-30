@@ -281,8 +281,42 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
 }
 
 class _ModeList extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 205,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+
+        ],
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

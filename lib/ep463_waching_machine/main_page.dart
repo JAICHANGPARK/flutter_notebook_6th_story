@@ -294,7 +294,11 @@ class _ModeList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children:
         [
-          Text("Mode"),
+          Text("Mode", style: TextStyle(
+            fontSize: 23,
+            color: CustomColors.primaryTextColor,
+            foreground: FontWeight.w700
+          ),),
         ],
       ),
     );

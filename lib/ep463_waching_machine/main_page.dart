@@ -305,9 +305,9 @@ class _ModeList extends StatelessWidget {
           ),
           Flexible(
             child: Consumer<MainProvider>(
-              builder: (context, value, _){
-                return ListView.builder(itemBuilder: (context, index){
-                  if(index > value.nodes.length -1) return null;
+              builder: (context, value, _) {
+                return ListView.builder(itemBuilder: (context, index) {
+                  if (index > value.nodes.length - 1) return null;
                   ModeItemModel item = value.nodes[index];
                   return Container();
                 });
@@ -329,47 +329,17 @@ class ModeTile extends StatelessWidget {
   final GestureTapCallback onTap;
   final bool disabled;
 
-  ModeTile({this.margin, this.name, this.minutes, this.pressed, this.indicatorColor, this.onTap, this.disabled});
+  ModeTile(
+      {this.margin,
+      @required this.name,
+      @required this.minutes,
+      this.pressed,
+      @required this.indicatorColor,
+      this.onTap,
+      this.disabled});
 
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

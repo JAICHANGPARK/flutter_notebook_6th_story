@@ -385,37 +385,16 @@ class _ModeTile extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(height: 6,),
-            Text("$minutes minutes", style: TextStyle(
-              fontSize: 13,
-              color: CustomColors.secondaryTextColor,
-              fontWeight: FontWeight.w400
-            ),),
+            SizedBox(
+              height: 6,
+            ),
+            Text(
+              "$minutes minutes",
+              style: TextStyle(fontSize: 13, color: CustomColors.secondaryTextColor, fontWeight: FontWeight.w400),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

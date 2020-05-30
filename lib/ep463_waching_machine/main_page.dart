@@ -146,7 +146,11 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                         Padding(
                           padding: margin,
                           child: _FunctionButtonsList(),
-                        )
+                        ),
+                        SizedBox(
+                          height: 60,
+                        ),
+                        _ModeList()
                       ],
                     )
                   ],

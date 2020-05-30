@@ -332,16 +332,10 @@ class _ModeTileIndicator extends StatelessWidget {
       width: 18,
       height: 18,
       padding: EdgeInsets.all(4.5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(50),
-        color: color.withAlpha(70)
-      ),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(50), color: color.withAlpha(70)),
       child: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50),
-          color: color
-        ),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50), color: color),
       ),
     );
   }
@@ -371,11 +365,7 @@ class _ModeTile extends StatelessWidget {
       onTap: this.onTap,
       width: 120,
       disabled: disabled,
-      margin: const EdgeInsets.only(
-        left: GLOBAL_EDGE_MARGIN_VALUE,
-        top: 15,
-        bottom: 15
-      ),
+      margin: const EdgeInsets.only(left: GLOBAL_EDGE_MARGIN_VALUE, top: 15, bottom: 15),
       pressed: pressed,
       child: Padding(
         padding: EdgeInsets.only(top: 5, left: 5, right: 8, bottom: 8),
@@ -387,17 +377,28 @@ class _ModeTile extends StatelessWidget {
             Expanded(
               child: Container(),
             ),
-            Text(name, style: TextStyle(
-              fontSize: 16,
-              color: CustomColors.primaryTextColor,
-              fontWeight: FontWeight.w700,
-            ),)
+            Text(
+              name,
+              style: TextStyle(
+                fontSize: 16,
+                color: CustomColors.primaryTextColor,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            SizedBox(height: 6,),
+            Text("$minutes minutes", style: TextStyle(
+              fontSize: 13,
+              color: CustomColors.secondaryTextColor,
+              fontWeight: FontWeight.w400
+            ),),
           ],
         ),
       ),
     );
   }
 }
+
+
 
 
 

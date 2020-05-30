@@ -321,7 +321,14 @@ class _ModeList extends StatelessWidget {
   }
 }
 
-class ModeTile extends StatelessWidget {
+class _ModeTileIndicator extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+class _ModeTile extends StatelessWidget {
   final EdgeInsetsGeometry margin;
   final String name;
   final int minutes;
@@ -330,7 +337,7 @@ class ModeTile extends StatelessWidget {
   final GestureTapCallback onTap;
   final bool disabled;
 
-  ModeTile(
+  _ModeTile(
       {this.margin,
       @required this.name,
       @required this.minutes,
@@ -353,6 +360,13 @@ class ModeTile extends StatelessWidget {
       pressed: pressed,
       child: Padding(
         padding: EdgeInsets.only(top: 5, left: 5, right: 8, bottom: 8),
+        child: Column(
+          children: [
+            _Indicator(
+              color: indicatorColor,
+            )
+          ],
+        ),
       ),
     );
   }

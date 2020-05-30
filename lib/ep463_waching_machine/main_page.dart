@@ -7,6 +7,7 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/timer_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
@@ -340,6 +341,35 @@ class ModeTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return NeumorphicButton(
+      onTap: this.onTap,
+      width: 120,
+      disabled: disabled,
+      margin: const EdgeInsets.only(
+        left: GLOBAL_EDGE_MARGIN_VALUE,
+        top: 15,
+        bottom: 15
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

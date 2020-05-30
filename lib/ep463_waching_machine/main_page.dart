@@ -294,11 +294,14 @@ class _ModeList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children:
         [
-          Text("Mode", style: TextStyle(
-            fontSize: 23,
-            color: CustomColors.primaryTextColor,
-            fontWeight: FontWeight.w700
-          ),),
+          Padding(
+            padding: WashingMachineMainPage.margin,
+            child: Text("Mode", style: TextStyle(
+              fontSize: 23,
+              color: CustomColors.primaryTextColor,
+              fontWeight: FontWeight.w700
+            ),),
+          ),
         ],
       ),
     );

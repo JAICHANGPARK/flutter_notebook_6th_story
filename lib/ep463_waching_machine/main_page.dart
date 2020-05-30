@@ -285,50 +285,22 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
 }
 
 class _ModeList extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 205,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children:
-        [
+        children: [
           Padding(
             padding: WashingMachineMainPage.margin,
-            child: Text("Mode", style: TextStyle(
-              fontSize: 23,
-              color: CustomColors.primaryTextColor,
-              fontWeight: FontWeight.w700
-            ),),
+            child: Text(
+              "Mode",
+              style: TextStyle(fontSize: 23, color: CustomColors.primaryTextColor, fontWeight: FontWeight.w700),
+            ),
           ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

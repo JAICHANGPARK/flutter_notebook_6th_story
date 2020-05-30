@@ -150,7 +150,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                           child: _FunctionButtonsList(),
                         ),
                         SizedBox(
-                          height: 60,
+                          height: 150,
                         ),
                         _ModeList()
                       ],

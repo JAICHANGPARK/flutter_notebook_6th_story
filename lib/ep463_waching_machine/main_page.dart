@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/enums/enum_mode_status.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/models/mode_item_model.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/main_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
@@ -299,8 +300,44 @@ class _ModeList extends StatelessWidget {
               style: TextStyle(fontSize: 23, color: CustomColors.primaryTextColor, fontWeight: FontWeight.w700),
             ),
           ),
+          SizedBox(
+            height: 4,
+          ),
+          Flexible(
+            child: Consumer<MainProvider>(
+              builder: (context, value, _){
+                return ListView.builder(itemBuilder: (context, index){
+                  if(index > value.nodes.length -1) return null;
+                  ModeItemModel item = value.nodes[index];
+                  return Container();
+                });
+              },
+            ),
+          )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -310,7 +310,14 @@ class _ModeList extends StatelessWidget {
                 return ListView.builder(itemBuilder: (context, index) {
                   if (index > value.nodes.length - 1) return null;
                   ModeItemModel item = value.nodes[index];
-                  return Container();
+                  return _ModeTile(
+                    pressed: value?.selectedMode == item,
+                    indicatorColor: item.color,
+                    name: item.name,
+                    minutes: item.minutes,
+                    disabled: value.modeStatus == ModeStatus.running,
+                    onTap: () => value.selectMode(item),
+                  );
                 });
               },
             ),

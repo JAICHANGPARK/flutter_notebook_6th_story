@@ -237,17 +237,18 @@ class __IndicatorState extends State<_Indicator> with SingleTickerProviderStateM
     setupAnimation();
   }
 
-  void setupAnimation(){
+  void setupAnimation() {
     Color startColor = CustomColors.primaryTextColor.withAlpha(150);
     Color endColor = CustomColors.primaryTextColor.withAlpha(150);
-    if(widget.color != null) startColor= widget.color;
+    if (widget.color != null) startColor = widget.color;
 
     _controller.reset();
-    _colorTween = ColorTween(begin: startColor, end:  endColor).animate(_controller);
-    if(widget.blink == true){
+    _colorTween = ColorTween(begin: startColor, end: endColor).animate(_controller);
+    if (widget.blink == true) {
       _controller.repeat(reverse: true);
     }
   }
+
   @override
   void dispose() {
     // TODO: implement dispose

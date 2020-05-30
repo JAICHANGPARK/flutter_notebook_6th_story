@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 class WashingMachineCase extends StatefulWidget {
 
@@ -37,6 +38,8 @@ class _WashingMachineCaseState extends State<WashingMachineCase> {
         gradient: LinearGradient(
           begin: Alignment(0.3, 0.07),
           end: Alignment(0.35, 1),
+          colors: CustomColors.drumRing1Colors,
+          stops: [0, 0.4 , 1]
         )
       ),
     );

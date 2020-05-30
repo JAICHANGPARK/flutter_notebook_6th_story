@@ -105,10 +105,9 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                       right: 0,
                       child: Transform.translate(
                         offset: Offset(100, 120),
-                        child: Container(
+                        child: WashingMachineCase(
                           width: 380,
                           height: 380,
-                          child: WashingMachineCase(),
                         ),
                       ),
                     ),

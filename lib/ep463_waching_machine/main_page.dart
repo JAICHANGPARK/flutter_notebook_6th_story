@@ -297,7 +297,7 @@ class _ModeList extends StatelessWidget {
           Text("Mode", style: TextStyle(
             fontSize: 23,
             color: CustomColors.primaryTextColor,
-            foreground: FontWeight.w700
+            fontWeight: FontWeight.w700
           ),),
         ],
       ),

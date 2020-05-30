@@ -307,18 +307,20 @@ class _ModeList extends StatelessWidget {
           Flexible(
             child: Consumer<MainProvider>(
               builder: (context, value, _) {
-                return ListView.builder(itemBuilder: (context, index) {
-                  if (index > value.nodes.length - 1) return null;
-                  ModeItemModel item = value.nodes[index];
-                  return _ModeTile(
-                    pressed: value?.selectedMode == item,
-                    indicatorColor: item.color,
-                    name: item.name,
-                    minutes: item.minutes,
-                    disabled: value.modeStatus == ModeStatus.running,
-                    onTap: () => value.selectMode(item),
-                  );
-                });
+                return ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      if (index > value.nodes.length - 1) return null;
+                      ModeItemModel item = value.nodes[index];
+                      return _ModeTile(
+                        pressed: value?.selectedMode == item,
+                        indicatorColor: item.color,
+                        name: item.name,
+                        minutes: item.minutes,
+                        disabled: value.modeStatus == ModeStatus.running,
+                        onTap: () => value.selectMode(item),
+                      );
+                    });
               },
             ),
           )

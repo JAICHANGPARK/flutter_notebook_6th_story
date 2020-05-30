@@ -336,6 +336,13 @@ class _ModeTileIndicator extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
         color: color.withAlpha(70)
       ),
+      child: Container(
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(50),
+          color: color
+        ),
+      ),
     );
   }
 }

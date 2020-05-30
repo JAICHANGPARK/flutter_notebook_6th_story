@@ -350,6 +350,10 @@ class ModeTile extends StatelessWidget {
         top: 15,
         bottom: 15
       ),
+      pressed: pressed,
+      child: Padding(
+        padding: EdgeInsets.only(top: 5, left: 5, right: 8, bottom: 8),
+      ),
     );
   }
 }

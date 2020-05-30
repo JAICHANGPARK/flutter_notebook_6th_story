@@ -288,8 +288,9 @@ class _ModeList extends StatelessWidget {
       height: 205,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-
+        children:
+        [
+          Text("Mode"),
         ],
       ),
     );

@@ -322,9 +322,21 @@ class _ModeList extends StatelessWidget {
 }
 
 class _ModeTileIndicator extends StatelessWidget {
+  final Color color;
+
+  _ModeTileIndicator({this.color});
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: 18,
+      height: 18,
+      padding: EdgeInsets.all(4.5),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(50),
+        color: color.withAlpha(70)
+      ),
+    );
   }
 }
 
@@ -362,7 +374,7 @@ class _ModeTile extends StatelessWidget {
         padding: EdgeInsets.only(top: 5, left: 5, right: 8, bottom: 8),
         child: Column(
           children: [
-            _Indicator(
+            _ModeTileIndicator(
               color: indicatorColor,
             )
           ],

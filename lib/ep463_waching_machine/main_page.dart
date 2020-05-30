@@ -321,6 +321,16 @@ class _ModeList extends StatelessWidget {
 }
 
 class ModeTile extends StatelessWidget {
+  final EdgeInsetsGeometry margin;
+  final String name;
+  final int minutes;
+  final bool pressed;
+  final Color indicatorColor;
+  final GestureTapCallback onTap;
+  final bool disabled;
+
+  ModeTile({this.margin, this.name, this.minutes, this.pressed, this.indicatorColor, this.onTap, this.disabled});
+
   @override
   Widget build(BuildContext context) {
     return Container();

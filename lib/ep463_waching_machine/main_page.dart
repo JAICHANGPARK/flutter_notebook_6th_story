@@ -10,6 +10,7 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.da
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/waching_machine_case.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/water_drawer.dart';
@@ -107,7 +108,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                         child: Container(
                           width: 380,
                           height: 380,
-                          color: Colors.blue,
+                          child: WashingMachineCase(),
                         ),
                       ),
                     ),

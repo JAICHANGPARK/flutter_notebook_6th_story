@@ -28,6 +28,11 @@ class DrumPhysicRenderer {
     canvas.restore();
   }
 
+  _drawCircleShape(Canvas canvas, CircleShape circle, Color color){
+    canvas.drawCircle(Offset(circle.p.x * ppm, circle.p.x * ppm), circle.radius * ppm,
+    Paint()..style = PaintingStyle.fill..color = color != null ? color : Colors.amber);
+  }
+
 
 
 

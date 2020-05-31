@@ -213,7 +213,13 @@ class _FunctionButtonsList extends StatelessWidget {
               icon: Icon(Icons.power_settings_new),
               color: CustomColors.icon,
               onTap: () => value.stop(),
-            )
+            ),
+            NeumorphicIconButton(
+              margin: margin,
+              icon: Icon(Icons.power_settings_new),
+              color: CustomColors.icon,
+              onTap: () => value.stop(),
+            ),
           ],
         );
       },

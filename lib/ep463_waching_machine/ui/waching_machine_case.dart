@@ -58,9 +58,7 @@ class _WashingMachineCaseState extends State<WashingMachineCase> {
             child: Container(
               width: widget.width - ring1Offset - ring2Offset - ring3Offset,
               height: widget.height - ring1Offset - ring2Offset - ring3Offset,
-              child: ClipOval(child: WashingMachineDrum(
-                _controller
-              )),
+              child: ClipOval(child: WashingMachineDrum(_controller)),
             ),
           ),
         ),

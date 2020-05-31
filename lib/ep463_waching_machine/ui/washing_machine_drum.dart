@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/drum_phsic.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
 
@@ -25,5 +26,25 @@ class _WhirlpoolRenderObject extends RenderBox {
 
   set controller(WashingMachineController v) {
     if (_controller == v) return;
+    _controller = v;
+    _controller.onNeedPaint = markNeedsPaint;
+    markNeedsPaint();
+    markNeedsLayout();
+    SchedulerBinding.instance.scheduleFrameCallback(frame);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
 }

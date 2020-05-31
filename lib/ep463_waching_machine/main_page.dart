@@ -222,8 +222,7 @@ class _FunctionButtonsList extends StatelessWidget {
             ),
             NeumorphicIconButton(
               margin: margin,
-             icon: Icon(value.modeStatus == ModeStatus.running ? Icons.pause :
-             Icons.play_arrow),
+              icon: Icon(value.modeStatus == ModeStatus.running ? Icons.pause : Icons.play_arrow),
               color: CustomColors.icon,
               onTap: () => Scaffold.of(context).openDrawer(),
             ),

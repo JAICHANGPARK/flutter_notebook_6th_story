@@ -57,7 +57,7 @@ class MainProvider with ChangeNotifier {
     _selectedMode = mode;
     _modeStatus = ModeStatus.notStarted;
     var timerVM = ServiceLocator.get<TimerProvider>();
-    timerVM.reset(callNofityListeners: true);
+    timerVM.reset(callNotifyListeners: true);
     notifyListeners();
     int sign = Random().nextBool() ? 1 : -1;
     ServiceLocator.get<WashingMachineController>().setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
@@ -97,7 +97,7 @@ class MainProvider with ChangeNotifier {
     var timerProvider = ServiceLocator.get<TimerProvider>();
     wachingMachineController.setAngularVelocity(0, seconds: 3);
     _modeStatus = ModeStatus.notStarted;
-    timerProvider.reset(callNofityListeners: true);
+    timerProvider.reset(callNotifyListeners: true);
     notifyListeners();
   }
 }

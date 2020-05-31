@@ -51,6 +51,33 @@ class DrumPhysicRenderer {
       ..strokeWidth = 1
       .. style = PaintingStyle.fill
       ..color = color != null ? color :
-      Colors.blue)
+      Colors.blue);
   }
+
+  _drawChainShape(Canvas canvas, ChainShape chain, Color color){
+    int vertexCount = chain.getVertexCount();
+    List<Offset> points = [];
+    for (int i = 0; i < vertexCount; i++) {
+      Vector2 vector2 = chain.getVertex(i) * ppm;
+      points.add(Offset(vector2.x, vector2.y));
+    }
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

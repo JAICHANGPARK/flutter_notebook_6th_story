@@ -3,6 +3,8 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/service_locator.da
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
+import 'washing_machine_drum.dart';
+
 class WashingMachineCase extends StatefulWidget {
   final double width;
   final double height;
@@ -56,6 +58,9 @@ class _WashingMachineCaseState extends State<WashingMachineCase> {
             child: Container(
               width: widget.width - ring1Offset - ring2Offset - ring3Offset,
               height: widget.height - ring1Offset - ring2Offset - ring3Offset,
+              child: ClipOval(child: WashingMachineDrum(
+                _controller
+              )),
             ),
           ),
         ),

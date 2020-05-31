@@ -11,6 +11,9 @@ class DrumPhysicRenderer{
     double angle = body.getAngle();
     Vector2 position = body.position * ppm;
     Color color = body.userData as Color;
-
+    Matrix4 matrix = Matrix4.identity()..leftTranslate(position.x, position.y)
+    ..rotateZ(angle);
+    canvas.save();
+    canvas.transform(matrix.storage);
   }
 }

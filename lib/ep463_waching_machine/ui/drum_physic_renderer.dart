@@ -44,44 +44,32 @@ class DrumPhysicRenderer {
       Vector2 vector2 = polygon.getVertex(i) * ppm;
       points.add(Offset(vector2.x, vector2.y));
     }
-    canvas.drawRect(Rect.fromLTRB(
-      points[0].dx,
-      points[2].dy,
-      points[2].dx,
-      points[0].dy,
-    ), Paint()
-      ..strokeWidth = 1
-      .. style = PaintingStyle.fill
-      ..color = color != null ? color :
-      Colors.blue);
+    canvas.drawRect(
+        Rect.fromLTRB(
+          points[0].dx,
+          points[2].dy,
+          points[2].dx,
+          points[0].dy,
+        ),
+        Paint()
+          ..strokeWidth = 1
+          ..style = PaintingStyle.fill
+          ..color = color != null ? color : Colors.blue);
   }
 
-  _drawChainShape(Canvas canvas, ChainShape chain, Color color){
+  _drawChainShape(Canvas canvas, ChainShape chain, Color color) {
     int vertexCount = chain.getVertexCount();
     List<Offset> points = [];
     for (int i = 0; i < vertexCount; i++) {
       Vector2 vector2 = chain.getVertex(i) * ppm;
       points.add(Offset(vector2.x, vector2.y));
     }
-    canvas.drawPoints(PointMode.lines, points, Paint()..strokeWidth =1..style = PaintingStyle.fill
-    ..color = color != null  ? color : Colors.green);
+    canvas.drawPoints(
+        PointMode.lines,
+        points,
+        Paint()
+          ..strokeWidth = 1
+          ..style = PaintingStyle.fill
+          ..color = color != null ? color : Colors.green);
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

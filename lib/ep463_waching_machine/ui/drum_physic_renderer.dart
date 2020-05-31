@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:box2d_flame/box2d.dart';
 import 'package:flutter/material.dart';
 
@@ -61,6 +63,8 @@ class DrumPhysicRenderer {
       Vector2 vector2 = chain.getVertex(i) * ppm;
       points.add(Offset(vector2.x, vector2.y));
     }
+    canvas.drawPoints(PointMode.lines, points, Paint()..strokeWidth =1..style = PaintingStyle.fill
+    ..color = color != null  ? color : Colors.green);
   }
 
 }

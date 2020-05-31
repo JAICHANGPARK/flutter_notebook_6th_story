@@ -150,7 +150,7 @@ class _WashingMachineMainPageState extends State<WashingMachineMainPage> {
                           child: _FunctionButtonsList(),
                         ),
                         SizedBox(
-                          height: 150,
+                          height: 60,
                         ),
                         _ModeList()
                       ],
@@ -224,7 +224,7 @@ class _FunctionButtonsList extends StatelessWidget {
               margin: margin,
               icon: Icon(value.modeStatus == ModeStatus.running ? Icons.pause : Icons.play_arrow),
               color: CustomColors.icon,
-              onTap: () => Scaffold.of(context).openDrawer(),
+              onTap: () => value.runOrPause(),
             ),
           ],
         );

@@ -19,8 +19,7 @@ class DrumPhysicRenderer {
     for (Fixture f = body.getFixtureList(); f != null; f = f.getNext()) {
       if (f.getType() == ShapeType.CIRCLE) {
         _drawCircleShape(canvas, f.getShape(), color);
-      } else if (f.getType() == ShapeType.POLYGON) {
-      } else if (f.getType() == ShapeType.CHAIN) {}
+      } else if (f.getType() == ShapeType.POLYGON) {} else if (f.getType() == ShapeType.CHAIN) {}
     }
     canvas.restore();
   }
@@ -41,5 +40,15 @@ class DrumPhysicRenderer {
       Vector2 vector2 = polygon.getVertex(i) * ppm;
       points.add(Offset(vector2.x, vector2.y));
     }
+    canvas.drawRect(Rect.fromLTRB(
+      points[0].dx,
+      points[2].dy,
+      points[2].dx,
+      points[0].dy,
+    ), Paint()
+      ..strokeWidth = 1
+      .. style = PaintingStyle.fill
+      ..color = color != null ? color :
+      Colors.blue)
   }
 }

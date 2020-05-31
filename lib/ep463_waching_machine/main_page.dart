@@ -183,7 +183,7 @@ class _TimelinePanelState extends State<TimerPanel> {
         child: Consumer<TimerProvider>(
           builder: (context, value, _) {
             return Text(
-              value.remainingString,
+              value.remainigString,
               style: TextStyle(color: CustomColors.secondaryTextColor, letterSpacing: 3, fontSize: 22),
             );
           },

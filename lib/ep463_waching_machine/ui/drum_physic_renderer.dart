@@ -23,7 +23,9 @@ class DrumPhysicRenderer {
         _drawCircleShape(canvas, f.getShape(), color);
       } else if (f.getType() == ShapeType.POLYGON) {
         _drawPolygonShape(canvas, f.getShape(), color);
-      } else if (f.getType() == ShapeType.CHAIN) {}
+      } else if (f.getType() == ShapeType.CHAIN) {
+        _drawChainShape(canvas, f.getShape(), color);
+      }
     }
     canvas.restore();
   }

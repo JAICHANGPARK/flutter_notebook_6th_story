@@ -2,14 +2,15 @@ import 'package:flutter/foundation.dart';
 
 
 class SettingsProvider with ChangeNotifier{
-  bool _debMode = false;
-
-  bool get devMode => _debMode;
-  set devMode(bool value){
-    if(_debMode == value){
+  bool get devMode => _devMode;
+  set devMode(bool value) {
+    if (_devMode == value) {
       return;
     }
-    _debMode = value;
+
+    _devMode = value;
     notifyListeners();
   }
+
+  bool _devMode = false;
 }

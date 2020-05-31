@@ -18,7 +18,7 @@ class DrumPhysicRenderer {
     canvas.transform(matrix.storage);
     for(Fixture f = body.getFixtureList(); f != null; f = f.getNext()){
       if(f.getType() == ShapeType.CIRCLE){
-
+        _drawCircleShape(canvas, f.getShape(), color);
       }else if(f.getType() == ShapeType.POLYGON){
 
       }else if(f.getType() == ShapeType.CHAIN){

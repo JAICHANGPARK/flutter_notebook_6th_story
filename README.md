@@ -1,6 +1,7 @@
 # flutter notebook 6th story
 
-A new Flutter application.
+
+Live stream Link : https://www.youtube.com/playlist?list=PLnz10ftgq9R9UZvQTsnf3ZRhEl4x2ZyYS
 
 ## Getting Started
 

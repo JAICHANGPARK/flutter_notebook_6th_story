@@ -14,7 +14,8 @@ class WashingMachineDrum extends LeafRenderObjectWidget {
   @override
   RenderObject createRenderObject(BuildContext context) {
     // TODO: implement createRenderObject
-    return _WhirlpoolRenderObject()..controller = controller;
+    return _WhirlpoolRenderObject()
+      ..controller = controller;
   }
 }
 
@@ -32,12 +33,11 @@ class _WhirlpoolRenderObject extends RenderBox {
     markNeedsPaint();
     markNeedsLayout();
     SchedulerBinding.instance.scheduleFrameCallback(frame);
-
-
   }
-  frame(Duration timeStamp){
+
+  frame(Duration timeStamp) {
     final double t = timeStamp.inMicroseconds / Duration.microsecondsPerMillisecond / 1000.0;
-    if(_lastTimeStamp == 0){
+    if (_lastTimeStamp == 0) {
       _lastTimeStamp = t;
       SchedulerBinding.instance.scheduleFrameCallback(frame);
       return;
@@ -48,12 +48,16 @@ class _WhirlpoolRenderObject extends RenderBox {
     controller.redraw();
     SchedulerBinding.instance.scheduleFrameCallback(frame);
   }
-  
-  _drawWhirlpool (PaintingContext context, Offset offset){
-    if(controller.devMode != true){
-      context.pushLayer(ColorFilterLayer(), (context, offset) { }, offset)
+
+  _drawWhirlpool(PaintingContext context, Offset offset) {
+    if (controller.devMode != true) {
+      context.pushLayer(ColorFilterLayer(
+          colorFilter: ColorFilter.matrix([
+            1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 20, -1200
+          ])
+      ), (context, offset) {}, offset)
     }
-  } 
+  }
 }
 
 

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
@@ -55,7 +57,15 @@ class _WhirlpoolRenderObject extends RenderBox {
           colorFilter: ColorFilter.matrix([
             1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 20, -1200
           ])
-      ), (context, offset) {}, offset)
+      ), (context, offset) {
+        return context.pushLayer(ImageFilterLayer(
+          imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
+        ), (context, offset) {
+          return _drawBalls(context, offset)
+        }, offset);
+      }, offset);
+    }else{
+      _drawBalls(context, offset);
     }
   }
 }

@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -6,6 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/drum_phsic.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/utils.dart';
 
 import 'drum_physic_renderer.dart';
 
@@ -120,8 +122,7 @@ class _WhirlpoolRenderObject extends RenderBox {
     Path basePath = _createDrumBasePath(segment, startAngel, angleOffset, bounds, convexity: convexity);
   }
 
-  Path _createDrumBasePath(int segments, double startAngle, double angleOffset, Rect bounds,
-      {double convexity = 0.0}) {
+  Path _createDrumBasePath(int segments, double startAngle, double angleOffset, Rect bounds, {double convexity = 0.0}) {
     Offset center = bounds.center;
     double r = bounds.width / 2;
     double stepRotationAngle = 360 / segments;
@@ -129,25 +130,11 @@ class _WhirlpoolRenderObject extends RenderBox {
     double startPointAngle = startAngle + angleOffset;
     double endPointAngle = startAngle + stepRotationAngle - angleOffset;
     Offset startPoint = _findPoint(center, r, startPointAngle);
-
   }
-  
+
+  Offset _findPoint(Offset center, double r, double angelDegree) {
+    double x = center.dx + r * cos(Utils.degToRad(angelDegree));
+    double y = center.dy + r * sin(Utils.degToRad(angelDegree));
+    return Offset(x, y);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

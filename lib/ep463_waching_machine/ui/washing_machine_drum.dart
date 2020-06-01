@@ -70,7 +70,8 @@ class _WhirlpoolRenderObject extends RenderBox {
   }
   _drawBalls(PaintingContext context, Offset offset) async{
     Canvas canvas = context.canvas;
-    var rect = Rect.fromLTWH(controller.physic.origin.dx - controller.physic.radius, top, width, height)
+    var rect = Rect.fromLTWH(controller.physic.origin.dx - controller.physic.radius,
+        controller.physic.origin.dy - controller.physic.radius, width, height)
   }
 }
 

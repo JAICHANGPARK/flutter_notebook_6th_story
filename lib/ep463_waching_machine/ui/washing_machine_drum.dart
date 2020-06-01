@@ -36,7 +36,10 @@ class _WhirlpoolRenderObject extends RenderBox {
   }
   frame(Duration timeStamp){
     final double t = timeStamp.inMicroseconds / Duration.microsecondsPerMillisecond / 1000.0;
-
+    if(_lastTimeStamp == 0){
+      _lastTimeStamp = t;
+      SchedulerBinding.instance.scheduleFrameCallback(frame);
+    }
   }
 }
 

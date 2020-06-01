@@ -35,6 +35,7 @@ class WashingMachineApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: WashingMachineMainPage(),
       ),
     );

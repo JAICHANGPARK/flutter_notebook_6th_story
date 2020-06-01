@@ -64,14 +64,17 @@ class _WhirlpoolRenderObject extends RenderBox {
           return _drawBalls(context, offset)
         }, offset);
       }, offset);
-    }else{
+    } else {
       _drawBalls(context, offset);
     }
   }
-  _drawBalls(PaintingContext context, Offset offset) async{
+
+  _drawBalls(PaintingContext context, Offset offset) async {
     Canvas canvas = context.canvas;
     var rect = Rect.fromLTWH(controller.physic.origin.dx - controller.physic.radius,
-        controller.physic.origin.dy - controller.physic.radius, width, height)
+        controller.physic.origin.dy - controller.physic.radius,
+        controller.physic.radius * 2,
+        controller.physic.radius * 2);
   }
 }
 

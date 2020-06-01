@@ -4,11 +4,13 @@ import 'dart:ui';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_whirlpool/screens/main/washing_machine/drum/physic/drum_physic.dart';
-import 'package:flutter_whirlpool/screens/main/washing_machine/drum/physic/drum_physic_renderer.dart';
-import 'package:flutter_whirlpool/screens/main/washing_machine/washing_machine_controller.dart';
-import 'package:flutter_whirlpool/shared/colors.dart';
-import 'package:flutter_whirlpool/shared/utils.dart';
+
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/utils.dart';
+
+import 'drum_phsic.dart';
+import 'drum_physic_renderer.dart';
+import 'washing_machine_controller.dart';
 
 class WashingMachineDrum extends LeafRenderObjectWidget {
   WashingMachineDrum(this.controller, {Key key}) : super(key: key);

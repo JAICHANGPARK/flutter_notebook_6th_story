@@ -5,6 +5,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/drum_phsic.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 import 'drum_physic_renderer.dart';
 
@@ -82,6 +83,17 @@ class _WhirlpoolRenderObject extends RenderBox {
       _physicRenderer.renderBody(canvas, element);
     });
     canvas.restore();
+  }
+
+  _drawDrum(PaintingContext context, Offset offset){
+    Canvas canvas = context.canvas;
+    canvas.drawRect(context.estimatedBounds, Paint()..color = CustomColors.drumBackground);
+    Path washingMachineRibForground = _createDrumPath(3, 10, context.estimatedBounds);
+    Path washingMachineRibBackground = _createDrumPath(3, 10, context.estimatedBounds, convexity: 30);
+  }
+
+  Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}){
+
   }
 }
 

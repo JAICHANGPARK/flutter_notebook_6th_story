@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/drum_phsic.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/washing_machine_controller.dart';
@@ -47,6 +48,12 @@ class _WhirlpoolRenderObject extends RenderBox {
     controller.redraw();
     SchedulerBinding.instance.scheduleFrameCallback(frame);
   }
+  
+  _drawWhirlpool (PaintingContext context, Offset offset){
+    if(controller.devMode != true){
+      context.pushLayer(ColorFilterLayer(), (context, offset) { }, offset)
+    }
+  } 
 }
 
 

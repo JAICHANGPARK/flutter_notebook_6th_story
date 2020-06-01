@@ -17,8 +17,7 @@ class WashingMachineDrum extends LeafRenderObjectWidget {
   @override
   RenderObject createRenderObject(BuildContext context) {
     // TODO: implement createRenderObject
-    return _WhirlpoolRenderObject()
-      ..controller = controller;
+    return _WhirlpoolRenderObject()..controller = controller;
   }
 }
 
@@ -54,14 +53,14 @@ class _WhirlpoolRenderObject extends RenderBox {
 
   _drawWhirlpool(PaintingContext context, Offset offset) {
     if (controller.devMode != true) {
-      context.pushLayer(ColorFilterLayer(
-          colorFilter: ColorFilter.matrix([
-            1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 20, -1200
-          ])
-      ), (context, offset) {
-        return context.pushLayer(ImageFilterLayer(
-          imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
-        ), (context, offset) {
+      context.pushLayer(
+          ColorFilterLayer(
+              colorFilter: ColorFilter.matrix([1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 20, -1200])),
+          (context, offset) {
+        return context.pushLayer(
+            ImageFilterLayer(
+              imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
+            ), (context, offset) {
           return _drawBalls(context, offset);
         }, offset);
       }, offset);
@@ -72,48 +71,35 @@ class _WhirlpoolRenderObject extends RenderBox {
 
   _drawBalls(PaintingContext context, Offset offset) async {
     Canvas canvas = context.canvas;
-    var rect = Rect.fromLTWH(controller.physic.origin.dx - controller.physic.radius,
+    var rect = Rect.fromLTWH(
+        controller.physic.origin.dx - controller.physic.radius,
         controller.physic.origin.dy - controller.physic.radius,
         controller.physic.radius * 2,
         controller.physic.radius * 2);
     canvas.save();
-    canvas.clipPath(Path()
-      ..addOval(rect));
+    canvas.clipPath(Path()..addOval(rect));
     controller.physic.balls.forEach((element) {
       _physicRenderer.renderBody(canvas, element);
     });
     canvas.restore();
   }
 
-  _drawDrum(PaintingContext context, Offset offset){
+  _drawDrum(PaintingContext context, Offset offset) {
     Canvas canvas = context.canvas;
     canvas.drawRect(context.estimatedBounds, Paint()..color = CustomColors.drumBackground);
     Path washingMachineRibForground = _createDrumPath(3, 10, context.estimatedBounds);
     Path washingMachineRibBackground = _createDrumPath(3, 10, context.estimatedBounds, convexity: 30);
     canvas.save();
-    canvas.translate(context.estimatedBounds.center.dx,
-    context.estimatedBounds.center.dy);
+    canvas.translate(context.estimatedBounds.center.dx, context.estimatedBounds.center.dy);
     canvas.rotate(controller.drumAngle);
     canvas.scale(1.05);
-    canvas.translate(-context.estimatedBounds.center.dx,
-    -context.estimatedBounds.center.dy);
+    canvas.translate(-context.estimatedBounds.center.dx, -context.estimatedBounds.center.dy);
+    canvas.drawPath(
+        washingMachineRibBackground,
+        Paint()
+          ..color = CustomColors.drumRibBackground
+          ..style = PaintingStyle.fill);
   }
 
-  Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}){
-
-  }
+  Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}) {}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

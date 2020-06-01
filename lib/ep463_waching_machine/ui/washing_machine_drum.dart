@@ -117,30 +117,9 @@ class _WhirlpoolRenderObject extends RenderBox {
     Offset center = bounds.center;
     double startAngel = 360.0 - 90.0;
     double stepRotationAngel = 360 / segment;
-    Path basePath = _createDrumBasePath(
-
-      segment,
-      startAngel,
-      angleOffset,
-      bounds,
-      convexity: convexity
-    );
-    
+    Path basePath = _createDrumBasePath(segment, startAngel, angleOffset, bounds, convexity: convexity);
   }
+
+  Path _createDrumBasePath(int segments, double startAngel, double angelOffset, Rect bounds,
+      {double convexity = 0.0}) {}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

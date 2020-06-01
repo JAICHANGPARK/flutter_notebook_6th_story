@@ -39,7 +39,13 @@ class _WhirlpoolRenderObject extends RenderBox {
     if(_lastTimeStamp == 0){
       _lastTimeStamp = t;
       SchedulerBinding.instance.scheduleFrameCallback(frame);
+      return;
     }
+    double elapsed = (t - _lastTimeStamp).clamp(0.0, 1.0);
+    _lastTimeStamp = t;
+    controller?.step(elapsed);
+    controller.redraw();
+    SchedulerBinding.instance.scheduleFrameCallback(frame);
   }
 }
 

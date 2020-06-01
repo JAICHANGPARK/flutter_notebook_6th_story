@@ -76,8 +76,12 @@ class _WhirlpoolRenderObject extends RenderBox {
         controller.physic.radius * 2,
         controller.physic.radius * 2);
     canvas.save();
-    canvas.clipPath(Path()..addOval(rect));
-    controller.physic.balls.forEach((element) { _physicRenderer.renderBody(canvas, element);});
+    canvas.clipPath(Path()
+      ..addOval(rect));
+    controller.physic.balls.forEach((element) {
+      _physicRenderer.renderBody(canvas, element);
+    });
+    canvas.restore();
   }
 }
 

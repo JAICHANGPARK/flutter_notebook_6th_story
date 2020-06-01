@@ -61,7 +61,7 @@ class _WhirlpoolRenderObject extends RenderBox {
         return context.pushLayer(ImageFilterLayer(
           imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
         ), (context, offset) {
-          return _drawBalls(context, offset)
+          return _drawBalls(context, offset);
         }, offset);
       }, offset);
     } else {

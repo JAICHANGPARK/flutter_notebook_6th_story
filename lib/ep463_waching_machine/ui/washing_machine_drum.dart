@@ -90,6 +90,13 @@ class _WhirlpoolRenderObject extends RenderBox {
     canvas.drawRect(context.estimatedBounds, Paint()..color = CustomColors.drumBackground);
     Path washingMachineRibForground = _createDrumPath(3, 10, context.estimatedBounds);
     Path washingMachineRibBackground = _createDrumPath(3, 10, context.estimatedBounds, convexity: 30);
+    canvas.save();
+    canvas.translate(context.estimatedBounds.center.dx,
+    context.estimatedBounds.center.dy);
+    canvas.rotate(controller.drumAngle);
+    canvas.scale(1.05);
+    canvas.translate(-context.estimatedBounds.center.dx,
+    -context.estimatedBounds.center.dy);
   }
 
   Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}){

@@ -1,7 +1,20 @@
-import 'package:flutter/material.dart';
-import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
+import 'package:flutter/widgets.dart';
+
+import 'neumorphic_container.dart';
 
 class NeumorphicButton extends StatefulWidget {
+  NeumorphicButton({
+    Key key,
+    @required this.child,
+    this.width = 54.0,
+    this.height = 54.0,
+    this.pressed,
+    this.onTap,
+    this.margin,
+    this.color,
+    this.disabled,
+  }) : super(key: key);
+
   final bool pressed;
   final double width;
   final double height;
@@ -10,18 +23,6 @@ class NeumorphicButton extends StatefulWidget {
   final GestureTapCallback onTap;
   final Color color;
   final bool disabled;
-
-  NeumorphicButton(
-      {Key key,
-      this.pressed,
-      this.width = 54.0,
-      this.height = 54.0,
-      @required this.child,
-      this.margin,
-      this.onTap,
-      this.color,
-      this.disabled})
-      : super(key: key);
 
   @override
   _NeumorphicButtonState createState() => _NeumorphicButtonState();
@@ -37,8 +38,8 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
       onTapUp: _onTapUp,
       onTapCancel: _onTapCancel,
       child: NeumorphicContainer(
-        pressed:  widget.pressed ?? _isPressed,
-        width:  widget.width,
+        pressed: widget?.pressed ?? _isPressed,
+        width: widget.width,
         height: widget.height,
         child: widget.child,
         margin: widget.margin,
@@ -48,46 +49,25 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
     );
   }
 
-  void _onTap(TapDownDetails details){
+  void _onTap(TapDownDetails details) {
     setState(() {
       _isPressed = true;
     });
-    if(widget.onTap != null && widget.disabled != true){
+
+    if (widget.onTap != null && widget.disabled != true) {
       widget.onTap();
     }
   }
-  void _onTapUp(TapUpDetails details){
+
+  void _onTapUp(TapUpDetails details) {
     setState(() {
       _isPressed = false;
     });
-
   }
-  void _onTapCancel(){
+
+  void _onTapCancel() {
     setState(() {
       _isPressed = false;
     });
-
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

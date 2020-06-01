@@ -124,11 +124,14 @@ class _WhirlpoolRenderObject extends RenderBox {
       {double convexity = 0.0}) {
     Offset center = bounds.center;
     double r = bounds.width / 2;
-    double stepRotationAngel = 360 / segments;
+    double stepRotationAngle = 360 / segments;
 
-    double startPointAngel = startAngle + angleOffset
-    
+    double startPointAngle = startAngle + angleOffset;
+    double endPointAngle = startAngle + stepRotationAngle - angleOffset;
+    Offset startPoint = _findPoint(center, r, startPointAngle);
+
   }
+  
 }
 
 

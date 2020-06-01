@@ -106,12 +106,41 @@ class _WhirlpoolRenderObject extends RenderBox {
           ..color = CustomColors.drumRibForeground
           ..style = PaintingStyle.fill);
     canvas.restore();
-    canvas.drawRect(context.estimatedBounds, Paint()..shader = RadialGradient(colors:
-    CustomColors.drumInnerShadowColors,
-    stops: [
-      0.85, 1
-    ]).createShader(context.estimatedBounds));
+    canvas.drawRect(
+        context.estimatedBounds,
+        Paint()
+          ..shader = RadialGradient(colors: CustomColors.drumInnerShadowColors, stops: [0.85, 1])
+              .createShader(context.estimatedBounds));
   }
 
-  Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}) {}
+  Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}) {
+    Offset center = bounds.center;
+    double startAngel = 360.0 - 90.0;
+    double stepRotationAngel = 360 / segment;
+    Path basePath = _createDrumBasePath(
+
+      segment,
+      startAngel,
+      angleOffset,
+      bounds,
+      convexity: convexity
+    );
+    
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

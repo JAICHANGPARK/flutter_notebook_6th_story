@@ -87,7 +87,7 @@ class _WhirlpoolRenderObject extends RenderBox {
   _drawDrum(PaintingContext context, Offset offset) {
     Canvas canvas = context.canvas;
     canvas.drawRect(context.estimatedBounds, Paint()..color = CustomColors.drumBackground);
-    Path washingMachineRibForground = _createDrumPath(3, 10, context.estimatedBounds);
+    Path washingMachineRibForeground = _createDrumPath(3, 10, context.estimatedBounds);
     Path washingMachineRibBackground = _createDrumPath(3, 10, context.estimatedBounds, convexity: 30);
     canvas.save();
     canvas.translate(context.estimatedBounds.center.dx, context.estimatedBounds.center.dy);
@@ -99,6 +99,18 @@ class _WhirlpoolRenderObject extends RenderBox {
         Paint()
           ..color = CustomColors.drumRibBackground
           ..style = PaintingStyle.fill);
+
+    canvas.drawPath(
+        washingMachineRibForeground,
+        Paint()
+          ..color = CustomColors.drumRibForeground
+          ..style = PaintingStyle.fill);
+    canvas.restore();
+    canvas.drawRect(context.estimatedBounds, Paint()..shader = RadialGradient(colors:
+    CustomColors.drumInnerShadowColors,
+    stops: [
+      0.85, 1
+    ]).createShader(context.estimatedBounds));
   }
 
   Path _createDrumPath(int segment, double angleOffset, Rect bounds, {double convexity = 0.0}) {}

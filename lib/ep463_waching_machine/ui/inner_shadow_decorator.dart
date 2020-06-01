@@ -36,21 +36,18 @@ class InnerShadowDecoration extends Decoration {
   @override
   InnerShadowDecoration lerpFrom(Decoration a, double t) {
     if (a == null) return scale(t);
-    if (a is InnerShadowDecoration)
-      return InnerShadowDecoration.lerp(a, this, t);
+    if (a is InnerShadowDecoration) return InnerShadowDecoration.lerp(a, this, t);
     return super.lerpFrom(a, t);
   }
 
   @override
   InnerShadowDecoration lerpTo(Decoration b, double t) {
     if (b == null) return scale(1.0 - t);
-    if (b is InnerShadowDecoration)
-      return InnerShadowDecoration.lerp(this, b, t);
+    if (b is InnerShadowDecoration) return InnerShadowDecoration.lerp(this, b, t);
     return super.lerpTo(b, t);
   }
 
-  static InnerShadowDecoration lerp(
-      InnerShadowDecoration a, InnerShadowDecoration b, double t) {
+  static InnerShadowDecoration lerp(InnerShadowDecoration a, InnerShadowDecoration b, double t) {
     assert(t != null);
     if (a == null && b == null) return null;
     if (a == null) return b.scale(t);
@@ -74,16 +71,14 @@ class InnerShadowDecoration extends Decoration {
 
     return InnerShadowDecoration(
       colors: lerpColors,
-      borderRadius:
-      BorderRadiusGeometry.lerp(a.borderRadius, b.borderRadius, t),
+      borderRadius: BorderRadiusGeometry.lerp(a.borderRadius, b.borderRadius, t),
       shape: t < 0.5 ? a.shape : b.shape,
     );
   }
 }
 
 class _InnerShadowDecorationPainter extends BoxPainter {
-  _InnerShadowDecorationPainter(this._decoration, VoidCallback onChanged)
-      : super(onChanged);
+  _InnerShadowDecorationPainter(this._decoration, VoidCallback onChanged) : super(onChanged);
 
   final InnerShadowDecoration _decoration;
 
@@ -98,10 +93,7 @@ class _InnerShadowDecorationPainter extends BoxPainter {
         break;
       case BoxShape.rectangle:
         if (_decoration.borderRadius != null) {
-          clipPath = Path()
-            ..addRRect(_decoration.borderRadius
-                .resolve(configuration.textDirection)
-                .toRRect(rect));
+          clipPath = Path()..addRRect(_decoration.borderRadius.resolve(configuration.textDirection).toRRect(rect));
         } else {
           clipPath = Path()..addRect(rect);
         }
@@ -117,21 +109,15 @@ class _InnerShadowDecorationPainter extends BoxPainter {
       ..fillType = PathFillType.evenOdd
       ..addRect(rect.inflate(depression * 2))
       ..addPath(clipPath, Offset.zero);
-    final paint = Paint()
-      ..maskFilter = MaskFilter.blur(BlurStyle.normal, depression);
-    final clipSize = rect.size.aspectRatio > 1
-        ? Size(rect.width, rect.height / 2)
-        : Size(rect.width / 2, rect.height);
+    final paint = Paint()..maskFilter = MaskFilter.blur(BlurStyle.normal, depression);
+    final clipSize = rect.size.aspectRatio > 1 ? Size(rect.width, rect.height / 2) : Size(rect.width / 2, rect.height);
 
     canvas.save();
     canvas.clipPath(clipPath);
 
     for (final alignment in [Alignment.topLeft, Alignment.bottomRight]) {
-      final shaderRect =
-      alignment.inscribe(Size.square(rect.longestSide), rect);
-      paint
-        ..shader = ui.Gradient.linear(shaderRect.topLeft,
-            shaderRect.bottomRight, _decoration.colors, stops);
+      final shaderRect = alignment.inscribe(Size.square(rect.longestSide), rect);
+      paint..shader = ui.Gradient.linear(shaderRect.topLeft, shaderRect.bottomRight, _decoration.colors, stops);
 
       canvas.save();
       canvas.clipRect(alignment.inscribe(clipSize, rect));

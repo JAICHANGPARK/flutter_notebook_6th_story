@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutternotebook6thstory/ep463_waching_machine/ui/inner_shadow_decorator.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/consts.dart';
+
+import 'inner_shadow_decorator.dart';
 
 class NeumorphicContainer extends StatelessWidget {
   const NeumorphicContainer({

@@ -61,7 +61,15 @@ class WaterDrawer extends StatelessWidget {
                     text: "Current   ",
                     style: TextStyle(
                       color: CustomColors.primaryTextColor,
-                    )
+                      fontSize: 18,
+                      fontWeight: FontWeight.w300
+                    ),
+                    children: [
+                      TextSpan(
+                        text: value.waterValue.toStringAsFixed(0),
+                        style: TextStyle(fontWeight: FontWeight.w700)
+                      )
+                    ]
                   )),
                   SizedBox(
                     height: 40,

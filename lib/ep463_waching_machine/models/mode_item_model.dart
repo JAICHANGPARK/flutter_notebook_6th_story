@@ -1,8 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 
-class ModeItemModel{
+class ModeItemModel {
   final String name;
   final int minutes;
   final Color color;

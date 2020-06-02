@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
@@ -33,6 +34,15 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
                     value.darkMode = !value.darkMode;
                   });
                 },
+              );
+            },
+          ),
+          SizedBox(width: 60,),
+          Consumer<SettingsProvider>(
+            builder: (context, value, _){
+              return NeumorphicIconButton(
+                icon: Icon(value.devMode ? Icons.blur_off : Icons.blur_on),
+                color: CustomColors.icon,
               );
             },
           )

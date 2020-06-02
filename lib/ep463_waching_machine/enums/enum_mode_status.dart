@@ -1,5 +1,4 @@
-
-enum ModeStatus{
+enum ModeStatus {
   notStarted,
   running,
   paused,

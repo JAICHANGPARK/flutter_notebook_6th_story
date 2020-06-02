@@ -56,8 +56,7 @@ class DrumPhysic {
     }
 
     dartAsync.Timer.periodic(Duration(milliseconds: 70), (timer) {
-      int offsetX =
-      _randomBetween(-origin.dx.toInt() + 30, origin.dx.toInt() - 30);
+      int offsetX = _randomBetween(-origin.dx.toInt() + 30, origin.dx.toInt() - 30);
       _createBall(offsetX, _randomColor());
       if (balls.length >= ballsCount) {
         timer.cancel();
@@ -73,30 +72,26 @@ class DrumPhysic {
   }
 
   void setAngularVelocity(
-      double value, {
-        double seconds = 0,
-        bool stopAtEnd = false,
-      }) {
+    double value, {
+    double seconds = 0,
+    bool stopAtEnd = false,
+  }) {
     _endVelocity = value;
     _velocityStopAtEnd = stopAtEnd;
     if (seconds == 0) {
-      whirlpoolCoreBody.angularVelocity =
-      (whirlpoolCoreBody.angularVelocity + value);
+      whirlpoolCoreBody.angularVelocity = (whirlpoolCoreBody.angularVelocity + value);
     } else {
-      _velocityStepValue = (value - whirlpoolCoreBody.angularVelocity) /
-          (seconds / _lastElapsed);
+      _velocityStepValue = (value - whirlpoolCoreBody.angularVelocity) / (seconds / _lastElapsed);
     }
   }
 
   void _velocityStep() {
     double newVelocity = 0;
     bool endReached = false;
-    if (_velocityStepValue > 0 &&
-        whirlpoolCoreBody.angularVelocity >= _endVelocity) {
+    if (_velocityStepValue > 0 && whirlpoolCoreBody.angularVelocity >= _endVelocity) {
       newVelocity = _endVelocity;
       endReached = true;
-    } else if (_velocityStepValue < 0 &&
-        whirlpoolCoreBody.angularVelocity <= _endVelocity) {
+    } else if (_velocityStepValue < 0 && whirlpoolCoreBody.angularVelocity <= _endVelocity) {
       newVelocity = _endVelocity;
       endReached = true;
     } else {
@@ -112,12 +107,7 @@ class DrumPhysic {
   }
 
   Color _randomColor() {
-    List<Color> colors = [
-      BALL_COLOR_BLUE,
-      BALL_COLOR_AQUA,
-      BALL_COLOR_ORANGE,
-      BALL_COLOR_PINK
-    ];
+    List<Color> colors = [BALL_COLOR_BLUE, BALL_COLOR_AQUA, BALL_COLOR_ORANGE, BALL_COLOR_PINK];
     int random = _randomBetween(0, colors.length);
 
     return colors[random];
@@ -172,8 +162,7 @@ class DrumPhysic {
   }
 
   void _jointWhirlpool() {
-    revoluteJointDef.initialize(
-        whirlpoolBaseBody, whirlpoolCoreBody, whirlpoolBaseBody.worldCenter);
+    revoluteJointDef.initialize(whirlpoolBaseBody, whirlpoolCoreBody, whirlpoolBaseBody.worldCenter);
     revoluteJointDef.collideConnected = false;
 
     revoluteJointDef.enableMotor = false;

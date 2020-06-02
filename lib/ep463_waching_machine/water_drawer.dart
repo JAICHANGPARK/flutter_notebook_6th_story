@@ -25,7 +25,7 @@ class WaterDrawer extends StatelessWidget {
                   NeumorphicIconButton(
                     icon: Icon(Icons.arrow_back_ios,
                     size: 18, color: CustomColors.icon,),
-
+                    onTap: ()=> Navigator.of(context).pop(),
                   )
 
                 ],

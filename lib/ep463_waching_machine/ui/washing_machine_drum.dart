@@ -23,8 +23,7 @@ class WashingMachineDrum extends LeafRenderObjectWidget {
   }
 
   @override
-  void updateRenderObject(
-      BuildContext context, covariant _WhirlpoolRenderObject renderObject) {
+  void updateRenderObject(BuildContext context, covariant _WhirlpoolRenderObject renderObject) {
     if (renderObject.controller != controller) {
       renderObject.controller = controller;
     }
@@ -69,8 +68,7 @@ class _WhirlpoolRenderObject extends RenderBox {
   }
 
   frame(Duration timeStamp) {
-    final double t =
-        timeStamp.inMicroseconds / Duration.microsecondsPerMillisecond / 1000.0;
+    final double t = timeStamp.inMicroseconds / Duration.microsecondsPerMillisecond / 1000.0;
 
     if (_lastTimeStamp == 0) {
       _lastTimeStamp = t;
@@ -94,14 +92,13 @@ class _WhirlpoolRenderObject extends RenderBox {
               [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 20, -1200],
             ),
           ),
-              (PaintingContext context2, Offset offset2) => context2.pushLayer(
-            ImageFilterLayer(
-              imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
-            ),
-                (PaintingContext context3, Offset offset3) =>
-                _drawBalls(context3, offset3),
-            offset2,
-          ),
+          (PaintingContext context2, Offset offset2) => context2.pushLayer(
+                ImageFilterLayer(
+                  imageFilter: ImageFilter.blur(sigmaX: 13, sigmaY: 13),
+                ),
+                (PaintingContext context3, Offset offset3) => _drawBalls(context3, offset3),
+                offset2,
+              ),
           offset);
     } else {
       _drawBalls(context, offset);
@@ -131,8 +128,7 @@ class _WhirlpoolRenderObject extends RenderBox {
       Paint()..color = CustomColors.drumBackground,
     );
 
-    Path washingMachineRibForeground =
-    _createDrumPath(3, 10, context.estimatedBounds);
+    Path washingMachineRibForeground = _createDrumPath(3, 10, context.estimatedBounds);
     Path washingMachineRibBackground = _createDrumPath(
       3,
       10,
@@ -141,12 +137,10 @@ class _WhirlpoolRenderObject extends RenderBox {
     );
 
     canvas.save();
-    canvas.translate(
-        context.estimatedBounds.center.dx, context.estimatedBounds.center.dy);
+    canvas.translate(context.estimatedBounds.center.dx, context.estimatedBounds.center.dy);
     canvas.rotate(controller.drumAngle);
     canvas.scale(1.05);
-    canvas.translate(
-        -context.estimatedBounds.center.dx, -context.estimatedBounds.center.dy);
+    canvas.translate(-context.estimatedBounds.center.dx, -context.estimatedBounds.center.dy);
 
     canvas.drawPath(
         washingMachineRibBackground,
@@ -175,8 +169,7 @@ class _WhirlpoolRenderObject extends RenderBox {
     );
   }
 
-  Path _createDrumPath(int segments, double angleOffset, Rect bounds,
-      {double convexity = 0.0}) {
+  Path _createDrumPath(int segments, double angleOffset, Rect bounds, {double convexity = 0.0}) {
     Offset center = bounds.center;
     double startAngle = 360.0 - 90.0;
     double stepRotationAngle = 360 / segments;
@@ -196,20 +189,19 @@ class _WhirlpoolRenderObject extends RenderBox {
         ..multiply(Matrix4.rotationZ(Utils.degToRad(i * stepRotationAngle)))
         ..translate(-center.dx, -center.dy);
 
-      result.extendWithPath(basePath, Offset.zero,
-          matrix4: transformMatrix.storage);
+      result.extendWithPath(basePath, Offset.zero, matrix4: transformMatrix.storage);
     }
 
     return result;
   }
 
   Path _createDrumBasePath(
-      int segments,
-      double startAngle,
-      double angleOffset,
-      Rect bounds, {
-        double convexity = 0.0,
-      }) {
+    int segments,
+    double startAngle,
+    double angleOffset,
+    Rect bounds, {
+    double convexity = 0.0,
+  }) {
     Offset center = bounds.center;
     double r = bounds.width / 2;
     double stepRotationAngle = 360 / segments;
@@ -218,14 +210,12 @@ class _WhirlpoolRenderObject extends RenderBox {
     double endPointAngle = startAngle + stepRotationAngle - angleOffset;
     Offset startPoint = _findPoint(center, r, startPointAngle);
     Offset endPoint = _findPoint(center, r, endPointAngle);
-    Offset controlPoint1 =
-    Offset(startPoint.dx + convexity - 10, center.dy - convexity + 10);
+    Offset controlPoint1 = Offset(startPoint.dx + convexity - 10, center.dy - convexity + 10);
     Offset controlPoint2 = Offset(endPoint.dx - 35, endPoint.dy - 28);
 
     return Path()
       ..moveTo(startPoint.dx, startPoint.dy)
-      ..cubicTo(controlPoint1.dx, controlPoint1.dy, controlPoint2.dx,
-          controlPoint2.dy, endPoint.dx, endPoint.dy);
+      ..cubicTo(controlPoint1.dx, controlPoint1.dy, controlPoint2.dx, controlPoint2.dy, endPoint.dx, endPoint.dy);
   }
 
   Offset _findPoint(Offset center, double r, double angleDegree) {

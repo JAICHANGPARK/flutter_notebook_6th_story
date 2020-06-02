@@ -25,6 +25,28 @@ class WaterDrawer extends StatelessWidget {
                       color: CustomColors.icon,
                     ),
                     onTap: () => Navigator.of(context).pop(),
+                  ),
+                  SizedBox(
+                    height: 35,
+                  ),
+                  Text(
+                    "Choose water",
+                    style: TextStyle(
+                      fontSize: 26,
+                      color: CustomColors.primaryTextColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    "Please save choice",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: CustomColors.primaryTextColor,
+                      fontWeight: FontWeight.w400,
+                    ),
                   )
                 ],
               ),

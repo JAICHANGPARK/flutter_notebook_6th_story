@@ -14,6 +14,10 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
       height: 120,
       decoration: BoxDecoration(
         color: CustomColors.primaryColor,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(48),
+          topRight: Radius.circular(48)
+        )
       ),
     );
   }

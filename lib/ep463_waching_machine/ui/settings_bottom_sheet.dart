@@ -24,7 +24,16 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
         children: [
           Consumer<ThemeProvider>(
             builder: (context, value, _) {
-              return NeumorphicIconButton();
+              return NeumorphicIconButton(
+                icon: Icon(Icons.brightness_low),
+                color: CustomColors.icon,
+                pressed: value.darkMode,
+                onTap: (){
+                  setState(() {
+                    value.darkMode = !value.darkMode;
+                  });
+                },
+              );
             },
           )
         ],
@@ -32,3 +41,25 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

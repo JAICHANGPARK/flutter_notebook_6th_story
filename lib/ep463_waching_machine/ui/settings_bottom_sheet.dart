@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/theme_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon_button.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
+import 'package:provider/provider.dart';
 
 
 class SettingsBottomSheet extends StatefulWidget {
@@ -23,9 +26,36 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-
+  Consumer<ThemeProvider>(
+    builder: (context ,value, _){
+      return NeumorphicIconButton()
+    },
+  )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

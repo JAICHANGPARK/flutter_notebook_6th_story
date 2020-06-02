@@ -17,7 +17,12 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(48),
           topRight: Radius.circular(48)
-        )
+        ),
+      ),
+      child: Row(
+        children: [
+          
+        ],
       ),
     );
   }

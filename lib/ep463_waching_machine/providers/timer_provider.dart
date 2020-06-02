@@ -7,9 +7,7 @@ class TimerProvider with ChangeNotifier {
       return _pausedRemaining;
     }
 
-    return _countdownTimer?.isRunning == true
-        ? _countdownTimer?.remaining
-        : Duration.zero;
+    return _countdownTimer?.isRunning == true ? _countdownTimer?.remaining : Duration.zero;
   }
 
   String get remainigString {

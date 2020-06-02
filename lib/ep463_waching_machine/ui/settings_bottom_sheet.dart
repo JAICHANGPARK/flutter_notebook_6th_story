@@ -4,7 +4,6 @@ import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_icon
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 import 'package:provider/provider.dart';
 
-
 class SettingsBottomSheet extends StatefulWidget {
   @override
   _SettingsBottomSheetState createState() => _SettingsBottomSheetState();
@@ -17,45 +16,19 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
       height: 120,
       decoration: BoxDecoration(
         color: CustomColors.primaryColor,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(48),
-          topRight: Radius.circular(48)
-        ),
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(48), topRight: Radius.circular(48)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-  Consumer<ThemeProvider>(
-    builder: (context ,value, _){
-      return NeumorphicIconButton()
-    },
-  )
+          Consumer<ThemeProvider>(
+            builder: (context, value, _) {
+              return NeumorphicIconButton();
+            },
+          )
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

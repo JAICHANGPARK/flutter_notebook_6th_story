@@ -33,12 +33,14 @@ class MainProvider with ChangeNotifier {
   ];
 
   double get waterValue => _waterValue;
+
   set waterValue(double value) {
     _waterValue = value;
     notifyListeners();
   }
 
   ModeItemModel get selectedMode => _selectedMode;
+
   ModeStatus get modeStatus => _modeStatus;
 
   double _waterValue = 600.0;
@@ -51,8 +53,7 @@ class MainProvider with ChangeNotifier {
     }
 
     var timerVM = ServiceLocator.get<TimerProvider>();
-    var washingMachineController =
-    ServiceLocator.get<WashingMachineController>();
+    var washingMachineController = ServiceLocator.get<WashingMachineController>();
 
     if (modeStatus == ModeStatus.running) {
       _modeStatus = ModeStatus.paused;
@@ -71,24 +72,21 @@ class MainProvider with ChangeNotifier {
 
       timerVM.start(Duration(minutes: selectedMode.minutes));
 
-      Timer.periodic(
-          Duration(seconds: !washingMachineController.hasBalls() ? 2 : 0),
-              (timer) {
-            timer.cancel();
-            if (modeStatus != ModeStatus.running) {
-              return;
-            }
+      Timer.periodic(Duration(seconds: !washingMachineController.hasBalls() ? 2 : 0), (timer) {
+        timer.cancel();
+        if (modeStatus != ModeStatus.running) {
+          return;
+        }
 
-            washingMachineController.setAngularVelocity(-15, seconds: 7);
-          });
+        washingMachineController.setAngularVelocity(-15, seconds: 7);
+      });
     }
 
     notifyListeners();
   }
 
   stop() {
-    var washingMachineController =
-    ServiceLocator.get<WashingMachineController>();
+    var washingMachineController = ServiceLocator.get<WashingMachineController>();
     var timerVM = ServiceLocator.get<TimerProvider>();
 
     washingMachineController.setAngularVelocity(0, seconds: 3);
@@ -113,7 +111,6 @@ class MainProvider with ChangeNotifier {
     notifyListeners();
 
     int sign = Random().nextBool() ? 1 : -1;
-    ServiceLocator.get<WashingMachineController>()
-        .setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
+    ServiceLocator.get<WashingMachineController>().setAngularVelocity(9.0 * sign, stopAtEnd: true, seconds: 0.6);
   }
 }

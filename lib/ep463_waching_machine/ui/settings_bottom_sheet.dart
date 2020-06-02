@@ -29,7 +29,7 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
                 icon: Icon(Icons.brightness_low),
                 color: CustomColors.icon,
                 pressed: value.darkMode,
-                onTap: (){
+                onTap: () {
                   setState(() {
                     value.darkMode = !value.darkMode;
                   });
@@ -37,39 +37,26 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
               );
             },
           ),
-          SizedBox(width: 60,),
+          SizedBox(
+            width: 60,
+          ),
           Consumer<SettingsProvider>(
-            builder: (context, value, _){
+            builder: (context, value, _) {
               return NeumorphicIconButton(
                 icon: Icon(value.devMode ? Icons.blur_off : Icons.blur_on),
                 color: CustomColors.icon,
+                onTap: () {
+                  setState(() {
+
+                    value.devMode = !value.devMode;
+                  });
+
+                },
               );
             },
-          )
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

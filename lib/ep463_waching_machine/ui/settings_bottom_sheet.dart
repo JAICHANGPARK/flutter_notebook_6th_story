@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 
 class SettingsBottomSheet extends StatefulWidget {
@@ -9,6 +10,11 @@ class SettingsBottomSheet extends StatefulWidget {
 class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 120,
+      decoration: BoxDecoration(
+        color: CustomColors.primaryColor,
+      ),
+    );
   }
 }

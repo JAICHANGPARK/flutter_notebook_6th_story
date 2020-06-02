@@ -47,10 +47,8 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
                 color: CustomColors.icon,
                 onTap: () {
                   setState(() {
-
                     value.devMode = !value.devMode;
                   });
-
                 },
               );
             },

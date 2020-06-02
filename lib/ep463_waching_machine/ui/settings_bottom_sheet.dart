@@ -20,8 +20,10 @@ class _SettingsBottomSheetState extends State<SettingsBottomSheet> {
         ),
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          
+
         ],
       ),
     );

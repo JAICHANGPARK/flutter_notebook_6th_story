@@ -47,7 +47,17 @@ class WaterDrawer extends StatelessWidget {
                       color: CustomColors.primaryTextColor,
                       fontWeight: FontWeight.w400,
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Expanded(
+                    child: Placeholder(),
+                  ),
+                  SizedBox(
+                    height: 80,
+                  ),
+                  Text.rich()
                 ],
               ),
             ),

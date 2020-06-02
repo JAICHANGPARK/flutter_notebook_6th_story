@@ -11,6 +11,14 @@ class WaterDrawer extends StatelessWidget {
       builder: (context, value, _){
         return Container(
           color: CustomColors.primaryColor,
+          child: SafeArea(
+            child: Column(
+              children: [
+
+              ],
+            ),
+
+          ),
         );
       },
     );

@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/settings_provider.dart';
 
-
 import '../service_locator.dart';
 import 'drum_phsic.dart';
 
@@ -17,7 +16,9 @@ class WashingMachineController {
   final DrumPhysic physic;
 
   double get drumAngle => physic?.whirlpoolCoreBody?.getAngle() ?? 0.0;
+
   double get radius => _radius;
+
   bool get devMode => ServiceLocator.get<SettingsProvider>()?.devMode;
   PaintCallback onNeedPaint;
 
@@ -49,10 +50,10 @@ class WashingMachineController {
   }
 
   setAngularVelocity(
-      double value, {
-        double seconds = 0.0,
-        bool stopAtEnd = false,
-      }) {
+    double value, {
+    double seconds = 0.0,
+    bool stopAtEnd = false,
+  }) {
     if (_initalized != true) {
       return;
     }

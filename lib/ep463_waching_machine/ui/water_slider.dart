@@ -108,7 +108,7 @@ class __WaterSlideState extends State<_WaterSlide> {
     // TODO: implement initState
     super.initState();
     double animationEndValue = widget.initValue == null ?
-        _validateYOffset(newYOffset)
+        _validateYOffset(_yOffset) : _validateYOffset();
   }
   @override
   Widget build(BuildContext context) {

@@ -113,7 +113,18 @@ class __WaterSlideState extends State<_WaterSlide> {
   Widget build(BuildContext context) {
     return Container();
   }
-  void _onDragUpdate(DragUpdateDetails details)
+  void _onDragUpdate(DragUpdateDetails details){
+    setState(() {
+      _yOffset =
+    });
+  }
+  double _validateYOffset(double newYOffset){
+    double result = newYOffset;
+    if(result < widget.topOffset){
+      result = widget.topOffset;
+    }
+    
+  }
 }
 
 

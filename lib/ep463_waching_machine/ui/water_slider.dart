@@ -101,8 +101,33 @@ class _WaterSlide extends StatefulWidget {
 }
 
 class __WaterSlideState extends State<_WaterSlide> {
+  Animation _growAnimation;
+  double _yOffset = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    double animationEndValue = widget.initValue == null
+  }
   @override
   Widget build(BuildContext context) {
     return Container();
   }
+  void _onDragUpdate(DragUpdateDetails details)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

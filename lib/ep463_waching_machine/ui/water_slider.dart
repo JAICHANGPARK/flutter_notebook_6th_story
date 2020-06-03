@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/neumorphic_container.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 typedef ValueChangeCallback = void Function(double value);
 
@@ -43,7 +45,19 @@ class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStat
   @override
   Widget build(BuildContext context) {
     BorderRadius borderRadius = BorderRadius.circular(50);
-    return LayoutBuilder();
+    return LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
+      return Row(
+        children: [
+          NeumorphicContainer(
+            width: 85,
+            color: CustomColors.containerPressed,
+            borderRadius: borderRadius,
+          )
+        ],
+      );
+    },
+
+    );
   }
 }
 

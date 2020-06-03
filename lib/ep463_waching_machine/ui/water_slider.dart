@@ -130,6 +130,15 @@ class __WaterSlideState extends State<_WaterSlide> {
     }
     return result;
   }
+  void _calculateValue(){
+    double workingH = widget.height - widget.topOffset - widget.bottomOffset;
+    double currentH = widget.height - widget.bottomOffset - _yOffset;
+    double factor = workingH / (widget.max - widget.min);
+    double value = (currentH + (widget.min * factor)) / factor;
+    if(widget.onValueChanged != null){
+      widget.onValueChanged(value)
+    }
+  }
 }
 
 

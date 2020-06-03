@@ -19,7 +19,9 @@ class WaterSlider extends StatefulWidget {
   _WaterSliderState createState() => _WaterSliderState();
 }
 
-class _WaterSliderState extends State<WaterSlider> {
+class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStateMixin {
+  AnimationController _animationController;
+  
   @override
   Widget build(BuildContext context) {
     return Container();

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whirlpool/screens/water_drawer/water_slider.dart';
-import 'package:flutter_whirlpool/shared/colors.dart';
-import 'package:flutter_whirlpool/shared/consts.dart';
-import 'package:flutter_whirlpool/shared/widgets.dart';
-import 'package:flutter_whirlpool/view_models/main_view_model.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/providers/main_provider.dart';
 import 'package:provider/provider.dart';
+
+import 'ui/neumorphic_icon_button.dart';
+import 'utils/colors.dart';
+import 'utils/consts.dart';
 
 class WaterDrawer extends StatelessWidget {
   const WaterDrawer({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<MainViewModel>(
+    return Consumer<MainProvider>(
       builder: (context, viewModel, _) {
         return Container(
           color: CustomColors.primaryColor,
@@ -52,13 +52,7 @@ class WaterDrawer extends StatelessWidget {
                   ),
                   SizedBox(height: 40),
                   Expanded(
-                    child: WaterSlider(
-                      minValue: 200,
-                      maxValue: 1200,
-                      initValue: viewModel.waterValue,
-                      onValueChanged: (newValue) =>
-                      viewModel.waterValue = newValue,
-                    ),
+                    child: Placeholder()
                   ),
                   SizedBox(height: 80),
                   RichText(

@@ -11,12 +11,15 @@ class WaterSlider extends StatefulWidget {
 
   WaterSlider({
     Key key,
-    @required
-    this.minValue,
+    @required this.minValue,
     @required this.maxValue,
-    this.initValue, this.onValueChanged}): super(key:key){
-    
-  };
+    this.initValue, this.onValueChanged}) : super(key: key) {
+      assert(minValue < maxValue);
+      assert(minValue >= 0);
+      assert(maxValue >= 0);
+  }
+
+
 
   @override
   _WaterSliderState createState() => _WaterSliderState();

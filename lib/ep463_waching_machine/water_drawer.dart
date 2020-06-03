@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/providers/main_provider.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/water_slider.dart';
 import 'package:provider/provider.dart';
 
 import 'ui/neumorphic_icon_button.dart';
@@ -52,7 +53,12 @@ class WaterDrawer extends StatelessWidget {
                   ),
                   SizedBox(height: 40),
                   Expanded(
-                    child: Placeholder()
+                    child: WaterSlider(
+                      minValue: 200,
+                      maxValue: 1200,
+                      initValue: viewModel.waterValue,
+                      onValueChanged: (newValue) => viewModel.waterValue = newValue,
+                    )
                   ),
                   SizedBox(height: 80),
                   RichText(

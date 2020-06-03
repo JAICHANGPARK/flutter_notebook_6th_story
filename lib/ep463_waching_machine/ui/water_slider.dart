@@ -115,10 +115,7 @@ class __WaterSlideState extends State<_WaterSlide> {
         .animate(CurvedAnimation(parent: widget.controller, curve: Interval(0.350, 0.750, curve: Curves.easeOutCubic)));
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
+
 
   void _onDragUpdate(DragUpdateDetails details) {
     setState(() {
@@ -154,5 +151,10 @@ class __WaterSlideState extends State<_WaterSlide> {
 
     double result = -((value * factor) - widget.height + widget.bottomOffset - (widget.min * factor));
     return result;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }

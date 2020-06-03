@@ -103,56 +103,46 @@ class _WaterSlide extends StatefulWidget {
 class __WaterSlideState extends State<_WaterSlide> {
   Animation _growAnimation;
   double _yOffset = 0;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    double animationEndValue = widget.initValue == null ?
-        _validateYOffset(_yOffset) : _validateYOffset();
+    double animationEndValue = widget.initValue == null ? _validateYOffset(_yOffset) : _validateYOffset(
+       
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Container();
   }
-  void _onDragUpdate(DragUpdateDetails details){
+
+  void _onDragUpdate(DragUpdateDetails details) {
     setState(() {
       _yOffset = _validateYOffset(_yOffset + details.delta.dy);
-      
+      _calculateValue();
     });
   }
-  double _validateYOffset(double newYOffset){
+
+  double _validateYOffset(double newYOffset) {
     double result = newYOffset;
-    if(result < widget.topOffset){
+    if (result < widget.topOffset) {
       result = widget.topOffset;
     }
-    if(result > widget.height - widget.bottomOffset){
+    if (result > widget.height - widget.bottomOffset) {
       result = widget.height - widget.bottomOffset;
     }
     return result;
   }
-  void _calculateValue(){
+
+  void _calculateValue() {
     double workingH = widget.height - widget.topOffset - widget.bottomOffset;
     double currentH = widget.height - widget.bottomOffset - _yOffset;
     double factor = workingH / (widget.max - widget.min);
     double value = (currentH + (widget.min * factor)) / factor;
-    if(widget.onValueChanged != null){
-      widget.onValueChanged(value)
+    if (widget.onValueChanged != null) {
+      widget.onValueChanged(value);
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

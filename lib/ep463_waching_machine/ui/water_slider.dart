@@ -10,10 +10,13 @@ class WaterSlider extends StatefulWidget {
   final ValueChangeCallback onValueChanged;
 
   WaterSlider({
+    Key key,
     @required
     this.minValue,
     @required this.maxValue,
-    this.initValue, this.onValueChanged}): super(key:key);
+    this.initValue, this.onValueChanged}): super(key:key){
+    
+  };
 
   @override
   _WaterSliderState createState() => _WaterSliderState();

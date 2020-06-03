@@ -42,6 +42,21 @@ class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStat
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    BorderRadius borderRadius = BorderRadius.circular(50);
+    return LayoutBuilder();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

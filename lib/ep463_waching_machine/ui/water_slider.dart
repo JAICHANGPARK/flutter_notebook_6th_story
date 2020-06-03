@@ -108,7 +108,11 @@ class __WaterSlideState extends State<_WaterSlide> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    double animationEndValue = widget.initValue == null ? _validateYOffset(_yOffset) : _validateYOffset();
+    double animationEndValue =
+        widget.initValue == null ? _validateYOffset(_yOffset) : _validateYOffset(_calculateYOffset(widget.initValue));
+
+    _growAnimation = Tween<double>(begin: widget.height, end: animationEndValue)
+        .animate(CurvedAnimation(parent: widget.controller, curve: Interval(0.350, 0.750, curve: Curves.easeOutCubic)));
   }
 
   @override
@@ -149,16 +153,6 @@ class __WaterSlideState extends State<_WaterSlide> {
     double factor = workingH / (widget.max - widget.min);
 
     double result = -((value * factor) - widget.height + widget.bottomOffset - (widget.min * factor));
+    return result;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

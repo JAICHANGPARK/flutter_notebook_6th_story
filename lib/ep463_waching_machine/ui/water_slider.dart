@@ -112,7 +112,10 @@ class __WaterSlideState extends State<_WaterSlide> {
         widget.initValue == null ? _validateYOffset(_yOffset) : _validateYOffset(_calculateYOffset(widget.initValue));
 
     _growAnimation = Tween<double>(begin: widget.height, end: animationEndValue)
-        .animate(CurvedAnimation(parent: widget.controller, curve: Interval(0.350, 0.750, curve: Curves.easeOutCubic)));
+        .animate(CurvedAnimation(parent: widget.controller, curve: Interval(0.350, 0.750, curve: Curves.easeOutCubic)))
+    ..addListener(() {setState(() {
+      _yOffset = _growAnimation.value;
+    });});
   }
 
 
@@ -155,6 +158,25 @@ class __WaterSlideState extends State<_WaterSlide> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Positioned(
+      bottom:  -_yOffset,
+      left: 0,
+      child: GestureDetector(),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,37 +21,27 @@ class WaterSlider extends StatefulWidget {
 
 class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStateMixin {
   AnimationController _animationController;
-  
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _animationController = AnimationController(
+      duration: const Duration(milliseconds: 2000),
+      vsync: this,
+    );
+  }
+
   @override
   void dispose() {
     // TODO: implement dispose
     _animationController?.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

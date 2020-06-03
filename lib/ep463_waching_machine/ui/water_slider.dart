@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+
 typedef ValueChangeCallback = void Function(double value);
 
 class WaterSlider extends StatefulWidget {

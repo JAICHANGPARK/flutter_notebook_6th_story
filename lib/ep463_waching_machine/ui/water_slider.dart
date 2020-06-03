@@ -107,7 +107,8 @@ class __WaterSlideState extends State<_WaterSlide> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    double animationEndValue = widget.initValue == null
+    double animationEndValue = widget.initValue == null ?
+        _validateYOffset(newYOffset)
   }
   @override
   Widget build(BuildContext context) {
@@ -115,7 +116,8 @@ class __WaterSlideState extends State<_WaterSlide> {
   }
   void _onDragUpdate(DragUpdateDetails details){
     setState(() {
-      _yOffset =
+      _yOffset = _validateYOffset(_yOffset + details.delta.dy);
+      
     });
   }
   double _validateYOffset(double newYOffset){
@@ -123,7 +125,10 @@ class __WaterSlideState extends State<_WaterSlide> {
     if(result < widget.topOffset){
       result = widget.topOffset;
     }
-    
+    if(result > widget.height - widget.bottomOffset){
+      result = widget.height - widget.bottomOffset;
+    }
+    return result;
   }
 }
 

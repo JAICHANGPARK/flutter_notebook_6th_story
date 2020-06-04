@@ -24,7 +24,7 @@ TickerProviderStateMixin{
     // TODO: implement initState
     super.initState();
 
-    
+    animationController = AnimationController(vsync: this, duration: widget.duration);
   }
   @override
   Widget build(BuildContext context) {

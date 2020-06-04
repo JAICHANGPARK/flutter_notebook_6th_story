@@ -8,7 +8,8 @@ class WaveContainer extends StatefulWidget {
   final Duration duration;
   final int sinWidthFraction;
 
-  WaveContainer(this.size, this.offset, this.color, this.duration, this.sinWidthFraction);
+  WaveContainer({this.size, this.offset, this.color, this.duration
+    = const Duration(seconds: 4), this.sinWidthFraction});
 
   @override
   _WaveContainerState createState() => _WaveContainerState();

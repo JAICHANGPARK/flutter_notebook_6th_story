@@ -43,12 +43,14 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
     });
     animationController.repeat();
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
     animationController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     List<Color> _gradientColors = [
@@ -59,29 +61,27 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
     List<double> _stops = [0.0, 0.3, 0.6];
     return Container(
       alignment: Alignment.center,
-      child: AnimatedBuilder(animation: CurvedAnimation(parent:
-      animationController, curve: Curves.easeInOut),
-
+      child: AnimatedBuilder(
+        animation: CurvedAnimation(parent: animationController, curve: Curves.easeInOut),
+        builder: (BuildContext context, Widget child) {
+          return ClipPath(
+            child: Container(
+              height: widget.size.height,
+              width: widget.size.width,
+              color: widget.color,
+              decoration: widget.color == null
+                  ? BoxDecoration(
+                      gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: _gradientColors,
+                          stops: _stops),
+                    )
+                  : null,
+            ),
+          );
+        },
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

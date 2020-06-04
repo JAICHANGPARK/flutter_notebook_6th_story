@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
+import 'dart:math';
 
+import 'package:flutter/material.dart';
+import 'package:vector_math/vector_math.dart' as Vector;
 
 class WaveContainer extends StatefulWidget {
   final Size size;
@@ -31,7 +33,12 @@ TickerProviderStateMixin{
       i <= widget.size.width.toInt() + 2;
       i++){
         print(i);
-        animationListener.add(Offset())
+        animationListener.add(Offset(
+          i.toDouble() + widget.offset.dx,
+          sin(
+              (animationController.value * 360 - i) % 360 *
+          );
+        ));
       }
     });
 

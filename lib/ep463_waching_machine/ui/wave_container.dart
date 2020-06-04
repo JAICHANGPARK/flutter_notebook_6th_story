@@ -25,6 +25,10 @@ TickerProviderStateMixin{
     super.initState();
 
     animationController = AnimationController(vsync: this, duration: widget.duration);
+    animationController.addListener(() {
+      animationListener.clear();
+    });
+
   }
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whirlpool/screens/water_drawer/wave_container.dart';
-import 'package:flutter_whirlpool/shared/colors.dart';
-import 'package:flutter_whirlpool/shared/decorators.dart';
-import 'package:flutter_whirlpool/shared/widgets.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 import 'inner_shadow_decorator.dart';

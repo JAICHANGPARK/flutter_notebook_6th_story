@@ -297,16 +297,7 @@ class _WaterSlideState extends State<_WaterSlide> {
         onVerticalDragUpdate: _onDragUpdate,
         child: Stack(
           children: [
-            WaveContainer(
-              size: Size(90, widget.height),
-              offset: Offset(45, 0),
-              color: Color.fromRGBO(254, 193, 45, .3),
-              sinWidthFraction: 2,
-            ),
-            WaveContainer(
-              size: Size(90, widget.height),
-              offset: Offset.zero,
-            ),
+
           ],
         ),
       ),

@@ -9,15 +9,46 @@ class WaveContainer extends StatefulWidget {
   final int sinWidthFraction;
 
   WaveContainer({this.size, this.offset, this.color, this.duration
-    = const Duration(seconds: 4), this.sinWidthFraction});
+    = const Duration(seconds: 4), this.sinWidthFraction = 3});
 
   @override
   _WaveContainerState createState() => _WaveContainerState();
 }
 
-class _WaveContainerState extends State<WaveContainer> {
+class _WaveContainerState extends State<WaveContainer> with
+TickerProviderStateMixin{
+  AnimationController animationController;
+  List<Offset> animationListener = [];
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    
+  }
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

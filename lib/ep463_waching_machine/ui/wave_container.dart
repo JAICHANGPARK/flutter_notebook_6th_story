@@ -34,11 +34,15 @@ TickerProviderStateMixin{
       i++){
         print(i);
         animationListener.add(Offset(
-          i.toDouble() + widget.offset.dx,
-          sin(
-              (animationController.value * 360 - i) % 360 *
-          );
-        ));
+            i.toDouble() + widget.offset.dx,
+            sin(((animationController.value * 360 - i) %
+                360 *
+                Vector.degrees2Radians) *
+                widget.sinWidthFraction) *
+                8 +
+                10 +
+                widget.offset.dy));
+       
       }
     });
 

@@ -5,6 +5,9 @@ import 'package:flutter_whirlpool/shared/decorators.dart';
 import 'package:flutter_whirlpool/shared/widgets.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
+import 'inner_shadow_decorator.dart';
+import 'neumorphic_container.dart';
+
 typedef ValueChangeCallback = void Function(double value);
 
 class WaterSlider extends StatefulWidget {

@@ -79,7 +79,7 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
                     )
                   : null,
             ),
-            clipper: WaveClipper(),
+            clipper: WaveClipper(animationController.value, animationListener),
           );
         },
       ),
@@ -87,9 +87,10 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
   }
 }
 
-class WaveClipper extends CustomClipper<Path>{
+class WaveClipper extends CustomClipper<Path> {
   final double animation;
   List<Offset> waveList1 = [];
+
   WaveClipper(this.animation, this.waveList1);
 
   @override
@@ -101,7 +102,6 @@ class WaveClipper extends CustomClipper<Path>{
     path.lineTo(0.0, size.height);
     path.close();
     return path;
-
   }
 
   @override
@@ -109,27 +109,4 @@ class WaveClipper extends CustomClipper<Path>{
     // TODO: implement shouldReclip
     return animation != oldClipper.animation;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

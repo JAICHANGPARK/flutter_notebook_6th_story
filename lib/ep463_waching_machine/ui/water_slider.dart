@@ -65,7 +65,18 @@ class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStat
                   borderRadius: borderRadius,
                 ),
                 child: Stack(
-                  children: [],
+                  children: [
+                    _WaterSlide(
+                      height: constraints.maxHeight,
+                      min: widget.minValue,
+                      max: widget.maxValue,
+                      controller: _animationController,
+                      topOffset: 40,
+                      bottomOffset: 58,
+                      initValue: widget.initValue,
+                      onValueChanged: widget?.onValueChanged,
+                    )
+                  ],
                 ),
               ),
             )
@@ -113,12 +124,12 @@ class __WaterSlideState extends State<_WaterSlide> {
 
     _growAnimation = Tween<double>(begin: widget.height, end: animationEndValue)
         .animate(CurvedAnimation(parent: widget.controller, curve: Interval(0.350, 0.750, curve: Curves.easeOutCubic)))
-    ..addListener(() {setState(() {
-      _yOffset = _growAnimation.value;
-    });});
+          ..addListener(() {
+            setState(() {
+              _yOffset = _growAnimation.value;
+            });
+          });
   }
-
-
 
   void _onDragUpdate(DragUpdateDetails details) {
     setState(() {
@@ -159,24 +170,14 @@ class __WaterSlideState extends State<_WaterSlide> {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom:  -_yOffset,
+      bottom: -_yOffset,
       left: 0,
-      child: GestureDetector(),
+      child: GestureDetector(
+        onVerticalDragUpdate: _onDragUpdate,
+        child: Stack(
+          children: [],
+        ),
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

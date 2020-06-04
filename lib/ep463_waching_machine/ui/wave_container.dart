@@ -86,3 +86,46 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
     );
   }
 }
+
+class WaveClipper extends CustomClipper<Path>{
+  final double animation;
+  List<Offset> waveList1 = [];
+  WaveClipper(this.animation, this.waveList1);
+
+  @override
+  Path getClip(Size size) {
+    // TODO: implement getClip
+    Path path = Path();
+    path.addPolygon(waveList1, false);
+    
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    // TODO: implement shouldReclip
+    throw UnimplementedError();
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

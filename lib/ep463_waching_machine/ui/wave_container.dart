@@ -57,7 +57,13 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
       Color.fromRGBO(95, 84, 228, 1),
     ];
     List<double> _stops = [0.0, 0.3, 0.6];
-    return Container();
+    return Container(
+      alignment: Alignment.center,
+      child: AnimatedBuilder(animation: CurvedAnimation(parent:
+      animationController, curve: Curves.easeInOut),
+
+      ),
+    );
   }
 }
 

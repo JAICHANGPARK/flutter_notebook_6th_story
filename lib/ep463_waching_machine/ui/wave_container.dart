@@ -53,9 +53,10 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
   Widget build(BuildContext context) {
     List<Color> _gradientColors = [
       Color.fromRGBO(254, 193, 45, 1),
-      Color.fromRGBO(254, 193, 45, 1),
-      Color.fromRGBO(254, 193, 45, 1),
+      Color.fromRGBO(253, 139, 51, 1),
+      Color.fromRGBO(95, 84, 228, 1),
     ];
+    List<double> _stops = [0.0, 0.3, 0.6];
     return Container();
   }
 }

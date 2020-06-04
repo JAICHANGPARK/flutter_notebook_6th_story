@@ -79,6 +79,7 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
                     )
                   : null,
             ),
+            clipper: WaveClipper(),
           );
         },
       ),

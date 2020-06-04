@@ -29,8 +29,7 @@ class WaterSlider extends StatefulWidget {
   _WaterSliderState createState() => _WaterSliderState();
 }
 
-class _WaterSliderState extends State<WaterSlider>
-    with SingleTickerProviderStateMixin {
+class _WaterSliderState extends State<WaterSlider> with SingleTickerProviderStateMixin {
   AnimationController _animationController;
 
   @override
@@ -118,18 +117,18 @@ class _SliderLegend extends StatelessWidget {
     this.markNStep,
     Key key,
   })  : shortLineWidth = Tween<double>(
-    begin: 0.0,
-    end: 25.0,
-  ).animate(
-    CurvedAnimation(
-      parent: controller,
-      curve: Interval(
-        0.180,
-        0.350,
-        curve: Curves.ease,
-      ),
-    ),
-  ),
+          begin: 0.0,
+          end: 25.0,
+        ).animate(
+          CurvedAnimation(
+            parent: controller,
+            curve: Interval(
+              0.180,
+              0.350,
+              curve: Curves.ease,
+            ),
+          ),
+        ),
         longLineWidth = Tween<double>(
           begin: 0.0,
           end: 80,
@@ -190,8 +189,7 @@ class _SliderLegend extends StatelessWidget {
     List<Widget> result = [];
 
     int numberOfLines = ((max - min) / step).floor() + 1;
-    double bottomMargin =
-        (height - topOffset - bottomOffset) / (numberOfLines - 1);
+    double bottomMargin = (height - topOffset - bottomOffset) / (numberOfLines - 1);
 
     for (int i = 0; i < numberOfLines; i++) {
       bool markStep = markNStep != null && i % markNStep == 0;
@@ -268,9 +266,8 @@ class _WaterSlideState extends State<_WaterSlide> {
   void initState() {
     super.initState();
 
-    double animationEndValue = widget.initValue == null
-        ? _validateYOffset(_yOffset)
-        : _validateYOffset(_calculateYOffset(widget.initValue));
+    double animationEndValue =
+        widget.initValue == null ? _validateYOffset(_yOffset) : _validateYOffset(_calculateYOffset(widget.initValue));
 
     _growAnimation = Tween<double>(
       begin: widget.height,
@@ -281,12 +278,12 @@ class _WaterSlideState extends State<_WaterSlide> {
         curve: Interval(0.350, .750, curve: Curves.easeOutCubic),
       ),
     )..addListener(
-          () {
-        setState(() {
-          _yOffset = _growAnimation.value;
-        });
-      },
-    );
+        () {
+          setState(() {
+            _yOffset = _growAnimation.value;
+          });
+        },
+      );
   }
 
   @override
@@ -298,12 +295,16 @@ class _WaterSlideState extends State<_WaterSlide> {
         onVerticalDragUpdate: _onDragUpdate,
         child: Stack(
           children: [
-          WaveContainer(
-            size: Size(90, widget.height),
-            offset: Offset(45, 0),
-            color: Color.fromRGBO(254, 193, 45, .3),
-            sinWidthFraction: 2,
-          )
+            WaveContainer(
+              size: Size(90, widget.height),
+              offset: Offset(45, 0),
+              color: Color.fromRGBO(254, 193, 45, .3),
+              sinWidthFraction: 2,
+            ),
+            WaveContainer(
+              size: Size(90, widget.height),
+              offset: Offset.zero,
+            )
           ],
         ),
       ),
@@ -333,10 +334,7 @@ class _WaterSlideState extends State<_WaterSlide> {
     double workingH = widget.height - widget.topOffset - widget.bottomOffset;
     double factor = workingH / (widget.max - widget.min);
 
-    double result = -((value * factor) -
-        widget.height +
-        widget.bottomOffset -
-        (widget.min * factor));
+    double result = -((value * factor) - widget.height + widget.bottomOffset - (widget.min * factor));
 
     return result;
   }

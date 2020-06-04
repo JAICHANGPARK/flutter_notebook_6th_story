@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook6thstory/ep463_waching_machine/ui/wave_container.dart';
 import 'package:flutternotebook6thstory/ep463_waching_machine/utils/colors.dart';
 
 import 'inner_shadow_decorator.dart';
@@ -297,7 +298,12 @@ class _WaterSlideState extends State<_WaterSlide> {
         onVerticalDragUpdate: _onDragUpdate,
         child: Stack(
           children: [
-
+          WaveContainer(
+            size: Size(90, widget.height),
+            offset: Offset(45, 0),
+            color: Color.fromRGBO(254, 193, 45, .3),
+            sinWidthFraction: 2,
+          )
           ],
         ),
       ),

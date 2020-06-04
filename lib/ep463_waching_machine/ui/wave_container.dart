@@ -27,6 +27,12 @@ TickerProviderStateMixin{
     animationController = AnimationController(vsync: this, duration: widget.duration);
     animationController.addListener(() {
       animationListener.clear();
+      for(double i = -2- widget.offset.dx;
+      i <= widget.size.width.toInt() + 2;
+      i++){
+        print(i);
+        animationListener.add(Offset())
+      }
     });
 
   }

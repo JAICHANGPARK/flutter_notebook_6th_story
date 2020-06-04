@@ -41,10 +41,40 @@ class _WaveContainerState extends State<WaveContainer> with TickerProviderStateM
         );
       }
     });
+    animationController.repeat();
   }
-
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    animationController.dispose();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
+    List<Color> _gradientColors = [
+      Color.fromRGBO(254, 193, 45, 1),
+      Color.fromRGBO(254, 193, 45, 1),
+      Color.fromRGBO(254, 193, 45, 1),
+    ];
     return Container();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

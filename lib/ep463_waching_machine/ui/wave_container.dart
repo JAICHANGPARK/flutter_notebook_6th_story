@@ -5,10 +5,10 @@ class WaveContainer extends StatefulWidget {
   final Size size;
   final Offset offset;
   final Color color;
-  final Duration duraion;
+  final Duration duration;
   final int sinWidthFraction;
 
-  WaveContainer(this.size, this.offset, this.color, this.duraion, this.sinWidthFraction);
+  WaveContainer(this.size, this.offset, this.color, this.duration, this.sinWidthFraction);
 
   @override
   _WaveContainerState createState() => _WaveContainerState();

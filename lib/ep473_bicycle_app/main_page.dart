@@ -58,6 +58,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           SizedBox(
                             height: 24,
                           ),
+                          Container(
+                            height: 48,
+                            width: MediaQuery.of(context).size.width - 32,
+                            color: Colors.white,
+                          )
                         ],
                       ),
                     ),

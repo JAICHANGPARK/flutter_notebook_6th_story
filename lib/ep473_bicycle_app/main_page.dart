@@ -8,3 +8,16 @@ class BicycleRentalApp extends StatelessWidget {
     );
   }
 }
+
+class BicycleRentalMainPage extends StatefulWidget {
+  @override
+  _BicycleRentalMainPageState createState() => _BicycleRentalMainPageState();
+}
+
+class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
+

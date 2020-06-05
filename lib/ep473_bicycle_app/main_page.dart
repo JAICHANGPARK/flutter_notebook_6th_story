@@ -35,7 +35,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                             children: [
                             TextSpan(
                               text: "Hi,"
-                            )
+                            ),
+                              TextSpan(
+                                  text: "Dreamwalker",
+                                style: TextStyle(
+
+                                )
+                              ),
                             ]
                           )
                         )

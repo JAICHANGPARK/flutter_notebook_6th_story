@@ -27,33 +27,39 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
           children: [
             Container(
               height: 220,
+              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
                     left: 16,
                     top: 24,
-                    child: Column(
-                      children: [
-                        Text.rich(TextSpan(children: [
-                          TextSpan(text: "Hi, ", style: TextStyle(color: fontSecondColor, fontSize: 18)),
-                          TextSpan(text: "Dreamwalker", style: TextStyle(color: fontMainColor, fontSize: 18)),
-                        ])),
-                        SizedBox(
-                          height: 24,
-                        ),
-                        Text.rich(TextSpan(children: [
-                          TextSpan(text: "Select ", style: TextStyle(color: fontSecondColor, fontSize: 22)),
-                          TextSpan(
-                              text: "Bicycle",
-                              style: TextStyle(color: fontMainColor, fontSize: 22, fontWeight: FontWeight.bold)),
-                        ])),
-                        Text.rich(TextSpan(children: [
-                          TextSpan(
-                              text: "To Riding ",
-                              style: TextStyle(color: fontMainColor, fontSize: 22, fontWeight: FontWeight.bold)),
-                          TextSpan(text: "Now.", style: TextStyle(color: fontSecondColor, fontSize: 22)),
-                        ])),
-                      ],
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Text.rich(TextSpan(children: [
+                            TextSpan(text: "Hi, ", style: TextStyle(color: fontSecondColor, fontSize: 18)),
+                            TextSpan(text: "Dreamwalker", style: TextStyle(color: fontMainColor, fontSize: 18)),
+                          ])),
+                          SizedBox(
+                            height: 24,
+                          ),
+                          Text.rich(TextSpan(children: [
+                            TextSpan(text: "Select ", style: TextStyle(color: fontSecondColor, fontSize: 22)),
+                            TextSpan(
+                                text: "Bicycle",
+                                style: TextStyle(color: fontMainColor, fontSize: 22, fontWeight: FontWeight.bold)),
+                          ])),
+                          Text.rich(TextSpan(children: [
+                            TextSpan(
+                                text: "To Riding ",
+                                style: TextStyle(color: fontMainColor, fontSize: 22, fontWeight: FontWeight.bold)),
+                            TextSpan(text: "Now.", style: TextStyle(color: fontSecondColor, fontSize: 22)),
+                          ])),
+                          SizedBox(
+                            height: 24,
+                          ),
+                        ],
+                      ),
                     ),
                   )
                 ],

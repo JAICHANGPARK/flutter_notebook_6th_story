@@ -72,11 +72,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                     ),
                   ),
                   Positioned(
-                    right: 0,
-                    top: 0,
+                    right: -2,
+                    top: -2,
                     child: Container(
                       height: 100,
-                      width: 80,
+                      width: 100,
                       decoration: BoxDecoration(
                         border: Border.all(color: bicycleAppColor)
                       ),

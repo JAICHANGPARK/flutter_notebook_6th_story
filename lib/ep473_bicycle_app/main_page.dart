@@ -87,7 +87,18 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           width: 38,
                           decoration: BoxDecoration(
                             border: Border.all(color: bicycleAppColor),
-                            
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: bicycleAppColor,
+                                blurRadius: 3,
+                                spreadRadius: 2,
+                                offset: Offset(
+                                  0, 10
+                                )
+                              )
+                            ]
                           ),
                         ),
                       ),

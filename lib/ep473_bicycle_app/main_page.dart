@@ -62,12 +62,23 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           Container(
                             height: 48,
                             width: MediaQuery.of(context).size.width - 32,
-
                             decoration: BoxDecoration(
                               color: Colors.white,
+                              borderRadius: BorderRadius.circular(8)
                             ),
                           )
                         ],
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    right: 0,
+                    top: 0,
+                    child: Container(
+                      height: 100,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: bicycleAppColor)
                       ),
                     ),
                   )

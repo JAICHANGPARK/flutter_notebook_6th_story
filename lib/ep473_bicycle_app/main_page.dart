@@ -22,12 +22,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
               height: 220,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
@@ -78,7 +78,8 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                       height: 100,
                       width: 100,
                       decoration: BoxDecoration(
-                        border: Border.all(color: bicycleAppColor)
+                        border: Border.all(color: bicycleAppColor),
+                        borderRadius: BorderRadius.circular(10)
                       ),
                     ),
                   )
@@ -91,3 +92,17 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

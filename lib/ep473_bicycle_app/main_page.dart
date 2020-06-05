@@ -91,11 +91,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                color: bicycleAppColor,
-                                blurRadius: 3,
-                                spreadRadius: 2,
+                                color: bicycleAppColor.withOpacity(0.2),
+                                blurRadius: 4,
+                                spreadRadius: -4,
                                 offset: Offset(
-                                  0, 10
+                                  0, 16
                                 )
                               )
                             ]

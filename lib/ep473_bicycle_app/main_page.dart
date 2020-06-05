@@ -26,7 +26,21 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
               child: Stack(
                 children: [
                   Positioned(
-                    
+                    left: 16,
+                    top: 24,
+                    child: Column(
+                      children: [
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                            TextSpan(
+                              text: "Hi,"
+                            )
+                            ]
+                          )
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),

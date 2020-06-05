@@ -17,7 +17,46 @@ class BicycleRentalMainPage extends StatefulWidget {
 class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: 220,
+              child: Stack(
+                children: [
+                  Positioned(
+                    
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

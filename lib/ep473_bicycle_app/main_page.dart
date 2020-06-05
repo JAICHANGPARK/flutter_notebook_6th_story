@@ -38,7 +38,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           TextSpan(text: "Hi, ", style: TextStyle(color: fontSecondColor, fontSize: 18)),
                           TextSpan(text: "Dreamwalker", style: TextStyle(color: fontMainColor, fontSize: 18)),
                         ])),
-
+                        SizedBox(height: 24,),
                         Text.rich(TextSpan(children: [
                           TextSpan(text: "Select ", style: TextStyle(color: fontSecondColor, fontSize: 22)),
                           TextSpan(text: "Bicycle", style: TextStyle(color: fontMainColor, fontSize: 22)),

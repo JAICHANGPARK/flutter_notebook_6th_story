@@ -35,7 +35,10 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                     child: Column(
                       children: [
                         Text.rich(TextSpan(children: [
-                          TextSpan(text: "Hi,",),
+                          TextSpan(text: "Hi,",style: TextStyle(
+                            color: fontSecondColor,
+                            fontSize: 18
+                          )),
                           TextSpan(text: "Dreamwalker", style: TextStyle()),
                         ]))
                       ],

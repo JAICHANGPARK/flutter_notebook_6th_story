@@ -62,7 +62,10 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           Container(
                             height: 48,
                             width: MediaQuery.of(context).size.width - 32,
-                            color: Colors.white,
+
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),

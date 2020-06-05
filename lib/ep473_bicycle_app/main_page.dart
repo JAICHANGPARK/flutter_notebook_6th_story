@@ -35,6 +35,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                     top: 24,
                     child: Container(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text.rich(TextSpan(children: [
                             TextSpan(text: "Hi, ", style: TextStyle(color: fontSecondColor, fontSize: 18)),

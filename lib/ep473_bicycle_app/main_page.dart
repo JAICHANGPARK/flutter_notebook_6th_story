@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const Color fontMainColor = Color(0xff293038);
+const Color fontSecondColor = Color(0xff696e74);
+const Color bicycleAppColor = Color(0xffffc329);
+
 class BicycleRentalApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,21 +34,10 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                     top: 24,
                     child: Column(
                       children: [
-                        Text.rich(
-                          TextSpan(
-                            children: [
-                            TextSpan(
-                              text: "Hi,"
-                            ),
-                              TextSpan(
-                                  text: "Dreamwalker",
-                                style: TextStyle(
-
-                                )
-                              ),
-                            ]
-                          )
-                        )
+                        Text.rich(TextSpan(children: [
+                          TextSpan(text: "Hi,",),
+                          TextSpan(text: "Dreamwalker", style: TextStyle()),
+                        ]))
                       ],
                     ),
                   )
@@ -57,26 +50,3 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -44,6 +44,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           TextSpan(text: "Bicycle", style: TextStyle(color: fontMainColor, fontSize: 22)),
                         ])),
 
+                        Text.rich(TextSpan(children: [
+                          TextSpan(text: "To Riding ", style: TextStyle(color: fontMainColor, fontSize: 22,
+                          fontWeight: FontWeight.bold)),
+                          TextSpan(text: "Now.", style: TextStyle(color: fontSecondColor, fontSize: 22)),
+                        ])),
+
                       ],
                     ),
                   )

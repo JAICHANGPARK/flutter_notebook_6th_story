@@ -113,13 +113,20 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
         },
         items: [
           BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home"), activeColor: bicycleAppColor),
-          BottomNavyBarItem(icon: Icon(Icons.motorcycle), title: Text("cycle"), inactiveColor: Colors.black),
-          BottomNavyBarItem(icon: Icon(Icons.email), title: Text("email"), inactiveColor: Colors.black),
-          BottomNavyBarItem(icon: Icon(Icons.multiline_chart), title: Text("Chart"), inactiveColor: Colors.black),
+          BottomNavyBarItem(
+              icon: Icon(Icons.motorcycle),
+              title: Text("cycle"),
+              inactiveColor: Colors.black,
+              activeColor: bicycleAppColor),
+          BottomNavyBarItem(
+              icon: Icon(Icons.email), title: Text("email"), inactiveColor: Colors.black, activeColor: bicycleAppColor),
+          BottomNavyBarItem(
+              icon: Icon(Icons.multiline_chart),
+              title: Text("Chart"),
+              inactiveColor: Colors.black,
+              activeColor: bicycleAppColor),
         ],
       ),
     );
   }
 }
-
-

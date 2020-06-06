@@ -21,6 +21,7 @@ class BicycleRentalMainPage extends StatefulWidget {
 
 class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,10 +65,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           Container(
                             height: 48,
                             width: MediaQuery.of(context).size.width - 32,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                           )
                         ],
                       ),
@@ -80,28 +78,22 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                       height: 100,
                       width: 100,
                       decoration: BoxDecoration(
-                        border: Border.all(color: bicycleAppColor),
-                        borderRadius: BorderRadius.circular(10)
-                      ),
+                          border: Border.all(color: bicycleAppColor), borderRadius: BorderRadius.circular(10)),
                       child: Center(
                         child: Container(
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
-                            border: Border.all(color: bicycleAppColor),
-                            borderRadius: BorderRadius.circular(8),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: bicycleAppColor.withOpacity(0.2),
-                                blurRadius: 4,
-                                spreadRadius: -4,
-                                offset: Offset(
-                                  0, 16
-                                )
-                              )
-                            ]
-                          ),
+                              border: Border.all(color: bicycleAppColor),
+                              borderRadius: BorderRadius.circular(8),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                    color: bicycleAppColor.withOpacity(0.2),
+                                    blurRadius: 4,
+                                    spreadRadius: -4,
+                                    offset: Offset(0, 16))
+                              ]),
                         ),
                       ),
                     ),
@@ -112,23 +104,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavyBar(onItemSelected: (int value) {
-
-      },),
+      bottomNavigationBar: BottomNavyBar(
+        onItemSelected: (int value) {
+          setState(() {
+            _pageIndex = value;
+          });
+        },
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

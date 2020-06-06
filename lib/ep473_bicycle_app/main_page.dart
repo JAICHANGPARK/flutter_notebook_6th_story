@@ -66,26 +66,21 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               height: 48,
                               width: MediaQuery.of(context).size.width - 32,
                               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 16
-                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Icon(Icons.search),
-                                  Expanded(child: TextField(
+                                  Expanded(
+                                      child: TextField(
                                     decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: "Where do you want to go biking?"
-                                    ),
+                                        border: InputBorder.none, hintText: "Where do you want to go biking?"),
                                   )),
                                   Container(
                                     height: 38,
                                     width: 38,
-                                    decoration: BoxDecoration(
-                                      color: bicycleAppColor,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: bicycleAppColor, borderRadius: BorderRadius.circular(8)),
                                     child: Center(
                                       child: Icon(Icons.map),
                                     ),

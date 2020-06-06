@@ -86,7 +86,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                       color: bicycleAppColor,
                                     ),
                                     child: Center(
-                                      child: Icon(Icons.),
+                                      child: Icon(Icons.map),
                                     ),
                                   )
                                 ],

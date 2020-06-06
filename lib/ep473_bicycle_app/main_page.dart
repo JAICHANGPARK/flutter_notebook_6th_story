@@ -129,7 +129,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   child: Row(
                     children: [
                       Container(
-                        width: 100,
+                        width: 70,
                         child: Stack(
                           children: [
                             Positioned(
@@ -150,6 +150,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                     "Newest",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 17,
                                     ),
                                   ),
                                 )),
@@ -157,9 +158,24 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                         ),
                       ),
                       Container(
-                        width: 100,
-                        color: Colors.blue,
-                      )
+                        width: 70,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 0,
+                                child: Center(
+                                  child: Text(
+                                    "Popular",
+                                    style: TextStyle(fontSize: 17,
+                                    fontWeight: FontWeight.w300),
+
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),

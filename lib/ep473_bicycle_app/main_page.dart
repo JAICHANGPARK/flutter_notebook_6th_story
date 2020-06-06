@@ -110,7 +110,26 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
             _pageIndex = value;
           });
         },
+        items: [
+          BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
+        ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

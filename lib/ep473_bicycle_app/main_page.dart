@@ -131,7 +131,18 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   height: 160,
                   child: Placeholder(),
                 ),
-                
+                Container(
+                  height: 64,
+                  child: Placeholder(),
+                ),
+                Container(
+                  height: 120,
+                  child: Placeholder(),
+                ),
+                Container(
+                  height: 120,
+                  child: Placeholder(),
+                )
               ],
             )
           ],

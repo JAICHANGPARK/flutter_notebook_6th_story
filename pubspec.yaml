@@ -23,6 +23,7 @@ dependencies:
   quiver: any
   get_it: any
   box2d_flame: any
+  bottom_navy_bar: any
 
 dev_dependencies:
   flutter_test:

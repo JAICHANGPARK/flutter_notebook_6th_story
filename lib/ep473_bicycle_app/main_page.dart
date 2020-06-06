@@ -130,6 +130,10 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                       Container(
                         width: 100,
                         color: Colors.blue,
+                      ),
+                      Container(
+                        width: 100,
+                        color: Colors.blue,
                       )
                     ],
                   ),

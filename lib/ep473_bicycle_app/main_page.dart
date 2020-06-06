@@ -113,7 +113,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
         },
         items: [
           BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home"), activeColor: bicycleAppColor),
-          BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavyBarItem(icon: Icon(Icons.motorcycle), title: Text("cycle")),
           BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
           BottomNavyBarItem(icon: Icon(Icons.home), title: Text("Home")),
         ],

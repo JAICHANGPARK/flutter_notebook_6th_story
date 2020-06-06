@@ -69,6 +69,14 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               child: Row(
                                 children: [
                                   Icon(Icons.search),
+                                  TextField(),
+                                  Container(
+                                    height: 38,
+                                    width: 38,
+                                    decoration: BoxDecoration(
+                                      color: bicycleAppColor
+                                    ),
+                                  )
                                 ],
                               ))
                         ],

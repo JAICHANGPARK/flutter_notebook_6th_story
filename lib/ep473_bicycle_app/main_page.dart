@@ -169,9 +169,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   child: Center(
                                     child: Text(
                                       "Popular",
-                                      style: TextStyle(fontSize: 17,
-                                      fontWeight: FontWeight.w300),
-
+                                      style: TextStyle(fontSize: 17, fontWeight: FontWeight.w300),
                                     ),
                                   )),
                             ],

@@ -125,7 +125,14 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
               children: [
                 Container(
                   height: 64,
-                  child: Placeholder(),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 100,
+                        color: Colors.blue,
+                      )
+                    ],
+                  ),
                 ),
                 Container(
                   height: 160,

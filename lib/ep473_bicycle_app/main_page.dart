@@ -70,14 +70,23 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                 horizontal: 16
                               ),
                               child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Icon(Icons.search),
-                                  Expanded(child: TextField()),
+                                  Expanded(child: TextField(
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: "Where do you want to go biking?"
+                                    ),
+                                  )),
                                   Container(
                                     height: 38,
                                     width: 38,
                                     decoration: BoxDecoration(
                                       color: bicycleAppColor,
+                                    ),
+                                    child: Center(
+                                      child: Icon(Icons.),
                                     ),
                                   )
                                 ],

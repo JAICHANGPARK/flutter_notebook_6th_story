@@ -105,6 +105,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavyBar(
+        selectedIndex: _pageIndex,
         onItemSelected: (int value) {
           setState(() {
             _pageIndex = value;

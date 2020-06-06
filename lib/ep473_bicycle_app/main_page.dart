@@ -20,6 +20,7 @@ class BicycleRentalMainPage extends StatefulWidget {
 }
 
 class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

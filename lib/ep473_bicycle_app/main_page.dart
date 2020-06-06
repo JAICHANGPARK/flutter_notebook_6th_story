@@ -125,11 +125,21 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
               children: [
                 Container(
                   height: 64,
+                  padding: EdgeInsets.only(left: 16),
                   child: Row(
                     children: [
                       Container(
                         width: 100,
-                        color: Colors.blue,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              child: CircleAvatar(),
+                            )
+                          ],
+                        ),
                       ),
                       Container(
                         width: 100,

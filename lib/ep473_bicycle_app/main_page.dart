@@ -194,11 +194,15 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 64,
-                    child: Placeholder(),
+                    child: Text(
+                      "Join The Community",
+                    ),
                   ),
                   Container(
                     height: 120,
-                    child: Placeholder(),
+                    child: Card(
+                      color: Colors.white,
+                    ),
                   ),
                   Container(
                     height: 120,

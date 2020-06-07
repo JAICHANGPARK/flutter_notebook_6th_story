@@ -210,7 +210,16 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Card(
                       color: Colors.white,
-
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Container(

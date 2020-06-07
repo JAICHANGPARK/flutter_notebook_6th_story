@@ -278,9 +278,78 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 120,
+                    width: MediaQuery.of(context).size.width,
                     margin: EdgeInsets.symmetric(horizontal: 16),
-                    child: Placeholder(),
-                  )
+                    child: Card(
+                      color: Colors.white,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              flex: 2,
+                              child: Container(
+                                margin: EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                    color: bicycleAppColor.withOpacity(0.5), borderRadius: BorderRadius.circular(7)),
+                              )),
+                          Expanded(
+                            flex: 4,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "Tegal Bike Community",
+                                        style: TextStyle(fontSize: 13),
+                                      ),
+                                      Icon(Icons.more_horiz),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.person,
+                                        size: 14,
+                                      ),
+                                      Text(
+                                        "85 Members",
+                                        style: TextStyle(fontSize: 11),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 12,
+                                      ),
+                                      Container(
+                                        height: 32,
+                                        width: 64,
+                                        decoration: BoxDecoration(
+                                          color: bicycleAppColor,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                        child: Center(
+                                          child: Text("join"),
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               )
             ],

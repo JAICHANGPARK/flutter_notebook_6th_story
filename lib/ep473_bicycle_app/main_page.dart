@@ -218,6 +218,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                 color: bicycleAppColor.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(7)
                                 
                               ),
                             )

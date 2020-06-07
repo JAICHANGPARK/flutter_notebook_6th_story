@@ -214,7 +214,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                         children: [
                           Expanded(
                             flex: 2,
-                            child: Placeholder(),
+                            child: Container(
+                              margin: EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                color: bicycleAppColor.withOpacity(0.5),
+                                
+                              ),
+                            )
                           ),
                           Expanded(
                             flex: 4,

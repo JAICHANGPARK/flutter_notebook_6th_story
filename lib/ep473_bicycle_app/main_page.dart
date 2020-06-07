@@ -224,38 +224,43 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           ),
                           Expanded(
                             flex: 4,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("Tegal Bike Community"),
-                                    Icon(Icons.more_horiz),
-                                  ],
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.person, size: 14,),
-                                    Text("85 Members"),
-                                  ],
-                                ),
-                                SizedBox(height: 16,),
-                                Row(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 12,
-                                    ),
-                                    Container(
-                                      height: 32,
-                                      width: 64,
-                                      decoration: BoxDecoration(
-                                        color: bicycleAppColor
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Tegal Bike Community", style: TextStyle(
+                                        fontSize: 13
+                                      ),),
+                                      Icon(Icons.more_horiz),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.person, size: 14,),
+                                      Text("85 Members"),
+                                    ],
+                                  ),
+                                  SizedBox(height: 16,),
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 12,
                                       ),
-                                    )
-                                  ],
-                                )
-                              ],
+                                      Container(
+                                        height: 32,
+                                        width: 64,
+                                        decoration: BoxDecoration(
+                                          color: bicycleAppColor
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ],

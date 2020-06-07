@@ -182,9 +182,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 160,
-                    padding: EdgeInsets.only(
-                      left: 16
-                    ),
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 2,
@@ -199,7 +197,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 48,
-                    padding: EdgeInsets.only(left: 16,top: 16),
+                    padding: EdgeInsets.only(left: 16, top: 16),
                     child: Text(
                       "Join The Community",
                     ),
@@ -213,15 +211,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                       child: Row(
                         children: [
                           Expanded(
-                            flex: 2,
-                            child: Container(
-                              margin: EdgeInsets.all(8),
-                              decoration: BoxDecoration(
-                                color: bicycleAppColor.withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(7)
-                              ),
-                            )
-                          ),
+                              flex: 2,
+                              child: Container(
+                                margin: EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                    color: bicycleAppColor.withOpacity(0.5), borderRadius: BorderRadius.circular(7)),
+                              )),
                           Expanded(
                             flex: 4,
                             child: Padding(
@@ -232,21 +227,28 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("Tegal Bike Community", style: TextStyle(
-                                        fontSize: 13
-                                      ),),
+                                      Text(
+                                        "Tegal Bike Community",
+                                        style: TextStyle(fontSize: 13),
+                                      ),
                                       Icon(Icons.more_horiz),
                                     ],
                                   ),
                                   Row(
                                     children: [
-                                      Icon(Icons.person, size: 14,),
-                                      Text("85 Members", style: TextStyle(
-                                          fontSize: 11
-                                      ),),
+                                      Icon(
+                                        Icons.person,
+                                        size: 14,
+                                      ),
+                                      Text(
+                                        "85 Members",
+                                        style: TextStyle(fontSize: 11),
+                                      ),
                                     ],
                                   ),
-                                  SizedBox(height: 16,),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [

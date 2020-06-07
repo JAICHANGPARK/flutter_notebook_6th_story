@@ -237,9 +237,9 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   children: [
                                     Icon(Icons.person, size: 14,),
                                     Text("85 Members"),
-                                    
                                   ],
-                                )
+                                ),
+                                CircleAvatar()
                               ],
                             ),
                           ),

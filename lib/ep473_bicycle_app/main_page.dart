@@ -180,7 +180,9 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 160,
-                    padding: EdgeInsets.only(),
+                    padding: EdgeInsets.only(
+                      left: 16
+                    ),
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 2,

@@ -180,7 +180,15 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 160,
-                    child: Placeholder(),
+                    child: ListView.builder(itemBuilder: (context, index){
+                      return SizedBox(
+                        width: 160,
+                        child: Card(
+                          color: Colors.white,
+                          
+                        ),
+                      );
+                    }),
                   ),
                   Container(
                     height: 64,

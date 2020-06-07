@@ -181,19 +181,16 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   Container(
                     height: 160,
                     child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-
-
-
-                        itemBuilder: (context, index){
-                      return SizedBox(
-                        width: 160,
-                        child: Card(
-                          color: Colors.white,
-
-                        ),
-                      );
-                    }),
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 2,
+                        itemBuilder: (context, index) {
+                          return SizedBox(
+                            width: 160,
+                            child: Card(
+                              color: Colors.white,
+                            ),
+                          );
+                        }),
                   ),
                   Container(
                     height: 64,

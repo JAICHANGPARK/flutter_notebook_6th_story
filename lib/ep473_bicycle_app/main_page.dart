@@ -180,12 +180,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 160,
+                    padding: EdgeInsets.only(),
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 2,
                         itemBuilder: (context, index) {
                           return SizedBox(
-                            width: 160,
+                            width: 240,
                             child: Card(
                               color: Colors.white,
                             ),

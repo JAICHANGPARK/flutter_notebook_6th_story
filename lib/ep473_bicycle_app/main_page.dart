@@ -29,6 +29,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 200,

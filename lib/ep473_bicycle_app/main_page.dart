@@ -225,6 +225,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                           Expanded(
                             flex: 4,
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -239,7 +240,10 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                     Text("85 Members"),
                                   ],
                                 ),
-                                CircleAvatar()
+                                SizedBox(height: 16,),
+                                CircleAvatar(
+                                  radius: 12,
+                                )
                               ],
                             ),
                           ),

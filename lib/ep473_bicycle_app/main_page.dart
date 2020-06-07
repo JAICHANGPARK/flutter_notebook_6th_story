@@ -199,14 +199,17 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 64,
+                    padding: EdgeInsets.only(left: 16,top: 16),
                     child: Text(
                       "Join The Community",
                     ),
                   ),
                   Container(
                     height: 120,
+                    width: MediaQuery.of(context).size.width,
                     child: Card(
                       color: Colors.white,
+
                     ),
                   ),
                   Container(

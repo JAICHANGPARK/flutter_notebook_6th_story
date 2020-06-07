@@ -207,6 +207,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   Container(
                     height: 120,
                     width: MediaQuery.of(context).size.width,
+                    margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Card(
                       color: Colors.white,
 
@@ -214,6 +215,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                   ),
                   Container(
                     height: 120,
+                    margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Placeholder(),
                   )
                 ],

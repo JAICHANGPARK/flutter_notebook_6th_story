@@ -124,6 +124,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                 ),
               ),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: 64,

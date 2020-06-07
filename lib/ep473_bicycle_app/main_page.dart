@@ -232,6 +232,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                     Text("Tegal Bike Community"),
                                     Icon(Icons.more_horiz),
                                   ],
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.person, size: 14,),
+                                    Text("85 Members"),
+                                    
+                                  ],
                                 )
                               ],
                             ),

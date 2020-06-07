@@ -219,13 +219,22 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               decoration: BoxDecoration(
                                 color: bicycleAppColor.withOpacity(0.5),
                                 borderRadius: BorderRadius.circular(7)
-                                
                               ),
                             )
                           ),
                           Expanded(
                             flex: 4,
-                            child: Placeholder(),
+                            child: Column(
+                              children: [
+                                Row(
+                                  
+                                  children: [
+                                    Text("Tegal Bike Community"),
+                                    Icon(Icons.more_horiz),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ],
                       ),

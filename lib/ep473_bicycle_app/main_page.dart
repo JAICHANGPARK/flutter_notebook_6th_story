@@ -227,7 +227,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                             child: Column(
                               children: [
                                 Row(
-                                  
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text("Tegal Bike Community"),
                                     Icon(Icons.more_horiz),

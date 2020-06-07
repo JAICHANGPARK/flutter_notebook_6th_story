@@ -198,7 +198,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                         }),
                   ),
                   Container(
-                    height: 64,
+                    height: 48,
                     padding: EdgeInsets.only(left: 16,top: 16),
                     child: Text(
                       "Join The Community",

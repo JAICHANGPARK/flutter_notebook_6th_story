@@ -241,11 +241,14 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   Row(
                                     children: [
                                       Icon(Icons.person, size: 14,),
-                                      Text("85 Members"),
+                                      Text("85 Members", style: TextStyle(
+                                          fontSize: 11
+                                      ),),
                                     ],
                                   ),
                                   SizedBox(height: 16,),
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       CircleAvatar(
                                         radius: 12,
@@ -254,7 +257,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                         height: 32,
                                         width: 64,
                                         decoration: BoxDecoration(
-                                          color: bicycleAppColor
+                                          color: bicycleAppColor,
+                                          borderRadius: BorderRadius.circular(8),
+                                        ),
+                                        child: Center(
+                                          child: Text("join"),
                                         ),
                                       )
                                     ],

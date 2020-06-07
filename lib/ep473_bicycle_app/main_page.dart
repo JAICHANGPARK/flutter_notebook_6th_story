@@ -241,8 +241,19 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   ],
                                 ),
                                 SizedBox(height: 16,),
-                                CircleAvatar(
-                                  radius: 12,
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 12,
+                                    ),
+                                    Container(
+                                      height: 32,
+                                      width: 64,
+                                      decoration: BoxDecoration(
+                                        color: bicycleAppColor
+                                      ),
+                                    )
+                                  ],
                                 )
                               ],
                             ),

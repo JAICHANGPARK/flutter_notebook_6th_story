@@ -196,7 +196,14 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   Expanded(
                                     flex: 4,
                                     child: Stack(
-                                      children: [Positioned()],
+                                      children: [Positioned(
+                                        top: 8,
+                                        right: 8,
+                                        child: CircleAvatar(
+                                          radius: 24,
+                                          backgroundColor: bicycleAppColor.withOpacity(0.4),
+                                        ),
+                                      )],
                                     ),
                                   ),
                                   Expanded(

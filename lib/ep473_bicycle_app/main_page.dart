@@ -202,7 +202,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                     child: Row(
                                       children: [
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Column(
+                                            children: [
+                                              Text("Range"),
+                                              Text("50mil"),
+                                            ],
+                                          ),
                                         ),
                                         Expanded(
                                           child: Placeholder(),

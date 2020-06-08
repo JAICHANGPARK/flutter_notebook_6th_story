@@ -210,6 +210,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                               children: [
                                                 Text("Range",style: TextStyle(
                                                   fontSize: 12,
+                                                  color: fontSecondColor
                                                 ),),
                                                 Text("50mil"),
                                               ],

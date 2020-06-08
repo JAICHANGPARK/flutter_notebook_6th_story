@@ -222,7 +222,17 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                             ),
                                           ),
                                         ),
-                                      )
+                                      ),
+                                        Positioned(
+                                          left: 8,
+                                          top: 8,
+                                          bottom: 8,
+                                          child: Column(
+                                            children: [
+                                              
+                                            ],
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ),

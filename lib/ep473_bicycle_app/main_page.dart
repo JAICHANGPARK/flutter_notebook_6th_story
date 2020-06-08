@@ -188,7 +188,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                         itemCount: 2,
                         itemBuilder: (context, index) {
                           return SizedBox(
-                            width: 240,
+                            width: 280,
                             child: Card(
                               color: Colors.white,
                               child: Column(

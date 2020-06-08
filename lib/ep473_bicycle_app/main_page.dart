@@ -202,13 +202,18 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                     child: Row(
                                       children: [
                                         Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              Text("Range",style: TextStyle(),),
-                                              Text("50mil"),
-                                            ],
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text("Range",style: TextStyle(
+                                                  fontSize: 12,
+                                                ),),
+                                                Text("50mil"),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         Expanded(

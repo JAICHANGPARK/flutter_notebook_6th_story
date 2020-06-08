@@ -203,7 +203,19 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           radius: 42,
                                           backgroundColor: bicycleAppColor.withOpacity(0.2),
                                         ),
-                                      )],
+                                      ),
+
+                                      Positioned(
+                                        right: 8,
+                                        top: 8,
+                                        bottom: 0,
+                                        child: Container(
+                                          width: 140,
+
+                                          decoration: BoxDecoration(),
+                                        ),
+                                      )
+                                      ],
                                     ),
                                   ),
                                   Expanded(

@@ -196,51 +196,49 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                   Expanded(
                                     flex: 4,
                                     child: Stack(
-                                      children: [Positioned(
-                                        top: 8,
-                                        right: 8,
-                                        child: CircleAvatar(
-                                          radius: 42,
-                                          backgroundColor: bicycleAppColor.withOpacity(0.2),
+                                      children: [
+                                        Positioned(
+                                          top: 8,
+                                          right: 8,
+                                          child: CircleAvatar(
+                                            radius: 42,
+                                            backgroundColor: bicycleAppColor.withOpacity(0.2),
+                                          ),
                                         ),
-                                      ),
-
-                                      Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        bottom: 0,
-                                        child: Container(
-                                          width: 140,
-
-                                          decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                              image: NetworkImage(
-                                                  "https://purepng.com/public/uploads/large/purepng."
-                                                  "com-bicyclebicyclesbicyclebikecyclehuman-poweredpedal-drivensingle-track-vehicletwo-wheels-1701528099545bmb5p.png",
-                                              ),
-                                              fit: BoxFit.fitHeight
+                                        Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          bottom: 0,
+                                          child: Container(
+                                            width: 140,
+                                            decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://purepng.com/public/uploads/large/purepng."
+                                                    "com-bicyclebicyclesbicyclebikecyclehuman-poweredpedal-drivensingle-track-vehicletwo-wheels-1701528099545bmb5p.png",
+                                                  ),
+                                                  fit: BoxFit.fitHeight),
                                             ),
                                           ),
                                         ),
-                                      ),
                                         Positioned(
                                           left: 8,
                                           top: 8,
                                           bottom: 8,
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text("Dream Cycle"),
                                               Text("Electric Bike"),
-                                              Text.rich(TextSpan(children:
-                                              [
+                                              Spacer(),
+                                              Text.rich(TextSpan(children: [
                                                 TextSpan(
                                                   text: "10\$",
                                                 ),
-                                                TextSpan(
-                                                  text:
-                                                    "/hour"
-                                                )
+                                                TextSpan(text: "/hour")
                                               ]))
+                                              ,
+                                              Spacer()
                                             ],
                                           ),
                                         )
@@ -305,9 +303,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                             width: 38,
                                             margin: EdgeInsets.symmetric(horizontal: 12),
                                             decoration: BoxDecoration(
-                                              color: bicycleAppColor,
-                                              borderRadius: BorderRadius.circular(16)
-                                            ),
+                                                color: bicycleAppColor, borderRadius: BorderRadius.circular(16)),
                                             child: Center(
                                               child: Icon(Icons.arrow_forward),
                                             ),

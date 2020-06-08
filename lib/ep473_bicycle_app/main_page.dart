@@ -233,7 +233,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                               Text("Electric Bike"),
                                               Text.rich(TextSpan(children:
                                               [
-                                                
+                                                TextSpan(
+                                                  text: "10\$",
+                                                ),
+                                                TextSpan(
+                                                  text:
+                                                    "/hour"
+                                                )
                                               ]))
                                             ],
                                           ),

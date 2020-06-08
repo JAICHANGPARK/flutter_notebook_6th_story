@@ -222,8 +222,8 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           ),
                                         ),
                                         Positioned(
-                                          left: 8,
-                                          top: 8,
+                                          left: 16,
+                                          top: 16,
                                           bottom: 8,
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,

@@ -194,12 +194,18 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               child: Column(
                                 children: [
                                   Expanded(
-                                    flex: 3,
+                                    flex: 4,
                                     child: Placeholder(),
                                   ),
                                   Expanded(
                                     flex: 2,
-                                    child: Placeholder(),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Placeholder(),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),

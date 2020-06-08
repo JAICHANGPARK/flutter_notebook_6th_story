@@ -250,7 +250,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Container(
+                                            margin: EdgeInsets.all(4),
+                                            decoration: BoxDecoration(
+                                              color: bicycleAppColor,
+                                              borderRadius: BorderRadius.circular(16)
+                                            ),
+                                          ),
                                         )
                                       ],
                                     ),

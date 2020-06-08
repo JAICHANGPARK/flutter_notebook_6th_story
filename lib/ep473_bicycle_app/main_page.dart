@@ -229,7 +229,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           bottom: 8,
                                           child: Column(
                                             children: [
-                                              
+                                              Text("Dream Cycle"),
+                                              Text("Electric Bike"),
+                                              Text.rich(TextSpan(children:
+                                              [
+                                                
+                                              ]))
                                             ],
                                           ),
                                         )

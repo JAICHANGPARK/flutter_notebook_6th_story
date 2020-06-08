@@ -191,6 +191,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                             width: 240,
                             child: Card(
                               color: Colors.white,
+                              child: Column(
+                                children: [
+                                  
+                                ],
+                              ),
                             ),
                           );
                         }),

@@ -193,7 +193,9 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                               color: Colors.white,
                               child: Column(
                                 children: [
-                                  
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
                                 ],
                               ),
                             ),

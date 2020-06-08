@@ -201,7 +201,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                         right: 8,
                                         child: CircleAvatar(
                                           radius: 42,
-                                          backgroundColor: bicycleAppColor.withOpacity(0.4),
+                                          backgroundColor: bicycleAppColor.withOpacity(0.2),
                                         ),
                                       )],
                                     ),

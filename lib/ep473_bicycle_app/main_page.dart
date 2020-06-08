@@ -228,7 +228,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                                     fontSize: 12,
                                                     color: fontSecondColor
                                                 ),),
-                                                Text("50mil"),
+                                                Text("75kmh"),
                                               ],
                                             ),
                                           ),

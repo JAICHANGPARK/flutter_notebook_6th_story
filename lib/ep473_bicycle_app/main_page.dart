@@ -231,27 +231,26 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                               Text("Dream Cycle"),
                                               Padding(
                                                 padding: const EdgeInsets.symmetric(vertical: 7),
-                                                child: Text("Electric Bike", style: TextStyle(
-                                                  fontSize: 12,
-                                                  color:fontSecondColor,
-                                                ),),
+                                                child: Text(
+                                                  "Electric Bike",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: fontSecondColor,
+                                                  ),
+                                                ),
                                               ),
                                               Spacer(),
                                               Text.rich(TextSpan(children: [
                                                 TextSpan(
-                                                  text: "10\$ ",
-                                                  style: TextStyle(
-                                                    color: bicycleAppColor,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 16
-                                                  )
-                                                ),
-                                                TextSpan(text: " / hour",style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: fontSecondColor
-                                                ))
-                                              ]))
-                                              ,
+                                                    text: "10\$ ",
+                                                    style: TextStyle(
+                                                        color: bicycleAppColor,
+                                                        fontWeight: FontWeight.bold,
+                                                        fontSize: 16)),
+                                                TextSpan(
+                                                    text: " / hour",
+                                                    style: TextStyle(fontSize: 12, color: fontSecondColor))
+                                              ])),
                                               Spacer()
                                             ],
                                           ),

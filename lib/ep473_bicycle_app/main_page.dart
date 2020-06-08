@@ -195,7 +195,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                 children: [
                                   Expanded(
                                     child: Placeholder(),
-                                  ) Expanded(
+                                  ) ,Expanded(
                                     child: Placeholder(),
                                   ),
                                 ],

@@ -246,7 +246,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                                     fontSize: 16
                                                   )
                                                 ),
-                                                TextSpan(text: " /hour",style: TextStyle(
+                                                TextSpan(text: " / hour",style: TextStyle(
                                                   fontSize: 12,
                                                   color: fontSecondColor
                                                 ))

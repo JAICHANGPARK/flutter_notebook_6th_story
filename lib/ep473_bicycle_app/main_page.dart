@@ -240,11 +240,11 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                Text("Speed",style: TextStyle(
+                                                Text("Power",style: TextStyle(
                                                     fontSize: 12,
                                                     color: fontSecondColor
                                                 ),),
-                                                Text("75kmh"),
+                                                Text("387wh"),
                                               ],
                                             ),
                                           ),

@@ -214,8 +214,12 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
 
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
-                                              image: NetworkImage("https://purepng.com/public/uploads/large/purepng.com-bicyclebicyclesbicyclebikecyclehuman-poweredpedal-drivensingle-track-vehicletwo-wheels-1701528099545bmb5p.png"),
-                                            )
+                                              image: NetworkImage(
+                                                  "https://purepng.com/public/uploads/large/purepng."
+                                                  "com-bicyclebicyclesbicyclebikecyclehuman-poweredpedal-drivensingle-track-vehicletwo-wheels-1701528099545bmb5p.png",
+                                              ),
+                                              fit: BoxFit.fitHeight
+                                            ),
                                           ),
                                         ),
                                       )

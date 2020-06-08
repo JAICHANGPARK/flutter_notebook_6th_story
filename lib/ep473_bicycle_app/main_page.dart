@@ -239,13 +239,14 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                               Spacer(),
                                               Text.rich(TextSpan(children: [
                                                 TextSpan(
-                                                  text: "10\$",
+                                                  text: "10\$ ",
                                                   style: TextStyle(
                                                     color: bicycleAppColor,
                                                     fontWeight: FontWeight.bold,
+                                                    fontSize: 16
                                                   )
                                                 ),
-                                                TextSpan(text: "/hour",style: TextStyle(
+                                                TextSpan(text: " /hour",style: TextStyle(
                                                   fontSize: 12,
                                                   color: fontSecondColor
                                                 ))

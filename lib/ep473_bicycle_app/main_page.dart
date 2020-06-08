@@ -234,7 +234,20 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           ),
                                         ),
                                         Expanded(
-                                          child: Placeholder(),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text("Speed",style: TextStyle(
+                                                    fontSize: 12,
+                                                    color: fontSecondColor
+                                                ),),
+                                                Text("75kmh"),
+                                              ],
+                                            ),
+                                          ),
                                         ),
                                         Expanded(
                                           child: Placeholder(),

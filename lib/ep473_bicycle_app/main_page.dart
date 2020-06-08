@@ -251,6 +251,8 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                         ),
                                         Expanded(
                                           child: Container(
+                                            height: 38,
+                                            width: 38,
                                             margin: EdgeInsets.all(4),
                                             decoration: BoxDecoration(
                                               color: bicycleAppColor,

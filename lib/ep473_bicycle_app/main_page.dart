@@ -229,7 +229,13 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Text("Dream Cycle"),
-                                              Text("Electric Bike"),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 7),
+                                                child: Text("Electric Bike", style: TextStyle(
+                                                  fontSize: 12,
+                                                  color:fontSecondColor,
+                                                ),),
+                                              ),
                                               Spacer(),
                                               Text.rich(TextSpan(children: [
                                                 TextSpan(

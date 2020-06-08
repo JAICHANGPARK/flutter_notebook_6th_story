@@ -253,7 +253,7 @@ class _BicycleRentalMainPageState extends State<BicycleRentalMainPage> {
                                           child: Container(
                                             height: 38,
                                             width: 38,
-                                            margin: EdgeInsets.symmetric(horizontal: 24),
+                                            margin: EdgeInsets.symmetric(horizontal: 12),
                                             decoration: BoxDecoration(
                                               color: bicycleAppColor,
                                               borderRadius: BorderRadius.circular(16)

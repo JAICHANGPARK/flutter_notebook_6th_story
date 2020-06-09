@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep473_bicycle_app/main_page.dart';
+import 'ep477_dog_lovers_app/dog_app.dart';
 
 void main() {
-  runApp(BicycleRentalApp());
+  runApp(DogLoversApp());
 }

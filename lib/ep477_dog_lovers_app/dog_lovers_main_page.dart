@@ -31,7 +31,17 @@ with TickerProviderStateMixin{
               right: 0,
               bottom: MediaQuery.of(context).size.height - _topBarHeight,
               duration: Duration(seconds: 1),
-              child: Container(color: Colors.white,),
+              child: Container(
+
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow:[
+                    BoxShadow(
+                      color: Colors.black,
+                    )
+                  ]
+                ),
+                ),
             ),
             Positioned(
               left: 0,

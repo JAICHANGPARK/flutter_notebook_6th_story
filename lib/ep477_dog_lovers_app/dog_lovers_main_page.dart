@@ -14,13 +14,35 @@ with TickerProviderStateMixin{
   void initState() {
     // TODO: implement initState
     super.initState();
+    animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
 
-    
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: Stack(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

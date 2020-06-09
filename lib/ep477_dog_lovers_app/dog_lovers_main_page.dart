@@ -21,21 +21,46 @@ with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          AnimatedPositioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: MediaQuery.of(context).size.height - _htopBareight,
-            duration: Duration(seconds: 1),
-            child: Container(color: Colors.white,),
-          )
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+            AnimatedPositioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: MediaQuery.of(context).size.height - _htopBareight,
+              duration: Duration(seconds: 1),
+              child: Container(color: Colors.white,),
+            ),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: SingleChildScrollView(
+
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

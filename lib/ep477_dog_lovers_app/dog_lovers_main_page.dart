@@ -48,7 +48,17 @@ with TickerProviderStateMixin{
               bottom: 0,
               top: 0,
               child: SingleChildScrollView(
-                child: Column(),
+                child: Column(
+                  children: [
+                    RaisedButton(
+                      onPressed: (){
+                        setState(() {
+                          _topBarHeight = 0;
+                        });
+                      },
+                    )
+                  ],
+                ),
 
               ),
             )

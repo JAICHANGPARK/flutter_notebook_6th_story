@@ -8,6 +8,8 @@ class DogLoversMainPage extends StatefulWidget {
 class _DogLoversMainPageState extends State<DogLoversMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      
+    );
   }
 }

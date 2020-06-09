@@ -33,6 +33,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    Container(
+                      height: 120,
+                    ),
                     RaisedButton(
                       onPressed: () {
                         setState(() {

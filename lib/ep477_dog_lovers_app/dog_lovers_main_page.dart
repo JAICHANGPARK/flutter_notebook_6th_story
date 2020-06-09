@@ -25,23 +25,6 @@ with TickerProviderStateMixin{
       body: SafeArea(
         child: Stack(
           children: [
-            AnimatedPositioned(
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: MediaQuery.of(context).size.height - _topBarHeight,
-              duration: Duration(seconds: 1),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  boxShadow:[
-                    BoxShadow(
-                      color: Colors.black,
-                    )
-                  ]
-                ),
-                ),
-            ),
             Positioned(
               left: 0,
               right: 0,
@@ -61,7 +44,25 @@ with TickerProviderStateMixin{
                 ),
 
               ),
-            )
+            ),
+            AnimatedPositioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: MediaQuery.of(context).size.height - _topBarHeight,
+              duration: Duration(seconds: 1),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow:[
+                    BoxShadow(
+                      color: Colors.black,
+                    )
+                  ]
+                ),
+                ),
+            ),
+
           ],
         ),
       ),

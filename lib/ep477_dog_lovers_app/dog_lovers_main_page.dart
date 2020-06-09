@@ -34,7 +34,14 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                 child: Column(
                   children: [
                     Container(
-                      height: 120,
+                      height: 100,
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height - 120,
+                      width: MediaQuery.of(context).size.width - 24,
+                      child: Card(
+                        color: Colors.white,
+                      ),
                     ),
                     RaisedButton(
                       onPressed: () {
@@ -43,13 +50,6 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                         });
                       },
                     ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height - 120,
-                      width: MediaQuery.of(context).size.width - 24,
-                      child: Card(
-                        color: Colors.white,
-                      ),
-                    )
                   ],
                 ),
               ),

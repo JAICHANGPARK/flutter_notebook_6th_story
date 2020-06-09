@@ -37,9 +37,18 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                       height: 100,
                     ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height - 120,
+                      height: MediaQuery.of(context).size.height - 240,
                       width: MediaQuery.of(context).size.width - 24,
                       child: Card(
+                        elevation: 24,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height - 240,
+                      width: MediaQuery.of(context).size.width - 24,
+                      child: Card(
+                        elevation: 24,
                         color: Colors.white,
                       ),
                     ),

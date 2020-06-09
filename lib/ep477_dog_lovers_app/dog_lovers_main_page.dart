@@ -6,11 +6,11 @@ class DogLoversMainPage extends StatefulWidget {
   _DogLoversMainPageState createState() => _DogLoversMainPageState();
 }
 
-class _DogLoversMainPageState extends State<DogLoversMainPage>
-with TickerProviderStateMixin{
+class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProviderStateMixin {
   AnimationController animationController;
   Animation<double> _animation;
   double _topBarHeight = 84;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -34,7 +34,7 @@ with TickerProviderStateMixin{
                 child: Column(
                   children: [
                     RaisedButton(
-                      onPressed: (){
+                      onPressed: () {
                         setState(() {
                           _topBarHeight = 0;
                         });
@@ -42,7 +42,6 @@ with TickerProviderStateMixin{
                     )
                   ],
                 ),
-
               ),
             ),
             AnimatedPositioned(
@@ -52,52 +51,16 @@ with TickerProviderStateMixin{
               bottom: MediaQuery.of(context).size.height - _topBarHeight,
               duration: Duration(seconds: 1),
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  boxShadow:[
-                    BoxShadow(
-                      color: Colors.black,
-                    )
-                  ]
-                ),
-                ),
+                decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                  )
+                ]),
+              ),
             ),
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

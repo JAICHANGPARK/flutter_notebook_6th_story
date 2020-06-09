@@ -56,6 +56,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                     color: Colors.black,
                   )
                 ]),
+                child: Center(
+                  child: Text("Challenges"),
+                ),
               ),
             ),
           ],

@@ -42,6 +42,14 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                           _topBarHeight = 0;
                         });
                       },
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height - 120,
+                      width: MediaQuery.of(context).size.width,
+                      child: Card(
+                        color: Colors.white,
+                      ),
+
                     )
                   ],
                 ),

@@ -10,7 +10,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage>
 with TickerProviderStateMixin{
   AnimationController animationController;
   Animation<double> _animation;
-  double _htopBareight = 64;
+  double _topBarHeight = 84;
   @override
   void initState() {
     // TODO: implement initState
@@ -21,6 +21,7 @@ with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurple[50],
       body: SafeArea(
         child: Stack(
           children: [
@@ -28,7 +29,7 @@ with TickerProviderStateMixin{
               top: 0,
               left: 0,
               right: 0,
-              bottom: MediaQuery.of(context).size.height - _htopBareight,
+              bottom: MediaQuery.of(context).size.height - _topBarHeight,
               duration: Duration(seconds: 1),
               child: Container(color: Colors.white,),
             ),

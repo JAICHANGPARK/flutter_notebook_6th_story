@@ -26,9 +26,10 @@ with TickerProviderStateMixin{
           AnimatedPositioned(
             top: 0,
             left: 0,
-            bottom: 0,
+            right: 0,
+            bottom: MediaQuery.of(context).size.height - _htopBareight,
             duration: Duration(seconds: 1),
-            child: null,
+            child: Container(color: Colors.white,),
           )
         ],
       ),

@@ -10,19 +10,26 @@ class _DogLoversMainPageState extends State<DogLoversMainPage>
 with TickerProviderStateMixin{
   AnimationController animationController;
   Animation<double> _animation;
+  double _htopBareight = 64;
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          
+          AnimatedPositioned(
+            top: 0,
+            left: 0,
+            bottom: 0,
+            duration: Duration(seconds: 1),
+            child: null,
+          )
         ],
       ),
     );

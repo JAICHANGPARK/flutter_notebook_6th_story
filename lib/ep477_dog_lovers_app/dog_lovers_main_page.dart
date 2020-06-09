@@ -42,15 +42,19 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                       child: Card(
                         elevation: 24,
                         color: Colors.white,
-                        shadowColor: Colors.deepPurple[200],
+                        shadowColor: Colors.deepPurple[100],
                       ),
                     ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height - 240,
-                      width: MediaQuery.of(context).size.width - 24,
-                      child: Card(
-                        elevation: 24,
-                        color: Colors.white,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: SizedBox(
+                        height: MediaQuery.of(context).size.height - 240,
+                        width: MediaQuery.of(context).size.width - 24,
+                        child: Card(
+                          elevation: 24,
+                          color: Colors.white,
+                          shadowColor: Colors.deepPurple[100],
+                        ),
                       ),
                     ),
                     RaisedButton(

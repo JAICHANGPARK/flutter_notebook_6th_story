@@ -32,7 +32,6 @@ with TickerProviderStateMixin{
               bottom: MediaQuery.of(context).size.height - _topBarHeight,
               duration: Duration(seconds: 1),
               child: Container(
-
                 decoration: BoxDecoration(
                   color: Colors.white,
                   boxShadow:[
@@ -49,6 +48,7 @@ with TickerProviderStateMixin{
               bottom: 0,
               top: 0,
               child: SingleChildScrollView(
+                child: Column(),
 
               ),
             )

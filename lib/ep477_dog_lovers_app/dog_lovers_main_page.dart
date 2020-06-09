@@ -42,6 +42,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                       child: Card(
                         elevation: 24,
                         color: Colors.white,
+                        shadowColor: Colors.deepPurple[200],
                       ),
                     ),
                     SizedBox(

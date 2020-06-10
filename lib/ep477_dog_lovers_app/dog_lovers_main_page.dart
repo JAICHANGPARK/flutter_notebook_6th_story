@@ -91,7 +91,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     ),),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Text("Teach your dog a new trick in a week"),
+                                      child: Text("Teach your dog a new trick in a week", style: TextStyle(
+                                        fontSize: 13
+                                      ),),
                                     ),
                                     Spacer(),
                                     Container(

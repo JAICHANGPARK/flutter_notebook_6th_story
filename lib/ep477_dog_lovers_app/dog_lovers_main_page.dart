@@ -94,7 +94,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
               left: 0,
               right: 0,
               bottom: MediaQuery.of(context).size.height - _topBarHeight,
-              duration: Duration(milliseconds: 500),
+              duration: Duration(milliseconds: 300),
               child: Container(
                 decoration: BoxDecoration(color: Colors.white, boxShadow: [
                   BoxShadow(

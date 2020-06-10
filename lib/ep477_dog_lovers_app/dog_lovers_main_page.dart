@@ -78,13 +78,6 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                         ),
                       ),
                     ),
-                    RaisedButton(
-                      onPressed: () {
-                        setState(() {
-                          _topBarHeight = 0;
-                        });
-                      },
-                    ),
                   ],
                 ),
               ),

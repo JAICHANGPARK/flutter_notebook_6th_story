@@ -62,7 +62,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                       width: MediaQuery.of(context).size.width - 24,
                       child: Card(
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(radius)
+                          borderRadius: BorderRadius.circular(24)
                         ),
                         elevation: 24,
                         color: Colors.white,
@@ -75,6 +75,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                         height: MediaQuery.of(context).size.height - 240,
                         width: MediaQuery.of(context).size.width - 24,
                         child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(24)
+                          ),
                           elevation: 24,
                           color: Colors.white,
                           shadowColor: Colors.deepPurple[100],

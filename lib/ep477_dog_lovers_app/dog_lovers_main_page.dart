@@ -76,7 +76,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     colors: [
                                       Colors.white,
                                       Colors.deepPurple[50],
-                                      
+                                      Colors.deepPurple[100],
+
                                     ]
                                   )
                                 ),

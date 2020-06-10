@@ -31,14 +31,17 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
               bottom: 0,
               top: 0,
               child: SingleChildScrollView(
+                c
                 child: Column(
                   children: [
                     Container(
                       height: 100,
-                      child: Text("Challenges",style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold
-                      ),),
+                      child: Center(
+                        child: Text("Challenges",style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold
+                        ),),
+                      ),
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height - 240,

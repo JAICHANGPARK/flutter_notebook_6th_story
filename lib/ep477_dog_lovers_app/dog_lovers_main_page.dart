@@ -9,7 +9,7 @@ class DogLoversMainPage extends StatefulWidget {
 class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProviderStateMixin {
   AnimationController animationController;
   Animation<double> _animation;
-  double _topBarHeight = 84;
+  double _topBarHeight = 94;
 
   ScrollController _scrollController;
   @override
@@ -25,7 +25,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
           });
         }else if(_scrollController.offset == 0.0){
           setState(() {
-            _topBarHeight = 
+            _topBarHeight = 94;
           });
         }
 

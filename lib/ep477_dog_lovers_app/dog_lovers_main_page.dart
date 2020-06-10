@@ -12,24 +12,25 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
   double _topBarHeight = 0.0;
 
   ScrollController _scrollController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
-    _scrollController =ScrollController()..addListener(() {
+    _scrollController = ScrollController()
+      ..addListener(() {
         print(_scrollController.offset);
-        if(_scrollController.offset != 0.0){
+        if (_scrollController.offset != 0.0) {
           setState(() {
             _topBarHeight = 94;
           });
-        }else if(_scrollController.offset == 0.0){
+        } else if (_scrollController.offset == 0.0) {
           setState(() {
             _topBarHeight = 0.0;
           });
         }
-
-    });
+      });
   }
 
   @override
@@ -51,22 +52,30 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                     Container(
                       height: 100,
                       child: Center(
-                        child: Text("Challenges",style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold
-                        ),),
+                        child: Text(
+                          "Challenges",
+                          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height - 240,
                       width: MediaQuery.of(context).size.width - 24,
                       child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(24)
-                        ),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
                         elevation: 24,
                         color: Colors.white,
                         shadowColor: Colors.deepPurple[100],
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                            Expanded(
+                              child: Placeholder(),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Padding(
@@ -75,9 +84,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                         height: MediaQuery.of(context).size.height - 240,
                         width: MediaQuery.of(context).size.width - 24,
                         child: Card(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(24)
-                          ),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
                           elevation: 24,
                           color: Colors.white,
                           shadowColor: Colors.deepPurple[100],
@@ -101,10 +108,10 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                   )
                 ]),
                 child: Center(
-                  child: Text("Challenges", style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20
-                  ),),
+                  child: Text(
+                    "Challenges",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                 ),
               ),
             ),
@@ -114,18 +121,3 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

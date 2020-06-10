@@ -85,8 +85,14 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Spacer(),
-                                    Text("Weekly Training"),
-                                    Text("Teach your dog a new trick in a week"),
+                                    Text("Weekly Training",style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+
+                                    ),),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("Teach your dog a new trick in a week"),
+                                    ),
                                     Spacer(),
                                     Container(
                                       height: 240,

@@ -132,6 +132,60 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                           elevation: 24,
                           color: Colors.white,
                           shadowColor: Colors.deepPurple[100],
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(24),
+                                          topLeft: Radius.circular(24)
+                                      ),
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [
+                                            Colors.white,
+                                            Colors.deepPurple[50],
+                                          ]
+                                      )
+                                  ),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Spacer(),
+                                      Text("Weekly Training",style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18
+
+                                      ),),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text("Teach your dog a new trick in a week", style: TextStyle(
+                                            fontSize: 13
+                                        ),),
+                                      ),
+                                      Spacer(),
+                                      Container(
+                                        height: 240,
+                                        width: double.infinity,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Image.network("https://assets-ouch.icons8.com/thumb/476/6e48f43e-bfb2-4ac9-a22e-ccb0fd5535cd.png",),
+                                        ),
+
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Placeholder(),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),

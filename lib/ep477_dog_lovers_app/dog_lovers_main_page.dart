@@ -35,7 +35,10 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                   children: [
                     Container(
                       height: 100,
-                      child: Text("Challenges"),
+                      child: Text("Challenges",style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold
+                      ),),
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height - 240,

@@ -17,7 +17,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
     // TODO: implement initState
     super.initState();
     animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
-    _scrollController =ScrollController();
+    _scrollController =ScrollController()..addListener(() {
+
+    });
   }
 
   @override
@@ -33,7 +35,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
               bottom: 0,
               top: 0,
               child: SingleChildScrollView(
-                c
+                controller: _scrollController,
                 child: Column(
                   children: [
                     Container(

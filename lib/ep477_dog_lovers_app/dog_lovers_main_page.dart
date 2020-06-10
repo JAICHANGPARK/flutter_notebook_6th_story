@@ -18,7 +18,17 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
     super.initState();
     animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
     _scrollController =ScrollController()..addListener(() {
-        print(_scrollController.position);
+        print(_scrollController.offset);
+        if(_scrollController.offset != 0.0){
+          setState(() {
+            _topBarHeight = 0.0;
+          });
+        }else if(_scrollController.offset == 0.0){
+          setState(() {
+            _topBarHeight = 
+          });
+        }
+
     });
   }
 

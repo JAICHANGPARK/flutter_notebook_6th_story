@@ -72,6 +72,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                               flex: 4,
                               child: Container(
                                 decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(),
                                   gradient: LinearGradient(
                                     begin: Alignment.topCenter,
                                     end: Alignment.bottomCenter,

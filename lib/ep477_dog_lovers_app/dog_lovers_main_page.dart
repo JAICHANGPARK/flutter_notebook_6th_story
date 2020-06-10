@@ -9,7 +9,7 @@ class DogLoversMainPage extends StatefulWidget {
 class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProviderStateMixin {
   AnimationController animationController;
   Animation<double> _animation;
-  double _topBarHeight = 94;
+  double _topBarHeight = 0.0;
 
   ScrollController _scrollController;
   @override
@@ -21,11 +21,11 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
         print(_scrollController.offset);
         if(_scrollController.offset != 0.0){
           setState(() {
-            _topBarHeight = 0.0;
+            _topBarHeight = 94;
           });
         }else if(_scrollController.offset == 0.0){
           setState(() {
-            _topBarHeight = 94;
+            _topBarHeight = 0.0;
           });
         }
 
@@ -94,7 +94,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
               left: 0,
               right: 0,
               bottom: MediaQuery.of(context).size.height - _topBarHeight,
-              duration: Duration(seconds: 1),
+              duration: Duration(milliseconds: 500),
               child: Container(
                 decoration: BoxDecoration(color: Colors.white, boxShadow: [
                   BoxShadow(
@@ -102,7 +102,10 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                   )
                 ]),
                 child: Center(
-                  child: Text("Challenges"),
+                  child: Text("Challenges", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20
+                  ),),
                 ),
               ),
             ),
@@ -112,3 +115,18 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

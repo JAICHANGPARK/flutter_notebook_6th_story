@@ -73,11 +73,11 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                               child: Container(
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
                                     colors: [
                                       Colors.white,
                                       Colors.deepPurple[50],
-                                      Colors.deepPurple[100],
-
                                     ]
                                   )
                                 ),

@@ -81,6 +81,12 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     ]
                                   )
                                 ),
+                                child: Column(
+                                  children: [
+                                    Text("Weekly Training"),
+                                    Text("Teach your dog a ")
+                                  ],
+                                ),
                               ),
                             ),
                             Expanded(

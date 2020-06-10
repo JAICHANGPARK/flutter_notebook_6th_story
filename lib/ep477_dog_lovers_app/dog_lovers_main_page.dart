@@ -87,6 +87,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     Spacer(),
                                     Text("Weekly Training",style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                      fontSize: 18
 
                                     ),),
                                     Padding(

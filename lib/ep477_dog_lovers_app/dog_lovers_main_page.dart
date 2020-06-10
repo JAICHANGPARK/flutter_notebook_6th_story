@@ -69,9 +69,11 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                         child: Column(
                           children: [
                             Expanded(
+                              flex: 3,
                               child: Placeholder(),
                             ),
                             Expanded(
+                              flex: 2,
                               child: Placeholder(),
                             )
                           ],

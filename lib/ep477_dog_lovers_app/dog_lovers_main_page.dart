@@ -91,7 +91,10 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     Container(
                                       height: 240,
                                       width: double.infinity,
-                                      child: Image.network("https://assets-ouch.icons8.com/thumb/476/6e48f43e-bfb2-4ac9-a22e-ccb0fd5535cd.png"),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Image.network("https://assets-ouch.icons8.com/thumb/476/6e48f43e-bfb2-4ac9-a22e-ccb0fd5535cd.png",),
+                                      ),
 
                                     )
                                   ],

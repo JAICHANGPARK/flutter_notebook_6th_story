@@ -11,11 +11,13 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
   Animation<double> _animation;
   double _topBarHeight = 84;
 
+  ScrollController _scrollController;
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
+    _scrollController =ScrollController();
   }
 
   @override

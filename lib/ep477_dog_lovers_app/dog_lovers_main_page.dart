@@ -70,7 +70,17 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                           children: [
                             Expanded(
                               flex: 4,
-                              child: Placeholder(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Colors.white,
+                                      Colors.deepPurple[50],
+                                      
+                                    ]
+                                  )
+                                ),
+                              ),
                             ),
                             Expanded(
                               flex: 2,

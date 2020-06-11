@@ -133,7 +133,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                           child: Column(
                             children: [
                               Expanded(
-                                flex: 4,
+                                flex: 8,
                                 child: Container(
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.only(
@@ -176,7 +176,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                 ),
                               ),
                               Expanded(
-                                flex: 2,
+                                flex:3,
                                 child: Column(
                                   children: [
                                     Expanded(

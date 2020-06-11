@@ -182,22 +182,35 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     Expanded(
                                       flex: 2,
                                       child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 16,
-                                        vertical: 16),
+                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                                         child: Row(
                                           children: [
-                                            Expanded(child: Placeholder(),),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
                                             VerticalDivider(
                                               width: 3,
                                               thickness: 0,
                                               color: Colors.white,
                                             ),
-                                            Expanded(child: Placeholder(),),
-                                            Expanded(child: Placeholder(),),
-                                            Expanded(child: Placeholder(),),
-                                            Expanded(child: Placeholder(),),
-                                            Expanded(child: Placeholder(),),
-                                            Expanded(child: Placeholder(),),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
                                           ],
                                         ),
                                       ),

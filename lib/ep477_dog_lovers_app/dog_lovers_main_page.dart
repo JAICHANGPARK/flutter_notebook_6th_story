@@ -190,7 +190,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             flex: 1,
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
 

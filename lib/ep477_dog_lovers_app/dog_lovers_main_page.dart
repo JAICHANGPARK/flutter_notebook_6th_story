@@ -188,12 +188,9 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple,
-                                                  borderRadius: BorderRadius.only(
-                                                    topLeft: Radius.circular(16),
-                                                    bottomLeft: Radius.circular(16)
-                                                  )
-                                                ),
+                                                    color: Colors.deepPurple,
+                                                    borderRadius: BorderRadius.only(
+                                                        topLeft: Radius.circular(16), bottomLeft: Radius.circular(16))),
                                               ),
                                             ),
                                             VerticalDivider(
@@ -202,7 +199,15 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                               color: Colors.white,
                                             ),
                                             Expanded(
-                                              child: Placeholder(),
+                                              child: Container(
+                                                  decoration: BoxDecoration(
+                                                color: Colors.deepPurple,
+                                              )),
+                                            ),
+                                            VerticalDivider(
+                                              width: 3,
+                                              thickness: 0,
+                                              color: Colors.white,
                                             ),
                                             Expanded(
                                               child: Placeholder(),

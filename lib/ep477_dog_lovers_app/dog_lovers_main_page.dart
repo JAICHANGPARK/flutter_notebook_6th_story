@@ -212,9 +212,16 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           ),
                                           Expanded(
                                             flex: 1,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.deepPurple,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                left: 16,
+                                                top: 16,
+                                                bottom: 16
+                                              ),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple,
+                                                ),
                                               ),
                                             ),
                                           )

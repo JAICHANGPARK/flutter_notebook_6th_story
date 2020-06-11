@@ -188,7 +188,11 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  
+                                                  color: Colors.deepPurple,
+                                                  borderRadius: BorderRadius.only(
+                                                    topLeft: Radius.circular(16),
+                                                    bottomLeft: Radius.circular(16)
+                                                  )
                                                 ),
                                               ),
                                             ),

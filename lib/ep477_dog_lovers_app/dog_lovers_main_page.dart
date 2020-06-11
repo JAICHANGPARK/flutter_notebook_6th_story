@@ -182,7 +182,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     Expanded(
                                       flex: 2,
                                       child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                                         child: Row(
                                           children: [
                                             Expanded(
@@ -194,7 +194,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                               ),
                                             ),
                                             VerticalDivider(
-                                              width: 3,
+                                              width: 2,
                                               thickness: 0,
                                               color: Colors.white,
                                             ),

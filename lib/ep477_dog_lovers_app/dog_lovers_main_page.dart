@@ -202,18 +202,20 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                                       fontSize: 18,
                                                     ),
                                                   ),
-                                                  Text("to finish",style: TextStyle(
-                                                    fontSize: 13
-                                                  ),),
+                                                  Text(
+                                                    "to finish",
+                                                    style: TextStyle(fontSize: 13),
+                                                  ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Expanded(
                                             flex: 1,
-                                            child: Container(decoration: BoxDecoration(
-                                              color: Colors.deepPurple,
-                                            ),
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.deepPurple,
+                                              ),
                                             ),
                                           )
                                         ],

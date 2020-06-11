@@ -205,7 +205,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                               )),
                                             ),
                                             VerticalDivider(
-                                              width: 3,
+                                              width: 2,
                                               thickness: 0,
                                               color: Colors.white,
                                             ),

@@ -214,13 +214,15 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             flex: 1,
                                             child: Padding(
                                               padding: const EdgeInsets.only(
-                                                left: 16,
-                                                top: 16,
-                                                bottom: 16
+                                                left: 32,
+                                                top: 12,
+                                                bottom: 12,
+                                                right: 16
                                               ),
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.deepPurple,
+                                                  borderRadius: BorderRadius.circular(16)
                                                 ),
                                               ),
                                             ),

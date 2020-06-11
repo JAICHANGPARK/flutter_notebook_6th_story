@@ -199,10 +199,12 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                                     "5 days",
                                                     style: TextStyle(
                                                       fontWeight: FontWeight.bold,
-                                                      fontSize: 16,
+                                                      fontSize: 18,
                                                     ),
                                                   ),
-                                                  Text("to finish"),
+                                                  Text("to finish",style: TextStyle(
+                                                    fontSize: 13
+                                                  ),),
                                                 ],
                                               ),
                                             ),

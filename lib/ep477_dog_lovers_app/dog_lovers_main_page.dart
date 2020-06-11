@@ -254,7 +254,15 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                               color: Colors.white,
                                             ),
                                             Expanded(
-                                              child: Placeholder(),
+                                              child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.deepPurple,
+                                                  )),
+                                            ),
+                                            VerticalDivider(
+                                              width: 2,
+                                              thickness: 0,
+                                              color: Colors.white,
                                             ),
                                           ],
                                         ),

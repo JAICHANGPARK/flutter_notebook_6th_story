@@ -180,7 +180,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                 child: Column(
                                   children: [
                                     Expanded(
-                                      flex: 1,
+                                      flex: 2,
                                       child: Placeholder(),
                                     ),
                                     Expanded(

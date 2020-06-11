@@ -212,8 +212,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.deepPurple,
-                                                  )),
+                                                color: Colors.deepPurple,
+                                              )),
                                             ),
                                             VerticalDivider(
                                               width: 2,
@@ -223,8 +223,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.deepPurple,
-                                                  )),
+                                                color: Colors.deepPurple,
+                                              )),
                                             ),
                                             VerticalDivider(
                                               width: 2,
@@ -234,8 +234,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.deepPurple,
-                                                  )),
+                                                color: Colors.deepPurple,
+                                              )),
                                             ),
                                             VerticalDivider(
                                               width: 2,
@@ -245,8 +245,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.deepPurple,
-                                                  )),
+                                                color: Colors.deepPurple,
+                                              )),
                                             ),
                                             VerticalDivider(
                                               width: 2,
@@ -256,8 +256,10 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                             Expanded(
                                               child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Colors.deepPurple[50],
-                                                  )),
+                                                      color: Colors.deepPurple[50],
+                                                      borderRadius: BorderRadius.only(
+                                                          topRight: Radius.circular(16),
+                                                          bottomRight: Radius.circular(16)))),
                                             ),
                                           ],
                                         ),

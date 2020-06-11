@@ -184,9 +184,15 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                     ),
                                     Expanded(
                                       flex: 1,
-                                      child: Placeholder(),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            flex: 1,
+                                            child: Placeholder(),
+                                          )
+                                        ],
+                                      ),
                                     )
-
                                   ],
                                 ),
                               )

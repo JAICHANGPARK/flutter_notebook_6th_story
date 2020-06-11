@@ -189,12 +189,16 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                         children: [
                                           Expanded(
                                             flex: 1,
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              children: [
-                                                Text("5 days"),
-                                                Text("to finish"),
-                                              ],
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                                children: [
+                                                  Text("5 days"),
+                                                  Text("to finish"),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           Expanded(

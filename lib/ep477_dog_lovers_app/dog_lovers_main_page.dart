@@ -193,7 +193,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                               padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
-
+                                                mainAxisAlignment: MainAxisAlignment.center,
                                                 children: [
                                                   Text("5 days"),
                                                   Text("to finish"),

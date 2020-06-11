@@ -176,7 +176,7 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                 ),
                               ),
                               Expanded(
-                                flex:3,
+                                flex: 3,
                                 child: Column(
                                   children: [
                                     Expanded(
@@ -195,7 +195,13 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                 children: [
-                                                  Text("5 days"),
+                                                  Text(
+                                                    "5 days",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
                                                   Text("to finish"),
                                                 ],
                                               ),

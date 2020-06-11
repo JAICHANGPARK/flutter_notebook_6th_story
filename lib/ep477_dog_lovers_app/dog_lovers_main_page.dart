@@ -73,8 +73,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                               flex: 8,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
+                                    borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(24), topLeft: Radius.circular(24)),
                                     gradient: LinearGradient(
                                         begin: Alignment.topCenter,
                                         end: Alignment.bottomCenter,
@@ -113,8 +113,146 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                               ),
                             ),
                             Expanded(
-                              flex: 2,
-                              child: Placeholder(),
+                              flex: 3,
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.deepPurple,
+                                                  borderRadius: BorderRadius.only(
+                                                      topLeft: Radius.circular(16), bottomLeft: Radius.circular(16))),
+                                            ),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple,
+                                                )),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple[50],
+                                                )),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple[50],
+                                                )),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple[50],
+                                                )),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.deepPurple[50],
+                                                )),
+                                          ),
+                                          VerticalDivider(
+                                            width: 2,
+                                            thickness: 0,
+                                            color: Colors.white,
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.deepPurple[50],
+                                                    borderRadius: BorderRadius.only(
+                                                        topRight: Radius.circular(16),
+                                                        bottomRight: Radius.circular(16)))),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          flex: 1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(12.0),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              children: [
+                                                Text(
+                                                  "5 days",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 18,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  "to finish",
+                                                  style: TextStyle(fontSize: 13),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          flex: 1,
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(left: 32, top: 12, bottom: 12, right: 16),
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.deepPurple, borderRadius: BorderRadius.circular(16)),
+                                              child: Center(
+                                                child: Text(
+                                                  "Continue",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),

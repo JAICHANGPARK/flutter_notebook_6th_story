@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
@@ -183,12 +184,18 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                       child: Placeholder(),
                                     ),
                                     Expanded(
-                                      flex: 1,
+                                      flex: 3,
                                       child: Row(
                                         children: [
                                           Expanded(
                                             flex: 1,
-                                            child: Placeholder(),
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text("5 days"),
+                                                Text("to finish"),
+                                              ],
+                                            ),
                                           ),
                                           Expanded(
                                             flex: 1,

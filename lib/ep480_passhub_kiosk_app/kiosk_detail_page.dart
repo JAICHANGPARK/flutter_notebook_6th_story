@@ -52,7 +52,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                 child: TextField(
                                   decoration: InputDecoration(
                                     border: InputBorder.none,
-                                    
+                                    icon: Icon(Icons.style)
+
                                   ),
                                 )
                               ),

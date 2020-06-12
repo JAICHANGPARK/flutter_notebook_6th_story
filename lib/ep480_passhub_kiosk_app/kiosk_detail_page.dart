@@ -49,7 +49,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   color: Colors.blueGrey[100],
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: TextField()
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    
+                                  ),
+                                )
                               ),
                             ),
                             Expanded(

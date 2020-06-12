@@ -13,19 +13,19 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
         child: Column(
           children: [
             Expanded(
-              flex: 1,
+              flex: 3,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 1,
+              flex: 8,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 1,
+              flex: 2,
               child: Placeholder(),
             ),
             Expanded(
-              flex: 1,
+              flex: 3,
               child: Placeholder(),
             ),
           ],

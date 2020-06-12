@@ -53,7 +53,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             Expanded(
                               flex: 2,
                               child: Container(
-                                margin: EdgeInsets.all(8),
+                                margin: EdgeInsets.only(
+                                  left: 12,
+                                  right: 12,
+                                  top: 8,
+                                  bottom: 8
+                                ),
                                 decoration: BoxDecoration(
                                   color: Colors.lightBlueAccent,
                                   borderRadius: BorderRadius.circular(8)

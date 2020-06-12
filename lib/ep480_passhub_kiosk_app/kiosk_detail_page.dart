@@ -9,17 +9,16 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-            child: Column(
-      children: [
-        Expanded(
-          flex: 1,
-          child: Placeholder(),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+          ],
         ),
-
-
-
-      ],
-    )));
+      ),
+    );
   }
 }

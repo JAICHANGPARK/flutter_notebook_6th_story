@@ -16,7 +16,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
           child: Column(
             children: [
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
@@ -79,11 +79,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
               ),
               Divider(),
               Expanded(
-                flex: 7,
+                flex: 10,
                 child: Placeholder(),
               ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: Placeholder(),
               ),
               Expanded(

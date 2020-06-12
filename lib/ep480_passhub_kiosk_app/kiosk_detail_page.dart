@@ -9,16 +9,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Colors.blueGrey[50],
-              Colors.white
-            ]
-          )
-        ),
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.blueGrey[50], Colors.white])),
         child: SafeArea(
           child: Column(
             children: [
@@ -33,10 +25,13 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("PassHub", style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "PassHub",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Icon(Icons.person_outline)
                         ],
                       ),
@@ -47,10 +42,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             Expanded(
                               flex: 8,
                               child: Container(
-                                margin: EdgeInsets.symmetric(vertical: 8,
+                                margin: EdgeInsets.symmetric(
+                                  vertical: 8,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.blueGrey[100]
+                                  color: Colors.blueGrey[100],
                                 ),
                               ),
                             ),
@@ -61,7 +57,6 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                           ],
                         ),
                       )
-
                     ],
                   ),
                 ),

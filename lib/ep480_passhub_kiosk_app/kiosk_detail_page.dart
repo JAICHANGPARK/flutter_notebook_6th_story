@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class KioskDetailPage extends StatefulWidget {
@@ -45,6 +46,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   margin: EdgeInsets.symmetric(
                                     vertical: 8,
                                   ),
+                                  padding: EdgeInsets.only(left: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.blueGrey[100],
                                     borderRadius: BorderRadius.circular(8),

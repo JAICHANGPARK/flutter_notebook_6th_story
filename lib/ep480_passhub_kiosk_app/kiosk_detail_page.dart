@@ -11,7 +11,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.blueGrey[50], Colors.white])),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [Colors.blueGrey[50], Colors.white]),
+        ),
         child: SafeArea(
           child: Column(
             children: [

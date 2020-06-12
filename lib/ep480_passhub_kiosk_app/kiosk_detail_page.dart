@@ -28,8 +28,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        
+                        Text("PassHub"),
+                        Icon(Icons.person_outline)
                       ],
                     )
 

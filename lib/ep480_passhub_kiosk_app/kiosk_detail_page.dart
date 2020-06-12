@@ -38,6 +38,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                           ),),
                           Icon(Icons.person_outline)
                         ],
+                      ),
+                      Container(
+                        height: 64,
+                        child: Placeholder(),
                       )
 
                     ],

@@ -16,6 +16,18 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
               flex: 1,
               child: Placeholder(),
             ),
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
           ],
         ),
       ),

@@ -47,6 +47,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                 ),
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey[100],
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
                             ),

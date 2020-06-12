@@ -73,8 +73,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                               flex: 8,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(24), topLeft: Radius.circular(24)),
+                                    borderRadius:
+                                        BorderRadius.only(topRight: Radius.circular(24), topLeft: Radius.circular(24)),
                                     gradient: LinearGradient(
                                         begin: Alignment.topCenter,
                                         end: Alignment.bottomCenter,
@@ -138,8 +138,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple,
-                                                )),
+                                              color: Colors.deepPurple,
+                                            )),
                                           ),
                                           VerticalDivider(
                                             width: 2,
@@ -149,8 +149,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple[50],
-                                                )),
+                                              color: Colors.deepPurple[50],
+                                            )),
                                           ),
                                           VerticalDivider(
                                             width: 2,
@@ -160,8 +160,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple[50],
-                                                )),
+                                              color: Colors.deepPurple[50],
+                                            )),
                                           ),
                                           VerticalDivider(
                                             width: 2,
@@ -171,8 +171,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple[50],
-                                                )),
+                                              color: Colors.deepPurple[50],
+                                            )),
                                           ),
                                           VerticalDivider(
                                             width: 2,
@@ -182,8 +182,8 @@ class _DogLoversMainPageState extends State<DogLoversMainPage> with TickerProvid
                                           Expanded(
                                             child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepPurple[50],
-                                                )),
+                                              color: Colors.deepPurple[50],
+                                            )),
                                           ),
                                           VerticalDivider(
                                             width: 2,

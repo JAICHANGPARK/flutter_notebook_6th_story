@@ -8,6 +8,12 @@ class KioskDetailPage extends StatefulWidget {
 class _KioskDetailPageState extends State<KioskDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          
+        ),
+      ),
+    );
   }
 }

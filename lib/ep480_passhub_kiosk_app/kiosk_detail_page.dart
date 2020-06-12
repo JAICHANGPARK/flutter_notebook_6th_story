@@ -54,8 +54,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                               flex: 2,
                               child: Container(
                                 margin: EdgeInsets.only(
-                                  left: 12,
-                                  right: 12,
+                                  left: 24,
+                                  right: 0,
                                   top: 8,
                                   bottom: 8
                                 ),

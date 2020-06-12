@@ -8,6 +8,6 @@ class KioskDetailPage extends StatefulWidget {
 class _KioskDetailPageState extends State<KioskDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

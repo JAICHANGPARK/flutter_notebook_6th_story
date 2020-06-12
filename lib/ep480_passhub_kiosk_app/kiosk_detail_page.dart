@@ -49,6 +49,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                               child: Container(
                                 margin: EdgeInsets.symmetric(vertical: 8,
                                 ),
+                                decoration: BoxDecoration(
+                                  color: Colors.blueGrey[100]
+                                ),
                               ),
                             ),
                             Expanded(

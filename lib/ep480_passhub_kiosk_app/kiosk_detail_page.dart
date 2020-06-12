@@ -52,7 +52,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             ),
                             Expanded(
                               flex: 2,
-                              child: Placeholder(),
+                              child: Container(
+                                margin: EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  color: Colors.lightBlueAccent,
+                                ),
+                              ),
                             )
                           ],
                         ),

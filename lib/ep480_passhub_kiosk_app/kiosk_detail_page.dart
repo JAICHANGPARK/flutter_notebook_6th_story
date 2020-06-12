@@ -46,7 +46,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                           children: [
                             Expanded(
                               flex: 8,
-                              child: Placeholder(),
+                              child: Container(
+                                margin: EdgeInsets.symmetric(vertical: 8,
+                                ),
+                              ),
                             ),
                             Expanded(
                               flex: 2,

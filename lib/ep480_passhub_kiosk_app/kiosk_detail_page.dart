@@ -32,7 +32,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("PassHub"),
+                          Text("PassHub", style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),),
                           Icon(Icons.person_outline)
                         ],
                       )

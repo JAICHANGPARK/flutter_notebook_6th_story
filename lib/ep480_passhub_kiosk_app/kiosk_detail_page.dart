@@ -24,18 +24,21 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
             children: [
               Expanded(
                 flex: 3,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("PassHub"),
-                        Icon(Icons.person_outline)
-                      ],
-                    )
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("PassHub"),
+                          Icon(Icons.person_outline)
+                        ],
+                      )
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Divider(),

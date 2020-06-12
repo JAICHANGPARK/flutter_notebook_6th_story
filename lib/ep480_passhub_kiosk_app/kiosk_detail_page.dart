@@ -24,7 +24,17 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
             children: [
               Expanded(
                 flex: 3,
-                child: Placeholder(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+
+                  ],
+                ),
               ),
               Divider(),
               Expanded(

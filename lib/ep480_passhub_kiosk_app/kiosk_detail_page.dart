@@ -141,7 +141,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Placeholder(),
+                      child: Container(
+                        margin: EdgeInsets.all(16),
+                        decoration: BoxDecoration(),
+                      ),
                     ),
                     Expanded(
                       child: Placeholder(),

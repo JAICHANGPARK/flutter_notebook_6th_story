@@ -55,9 +55,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   ),
                                   child: TextField(
                                     decoration: InputDecoration(
-                                        border: InputBorder.none, 
-                                        icon: Icon(Icons.style),
-                                        hintText: "123456789"),
+                                        border: InputBorder.none, icon: Icon(Icons.style), hintText: "123456789"),
                                   )),
                             ),
                             Expanded(
@@ -84,7 +82,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
               Divider(),
               Expanded(
                 flex: 10,
-                child: Placeholder(),
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
               ),
               Expanded(
                 flex: 2,

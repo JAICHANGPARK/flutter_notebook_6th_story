@@ -89,7 +89,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       child: Row(
                         children: [
                           Expanded(
-                            flex: 1,
+                            flex: 4,
                             child: Column(
                               children: [
                                 Row(
@@ -108,6 +108,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
 
                                 )
                               ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 3,
+                            child: Container(
+                              decoration: ,
                             ),
                           )
                         ],

@@ -104,7 +104,14 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   ),
                                   Row(
                                     children: [
-                                      Text("3 scans, 1 left"),
+                                      Text(
+                                        "3 scans, 1 left",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12,
+                                          color: Colors.blueGrey,
+                                        ),
+                                      ),
                                       SizedBox(
                                         width: 12,
                                       ),

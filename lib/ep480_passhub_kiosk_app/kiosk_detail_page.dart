@@ -95,6 +95,13 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   Text("Order: "),
                                   Text("31559165318"),
                                 ],
+                              ),
+                              Row(
+                                children:[
+
+                                ],
+                                Text("3 scans, 1 left"),
+
                               )
                             ],
                           )

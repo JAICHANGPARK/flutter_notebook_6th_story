@@ -92,19 +92,22 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                         children: [
                           Expanded(
                             flex: 4,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Row(
-                                  children: [
-                                    Text("Order: "),
-                                    Text("31559165318"),
-                                  ],
-                                ),
-                                Row(
-                                  children: [Text("3 scans, 1 left"), Icon(Icons.refresh), Text("Upgrade")],
-                                )
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Order: "),
+                                      Text("31559165318"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [Text("3 scans, 1 left"), Icon(Icons.refresh), Text("Upgrade")],
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           Expanded(

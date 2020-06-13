@@ -156,6 +156,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             color: Colors.redAccent,
                             borderRadius: BorderRadius.circular(12)
                         ),
+                        child: Center(
+                          child: Text("Cancel Item", style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ),
                       ),
                     ),
                   ],

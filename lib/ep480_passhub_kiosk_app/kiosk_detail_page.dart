@@ -50,7 +50,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   ),
                                   padding: EdgeInsets.only(left: 8),
                                   decoration: BoxDecoration(
-                                    color: Colors.blueGrey[100],
+                                    color: Colors.grey[300],
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: TextField(

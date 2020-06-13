@@ -114,7 +114,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             flex: 3,
                             child: Container(
                               margin: EdgeInsets.all(16),
-                              decoration: BoxDecoration(border: Border.all(color: Colors.blueGrey)),
+                              decoration: BoxDecoration(border: Border.all(color: Colors.blueGrey),
+                              borderRadius: BorderRadius.circular(4)),
                               child: Center(
                                 child: Text("WRONG RESULT?",),
                               ),

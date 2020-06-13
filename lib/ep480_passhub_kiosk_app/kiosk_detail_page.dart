@@ -88,7 +88,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       flex: 2,
                       child: Row(
                         children: [
-                          
+                          Column(
+                            children: [
+                              
+                            ],
+                          )
                         ],
                       ),
                     ),

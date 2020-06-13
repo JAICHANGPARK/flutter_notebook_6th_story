@@ -84,7 +84,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                 flex: 10,
                 child: Column(
                   children: [
-                    
+                    Expanded(
+                      flex: 2,
+                      child: Placeholder(),
+                    ),
                   ],
                 ),
               ),

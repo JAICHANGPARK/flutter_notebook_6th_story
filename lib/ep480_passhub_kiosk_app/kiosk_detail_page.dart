@@ -137,7 +137,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
               ),
               Expanded(
                 flex: 2,
-                child: Placeholder(),
+                child: Row(
+                  children: [
+
+                  ],
+                ),
               ),
             ],
           ),
@@ -146,3 +150,18 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

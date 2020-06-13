@@ -92,7 +92,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             children: [
                               Row(
                                 children: [
-                                  
+                                  Text("Order: "),
+                                  Text("31559165318"),
                                 ],
                               )
                             ],

@@ -87,10 +87,13 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                     Expanded(
                       flex: 2,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+
                         children: [
                           Expanded(
                             flex: 4,
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Row(
                                   children: [
@@ -99,13 +102,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                   ],
                                 ),
                                 Row(
-                                  children:[
-                                    Text("3 scans, 1 left"),
-                                    Icon(Icons.refresh),
-                                    Text("Upgrade")
-                                  ],
-
-
+                                  children: [Text("3 scans, 1 left"), Icon(Icons.refresh), Text("Upgrade")],
                                 )
                               ],
                             ),
@@ -114,10 +111,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             flex: 3,
                             child: Container(
                               margin: EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.blueGrey
-                                )
+                              decoration: BoxDecoration(border: Border.all(color: Colors.blueGrey)),
+                              child: Center(
+                                child: Text("WRONG RESULT?",),
                               ),
                             ),
                           )

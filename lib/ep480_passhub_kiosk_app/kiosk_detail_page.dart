@@ -108,8 +108,17 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                       SizedBox(
                                         width: 12,
                                       ),
-                                      Icon(Icons.refresh, color: Colors.lightBlueAccent,),
-                                      Text("Upgrade")
+                                      Icon(
+                                        Icons.refresh,
+                                        color: Colors.lightBlueAccent,
+                                      ),
+                                      Text(
+                                        "Upgrade",
+                                        style: TextStyle(
+                                          color: Colors.lightBlueAccent,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],

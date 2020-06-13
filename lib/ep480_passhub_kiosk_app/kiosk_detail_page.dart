@@ -150,8 +150,14 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       ),
                     ),
                     Expanded(
-                      child: Placeholder(),
-                    )
+                      child: Container(
+                        margin: EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                            color: Colors.redAccent,
+                            borderRadius: BorderRadius.circular(12)
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

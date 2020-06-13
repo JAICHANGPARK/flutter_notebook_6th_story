@@ -118,6 +118,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                               child: Center(
                                 child: Text(
                                   "WRONG RESULT?",
+                                  style: TextStyle(
+                                    color: Colors.lightBlueAccent
+                                  ),
                                 ),
                               ),
                             ),

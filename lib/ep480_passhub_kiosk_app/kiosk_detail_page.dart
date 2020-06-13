@@ -98,9 +98,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                               ),
                               Row(
                                 children:[
-
+                                  Text("3 scans, 1 left"),
+                                  Icon(Icons.refresh),
+                                  Text("Upgrade")
                                 ],
-                                Text("3 scans, 1 left"),
+
 
                               )
                             ],

@@ -98,12 +98,16 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                 children: [
                                   Row(
                                     children: [
-                                      Text("Order: ", style: TextStyle(
-                                        color: Colors.blueGrey
-                                      ),),
-                                      Text("31559165318", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),),
+                                      Text(
+                                        "Order: ",
+                                        style: TextStyle(color: Colors.blueGrey),
+                                      ),
+                                      Text(
+                                        "31559165318",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   Row(

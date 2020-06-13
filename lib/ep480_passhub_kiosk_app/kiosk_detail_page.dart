@@ -113,7 +113,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                           Expanded(
                             flex: 3,
                             child: Container(
-                              decoration: ,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.blueGrey
+                                )
+                              ),
                             ),
                           )
                         ],

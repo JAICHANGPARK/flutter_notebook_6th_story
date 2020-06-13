@@ -88,24 +88,27 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                       flex: 2,
                       child: Row(
                         children: [
-                          Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Text("Order: "),
-                                  Text("31559165318"),
-                                ],
-                              ),
-                              Row(
-                                children:[
-                                  Text("3 scans, 1 left"),
-                                  Icon(Icons.refresh),
-                                  Text("Upgrade")
-                                ],
+                          Expanded(
+                            flex: 1,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Order: "),
+                                    Text("31559165318"),
+                                  ],
+                                ),
+                                Row(
+                                  children:[
+                                    Text("3 scans, 1 left"),
+                                    Icon(Icons.refresh),
+                                    Text("Upgrade")
+                                  ],
 
 
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),

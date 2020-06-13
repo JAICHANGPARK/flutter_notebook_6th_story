@@ -90,7 +90,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                         children: [
                           Column(
                             children: [
-                              
+                              Row(
+                                children: [
+                                  
+                                ],
+                              )
                             ],
                           )
                         ],

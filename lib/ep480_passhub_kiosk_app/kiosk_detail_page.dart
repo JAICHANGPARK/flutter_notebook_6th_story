@@ -103,7 +103,14 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                                     ],
                                   ),
                                   Row(
-                                    children: [Text("3 scans, 1 left"), Icon(Icons.refresh), Text("Upgrade")],
+                                    children: [
+                                      Text("3 scans, 1 left"),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Icon(Icons.refresh),
+                                      Text("Upgrade")
+                                    ],
                                   )
                                 ],
                               ),
@@ -114,7 +121,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                             child: Container(
                               margin: EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.blueGrey), borderRadius: BorderRadius.circular(4)),
+                                  border: Border.all(color: Colors.blueGrey[200]),
+                                  borderRadius: BorderRadius.circular(4)),
                               child: Center(
                                 child: Text(
                                   "WRONG RESULT?",
@@ -147,30 +155,31 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                     Expanded(
                       child: Container(
                         margin: EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: Colors.lightBlueAccent,
-                          borderRadius: BorderRadius.circular(12)
-                        ),
+                        decoration:
+                            BoxDecoration(color: Colors.lightBlueAccent, borderRadius: BorderRadius.circular(12)),
                         child: Center(
-                          child: Text("Get my Pass", style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "Get my Pass",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ),
                     Expanded(
                       child: Container(
                         margin: EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                            color: Colors.redAccent,
-                            borderRadius: BorderRadius.circular(12)
-                        ),
+                        decoration: BoxDecoration(color: Colors.redAccent, borderRadius: BorderRadius.circular(12)),
                         child: Center(
-                          child: Text("Cancel Item", style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "Cancel Item",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ),

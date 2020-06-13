@@ -147,6 +147,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
                           color: Colors.lightBlueAccent,
                           borderRadius: BorderRadius.circular(12)
                         ),
+                        child: Center(
+                          child: Text("Get my Pass", style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ),
                       ),
                     ),
                     Expanded(

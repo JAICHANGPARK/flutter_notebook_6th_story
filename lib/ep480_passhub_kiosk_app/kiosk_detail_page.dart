@@ -335,7 +335,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                           ),
                                           Text(
                                             "Regular, 4 time visit",
-                                            style: TextStyle(fontSize: 13),
+                                            style: TextStyle(fontSize: 13,
+                                            fontWeight: FontWeight.bold,
+                                            ),
                                           )
                                         ],
                                       ),

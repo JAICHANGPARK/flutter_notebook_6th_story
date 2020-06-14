@@ -265,11 +265,16 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                           fontSize: 12,
                                                         ),
                                                       ),
-                                                      Text(
-                                                        "Sep 24, 2020",
-                                                        style: TextStyle(
-                                                          fontWeight: FontWeight.bold,
-                                                        ),
+                                                      Row(
+                                                        children: [
+                                                          Text(
+                                                            "Sep 24, 2020",
+                                                            style: TextStyle(
+                                                              fontWeight: FontWeight.bold,
+                                                            ),
+                                                          ),
+                                                          Icon(Icons.arrow_drop_down, size: 12,)
+                                                        ],
                                                       )
                                                     ],
                                                   ),

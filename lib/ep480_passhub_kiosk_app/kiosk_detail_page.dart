@@ -201,7 +201,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                   Text("Museum Of Modern Art (MoMA)"),
                                   Row(
                                     children: [
-                                      
+                                      Icon(Icons.location_on),
+                                      Text("Lincoin Center Plaza, New York, NY 10023")
                                     ],
                                   )
                                 ],

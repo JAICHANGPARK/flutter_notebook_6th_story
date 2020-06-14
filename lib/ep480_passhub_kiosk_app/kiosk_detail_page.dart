@@ -375,7 +375,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             ),
                                           ),
                                           Spacer(),
-                                          Text("MORE DERAILS"),
+                                          Text("MORE DERAILS", style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14,
+                                            color: Colors.lightBlueAccent
+                                          ),),
                                           Icon(Icons.keyboard_arrow_down),
                                         ],
                                       ),

@@ -324,8 +324,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                               borderRadius: BorderRadius.circular(8)
                                             ),
                                           ),
-                                          Text("Type:"),
-                                          Text("Regular, 4 time visit")
+                                          Text("Type:  ",style: TextStyle(
+                                            fontSize: 13
+                                          ),),
+                                          Text("Regular, 4 time visit",style: TextStyle(
+                                            fontSize: 13
+                                          ),)
                                         ],
                                       ),
                                     ),

@@ -166,7 +166,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                       flex: 8,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.blueGrey[100]
+                            )
+                          ]
                         ),
                       ),
                     ),

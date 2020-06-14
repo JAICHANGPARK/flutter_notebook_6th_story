@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class KioskDetailPage extends StatefulWidget {
   @override
@@ -170,7 +171,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> {
               ),
               Expanded(
                 flex: 1,
-                child: Center(),
+                child: Center(
+                  child: SpinKitCircle(
+                    color: Colors.blueAccent,
+                    controller: AnimationController(vsync: this, duration: const Duration(seconds: 100)),
+                  ),
+                ),
               ),
               Expanded(
                 flex: 2,

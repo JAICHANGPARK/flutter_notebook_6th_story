@@ -232,6 +232,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(
                                       child: Row(
@@ -254,7 +255,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                 ),
                                                 Expanded(
                                                   flex:6,
-                                                  child: Placeholder(),
+                                                  child: Column(
+                                                    children: [
+                                                      Text("Pur. Date:"),
+                                                      Text("Sep 24, 2020")
+                                                    ],
+                                                  ),
                                                 ),
 
                                               ],

@@ -207,7 +207,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                     ),),
                                     Row(
                                       children: [
-                                        Icon(Icons.location_on,size: 16,),
+                                        Icon(Icons.location_on,size: 16,
+                                        color: Colors.blueGrey,),
                                         Text("Lincoin Center Plaza, New York, NY 10023",
                                         style: TextStyle(
                                           fontSize: 12,

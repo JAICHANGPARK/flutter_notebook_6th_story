@@ -196,16 +196,21 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                             ),
                             Expanded(
                               flex: 1,
-                              child: Column(
-                                children: [
-                                  Text("Museum Of Modern Art (MoMA)"),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.location_on),
-                                      Text("Lincoin Center Plaza, New York, NY 10023")
-                                    ],
-                                  )
-                                ],
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text("Museum Of Modern Art (MoMA)"),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.location_on,size: 16,),
+                                        Text("Lincoin Center Plaza, New York, NY 10023")
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             Divider(),

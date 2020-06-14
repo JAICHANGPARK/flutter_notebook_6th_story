@@ -16,6 +16,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
           gradient: LinearGradient(colors: [Colors.blueGrey[50], Colors.white]),
         ),
         child: SafeArea(
+          maintainBottomViewPadding: true,
           child: Column(
             children: [
               Expanded(

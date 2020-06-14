@@ -255,28 +255,32 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                 ),
                                                 Expanded(
                                                   flex: 6,
-                                                  child: Column(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                                    children: [
-                                                      Text(
-                                                        "Pur. Date:",
-                                                        style: TextStyle(
-                                                          fontSize: 12,
-                                                        ),
-                                                      ),
-                                                      Row(
-                                                        children: [
-                                                          Text(
-                                                            "Sep 24, 2020",
-                                                            style: TextStyle(
-                                                              fontWeight: FontWeight.bold,
-                                                            ),
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                                    child: Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                                      children: [
+                                                        Text(
+                                                          "Pur. Date:",
+                                                          style: TextStyle(
+                                                            fontSize: 12,
                                                           ),
-                                                          Icon(Icons.arrow_drop_down, size: 12,)
-                                                        ],
-                                                      )
-                                                    ],
+                                                        ),
+                                                        Row(
+                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                          children: [
+                                                            Text(
+                                                              "Sep 24, 2020",
+                                                              style: TextStyle(
+                                                                fontWeight: FontWeight.bold,
+                                                              ),
+                                                            ),
+                                                            Icon(Icons.arrow_drop_down, size: 12,)
+                                                          ],
+                                                        )
+                                                      ],
+                                                    ),
                                                   ),
                                                 ),
                                               ],

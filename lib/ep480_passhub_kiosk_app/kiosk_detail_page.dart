@@ -240,7 +240,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                               Expanded(
                                                 flex:2,
                                                 child: Container(
-                                                  
+                                                  margin: EdgeInsets.all(3),
                                                   decoration: BoxDecoration(
                                                     color: Colors.lightBlueAccent[100],
                                                     borderRadius: BorderRadius.circular(8),

@@ -240,8 +240,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
-                                              Text("Exp Date:"),
+                                              Text("Exp Date:", style: TextStyle(
+                                                fontSize: 12,
+                                              ),),
                                               Text("Sep 28, 2020"),
                                             ],
                                           ),

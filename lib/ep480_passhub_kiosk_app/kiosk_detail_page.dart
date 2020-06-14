@@ -233,6 +233,12 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                 children: [
                                   Expanded(
                                     child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
                                   )
                                 ],
                               ),

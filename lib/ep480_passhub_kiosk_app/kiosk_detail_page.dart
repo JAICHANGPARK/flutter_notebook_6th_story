@@ -180,7 +180,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                           children: [
                             Expanded(
                               flex: 3,
-                              child: Placeholder(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  
+                                ),
+                              ),
                             ),
                             Expanded(
                               flex: 1,

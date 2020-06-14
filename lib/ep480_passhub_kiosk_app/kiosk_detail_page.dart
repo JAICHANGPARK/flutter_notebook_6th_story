@@ -229,7 +229,13 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                             Divider(),
                             Expanded(
                               flex: 3,
-                              child: Placeholder(),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),

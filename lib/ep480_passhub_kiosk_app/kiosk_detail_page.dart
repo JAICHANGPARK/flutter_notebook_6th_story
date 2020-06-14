@@ -324,6 +324,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             width: 38,
                                             decoration: BoxDecoration(
                                                 color: Colors.lightBlueAccent, borderRadius: BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Icon(Icons.),
+                                            ),
                                           ),
                                           SizedBox(width: 4,),
                                           Text(

@@ -313,7 +313,18 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                       ),
                                     ),
                                     Expanded(
-                                      child: Placeholder(),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            height: 38,
+                                            width: 38,
+                                            decoration: BoxDecoration(
+                                              color: Colors.lightBlueAccent,
+                                              borderRadius: BorderRadius.circular(8)
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                     Expanded(
                                       child: Placeholder(),

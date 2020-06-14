@@ -182,7 +182,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                               flex: 3,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  
+                                  image: DecorationImage(
+                                    image: NetworkImage("")
+                                  )
                                 ),
                               ),
                             ),

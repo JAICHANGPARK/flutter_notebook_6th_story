@@ -196,7 +196,16 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                             ),
                             Expanded(
                               flex: 1,
-                              child: Placeholder(),
+                              child: Column(
+                                children: [
+                                  Text("Museum Of Modern Art (MoMA)"),
+                                  Row(
+                                    children: [
+                                      
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                             Divider(),
                             Expanded(

@@ -178,7 +178,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                             borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           children: [
-                            
+                            Expanded(
+                              flex: 3,
+                              child: Placeholder(),
+                            )
                           ],
                         ),
                       ),

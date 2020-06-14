@@ -7,7 +7,7 @@ class KioskDetailPage extends StatefulWidget {
   _KioskDetailPageState createState() => _KioskDetailPageState();
 }
 
-class _KioskDetailPageState extends State<KioskDetailPage> {
+class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

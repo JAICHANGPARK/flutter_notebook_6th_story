@@ -182,16 +182,15 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                               flex: 3,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(16),
-                                    topRight: Radius.circular(16),
-                                  ),
-                                  image: DecorationImage(
-                                    image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070__340.jpg",
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(16),
+                                      topRight: Radius.circular(16),
                                     ),
-                                    fit: BoxFit.cover
-                                  )
-                                ),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070__340.jpg",
+                                        ),
+                                        fit: BoxFit.cover)),
                               ),
                             ),
                             Expanded(
@@ -202,19 +201,23 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Museum Of Modern Art (MoMA)", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),),
+                                    Text(
+                                      "Museum Of Modern Art (MoMA)",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Row(
                                       children: [
-                                        Icon(Icons.location_on,size: 16,
-                                        color: Colors.blueGrey,),
-                                        Text("Lincoin Center Plaza, New York, NY 10023",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.blueGrey
-
-                                        ),)
+                                        Icon(
+                                          Icons.location_on,
+                                          size: 16,
+                                          color: Colors.blueGrey,
+                                        ),
+                                        Text(
+                                          "Lincoin Center Plaza, New York, NY 10023",
+                                          style: TextStyle(fontSize: 12, color: Colors.blueGrey),
+                                        )
                                       ],
                                     )
                                   ],

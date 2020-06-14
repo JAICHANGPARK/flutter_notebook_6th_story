@@ -276,7 +276,10 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                                 fontWeight: FontWeight.bold,
                                                               ),
                                                             ),
-                                                            Icon(Icons.arrow_drop_down, size: 12,)
+                                                            Icon(
+                                                              Icons.arrow_drop_down,
+                                                              size: 12,
+                                                            )
                                                           ],
                                                         )
                                                       ],
@@ -320,16 +323,20 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             height: 38,
                                             width: 38,
                                             decoration: BoxDecoration(
-                                              color: Colors.lightBlueAccent,
-                                              borderRadius: BorderRadius.circular(8)
+                                                color: Colors.lightBlueAccent, borderRadius: BorderRadius.circular(8)),
+                                          ),
+                                          Text(
+                                            "Type:  ",
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                              color: Colors.blueGrey,
+                                              fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          Text("Type:  ",style: TextStyle(
-                                            fontSize: 13
-                                          ),),
-                                          Text("Regular, 4 time visit",style: TextStyle(
-                                            fontSize: 13
-                                          ),)
+                                          Text(
+                                            "Regular, 4 time visit",
+                                            style: TextStyle(fontSize: 13),
+                                          )
                                         ],
                                       ),
                                     ),

@@ -11,12 +11,13 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomPadding: false,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(colors: [Colors.blueGrey[50], Colors.white]),
         ),
         child: SafeArea(
-          maintainBottomViewPadding: true,
           child: Column(
             children: [
               Expanded(

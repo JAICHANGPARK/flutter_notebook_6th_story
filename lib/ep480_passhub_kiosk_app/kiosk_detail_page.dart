@@ -211,7 +211,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                         Text("Lincoin Center Plaza, New York, NY 10023",
                                         style: TextStyle(
                                           fontSize: 12,
-                                          
+                                          color: Colors.blueGrey
+
                                         ),)
                                       ],
                                     )

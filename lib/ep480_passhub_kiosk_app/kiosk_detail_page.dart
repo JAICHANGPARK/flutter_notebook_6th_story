@@ -170,9 +170,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.blueGrey[100]
-                            )
-                          ]
+                              color: Colors.blueGrey[100],
+                              
+                            ),
+                          ],
+                          borderRadius: BorderRadius.circular(16)
                         ),
                       ),
                     ),

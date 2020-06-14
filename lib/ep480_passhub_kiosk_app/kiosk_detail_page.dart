@@ -256,6 +256,8 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                 Expanded(
                                                   flex: 6,
                                                   child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                                                     children: [
                                                       Text(
                                                         "Pur. Date:",

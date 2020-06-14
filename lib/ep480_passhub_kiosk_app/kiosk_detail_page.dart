@@ -184,6 +184,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(16),
+                                    topRight: Radius.circular(16),
                                   ),
                                   image: DecorationImage(
                                     image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070__340.jpg",

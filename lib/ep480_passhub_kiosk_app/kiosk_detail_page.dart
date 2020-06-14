@@ -287,23 +287,26 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             ),
                                           ),
                                           Expanded(
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                              children: [
-                                                Text(
-                                                  "Exp Date:",
-                                                  style: TextStyle(
-                                                    fontSize: 12,
+                                            child: Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                                children: [
+                                                  Text(
+                                                    "Exp Date:",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
                                                   ),
-                                                ),
-                                                Text(
-                                                  "Sep 28, 2020",
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
+                                                  Text(
+                                                    "Sep 28, 2020",
+                                                    style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                    ),
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ],

@@ -7,7 +7,7 @@ class KioskDetailPage extends StatefulWidget {
   _KioskDetailPageState createState() => _KioskDetailPageState();
 }
 
-class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderStateMixin{
+class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -167,15 +167,15 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                       child: Container(
                         margin: EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.blueGrey[100],
-                              
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(16)
-                        ),
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.blueGrey[50],
+                                spreadRadius: 5,
+                                blurRadius: 2,
+                              ),
+                            ],
+                            borderRadius: BorderRadius.circular(16)),
                       ),
                     ),
                   ],

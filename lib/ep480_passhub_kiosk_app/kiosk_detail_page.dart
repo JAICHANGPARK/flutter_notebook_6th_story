@@ -316,13 +316,16 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                       child: Row(
                                         children: [
                                           Container(
+                                            margin: EdgeInsets.all(3),
                                             height: 38,
                                             width: 38,
                                             decoration: BoxDecoration(
                                               color: Colors.lightBlueAccent,
                                               borderRadius: BorderRadius.circular(8)
                                             ),
-                                          )
+                                          ),
+                                          Text("Type:"),
+                                          Text("Regular, 4 time visit")
                                         ],
                                       ),
                                     ),

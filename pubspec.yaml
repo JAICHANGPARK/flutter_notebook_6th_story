@@ -24,6 +24,7 @@ dependencies:
   get_it: any
   box2d_flame: any
   bottom_navy_bar: any
+  flutter_spinkit: ^4.1.2
 
 dev_dependencies:
   flutter_test:

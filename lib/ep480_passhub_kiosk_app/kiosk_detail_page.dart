@@ -241,7 +241,7 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             child: Row(
                                               children: [
                                                 Expanded(
-                                                  flex:2,
+                                                  flex: 2,
                                                   child: Container(
                                                     margin: EdgeInsets.all(3),
                                                     decoration: BoxDecoration(
@@ -254,15 +254,19 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                                   ),
                                                 ),
                                                 Expanded(
-                                                  flex:6,
+                                                  flex: 6,
                                                   child: Column(
                                                     children: [
-                                                      Text("Pur. Date:"),
+                                                      Text(
+                                                        "Pur. Date:",
+                                                        style: TextStyle(
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
                                                       Text("Sep 24, 2020")
                                                     ],
                                                   ),
                                                 ),
-
                                               ],
                                             ),
                                           ),

@@ -202,11 +202,17 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Museum Of Modern Art (MoMA)"),
+                                    Text("Museum Of Modern Art (MoMA)", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),),
                                     Row(
                                       children: [
                                         Icon(Icons.location_on,size: 16,),
-                                        Text("Lincoin Center Plaza, New York, NY 10023")
+                                        Text("Lincoin Center Plaza, New York, NY 10023",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          
+                                        ),)
                                       ],
                                     )
                                   ],

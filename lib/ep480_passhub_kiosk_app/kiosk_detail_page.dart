@@ -347,8 +347,39 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                       ),
                                     ),
                                     Expanded(
-                                      child: Placeholder(),
-                                    )
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            margin: EdgeInsets.all(3),
+                                            height: 38,
+                                            width: 38,
+                                            decoration: BoxDecoration(
+                                                color: Colors.lightBlueAccent, borderRadius: BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Icon(Icons.refresh),
+                                            ),
+                                          ),
+                                          SizedBox(width: 4,),
+                                          Text(
+                                            "Type:  ",
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                              color: Colors.blueGrey,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Regular, 4 time visit",
+                                            style: TextStyle(fontSize: 13,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Text("MORE DERAILS"),
+                                          Icon(Icons.keyboard_arrow_down),
+                                        ],
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),

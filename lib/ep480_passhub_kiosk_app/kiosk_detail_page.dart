@@ -229,65 +229,68 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                             Divider(),
                             Expanded(
                               flex: 3,
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Row(
-                                      children: [
-                                        Expanded(
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                flex:2,
-                                                child: Container(
-                                                  margin: EdgeInsets.all(3),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.lightBlueAccent[100],
-                                                    borderRadius: BorderRadius.circular(8),
-                                                  ),
-                                                  child: Center(
-                                                    child: Icon(Icons.calendar_today),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                  flex:2,
+                                                  child: Container(
+                                                    margin: EdgeInsets.all(3),
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.lightBlueAccent[100],
+                                                      borderRadius: BorderRadius.circular(8),
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.calendar_today),
+                                                    ),
                                                   ),
                                                 ),
-                                              ),
-                                              Expanded(
-                                                flex:6,
-                                                child: Placeholder(),
-                                              ),
+                                                Expanded(
+                                                  flex:6,
+                                                  child: Placeholder(),
+                                                ),
 
-                                            ],
+                                              ],
+                                            ),
                                           ),
-                                        ),
-                                        Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                            children: [
-                                              Text(
-                                                "Exp Date:",
-                                                style: TextStyle(
-                                                  fontSize: 12,
+                                          Expanded(
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                              children: [
+                                                Text(
+                                                  "Exp Date:",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),
                                                 ),
-                                              ),
-                                              Text(
-                                                "Sep 28, 2020",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
+                                                Text(
+                                                  "Sep 28, 2020",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    child: Placeholder(),
-                                  ),
-                                  Expanded(
-                                    child: Placeholder(),
-                                  )
-                                ],
+                                    Expanded(
+                                      child: Placeholder(),
+                                    ),
+                                    Expanded(
+                                      child: Placeholder(),
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],

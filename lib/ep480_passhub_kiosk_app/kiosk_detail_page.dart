@@ -328,7 +328,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                               child: Icon(Icons.confirmation_number),
                                             ),
                                           ),
-                                          SizedBox(width: 4,),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
                                           Text(
                                             "Type:  ",
                                             style: TextStyle(
@@ -339,8 +341,9 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                           ),
                                           Text(
                                             "Regular, 4 time visit",
-                                            style: TextStyle(fontSize: 13,
-                                            fontWeight: FontWeight.bold,
+                                            style: TextStyle(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.bold,
                                             ),
                                           )
                                         ],
@@ -359,9 +362,11 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                               child: Icon(Icons.refresh),
                                             ),
                                           ),
-                                          SizedBox(width: 4,),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
                                           Text(
-                                            "Type:  ",
+                                            "Days left:  ",
                                             style: TextStyle(
                                               fontSize: 13,
                                               color: Colors.blueGrey,
@@ -369,18 +374,24 @@ class _KioskDetailPageState extends State<KioskDetailPage> with TickerProviderSt
                                             ),
                                           ),
                                           Text(
-                                            "Regular, 4 time visit",
-                                            style: TextStyle(fontSize: 13,
+                                            "3",
+                                            style: TextStyle(
+                                              fontSize: 13,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                           Spacer(),
-                                          Text("MORE DERAILS", style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14,
-                                            color: Colors.lightBlueAccent
-                                          ),),
-                                          Icon(Icons.keyboard_arrow_down),
+                                          Text(
+                                            "MORE DERAILS",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 14,
+                                                color: Colors.lightBlueAccent),
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_down,
+                                            color: Colors.lightBlueAccent,
+                                          ),
                                         ],
                                       ),
                                     ),

@@ -13,7 +13,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container()
+            Container(
+              height: 360,
+              
+            )
 
           ],
         ),

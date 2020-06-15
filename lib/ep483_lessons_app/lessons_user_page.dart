@@ -87,10 +87,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.list, color: Colors.orange,
+                    Icon(Icons.surround_sound, color: Colors.grey,
                       size: 38,),
-                    Text("Lessons",style: TextStyle(
-                      color: Colors.orange,
+                    Text("Listening",style: TextStyle(
+                      color: Colors.grey,
 
                     ),)
                   ],

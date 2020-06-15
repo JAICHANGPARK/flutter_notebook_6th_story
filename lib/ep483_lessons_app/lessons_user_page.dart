@@ -10,7 +10,14 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-      body: SingleChildScrollView(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container()
+
+          ],
+        ),
+      ),
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(36),

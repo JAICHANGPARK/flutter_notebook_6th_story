@@ -64,7 +64,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Icon(Icons.threed_rotation, color: Colors.grey,
-                      size: 38,),
+                      size: 28,),
                     Text("Lessons",style: TextStyle(
                       color: Colors.grey,fontSize: 12
 

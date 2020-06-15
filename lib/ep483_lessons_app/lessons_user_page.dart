@@ -63,10 +63,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.list, color: Colors.orange,
+                    Icon(Icons.threed_rotation, color: Colors.grey,
                       size: 38,),
                     Text("Lessons",style: TextStyle(
-                      color: Colors.orange,
+                      color: Colors.grey,
 
                     ),)
                   ],
@@ -75,10 +75,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.list, color: Colors.orange,
+                    Icon(Icons.list, color: Colors.grey,
                       size: 38,),
                     Text("Lessons",style: TextStyle(
-                      color: Colors.orange,
+                      color: Colors.grey,
 
                     ),)
                   ],

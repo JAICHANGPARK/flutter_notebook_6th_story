@@ -43,9 +43,40 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
           child: Container(
             height: 78,
             decoration: BoxDecoration(),
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    Icon(Icons.list, color: Colors.orange,
+                    size: 38,),
+                    Text("Lessons",style: TextStyle(
+                      color: Colors.orange,
+
+                    ),)
+                  ],
+                )
+              ],
+            ),
+
           ),
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

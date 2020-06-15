@@ -30,7 +30,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               ),
             ),
             Container(
-              height: 240,
+              height: 120,
               decoration: BoxDecoration(
                   color: Colors.blue
               ),

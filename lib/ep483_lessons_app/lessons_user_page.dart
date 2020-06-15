@@ -76,10 +76,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Icon(Icons.chat_bubble_outline, color: Colors.grey,
-                      size: 32,),
+                      size: 28,),
                     Text("Reports",style: TextStyle(
                       color: Colors.grey,
-
+                      fontSize: 12
                     ),)
                   ],
                 ),

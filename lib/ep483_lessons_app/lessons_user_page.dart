@@ -54,7 +54,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     Icon(Icons.list, color: Colors.orange,
                     size: 38,),
                     Text("Lessons",style: TextStyle(
-                      color: Colors.orange,
+                      color: Colors.orange,fontSize: 12
 
                     ),)
                   ],
@@ -66,7 +66,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     Icon(Icons.threed_rotation, color: Colors.grey,
                       size: 38,),
                     Text("Lessons",style: TextStyle(
-                      color: Colors.grey,
+                      color: Colors.grey,fontSize: 12
 
                     ),)
                   ],

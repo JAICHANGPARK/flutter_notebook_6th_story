@@ -52,7 +52,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Icon(Icons.list, color: Colors.orange,
-                    size: 38,),
+                    size: 28,),
                     Text("Lessons",style: TextStyle(
                       color: Colors.orange,fontSize: 12
 

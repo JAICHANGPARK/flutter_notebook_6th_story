@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep480_passhub_kiosk_app/kiosk_main_page.dart';
+import 'ep483_lessons_app/lessons_app.dart';
 
 void main() {
-  runApp(KioskApp());
+  runApp(LessonsApp());
 }

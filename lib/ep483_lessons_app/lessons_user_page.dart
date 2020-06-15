@@ -13,7 +13,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
       bottomNavigationBar: BottomAppBar(
         elevation: 9,
         child: Container(
-          height: 72,
+          height: 78,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(24),

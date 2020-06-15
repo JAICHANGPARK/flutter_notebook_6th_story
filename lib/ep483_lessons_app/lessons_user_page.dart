@@ -10,6 +10,15 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 9,
+        child: Container(
+          height: 72,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only()
+          ),
+        ),
+      ),
     );
   }
 }

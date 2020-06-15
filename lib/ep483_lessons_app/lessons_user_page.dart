@@ -13,8 +13,8 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
       body: SingleChildScrollView(),
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
-          topRight: Radius.circular(24),
-          topLeft: Radius.circular(24),
+          topRight: Radius.circular(36),
+          topLeft: Radius.circular(36),
         ),
         child: BottomAppBar(
           elevation: 12,

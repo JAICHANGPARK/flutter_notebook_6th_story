@@ -51,72 +51,67 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.list, color: Colors.orange,
-                    size: 28,),
-                    Text("Lessons",style: TextStyle(
-                      color: Colors.orange,fontSize: 12
-
-                    ),)
+                    Icon(
+                      Icons.list,
+                      color: Colors.orange,
+                      size: 28,
+                    ),
+                    Text(
+                      "Lessons",
+                      style: TextStyle(color: Colors.orange, fontSize: 12),
+                    )
                   ],
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.threed_rotation, color: Colors.grey,
-                      size: 28,),
-                    Text("Lessons",style: TextStyle(
-                      color: Colors.grey,fontSize: 12
-
-                    ),)
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(Icons.chat_bubble_outline, color: Colors.grey,
-                      size: 28,),
-                    Text("Reports",style: TextStyle(
+                    Icon(
+                      Icons.threed_rotation,
                       color: Colors.grey,
-                      fontSize: 12
-                    ),)
+                      size: 28,
+                    ),
+                    Text(
+                      "Lessons",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    )
                   ],
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.surround_sound, color: Colors.grey,
-                      size: 28,),
-                    Text("Listening",style: TextStyle(
-                      color: Colors.grey,fontSize: 12
-
-                    ),)
+                    Icon(
+                      Icons.chat_bubble_outline,
+                      color: Colors.grey,
+                      size: 28,
+                    ),
+                    Text(
+                      "Reports",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    )
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(
+                      Icons.surround_sound,
+                      color: Colors.grey,
+                      size: 28,
+                    ),
+                    Text(
+                      "Listening",
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    )
                   ],
                 )
               ],
             ),
-
           ),
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

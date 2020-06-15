@@ -45,6 +45,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -52,6 +53,42 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   children: [
                     Icon(Icons.list, color: Colors.orange,
                     size: 38,),
+                    Text("Lessons",style: TextStyle(
+                      color: Colors.orange,
+
+                    ),)
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.list, color: Colors.orange,
+                      size: 38,),
+                    Text("Lessons",style: TextStyle(
+                      color: Colors.orange,
+
+                    ),)
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.list, color: Colors.orange,
+                      size: 38,),
+                    Text("Lessons",style: TextStyle(
+                      color: Colors.orange,
+
+                    ),)
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(Icons.list, color: Colors.orange,
+                      size: 38,),
                     Text("Lessons",style: TextStyle(
                       color: Colors.orange,
 

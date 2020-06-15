@@ -42,12 +42,13 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
           elevation: 12,
           child: Container(
             height: 78,
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(),
             child: Row(
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Icon(Icons.list, color: Colors.orange,
                     size: 38,),

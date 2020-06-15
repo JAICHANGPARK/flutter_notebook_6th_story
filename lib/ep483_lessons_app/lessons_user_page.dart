@@ -90,7 +90,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     Icon(Icons.surround_sound, color: Colors.grey,
                       size: 28,),
                     Text("Listening",style: TextStyle(
-                      color: Colors.grey,
+                      color: Colors.grey,fontSize: 12
 
                     ),)
                   ],

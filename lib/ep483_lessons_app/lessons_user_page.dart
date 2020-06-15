@@ -19,7 +19,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                 color: Colors.indigoAccent,
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(36),
-                  topLeft: Radius.circular(36),
+                  bottomLeft: Radius.circular(36),
                 )
               ),
 

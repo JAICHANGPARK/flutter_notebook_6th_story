@@ -8,6 +8,8 @@ class LessonsUserPage extends StatefulWidget {
 class _LessonsUserPageState extends State<LessonsUserPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(),
+    );
   }
 }

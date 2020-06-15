@@ -75,9 +75,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Icon(Icons.list, color: Colors.grey,
+                    Icon(Icons.chat_bubble_outline, color: Colors.grey,
                       size: 38,),
-                    Text("Lessons",style: TextStyle(
+                    Text("Reports",style: TextStyle(
                       color: Colors.grey,
 
                     ),)

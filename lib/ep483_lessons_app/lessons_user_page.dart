@@ -9,9 +9,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(),
       bottomNavigationBar: BottomAppBar(
-        elevation: 9,
+        elevation: 12,
         child: Container(
           height: 78,
           decoration: BoxDecoration(

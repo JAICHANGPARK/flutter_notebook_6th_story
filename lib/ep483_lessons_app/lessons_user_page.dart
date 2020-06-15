@@ -22,7 +22,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   bottomLeft: Radius.circular(36),
                 )
               ),
-
+            ),
+            Container(
+              height: 240,
             )
 
           ],

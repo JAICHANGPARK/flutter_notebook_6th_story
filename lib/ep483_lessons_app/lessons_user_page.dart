@@ -25,6 +25,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
             ),
             Container(
               height: 240,
+              decoration: BoxDecoration(
+                color: Colors.redAccent
+              ),
             )
 
           ],

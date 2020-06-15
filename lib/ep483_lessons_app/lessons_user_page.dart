@@ -15,7 +15,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
         child: Container(
           height: 72,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only()
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(24),
+              topLeft: Radius.circular(24),
+            )
           ),
         ),
       ),

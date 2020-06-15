@@ -88,7 +88,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Icon(Icons.surround_sound, color: Colors.grey,
-                      size: 38,),
+                      size: 28,),
                     Text("Listening",style: TextStyle(
                       color: Colors.grey,
 

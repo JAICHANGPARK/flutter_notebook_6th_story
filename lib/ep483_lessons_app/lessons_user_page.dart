@@ -16,26 +16,20 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
             Container(
               height: 300,
               decoration: BoxDecoration(
-                color: Colors.indigoAccent,
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(36),
-                  bottomLeft: Radius.circular(36),
-                )
-              ),
+                  color: Colors.indigoAccent,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(36),
+                    bottomLeft: Radius.circular(36),
+                  )),
             ),
             Container(
               height: 240,
-              decoration: BoxDecoration(
-                color: Colors.redAccent
-              ),
+              decoration: BoxDecoration(color: Colors.redAccent),
             ),
             Container(
               height: 120,
-              decoration: BoxDecoration(
-                  color: Colors.blue
-              ),
+              decoration: BoxDecoration(color: Colors.blue),
             )
-
           ],
         ),
       ),
@@ -48,9 +42,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
           elevation: 12,
           child: Container(
             height: 78,
-            decoration: BoxDecoration(
-
-            ),
+            decoration: BoxDecoration(),
           ),
         ),
       ),

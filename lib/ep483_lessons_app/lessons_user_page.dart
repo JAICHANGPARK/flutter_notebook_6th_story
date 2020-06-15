@@ -11,15 +11,18 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(),
-      bottomNavigationBar: BottomAppBar(
-        elevation: 12,
-        child: Container(
-          height: 78,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(24),
-              topLeft: Radius.circular(24),
-            )
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(24),
+          topLeft: Radius.circular(24),
+        ),
+        child: BottomAppBar(
+          elevation: 12,
+          child: Container(
+            height: 78,
+            decoration: BoxDecoration(
+
+            ),
           ),
         ),
       ),

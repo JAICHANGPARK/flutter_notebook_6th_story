@@ -14,7 +14,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
         child: Column(
           children: [
             Container(
-              height: 360,
+              height: 300,
               decoration: BoxDecoration(
                 color: Colors.indigoAccent
               ),

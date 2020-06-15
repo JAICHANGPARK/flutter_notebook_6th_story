@@ -47,7 +47,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(Icons.list, color: Colors.orange,
                     size: 38,),

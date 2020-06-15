@@ -15,7 +15,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
           children: [
             Container(
               height: 360,
-              
+              decoration: BoxDecoration(
+                color: Colors.indigoAccent
+              ),
+
             )
 
           ],

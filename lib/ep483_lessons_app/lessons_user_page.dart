@@ -21,6 +21,11 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     bottomRight: Radius.circular(36),
                     bottomLeft: Radius.circular(36),
                   )),
+              child: Stack(
+                children: [
+                  
+                ],
+              ),
             ),
             Container(
               height: 240,

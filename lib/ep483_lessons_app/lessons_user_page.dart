@@ -112,7 +112,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               ),
             ),
             Container(
-              height: 240,
+              height: 230,
               padding: EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

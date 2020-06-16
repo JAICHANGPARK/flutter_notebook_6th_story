@@ -148,7 +148,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                 ]),
                             child: Column(
                               children: [
-                                
+                                Expanded(
+                                  flex: 2,
+                                  child: Placeholder(),
+                                )
                               ],
                             ),
                           );

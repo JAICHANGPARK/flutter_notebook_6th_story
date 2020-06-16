@@ -53,7 +53,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     child: FloatingActionButton(
                       elevation: 12,
                       backgroundColor: Colors.white,
-                      onPressed: () {  },
+                      onPressed: () {},
                       child: Text(
                         "B2",
                         style: TextStyle(
@@ -68,7 +68,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     bottom: 24,
                     right: 24,
                     child: Column(
-
+                      children: [],
                     ),
                   )
                 ],

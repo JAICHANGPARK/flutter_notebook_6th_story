@@ -132,7 +132,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: ListView.builder(itemBuilder: (context, index){
+                    child: ListView.builder(
+                        itemCount: 10,
+                        
+                        itemBuilder: (context, index){
                       return Container();
                     }),
                   )

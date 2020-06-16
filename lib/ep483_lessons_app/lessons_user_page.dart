@@ -46,6 +46,14 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                       backgroundColor: Colors.orangeAccent,
                       radius: 62,
                     ),
+                  ),
+                  Positioned(
+                    top: 120,
+                    right: 16,
+                    child: FloatingActionButton(
+                      backgroundColor: Colors.white,
+                      child: Text("B2", style: TextStyle(),),
+                    ),
                   )
                 ],
               ),

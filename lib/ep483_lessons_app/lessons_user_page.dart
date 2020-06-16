@@ -82,11 +82,19 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         ),),
                         Spacer(),
                         Text("Course"),
-                        Text("Business English"),
+                        Text("Business English", style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold
+                        ),),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("12/46 Lessons"),
+                            Text("12/46 Lessons", style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold
+                            ),),
                             Text("intermediate")
                           ],
                         )

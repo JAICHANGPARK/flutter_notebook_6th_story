@@ -145,7 +145,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                           border: Border.all(color: Colors.indigo),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey[100],
+                              color: Colors.grey[400],
+                              blurRadius: 2,
+                              spreadRadius: 2,
+                              offset: Offset(-2,4)
                             )
                           ]
                         ),

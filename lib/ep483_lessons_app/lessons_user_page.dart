@@ -137,7 +137,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index){
                       return Container(
-                        width: 240,
+                        width: 180,
                         margin: EdgeInsets.only(right: 8,
                         bottom: 8, top: 8),
                         decoration: BoxDecoration(

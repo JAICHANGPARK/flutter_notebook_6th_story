@@ -38,6 +38,13 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                       radius: 120,
                       backgroundColor: Colors.indigoAccent[100],
                     ),
+                  ),
+                  Positioned(
+                    right: 16,
+                    top: 40,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.orangeAccent,
+                    ),
                   )
                 ],
               ),

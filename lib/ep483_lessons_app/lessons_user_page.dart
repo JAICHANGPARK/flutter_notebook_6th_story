@@ -164,9 +164,14 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                         color: Colors.grey,
                                         fontSize: 12
                                       ),),
-                                      Text("Business\nmeetings", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),)
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          vertical: 8
+                                        ),
+                                        child: Text("Business\nmeetings", style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),),
+                                      )
                                     ],
                                   ),
                                 )

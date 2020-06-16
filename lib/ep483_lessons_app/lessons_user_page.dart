@@ -64,7 +64,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Positioned(
                     left: 16,
-                    top: 40,
+                    top: 64,
                     bottom: 24,
                     right: 24,
                     child: Column(

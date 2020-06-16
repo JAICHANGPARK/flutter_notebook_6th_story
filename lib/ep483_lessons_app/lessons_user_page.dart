@@ -81,7 +81,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                           fontSize: 12
                         ),),
                         Spacer(),
-                        Text("Course"),
+                        Text("Course",style: TextStyle(
+                            color: Colors.indigoAccent[700],
+                            fontSize: 12
+                        ),),
                         Text("Business English", style: TextStyle(
                             fontSize: 24,
                             color: Colors.white,

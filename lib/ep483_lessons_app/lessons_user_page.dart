@@ -164,7 +164,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                         color: Colors.grey,
                                         fontSize: 12
                                       ),),
-                                      Text("Business\nmeetings")
+                                      Text("Business\nmeetings", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),)
                                     ],
                                   ),
                                 )

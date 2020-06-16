@@ -121,6 +121,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     child: Placeholder(),
                   ),
                   Expanded(
+                    flex: 6,
                     child: Placeholder(),
                   )
                 ],
@@ -215,3 +216,16 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

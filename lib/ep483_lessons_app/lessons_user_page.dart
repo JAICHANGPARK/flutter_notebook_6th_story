@@ -158,7 +158,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                         flex: 1,
                                         child: Placeholder(),
                                       ),
-                                      
+                                      Expanded(
+                                        flex: 1,
+                                        child: Placeholder(),
+                                      ),
                                     ],
                                   ),
                                 ),

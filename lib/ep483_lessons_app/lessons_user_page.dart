@@ -68,7 +68,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     bottom: 24,
                     right: 24,
                     child: Column(
-                      children: [],
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Dreamwalker!"),
+                        Text("What are we learning today?"),
+
+                      ],
                     ),
                   )
                 ],

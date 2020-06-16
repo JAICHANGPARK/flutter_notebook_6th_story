@@ -45,6 +45,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     child: CircleAvatar(
                       backgroundColor: Colors.orangeAccent,
                       radius: 62,
+                      backgroundImage: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
                     ),
                   ),
                   Positioned(

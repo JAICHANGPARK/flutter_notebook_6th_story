@@ -134,7 +134,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     flex: 6,
                     child: ListView.builder(
                         itemCount: 10,
-                        
+                        scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index){
                       return Container();
                     }),

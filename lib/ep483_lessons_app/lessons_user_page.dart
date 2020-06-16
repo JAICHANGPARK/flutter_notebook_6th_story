@@ -24,8 +24,16 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               child: Stack(
                 children: [
                   Positioned(
-                    left: 0,
-                    bottom: 0,
+                    left: -40,
+                    bottom: -40,
+                    child: CircleAvatar(
+                      radius: 80,
+                      backgroundColor: Colors.indigoAccent[100],
+                    ),
+                  ),
+                  Positioned(
+                    left: -40,
+                    bottom: -40,
                     child: CircleAvatar(
                       radius: 80,
                       backgroundColor: Colors.indigoAccent[100],

@@ -75,7 +75,8 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold
                         ),),
-                        Text("What are we learning today?"),
+                        SizedBox(height: 8,),
+                        Text("What are we learning today?",style: TextStyle(),),
                         Spacer(),
                         Text("Course"),
                         Text("Business English"),

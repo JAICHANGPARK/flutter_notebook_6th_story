@@ -76,7 +76,8 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         Text("Business English"),
                         Row(
                           children: [
-                            
+                            Text("12/46 Lessons"),
+                            Text("intermediate")
                           ],
                         )
 

@@ -226,16 +226,3 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

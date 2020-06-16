@@ -95,7 +95,11 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold
                             ),),
-                            Text("intermediate")
+                            Text("intermediate", style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold
+                            ),)
                           ],
                         )
 

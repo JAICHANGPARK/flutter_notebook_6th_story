@@ -153,9 +153,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                 Expanded(
                                   flex: 2,
                                   child: Row(
-                                    children: [
-                                      
-                                    ],
+                                    children: [],
                                   ),
                                 ),
                                 Expanded(
@@ -164,17 +162,18 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text("Lesson 5",style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 12
-                                      ),),
+                                      Text(
+                                        "Lesson 5",
+                                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      ),
                                       Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 8
+                                        padding: const EdgeInsets.symmetric(vertical: 8),
+                                        child: Text(
+                                          "Business\nmeetings",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                        child: Text("Business\nmeetings", style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),),
                                       )
                                     ],
                                   ),

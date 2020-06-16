@@ -44,6 +44,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     top: 40,
                     child: CircleAvatar(
                       backgroundColor: Colors.orangeAccent,
+                      radius: 62,
                     ),
                   )
                 ],

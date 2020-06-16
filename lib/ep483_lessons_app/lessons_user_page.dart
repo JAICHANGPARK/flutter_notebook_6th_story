@@ -138,8 +138,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         itemBuilder: (context, index){
                       return Container(
                         width: 240,
+                        margin: EdgeInsets.only(right: 8,
+                        bottom: 8, top: 8),
                         decoration: BoxDecoration(
-                          color: Colors.white
+                          color: Colors.white,
                         ),
                       );
                     }),

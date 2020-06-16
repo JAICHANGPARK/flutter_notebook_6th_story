@@ -119,7 +119,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Placeholder(),
+                    child: Text(
+                      "Your Last Lesson",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                   Expanded(
                     flex: 6,

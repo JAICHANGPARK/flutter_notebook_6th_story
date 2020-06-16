@@ -158,9 +158,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                   flex: 3,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text("Lesson 5",),
+                                      Text("Lesson 5",style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 12
+                                      ),),
                                       Text("Business\nmeetings")
                                     ],
                                   ),

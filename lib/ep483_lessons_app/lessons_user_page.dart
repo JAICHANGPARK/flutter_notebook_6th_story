@@ -146,7 +146,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                   BoxShadow(
                                       color: Colors.grey[400], blurRadius: 2, spreadRadius: 2, offset: Offset(-2, 4))
                                 ]),
+                            padding: EdgeInsets.all(8),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
                                   flex: 2,
@@ -158,7 +160,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      Text("Lesson 5"),
+                                      Text("Lesson 5",),
                                       Text("Business\nmeetings")
                                     ],
                                   ),

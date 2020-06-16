@@ -136,7 +136,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index){
-                      return Container();
+                      return Container(
+                        width: 240,
+                        decoration: BoxDecoration(
+                          color: Colors.white
+                        ),
+                      );
                     }),
                   )
                 ],

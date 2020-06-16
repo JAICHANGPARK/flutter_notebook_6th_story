@@ -142,7 +142,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Colors.indigo)
+                          border: Border.all(color: Colors.indigo),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[100],
+                            )
+                          ]
                         ),
                       );
                     }),

@@ -113,7 +113,6 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
             ),
             Container(
               height: 240,
-              decoration: BoxDecoration(color: Colors.redAccent),
               padding: EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

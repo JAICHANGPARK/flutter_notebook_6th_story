@@ -32,10 +32,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     ),
                   ),
                   Positioned(
-                    left: -40,
-                    bottom: -40,
+                    right: -40,
+                    top: -40,
                     child: CircleAvatar(
-                      radius: 80,
+                      radius: 120,
                       backgroundColor: Colors.indigoAccent[100],
                     ),
                   )

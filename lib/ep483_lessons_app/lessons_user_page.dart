@@ -154,7 +154,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                 ),
                                 Expanded(
                                   flex: 3,
-                                  child: Placeholder(),
+                                  child: Column(
+                                    children: [
+                                      Text("Lesson 5"),
+                                      Text("Business\nmeetings")
+                                    ],
+                                  ),
                                 )
                               ],
                             ),

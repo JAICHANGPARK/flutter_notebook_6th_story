@@ -134,26 +134,20 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index){
-                      return Container(
-                        width: 180,
-                        margin: EdgeInsets.only(right: 8,
-                        bottom: 8, top: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: Colors.indigo),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey[400],
-                              blurRadius: 2,
-                              spreadRadius: 2,
-                              offset: Offset(-2,4)
-                            )
-                          ]
-                        ),
-                      );
-                    }),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 180,
+                            margin: EdgeInsets.only(right: 8, bottom: 8, top: 8),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(color: Colors.indigo),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.grey[400], blurRadius: 2, spreadRadius: 2, offset: Offset(-2, 4))
+                                ]),
+                          );
+                        }),
                   )
                 ],
               ),

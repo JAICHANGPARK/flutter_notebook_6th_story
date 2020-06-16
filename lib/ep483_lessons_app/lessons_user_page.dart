@@ -72,6 +72,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                       children: [
                         Text("Dreamwalker!"),
                         Text("What are we learning today?"),
+                        Spacer(),
                         Text("Course"),
                         Text("Business English"),
                         Row(

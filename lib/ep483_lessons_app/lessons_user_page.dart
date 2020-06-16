@@ -115,6 +115,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               height: 240,
               decoration: BoxDecoration(color: Colors.redAccent),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
                     flex: 1,

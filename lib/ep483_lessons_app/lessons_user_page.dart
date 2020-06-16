@@ -70,42 +70,39 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Dreamwalker!", style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold
-                        ),),
-                        SizedBox(height: 8,),
-                        Text("What are we learning today?",style: TextStyle(
-                          color: Colors.indigoAccent[100],
-                          fontSize: 12
-                        ),),
+                        Text(
+                          "Dreamwalker!",
+                          style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "What are we learning today?",
+                          style: TextStyle(color: Colors.indigoAccent[100], fontSize: 12),
+                        ),
                         Spacer(),
-                        Text("Course",style: TextStyle(
-                            color: Colors.indigoAccent[700],
-                            fontSize: 12
-                        ),),
-                        Text("Business English", style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold
-                        ),),
+                        Text(
+                          "Course",
+                          style: TextStyle(color: Colors.indigoAccent[700], fontSize: 12),
+                        ),
+                        Text(
+                          "Business English",
+                          style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("12/46 Lessons", style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold
-                            ),),
-                            Text("intermediate", style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold
-                            ),)
+                            Text(
+                              "12/46 Lessons",
+                              style: TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "intermediate",
+                              style: TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+                            )
                           ],
                         )
-
                       ],
                     ),
                   )

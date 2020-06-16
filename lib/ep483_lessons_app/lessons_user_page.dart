@@ -76,6 +76,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         Text("Course"),
                         Text("Business English"),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text("12/46 Lessons"),
                             Text("intermediate")

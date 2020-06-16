@@ -146,6 +146,11 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                   BoxShadow(
                                       color: Colors.grey[400], blurRadius: 2, spreadRadius: 2, offset: Offset(-2, 4))
                                 ]),
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            ),
                           );
                         }),
                   )

@@ -49,7 +49,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Positioned(
                     top: 140,
-                    right: 48,
+                    right: 32,
                     child: FloatingActionButton(
                       backgroundColor: Colors.white,
                       onPressed: () {  },

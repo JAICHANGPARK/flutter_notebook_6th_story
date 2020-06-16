@@ -142,6 +142,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                         bottom: 8, top: 8),
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)
                         ),
                       );
                     }),

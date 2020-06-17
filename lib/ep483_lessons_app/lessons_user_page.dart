@@ -161,7 +161,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                       ),
                                       Expanded(
                                         flex: 1,
-                                        child: CircularPercentIndicator(
+                                        child: CircularPercentIndicator(radius: 48,
                                           
                                         ),
                                       ),

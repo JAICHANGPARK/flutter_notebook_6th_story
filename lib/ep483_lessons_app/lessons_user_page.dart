@@ -221,11 +221,17 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        
+                        children: [
+                          Text("Small talk 1 of 2"),
+                          Text("Listened - 2:24s")
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(

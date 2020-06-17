@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class LessonsUserPage extends StatefulWidget {
   @override
@@ -160,7 +161,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                       ),
                                       Expanded(
                                         flex: 1,
-                                        child: Placeholder(),
+                                        child: CircularPercentIndicator(
+                                          
+                                        ),
                                       ),
                                     ],
                                   ),

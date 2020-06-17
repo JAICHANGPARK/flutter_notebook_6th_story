@@ -221,7 +221,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+
+                      ],
+                    ),
                   ),
                   Expanded(
                     child: CircularPercentIndicator(

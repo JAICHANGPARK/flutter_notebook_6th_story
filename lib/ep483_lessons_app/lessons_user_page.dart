@@ -207,8 +207,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               margin: EdgeInsets.all(16),
               decoration: BoxDecoration(color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.red)
-
+                border: Border.all(color: Colors.red),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.15)
+                  )
+                ]
               )
               
             )

@@ -220,6 +220,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   child: Placeholder(),
                 ),
                 Expanded(
+                  flex: 2,
                   child: Placeholder(),
                 ),
                 Expanded(

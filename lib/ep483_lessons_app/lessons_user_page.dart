@@ -217,7 +217,10 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Placeholder(),
+                    child: CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Colors.red,
+                    ),
                   ),
                   Expanded(
                     flex: 2,

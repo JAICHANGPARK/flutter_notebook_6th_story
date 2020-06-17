@@ -228,6 +228,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                       radius: 48,
                       progressColor: Colors.red,
                       percent: 0.25,
+                      center: Text("25%"),
                     ),
                   ),
                 ],

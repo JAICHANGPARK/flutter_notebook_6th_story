@@ -207,28 +207,28 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               ),
             ),
             Container(
-                height: 120,
-                margin: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.red),
-                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  child: Placeholder(),
-                ),
-              ],
-            ),),
-
+              height: 120,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: Colors.red),
+                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    child: Placeholder(),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

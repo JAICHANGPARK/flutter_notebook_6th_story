@@ -226,7 +226,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [Text("Small talk 1 of 2"), Text("Listened - 2:24s")],
+                        children: [Text("Small talk 1 of 2", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),), Text("Listened - 2:24s",style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12
+                        ),)],
                       ),
                     ),
                   ),

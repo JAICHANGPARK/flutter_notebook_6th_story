@@ -165,6 +165,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                           lineWidth: 4,
                                           percent: 0.25,
                                           center: Text("25%"),
+                                          progressColor: Colors.indigo,
 
                                         ),
                                       ),

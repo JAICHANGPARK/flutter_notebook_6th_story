@@ -225,7 +225,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   ),
                   Expanded(
                     child: CircularPercentIndicator(
-                      radius: 48,
+                      radius: 62,
                       progressColor: Colors.red,
                       percent: 0.25,
                       center: Text("25%"),

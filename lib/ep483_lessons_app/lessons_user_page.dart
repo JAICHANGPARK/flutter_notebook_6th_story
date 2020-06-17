@@ -157,16 +157,20 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                     children: [
                                       Expanded(
                                         flex: 1,
-                                        child: Center(child: Icon(Icons.person_outline, size: 42,)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.person_outline,
+                                          size: 42,
+                                        )),
                                       ),
                                       Expanded(
                                         flex: 1,
-                                        child: CircularPercentIndicator(radius: 48,
+                                        child: CircularPercentIndicator(
+                                          radius: 48,
                                           lineWidth: 4,
                                           percent: 0.25,
                                           center: Text("25%"),
                                           progressColor: Colors.indigo,
-
                                         ),
                                       ),
                                     ],
@@ -203,21 +207,13 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               ),
             ),
             Container(
-              height: 120,
-              margin: EdgeInsets.all(16),
-              decoration: BoxDecoration(color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: Colors.red),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.11),
-                    blurRadius: 2,
-                    spreadRadius: 3
-                  )
-                ]
-              )
-              
-            )
+                height: 120,
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.red),
+                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]))
           ],
         ),
       ),

@@ -164,6 +164,8 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                         child: CircularPercentIndicator(radius: 48,
                                           lineWidth: 4,
                                           percent: 0.25,
+                                          center: Text("25%"),
+
                                         ),
                                       ),
                                     ],

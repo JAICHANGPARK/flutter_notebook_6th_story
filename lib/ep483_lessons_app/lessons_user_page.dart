@@ -156,7 +156,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                                     children: [
                                       Expanded(
                                         flex: 1,
-                                        child: Center(child: Icon(Icons.person_outline, size: 32,)),
+                                        child: Center(child: Icon(Icons.person_outline, size: 42,)),
                                       ),
                                       Expanded(
                                         flex: 1,

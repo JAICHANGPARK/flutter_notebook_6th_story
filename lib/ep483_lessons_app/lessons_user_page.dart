@@ -207,7 +207,7 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
               ),
             ),
             Container(
-              height: 120,
+              height: 100,
               margin: EdgeInsets.all(16),
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -222,10 +222,14 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                   Expanded(
                     flex: 2,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 24,
+                        horizontal: 12
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+
                         children: [
                           Text("Small talk 1 of 2"),
                           Text("Listened - 2:24s")

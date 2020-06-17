@@ -213,7 +213,13 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(color: Colors.red),
-                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]))
+                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]),
+            child: Row(
+              children: [
+                
+              ],
+            ),),
+
           ],
         ),
       ),

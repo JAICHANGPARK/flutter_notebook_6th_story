@@ -216,7 +216,9 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                     boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.11), blurRadius: 2, spreadRadius: 3)]),
             child: Row(
               children: [
-                
+                Expanded(
+                  child: Placeholder(),
+                ),
               ],
             ),),
 

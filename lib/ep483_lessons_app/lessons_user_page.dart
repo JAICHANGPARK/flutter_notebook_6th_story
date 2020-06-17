@@ -219,6 +219,12 @@ class _LessonsUserPageState extends State<LessonsUserPage> {
                 Expanded(
                   child: Placeholder(),
                 ),
+                Expanded(
+                  child: Placeholder(),
+                ),
+                Expanded(
+                  child: Placeholder(),
+                ),
               ],
             ),),
 

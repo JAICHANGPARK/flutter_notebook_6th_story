@@ -56,6 +56,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.red,
+                                shape: BoxShape.circle
                               ),
                             ),
                           )

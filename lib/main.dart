@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep483_lessons_app/lessons_app.dart';
+import 'ep486_dmm_app/dmm_main_page.dart';
 
 void main() {
-  runApp(LessonsApp());
+  runApp(DmmApp());
 }

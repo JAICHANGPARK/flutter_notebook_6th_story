@@ -36,10 +36,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         children: [
                           Text("Refund requests", style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.bold,
-                            
+                            fontSize: 24
+
                           )),
                           Text("26 refund requests", style: TextStyle(
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey
                           ),)
                         ],
                       ),

@@ -52,7 +52,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         children: [
                           Positioned(
                             left: 8,
-                            top: 0,
+                            top: 4,
                             child: Container(
                               height: 48,
                               width: 48,

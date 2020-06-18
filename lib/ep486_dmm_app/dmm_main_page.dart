@@ -30,6 +30,8 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     Expanded(
                       flex: 8,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("Refund requests"),
                           Text("26 refund requests", style: TextStyle(

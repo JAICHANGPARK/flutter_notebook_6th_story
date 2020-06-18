@@ -17,6 +17,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [

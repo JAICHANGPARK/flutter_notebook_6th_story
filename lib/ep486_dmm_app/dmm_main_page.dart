@@ -51,29 +51,32 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       child: Stack(
                         children: [
                           Positioned(
-                            left: 0,
-                            top: 0,
-                            child: Container(
-                              height: 12,
-                              width: 12,
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                                shape: BoxShape.circle
-                              ),
-                            ),
-                          ),
-                          Positioned(
                             left: 8,
                             top: 0,
                             child: Container(
                               height: 48,
                               width: 48,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: Colors.indigo
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.indigo
                               ),
                             ),
-                          )
+                          ),
+                          Positioned(
+                            left: 0,
+                            top: 0,
+                            child: Container(
+                              height: 18,
+                              width: 18,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.white,
+                                width: 3)
+                              ),
+                            ),
+                          ),
+
                         ],
                       ),
                     )

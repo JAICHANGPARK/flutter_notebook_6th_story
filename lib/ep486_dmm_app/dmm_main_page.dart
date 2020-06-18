@@ -9,6 +9,7 @@ class DmmApp extends StatelessWidget {
     );
   }
 }
+
 class DmmMainPage extends StatefulWidget {
   @override
   _DmmMainPageState createState() => _DmmMainPageState();
@@ -35,15 +36,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Refund requests", style: GoogleFonts.montserrat(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-
-                          )),
-                          Text("26 refund requests", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey
-                          ),)
+                          Text("Refund requests",
+                              style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 24)),
+                          Text(
+                            "26 refund requests",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                          )
                         ],
                       ),
                     ),
@@ -58,10 +56,8 @@ class _DmmMainPageState extends State<DmmMainPage> {
                               child: Container(
                                 height: 48,
                                 width: 48,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(12),
-                                    color: Colors.indigo
-                                ),
+                                decoration:
+                                    BoxDecoration(borderRadius: BorderRadius.circular(12), color: Colors.indigo),
                               ),
                             ),
                             Positioned(
@@ -71,14 +67,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                 height: 18,
                                 width: 18,
                                 decoration: BoxDecoration(
-                                  color: Colors.red,
-                                  shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.white,
-                                  width: 3)
-                                ),
+                                    color: Colors.red,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.white, width: 3)),
                               ),
                             ),
-
                           ],
                         ),
                       ),
@@ -105,16 +98,3 @@ class _DmmMainPageState extends State<DmmMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

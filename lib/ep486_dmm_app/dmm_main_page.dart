@@ -31,7 +31,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       flex: 8,
                       child: Column(
                         children: [
-                          
+                          Text("Refund requests"),
+                          Text("26 refund requests", style: TextStyle(
+                            fontWeight: FontWeight.bold
+                          ),)
                         ],
                       ),
                     ),

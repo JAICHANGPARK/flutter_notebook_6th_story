@@ -26,7 +26,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 1,
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

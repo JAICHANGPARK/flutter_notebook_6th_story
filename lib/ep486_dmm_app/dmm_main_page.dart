@@ -33,7 +33,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Refund requests"),
+                          Text("Refund requests", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                          ),),
                           Text("26 refund requests", style: TextStyle(
                             fontWeight: FontWeight.bold
                           ),)

@@ -61,6 +61,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                 shape: BoxShape.circle
                               ),
                             ),
+                          ),
+                          Positioned(
+                            left: 8,
+                            top: 0,
+                            child: Container(),
                           )
                         ],
                       ),

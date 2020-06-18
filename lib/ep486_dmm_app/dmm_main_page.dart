@@ -82,17 +82,18 @@ class _DmmMainPageState extends State<DmmMainPage> {
             ),
             Expanded(
               flex: 1,
-              child: Placeholder(),
+              child: Container(margin: EdgeInsets.all(16),
+              color: Colors.grey[200],),
             ),
             Expanded(
               flex: 5,
-              child: Placeholder(),
+              child: Container(),
             ),
             Expanded(
               flex: 1,
               child: Row(
                 children: [
-                  
+
                 ],
               ),
             )

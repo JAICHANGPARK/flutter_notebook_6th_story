@@ -53,7 +53,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           Positioned(
                             left: 0,
                             top: 0,
-                            child: Container(),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            ),
                           )
                         ],
                       ),

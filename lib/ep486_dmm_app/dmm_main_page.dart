@@ -16,7 +16,7 @@ class DmmMainPage extends StatefulWidget {
 class _DmmMainPageState extends State<DmmMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 

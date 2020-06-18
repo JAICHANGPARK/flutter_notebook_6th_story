@@ -48,36 +48,38 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     ),
                     Expanded(
                       flex: 2,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            left: 8,
-                            top: 4,
-                            child: Container(
-                              height: 48,
-                              width: 48,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(12),
-                                  color: Colors.indigo
+                      child: Center(
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 8,
+                              top: 4,
+                              child: Container(
+                                height: 48,
+                                width: 48,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.indigo
+                                ),
                               ),
                             ),
-                          ),
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            child: Container(
-                              height: 18,
-                              width: 18,
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.white,
-                                width: 3)
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              child: Container(
+                                height: 18,
+                                width: 18,
+                                decoration: BoxDecoration(
+                                  color: Colors.red,
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.white,
+                                  width: 3)
+                                ),
                               ),
                             ),
-                          ),
 
-                        ],
+                          ],
+                        ),
                       ),
                     )
                   ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DmmApp extends StatelessWidget {
   @override
@@ -33,10 +34,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Refund requests", style: TextStyle(
+                          Text("Refund requests", style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.bold,
-                            fontSize: 24
-                          ),),
+                            
+                          )),
                           Text("26 refund requests", style: TextStyle(
                             fontWeight: FontWeight.bold
                           ),)

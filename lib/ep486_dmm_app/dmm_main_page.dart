@@ -23,13 +23,20 @@ class _DmmMainPageState extends State<DmmMainPage> {
           children: [
             Expanded(
               flex: 1,
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 8,
-                    child: Placeholder(),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 8,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: Placeholder(),
+                    )
+                  ],
+                ),
               ),
             ),
             Expanded(

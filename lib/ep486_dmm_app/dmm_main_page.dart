@@ -25,7 +25,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
               flex: 1,
               child: Row(
                 children: [
-                  
+                  Expanded(
+                    flex: 8,
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),

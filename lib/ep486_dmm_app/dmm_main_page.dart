@@ -54,8 +54,8 @@ class _DmmMainPageState extends State<DmmMainPage> {
                             left: 0,
                             top: 0,
                             child: Container(
-                              height: 16,
-                              width: 16,
+                              height: 12,
+                              width: 12,
                               decoration: BoxDecoration(
                                 color: Colors.red,
                                 shape: BoxShape.circle

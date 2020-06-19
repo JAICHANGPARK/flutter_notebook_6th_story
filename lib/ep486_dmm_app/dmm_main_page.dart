@@ -115,7 +115,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 5,
               child: PageView(
-                controller: ,
+                controller: _pageController,
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(

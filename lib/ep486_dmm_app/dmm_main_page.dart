@@ -139,6 +139,27 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       ),
                     ),
                   ),
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        _pageIndex = 2;
+                      });
+                    },
+                    child: Container(
+                      height: 32,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: _pageIndex == 2 ? Colors.deepPurpleAccent : Colors.transparent,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.chart,
+                          color: _pageIndex == 2 ? Colors.white : Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )

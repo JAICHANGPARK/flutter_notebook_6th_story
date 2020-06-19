@@ -16,7 +16,14 @@ class DmmMainPage extends StatefulWidget {
 }
 
 class _DmmMainPageState extends State<DmmMainPage> {
+  PageController _pageController;
   int _pageIndex = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: _pageIndex,);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,6 +115,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 5,
               child: PageView(
+                controller: ,
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(

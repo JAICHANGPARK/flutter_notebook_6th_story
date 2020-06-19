@@ -89,7 +89,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                 decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                 child: Row(
                   children: [
-                    
+                    Icon(Icons.search, size: 32,),
                   ],
                 ),
               ),

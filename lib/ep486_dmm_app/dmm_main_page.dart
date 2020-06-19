@@ -97,17 +97,24 @@ class _DmmMainPageState extends State<DmmMainPage> {
               flex: 1,
               child: Row(
                 children: [
-                  Container(
-                    height: 32,
-                    width: 32,
-                    decoration: BoxDecoration(
-                      color: _pageIndex == 0 ? Colors.deepPurpleAccent : Colors.transparent,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Center(
-                      child: Icon(
-                        Icons.insert_chart,
-                        color:_pageIndex == 0 ?  Colors.white : Colors.grey,
+                  InkWell(
+                    onTap: (){
+                      setState(() {
+                        _pageIndex = 0;
+                      });
+                    },
+                    child: Container(
+                      height: 32,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: _pageIndex == 0 ? Colors.deepPurpleAccent : Colors.transparent,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.insert_chart,
+                          color:_pageIndex == 0 ?  Colors.white : Colors.grey,
+                        ),
                       ),
                     ),
                   ),

@@ -177,7 +177,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       child: Center(
                         child: Icon(
                           Icons.folder_open,
-                          color: _pageIndex ==3  ? Colors.white : Colors.grey,
+                          color: _pageIndex == 3 ? Colors.white : Colors.grey,
                         ),
                       ),
                     ),
@@ -191,14 +191,3 @@ class _DmmMainPageState extends State<DmmMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-

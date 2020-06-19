@@ -94,7 +94,13 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 1,
               child: Row(
-                children: [],
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurpleAccent,
+                    ),
+                  )
+                ],
               ),
             )
           ],

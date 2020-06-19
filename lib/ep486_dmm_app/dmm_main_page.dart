@@ -16,6 +16,7 @@ class DmmMainPage extends StatefulWidget {
 }
 
 class _DmmMainPageState extends State<DmmMainPage> {
+  int _pageIndex =0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -108,7 +109,8 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         color: Colors.white,
                       ),
                     ),
-                  )
+                  ),
+
                 ],
               ),
             )

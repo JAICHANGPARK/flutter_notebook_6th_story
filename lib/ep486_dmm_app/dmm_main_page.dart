@@ -107,7 +107,17 @@ class _DmmMainPageState extends State<DmmMainPage> {
             ),
             Expanded(
               flex: 5,
-              child: Container(),
+              child: PageView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    color: Colors.red,
+                  ),
+                  Container(
+                    color: Colors.grey,
+                  )
+                ],
+              ),
             ),
             Expanded(
               flex: 1,

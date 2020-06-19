@@ -102,6 +102,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       color: Colors.deepPurpleAccent,
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    child: Center(
+                      child: Icon(Icons.insert_chart,color: Colors.white,),
+                    ),
                   )
                 ],
               ),

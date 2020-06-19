@@ -87,6 +87,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
               child: Container(
                 margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
+                child: Row(
+                  children: [
+                    
+                  ],
+                ),
               ),
             ),
             Expanded(

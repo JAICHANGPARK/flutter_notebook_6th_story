@@ -118,6 +118,27 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       ),
                     ),
                   ),
+                  InkWell(
+                    onTap: () {
+                      setState(() {
+                        _pageIndex = 1;
+                      });
+                    },
+                    child: Container(
+                      height: 32,
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: _pageIndex == 1 ? Colors.deepPurpleAccent : Colors.transparent,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.calendar_today,
+                          color: _pageIndex == 1 ? Colors.white : Colors.grey,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
@@ -127,3 +148,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+

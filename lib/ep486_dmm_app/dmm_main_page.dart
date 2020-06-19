@@ -182,7 +182,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _pageIndex = 2;
+                        _pageIndex = 2; _pageController.jumpToPage(_pageIndex);
                       });
                     },
                     child: Container(
@@ -203,7 +203,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _pageIndex = 3;
+                        _pageIndex = 3; _pageController.jumpToPage(_pageIndex);
                       });
                     },
                     child: Container(

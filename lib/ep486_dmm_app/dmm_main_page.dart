@@ -126,6 +126,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                   ),
                   Container(
                     color: Colors.grey,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    color: Colors.green,
                   )
                 ],
               ),

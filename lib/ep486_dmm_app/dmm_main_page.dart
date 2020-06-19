@@ -90,6 +90,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                 child: Row(
                   children: [
                     Icon(Icons.search, size: 32,),
+                    Text("Search", style: TextStyle(
+                      color: Colors.grey,
+                    ),)
                   ],
                 ),
               ),

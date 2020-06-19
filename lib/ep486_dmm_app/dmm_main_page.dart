@@ -103,7 +103,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Icon(Icons.insert_chart,color: Colors.white,),
+                      child: Icon(
+                        Icons.insert_chart,
+                        color: Colors.white,
+                      ),
                     ),
                   )
                 ],
@@ -115,26 +118,3 @@ class _DmmMainPageState extends State<DmmMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

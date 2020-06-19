@@ -107,7 +107,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     child: Center(
                       child: Icon(
                         Icons.insert_chart,
-                        color: Colors.white,
+                        color:_pageIndex == 0 ?  Colors.white : Colors.grey,
                       ),
                     ),
                   ),

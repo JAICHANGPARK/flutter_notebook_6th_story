@@ -176,7 +176,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       ),
                       child: Center(
                         child: Icon(
-                          Icons.bubble_chart,
+                          Icons.folder_open,
                           color: _pageIndex ==3  ? Colors.white : Colors.grey,
                         ),
                       ),

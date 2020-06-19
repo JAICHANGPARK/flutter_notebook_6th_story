@@ -96,6 +96,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 1,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   InkWell(
                     onTap: () {
@@ -154,7 +155,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       ),
                       child: Center(
                         child: Icon(
-                          Icons.chart,
+                          Icons.bubble_chart,
                           color: _pageIndex == 2 ? Colors.white : Colors.grey,
                         ),
                       ),

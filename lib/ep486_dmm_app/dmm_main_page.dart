@@ -98,7 +98,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
               child: Row(
                 children: [
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
                         _pageIndex = 0;
                       });
@@ -113,7 +113,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       child: Center(
                         child: Icon(
                           Icons.insert_chart,
-                          color:_pageIndex == 0 ?  Colors.white : Colors.grey,
+                          color: _pageIndex == 0 ? Colors.white : Colors.grey,
                         ),
                       ),
                     ),

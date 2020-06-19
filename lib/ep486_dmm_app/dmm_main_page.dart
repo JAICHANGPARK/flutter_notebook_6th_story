@@ -96,8 +96,13 @@ class _DmmMainPageState extends State<DmmMainPage> {
               child: Row(
                 children: [
                   Container(
+                    height: 38,
+                    width: 38,
                     decoration: BoxDecoration(
                       color: Colors.deepPurpleAccent,
+                      borderRadius: BoxDecoration(
+                        
+                      )
                     ),
                   )
                 ],

@@ -85,11 +85,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
             Expanded(
               flex: 1,
               child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8),
                 margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                 child: Row(
                   children: [
-                    Icon(Icons.search, size: 32,),
+                    Icon(Icons.search, size: 32, color: Colors.grey,),
                     Text("Search", style: TextStyle(
                       color: Colors.grey,
                     ),)

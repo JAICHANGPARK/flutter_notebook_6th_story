@@ -16,7 +16,8 @@ class DmmMainPage extends StatefulWidget {
 }
 
 class _DmmMainPageState extends State<DmmMainPage> {
-  int _pageIndex =0;
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +101,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     height: 32,
                     width: 32,
                     decoration: BoxDecoration(
-                      color: Colors.deepPurpleAccent,
+                      color: _pageIndex == 0 ? Colors.deepPurpleAccent : Colors.transparent,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -110,7 +111,6 @@ class _DmmMainPageState extends State<DmmMainPage> {
                       ),
                     ),
                   ),
-
                 ],
               ),
             )

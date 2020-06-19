@@ -139,6 +139,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     onTap: () {
                       setState(() {
                         _pageIndex = 0;
+                        _pageController.jumpToPage(_pageIndex);
                       });
                     },
                     child: Container(
@@ -160,6 +161,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     onTap: () {
                       setState(() {
                         _pageIndex = 1;
+                        _pageController.jumpToPage(_pageIndex);
                       });
                     },
                     child: Container(

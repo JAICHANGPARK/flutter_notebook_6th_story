@@ -165,7 +165,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        flex: 3,
+                                        flex: 2,
                                         child: Padding(
                                           padding: const EdgeInsets.all(16.0),
                                           child: Row(
@@ -202,7 +202,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                         ),
                                       ),
                                       Expanded(
-                                        flex: 8,
+                                        flex: 6,
                                         child: Placeholder(),
 
                                       )

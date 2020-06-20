@@ -155,6 +155,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                   spreadRadius: 2,
                                   offset: Offset(0, 4)),
                             ]),
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            ),
+
                           ),
                         )
                       ],

@@ -167,8 +167,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       Expanded(
                                         flex: 3,
                                         child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text("80% is solved",style: TextStyle(),),
+                                            Text("80% is solved",style: TextStyle(
+                                              fontSize: 22
+                                            ),),
                                             CircularPercentIndicator(
                                               radius: 38,
                                               lineWidth: 2,

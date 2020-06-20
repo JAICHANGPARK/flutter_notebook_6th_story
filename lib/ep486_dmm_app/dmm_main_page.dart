@@ -179,7 +179,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Text("Dreamwalker"),
+                                              Text("Dreamwalker",style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18
+                                              ),),
                                               Text("Flutter/Android"),
                                             ],
                                           ),

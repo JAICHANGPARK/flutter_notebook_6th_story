@@ -130,15 +130,17 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           bottom: 16,
                           right: 24,
                           child: Container(
-                            decoration:
-                                BoxDecoration(color: Colors.white.withOpacity(0.5), borderRadius: BorderRadius.circular(24), boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(.2),
-                                blurRadius: 3,
-                                spreadRadius: 2,
-                                offset: Offset(0, 4),
-                              )
-                            ]),
+                            decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(24),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(.2),
+                                    blurRadius: 3,
+                                    spreadRadius: 2,
+                                    offset: Offset(0, 4),
+                                  )
+                                ]),
                           ),
                         ),
                         Positioned(
@@ -179,28 +181,30 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Text("Dreamwalker",style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18
-                                              ),),
-                                              Text("Flutter/Android"),
+                                              Text(
+                                                "Dreamwalker",
+                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                              Text(
+                                                "Flutter/Android",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
                                         Spacer(),
                                         IconButton(
                                           icon: Icon(Icons.arrow_forward_ios),
-                                          onPressed: (){},
+                                          onPressed: () {},
                                         )
-
-
                                       ],
                                     ),
                                   ),
                                 )
                               ],
                             ),
-
                           ),
                         )
                       ],

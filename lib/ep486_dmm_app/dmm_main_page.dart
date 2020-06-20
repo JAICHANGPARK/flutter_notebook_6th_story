@@ -171,13 +171,16 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         CircleAvatar(),
-                                        Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Text("Dreamwalker"),
-                                            Text("Flutter/Android"),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text("Dreamwalker"),
+                                              Text("Flutter/Android"),
+                                            ],
+                                          ),
                                         ),
                                         Spacer(),
                                         IconButton(

@@ -225,7 +225,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                       fontSize: 28,
                                                       fontWeight: FontWeight.bold,
                                                     ),),
-                                                    Text("Illustration"),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                                      child: Text("Illustration"),
+                                                    ),
                                                     Container(
                                                       height: 24,
                                                       width: 38,

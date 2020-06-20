@@ -164,7 +164,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        flex: 2,
+                                        flex: 3,
                                         child: Placeholder(),
                                       ),
                                       Expanded(

@@ -168,10 +168,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                     padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         CircleAvatar(),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             Text("Dreamwalker"),
                                             Text("Flutter/Android"),

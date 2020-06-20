@@ -171,10 +171,13 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                           child: Row(
                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text("80% is solved",style: TextStyle(
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
-                                              ),),
+                                              Text(
+                                                "80% is solved",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               CircularPercentIndicator(
                                                 radius: 38,
                                                 lineWidth: 2,
@@ -182,16 +185,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                 progressColor: Colors.red,
                                                 center: Container(
                                                   decoration: BoxDecoration(
-                                                    shape: BoxShape.circle,
-                                                    color: Colors.white,
-                                                    boxShadow: [
-                                                      BoxShadow(
-                                                        color: Colors.black.withOpacity(.1),
-                                                        spreadRadius: 2,
-                                                        blurRadius: 2
-                                                      )
-                                                    ]
-                                                  ),
+                                                      shape: BoxShape.circle,
+                                                      color: Colors.white,
+                                                      boxShadow: [
+                                                        BoxShadow(
+                                                            color: Colors.black.withOpacity(.1),
+                                                            spreadRadius: 2,
+                                                            blurRadius: 2)
+                                                      ]),
                                                   height: 24,
                                                   width: 24,
                                                   child: Center(child: Text("80")),
@@ -209,8 +210,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               child: Column(
                                                 children: [
                                                   Row(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                     children: [
-
+                                                      Icon(Icons.arrow_back),
+                                                      Icon(Icons.arrow_forward),
                                                     ],
                                                   ),
                                                   Text("Jeff."),
@@ -229,11 +232,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               ),
                                             ),
                                             Expanded(
-                                              child: Image.network("https://assets-ouch.icons8.com/thumb/435/75647df7-5caf-427d-b524-31e8de6ffa5f.png"),
+                                              child: Image.network(
+                                                  "https://assets-ouch.icons8.com/thumb/435/75647df7-5caf-427d-b524-31e8de6ffa5f.png"),
                                             )
                                           ],
                                         ),
-
                                       )
                                     ],
                                   ),

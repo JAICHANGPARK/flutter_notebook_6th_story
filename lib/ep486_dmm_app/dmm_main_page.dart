@@ -207,29 +207,32 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                         child: Row(
                                           children: [
                                             Expanded(
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                children: [
-                                                  Row(
-                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                    children: [
-                                                      Icon(Icons.arrow_back),
-                                                      Icon(Icons.arrow_forward),
-                                                    ],
-                                                  ),
-                                                  Text("Jeff."),
-                                                  Text("Illustration"),
-                                                  Container(
-                                                    height: 24,
-                                                    width: 38,
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.red[50],
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(16.0),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                      children: [
+                                                        Icon(Icons.arrow_back),
+                                                        Icon(Icons.arrow_forward),
+                                                      ],
                                                     ),
-                                                    child: Center(
-                                                      child: Text("\$19"),
-                                                    ),
-                                                  )
-                                                ],
+                                                    Text("Jeff."),
+                                                    Text("Illustration"),
+                                                    Container(
+                                                      height: 24,
+                                                      width: 38,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.red[50],
+                                                      ),
+                                                      child: Center(
+                                                        child: Text("\$19"),
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
                                               ),
                                             ),
                                             Expanded(

@@ -131,7 +131,8 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           right: 24,
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(24)
                             ),
                           ),
                         ),
@@ -139,7 +140,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           left: 16,
                           right: 16,
                           top: 8,
-                          bottom: 24,
+                          bottom: 38,
                           child: Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(24),

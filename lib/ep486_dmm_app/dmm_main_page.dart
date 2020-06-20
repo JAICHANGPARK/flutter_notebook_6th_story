@@ -210,8 +210,15 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                 children: [
                                                   Row(
                                                     children: [
-                                                      
+
                                                     ],
+                                                  ),
+                                                  Text("Jeff."),
+                                                  Text("Illustration"),
+                                                  Container(
+                                                    height: 24,
+                                                    width: 38,
+                                                    decoration: BoxDecoration(),
                                                   )
                                                 ],
                                               ),

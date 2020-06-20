@@ -207,6 +207,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                         child: Row(
                                           children: [
                                             Expanded(
+                                              flex: 2,
                                               child: Padding(
                                                 padding: const EdgeInsets.all(16.0),
                                                 child: Column(
@@ -219,7 +220,10 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                         Icon(Icons.arrow_forward),
                                                       ],
                                                     ),
-                                                    Text("Jeff."),
+                                                    Text("Jeff.", style: TextStyle(
+                                                      fontSize: 28,
+                                                      fontWeight: FontWeight.bold,
+                                                    ),),
                                                     Text("Illustration"),
                                                     Container(
                                                       height: 24,
@@ -236,6 +240,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               ),
                                             ),
                                             Expanded(
+                                              flex: 4,
                                               child: Image.network(
                                                   "https://assets-ouch.icons8.com/thumb/435/75647df7-5caf-427d-b524-31e8de6ffa5f.png"),
                                             )

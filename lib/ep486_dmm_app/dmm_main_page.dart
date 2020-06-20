@@ -206,7 +206,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                         child: Row(
                                           children: [
                                             Expanded(
-                                              child: Placeholder(),
+                                              child: Column(),
                                             ),
                                             Expanded(
                                               child: Image.network("https://assets-ouch.icons8.com/thumb/435/75647df7-5caf-427d-b524-31e8de6ffa5f.png"),

@@ -135,7 +135,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                             ),
                           ),
                         ),
-                        
+                        Positioned(
+                          left: 16,
+                          right: 16,
+                          top:16,
+                          bottom: 16,
+                          child: Container(),
+                        )
+
                       ],
                     ),
                   ),

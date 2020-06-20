@@ -165,6 +165,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                 Expanded(
                                   flex: 2,
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       CircleAvatar(),
                                       Column(

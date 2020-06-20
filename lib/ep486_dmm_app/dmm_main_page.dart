@@ -208,6 +208,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                           children: [
                                             Expanded(
                                               child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

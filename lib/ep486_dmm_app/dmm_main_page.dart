@@ -130,9 +130,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           top: 24,
                           bottom: 8,
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
                           ),
-                        )
+                        ),
+                        
                       ],
                     ),
                   ),

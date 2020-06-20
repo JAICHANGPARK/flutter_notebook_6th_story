@@ -169,9 +169,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       CircleAvatar(),
                                       Column(
                                         children: [
-                                          Text("")
+                                          Text("Dreamwalker"),
+                                          Text("Flutter/Android"),
                                         ],
+                                      ),
+                                      IconButton(
+                                        
                                       )
+
                                     ],
                                   ),
                                 )

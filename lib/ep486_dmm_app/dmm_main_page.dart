@@ -230,13 +230,15 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                       child: Text("Illustration"),
                                                     ),
                                                     Container(
-                                                      height: 24,
-                                                      width: 38,
+                                                      height: 22,
+                                                      width: 48,
                                                       decoration: BoxDecoration(
                                                         color: Colors.red[50],
                                                       ),
                                                       child: Center(
-                                                        child: Text("\$19"),
+                                                        child: Text("\$19", style: TextStyle(
+                                                          color: Colors.red,
+                                                        ),),
                                                       ),
                                                     )
                                                   ],

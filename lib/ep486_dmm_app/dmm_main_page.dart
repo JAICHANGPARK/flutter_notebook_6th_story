@@ -164,23 +164,27 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                 Divider(),
                                 Expanded(
                                   flex: 2,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      CircleAvatar(),
-                                      Column(
-                                        children: [
-                                          Text("Dreamwalker"),
-                                          Text("Flutter/Android"),
-                                        ],
-                                      ),
-                                      IconButton(
-                                        icon: Icon(Icons.arrow_forward_ios),
-                                        onPressed: (){},
-                                      )
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        CircleAvatar(),
+                                        Column(
+                                          children: [
+                                            Text("Dreamwalker"),
+                                            Text("Flutter/Android"),
+                                          ],
+                                        ),
+                                        Spacer(),
+                                        IconButton(
+                                          icon: Icon(Icons.arrow_forward_ios),
+                                          onPressed: (){},
+                                        )
 
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],

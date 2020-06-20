@@ -128,6 +128,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           left: 24,
                           top: 24,
                           bottom: 8,
+                          right: 24,
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.grey,
@@ -141,6 +142,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           bottom: 16,
                           child: Container(
                             color: Colors.white,
+                            decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(.1),
+                                  
+                                )
+                              ]
+                            ),
                           ),
                         )
 

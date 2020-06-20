@@ -122,7 +122,6 @@ class _DmmMainPageState extends State<DmmMainPage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    color: Colors.red,
                     child: Stack(
                       children: [
                         Positioned(
@@ -131,7 +130,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           bottom: 8,
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ),
@@ -140,7 +139,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           right: 16,
                           top:16,
                           bottom: 16,
-                          child: Container(),
+                          child: Container(
+                            color: Colors.white,
+                          ),
                         )
 
                       ],

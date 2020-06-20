@@ -166,7 +166,12 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                   flex: 2,
                                   child: Row(
                                     children: [
-                                      
+                                      CircleAvatar(),
+                                      Column(
+                                        children: [
+                                          Text("")
+                                        ],
+                                      )
                                     ],
                                   ),
                                 )

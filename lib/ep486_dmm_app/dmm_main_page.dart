@@ -176,7 +176,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               progressColor: Colors.red,
                                               center: Container(
                                                 decoration: BoxDecoration(
-                                                  shape: BoxShape.circle
+                                                  shape: BoxShape.circle,
+                                                  boxShadow: [
+                                                    BoxShadow(
+                                                      color: Colors.black,
+                                                      spreadRadius: 2,
+                                                      blurRadius: 2
+                                                    )
+                                                  ]
                                                 ),
                                                 height: 16,
                                                 width: 16,

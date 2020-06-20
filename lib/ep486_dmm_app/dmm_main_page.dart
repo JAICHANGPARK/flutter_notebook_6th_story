@@ -166,36 +166,39 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                     children: [
                                       Expanded(
                                         flex: 3,
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text("80% is solved",style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
-                                            ),),
-                                            CircularPercentIndicator(
-                                              radius: 38,
-                                              lineWidth: 2,
-                                              percent: 0.8,
-                                              progressColor: Colors.red,
-                                              center: Container(
-                                                decoration: BoxDecoration(
-                                                  shape: BoxShape.circle,
-                                                  color: Colors.white,
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black.withOpacity(.1),
-                                                      spreadRadius: 2,
-                                                      blurRadius: 2
-                                                    )
-                                                  ]
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text("80% is solved",style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.bold,
+                                              ),),
+                                              CircularPercentIndicator(
+                                                radius: 38,
+                                                lineWidth: 2,
+                                                percent: 0.8,
+                                                progressColor: Colors.red,
+                                                center: Container(
+                                                  decoration: BoxDecoration(
+                                                    shape: BoxShape.circle,
+                                                    color: Colors.white,
+                                                    boxShadow: [
+                                                      BoxShadow(
+                                                        color: Colors.black.withOpacity(.1),
+                                                        spreadRadius: 2,
+                                                        blurRadius: 2
+                                                      )
+                                                    ]
+                                                  ),
+                                                  height: 24,
+                                                  width: 24,
+                                                  child: Center(child: Text("80")),
                                                 ),
-                                                height: 24,
-                                                width: 24,
-                                                child: Center(child: Text("80")),
-                                              ),
-                                            )
-                                          ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Expanded(

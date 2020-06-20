@@ -123,6 +123,11 @@ class _DmmMainPageState extends State<DmmMainPage> {
                 children: [
                   Container(
                     color: Colors.red,
+                    child: Stack(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                   Container(
                     color: Colors.grey,

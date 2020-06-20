@@ -175,6 +175,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               percent: 0.8,
                                               progressColor: Colors.red,
                                               center: Container(
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle
+                                                ),
                                                 height: 16,
                                                 width: 16,
                                                 child: Text("80"),

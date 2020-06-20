@@ -125,7 +125,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                     color: Colors.red,
                     child: Stack(
                       children: [
-                        
+                        Positioned(
+                          left: 24,
+                          top: 24,
+                          bottom: 8,
+                          child: Container(
+                            decoration: BoxDecoration(),
+                          ),
+                        )
                       ],
                     ),
                   ),

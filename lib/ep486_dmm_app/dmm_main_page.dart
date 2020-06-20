@@ -203,7 +203,16 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       ),
                                       Expanded(
                                         flex: 6,
-                                        child: Placeholder(),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Placeholder(),
+                                            ),
+                                            Expanded(
+                                              child: Placeholder(),
+                                            )
+                                          ],
+                                        ),
 
                                       )
                                     ],

@@ -171,6 +171,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       children: [
                                         CircleAvatar(),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Dreamwalker"),
                                             Text("Flutter/Android"),

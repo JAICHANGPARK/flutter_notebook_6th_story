@@ -168,7 +168,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                         flex: 3,
                                         child: Row(
                                           children: [
-                                            Text("80% is solved"),
+                                            Text("80% is solved",style: TextStyle(),),
                                             CircularPercentIndicator(
                                               radius: 38,
                                               lineWidth: 2,
@@ -180,7 +180,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                   color: Colors.white,
                                                   boxShadow: [
                                                     BoxShadow(
-                                                      color: Colors.black.withOpacity(.2),
+                                                      color: Colors.black.withOpacity(.1),
                                                       spreadRadius: 2,
                                                       blurRadius: 2
                                                     )
@@ -188,7 +188,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                 ),
                                                 height: 24,
                                                 width: 24,
-                                                child: Text("80"),
+                                                child: Center(child: Text("80")),
                                               ),
                                             )
                                           ],

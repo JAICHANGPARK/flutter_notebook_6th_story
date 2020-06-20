@@ -138,24 +138,14 @@ class _DmmMainPageState extends State<DmmMainPage> {
                         Positioned(
                           left: 16,
                           right: 16,
-                          top:16,
+                          top: 16,
                           bottom: 16,
                           child: Container(
-
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(.2),
-                                  blurRadius: 3,
-                                  spreadRadius: 2
-
-                                )
-                              ]
-                            ),
+                            decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(.2), blurRadius: 3, spreadRadius: 2)
+                            ]),
                           ),
                         )
-
                       ],
                     ),
                   ),

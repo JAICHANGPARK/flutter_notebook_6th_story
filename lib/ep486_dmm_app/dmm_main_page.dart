@@ -141,7 +141,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           top: 16,
                           bottom: 16,
                           child: Container(
-                            decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                color: Colors.white, boxShadow: [
                               BoxShadow(color: Colors.black.withOpacity(.2), blurRadius: 3, spreadRadius: 2)
                             ]),
                           ),

@@ -130,10 +130,15 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           bottom: 16,
                           right: 24,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(24)
-                            ),
+                            decoration:
+                                BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24), boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(.2),
+                                blurRadius: 3,
+                                spreadRadius: 2,
+                                offset: Offset(0, 4),
+                              )
+                            ]),
                           ),
                         ),
                         Positioned(
@@ -142,13 +147,13 @@ class _DmmMainPageState extends State<DmmMainPage> {
                           top: 8,
                           bottom: 38,
                           child: Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(24),
-                                color: Colors.white, boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(.2), blurRadius: 3, spreadRadius: 2,
-                              offset: Offset(
-                                0,4
-                              )),
+                            decoration:
+                                BoxDecoration(borderRadius: BorderRadius.circular(24), color: Colors.white, boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(.2),
+                                  blurRadius: 3,
+                                  spreadRadius: 2,
+                                  offset: Offset(0, 4)),
                             ]),
                           ),
                         )

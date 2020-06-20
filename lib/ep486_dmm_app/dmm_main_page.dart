@@ -170,7 +170,9 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
-                                        CircleAvatar(),
+                                        CircleAvatar(
+                                          radius: 24,
+                                        ),
                                         Padding(
                                           padding: const EdgeInsets.all(12.0),
                                           child: Column(

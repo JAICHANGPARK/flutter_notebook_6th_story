@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class DmmApp extends StatelessWidget {
   @override
@@ -165,7 +166,22 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                     children: [
                                       Expanded(
                                         flex: 3,
-                                        child: Placeholder(),
+                                        child: Row(
+                                          children: [
+                                            Text("80% is solved"),
+                                            CircularPercentIndicator(
+                                              radius: 38,
+                                              lineWidth: 2,
+                                              percent: 0.8,
+                                              progressColor: Colors.red,
+                                              center: Container(
+                                                height: 16,
+                                                width: 16,
+                                                child: Text("80"),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                       Expanded(
                                         flex: 8,

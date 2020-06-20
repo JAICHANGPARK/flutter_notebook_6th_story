@@ -211,7 +211,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                               child: Padding(
                                                 padding: const EdgeInsets.all(16.0),
                                                 child: Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  crossAxisAlignment: CrossAxisAlignment.center,
                                                   children: [
                                                     Row(
                                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -220,6 +220,7 @@ class _DmmMainPageState extends State<DmmMainPage> {
                                                         Icon(Icons.arrow_forward),
                                                       ],
                                                     ),
+                                                    SizedBox(height: 16,),
                                                     Text("Jeff.", style: TextStyle(
                                                       fontSize: 28,
                                                       fontWeight: FontWeight.bold,

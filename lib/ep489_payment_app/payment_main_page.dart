@@ -56,10 +56,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: GestureDetector(
-              onTap: (){
-                showDialog(context: context, builder: (context) => AlertDialog(
-                  content: Text("Payment"),
-                ));
+              onTap: () {
+                showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                          content: Text("Payment"),
+                        ));
               },
               child: Container(
                 height: 64,

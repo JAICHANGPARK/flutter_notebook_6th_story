@@ -49,8 +49,37 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
         elevation: 25,
         child: Container(
           height: 72,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 64,
+              decoration: BoxDecoration(
+                color: Colors.orangeAccent
+              ),
+            ),
+          ),
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

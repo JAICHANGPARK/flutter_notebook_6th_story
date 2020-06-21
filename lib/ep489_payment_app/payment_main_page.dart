@@ -12,7 +12,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
       backgroundColor: Colors.red,
       body: Column(
         children: [
-
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          )
         ],
       ),
       bottomNavigationBar: BottomAppBar(

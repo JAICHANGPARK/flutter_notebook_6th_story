@@ -26,7 +26,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
             ),
             Expanded(
               flex: 12,
-              child: Placeholder(),
+              child: Container(),
             )
           ],
         ),

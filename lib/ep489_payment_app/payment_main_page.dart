@@ -79,7 +79,13 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.red
-                            )), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
+                            )), TextSpan(text: "26.00 ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            )), TextSpan(text: "Incl taxes", style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 12
+                            ))]))
                       ],
                     ),
                   )
@@ -92,3 +98,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

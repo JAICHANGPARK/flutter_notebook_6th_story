@@ -64,7 +64,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                 children: [
                   Column(
                     children: [
-                      
+                      Text("4 ITEMS"),
+                      Text.rich(TextSpan(
+                        children:
+                          [
+                            TextSpan(text: "\$"),
+                            TextSpan(
+                              text: "26.00"
+                            ),
+                            TextSpan(
+                              text: "Incl taxes"
+                            )
+                          ]
+                      ))
                     ],
                   )
 

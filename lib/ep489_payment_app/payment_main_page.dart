@@ -8,6 +8,6 @@ class PaymentMainPage extends StatefulWidget {
 class _PaymentMainPageState extends State<PaymentMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

@@ -50,7 +50,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
         child: Container(
           height: 72,
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8
+            ),
             child: Container(
               height: 64,
               decoration: BoxDecoration(

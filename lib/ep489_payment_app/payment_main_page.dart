@@ -29,6 +29,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24)
+                  )
 
                 ),
               ),

@@ -90,11 +90,16 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     ),
                   ),
                   Spacer(),
-                  Row(
-                    children: [
-                      Text("Pay"),
-                      Icon(Icons.play_arrow)
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Text("Pay", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        Icon(Icons.play_arrow)
+                      ],
+                    ),
                   )
                 ],
               ),

@@ -13,9 +13,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
       body: Column(
         children: [
           Expanded(
+            flex: 1,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 10,
             child: Placeholder(),
           )
         ],

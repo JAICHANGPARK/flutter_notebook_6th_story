@@ -26,13 +26,18 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
             ),
             Expanded(
               flex: 12,
-              child: Container(),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+
+                ),
+              ),
             )
           ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        elevation: 9,
+        elevation: 25,
         child: Container(
           height: 72,
         ),

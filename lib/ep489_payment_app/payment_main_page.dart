@@ -30,7 +30,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24)
+                    topLeft: Radius.circular(16)
                   )
 
                 ),

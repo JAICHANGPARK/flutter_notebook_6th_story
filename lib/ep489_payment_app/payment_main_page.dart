@@ -88,6 +88,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             ))]))
                       ],
                     ),
+                  ),
+                  Spacer(),
+                  Row(
+                    
                   )
                 ],
               ),

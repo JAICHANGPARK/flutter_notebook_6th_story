@@ -70,22 +70,22 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("4 ITEMS",style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        Text.rich(TextSpan(
-                            children: [TextSpan(text: "\$ ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red
-                            )), TextSpan(text: "26.00 ",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            )), TextSpan(text: "Incl taxes", style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12
-                            ))]))
+                        Text(
+                          "4 ITEMS",
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text.rich(TextSpan(children: [
+                          TextSpan(text: "\$ ", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red)),
+                          TextSpan(
+                              text: "26.00 ",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              )),
+                          TextSpan(text: "Incl taxes", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12))
+                        ]))
                       ],
                     ),
                   ),
@@ -94,9 +94,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Text("Pay", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),),
+                        Text(
+                          "Pay",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Icon(Icons.play_arrow)
                       ],
                     ),
@@ -110,19 +113,3 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -10,17 +10,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
-      body: Column(
-        children: [
-          Expanded(
-            flex: 1,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 10,
-            child: Placeholder(),
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 10,
+              child: Placeholder(),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 9,

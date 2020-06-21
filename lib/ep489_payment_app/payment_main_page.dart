@@ -58,7 +58,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
             child: Container(
               height: 64,
               decoration: BoxDecoration(
-                color: Colors.orangeAccent,
+                color: Colors.orange[300],
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(

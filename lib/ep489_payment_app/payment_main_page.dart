@@ -9,9 +9,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red,
       body: Column(
         children: [
-          
+
         ],
       ),
     );

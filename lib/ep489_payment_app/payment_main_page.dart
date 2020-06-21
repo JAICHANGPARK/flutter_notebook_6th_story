@@ -20,7 +20,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                   IconButton(
                     icon: Icon(Icons.keyboard_arrow_left, color: Colors.white,),
                     onPressed: (){},
-                  )
+                  ),
+                  Text("Cart", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: Colors.white,
+                  ),)
                 ],
               ),
             ),

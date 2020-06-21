@@ -70,9 +70,16 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("4 ITEMS"),
+                        Text("4 ITEMS",style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),),
                         Text.rich(TextSpan(
-                            children: [TextSpan(text: "\$"), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
+                            children: [TextSpan(text: "\$ ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red
+                            )), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
                       ],
                     ),
                   )

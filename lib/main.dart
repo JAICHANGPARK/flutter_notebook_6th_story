@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep486_dmm_app/dmm_main_page.dart';
+import 'ep489_payment_app/payment_app.dart';
 
 void main() {
-  runApp(DmmApp());
+  runApp(PaymentApp());
 }

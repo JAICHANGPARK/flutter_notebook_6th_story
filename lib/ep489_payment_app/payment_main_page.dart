@@ -18,14 +18,20 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
               child: Row(
                 children: [
                   IconButton(
-                    icon: Icon(Icons.keyboard_arrow_left, color: Colors.white,),
-                    onPressed: (){},
+                    icon: Icon(
+                      Icons.keyboard_arrow_left,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {},
                   ),
-                  Text("Cart", style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),)
+                  Text(
+                    "Cart",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -33,13 +39,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
               flex: 12,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  )
-
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16),
+                    )),
               ),
             )
           ],
@@ -50,10 +54,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
         child: Container(
           height: 72,
           child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 8
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Container(
               height: 64,
               decoration: BoxDecoration(
@@ -67,20 +68,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     children: [
                       Text("4 ITEMS"),
                       Text.rich(TextSpan(
-                        children:
-                          [
-                            TextSpan(text: "\$"),
-                            TextSpan(
-                              text: "26.00"
-                            ),
-                            TextSpan(
-                              text: "Incl taxes"
-                            )
-                          ]
-                      ))
+                          children: [TextSpan(text: "\$"), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
                     ],
                   )
-
                 ],
               ),
             ),
@@ -90,23 +80,3 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

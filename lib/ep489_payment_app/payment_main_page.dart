@@ -62,14 +62,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("4 ITEMS"),
-                      Text.rich(TextSpan(
-                          children: [TextSpan(text: "\$"), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("4 ITEMS"),
+                        Text.rich(TextSpan(
+                            children: [TextSpan(text: "\$"), TextSpan(text: "26.00"), TextSpan(text: "Incl taxes")]))
+                      ],
+                    ),
                   )
                 ],
               ),

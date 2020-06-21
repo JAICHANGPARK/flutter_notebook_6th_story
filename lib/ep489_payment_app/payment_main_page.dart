@@ -63,6 +63,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("4 ITEMS"),
                       Text.rich(TextSpan(

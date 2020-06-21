@@ -15,6 +15,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
 
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        elevation: 9,
+        child: Container(
+          height: 72,
+        ),
+      ),
     );
   }
 }

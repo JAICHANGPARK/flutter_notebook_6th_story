@@ -57,22 +57,27 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       child: Row(
                         children: [
                           Icon(Icons.location_on, color: Colors.red,),
-                          Column(
-                            children: [
-                              Text.rich(TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: "Deliver at : ",
-                                  ),
-                                  TextSpan(
-                                    text: "Home",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Column(
+                              children: [
+                                Text.rich(TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Deliver at : ",
+                                    ),
+                                    TextSpan(
+                                      text: "Home",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      )
                                     )
-                                  )
-                                ]
-                              ))
-                            ],
+                                  ]
+                                )),
+                                Text("1633 Hampton Meadows, Lexington",
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),

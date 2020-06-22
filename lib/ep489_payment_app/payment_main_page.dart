@@ -89,7 +89,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       ),
                     ),
                     Container(
-                      height: 240,
+                      height: 260,
                       decoration: BoxDecoration(
                         color: Colors.blue
                       ),

@@ -82,7 +82,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           ),
                           Center(
                             child: Text("Change", style: TextStyle(
-                              fontWeight: FontWeight.w700
+                              fontWeight: FontWeight.w700,fontSize: 13,
+                              color: Colors.red
                             ),),
                           )
                         ],

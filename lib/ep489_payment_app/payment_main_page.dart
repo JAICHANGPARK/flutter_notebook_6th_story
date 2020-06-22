@@ -116,7 +116,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       ),
                       child: Row(
                         children: [
-                          
+                          Icon(Icons.local_play, color: Colors.red,),
+                          Text("Apply a promo code", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black
+                          ),)
                         ],
                       ),
                     ),

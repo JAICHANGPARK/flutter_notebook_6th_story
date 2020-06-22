@@ -155,6 +155,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 Text(
                                   "Apple Pay",
                                   style: TextStyle(
+                                    fontSize: 14,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),

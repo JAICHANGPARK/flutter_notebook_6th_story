@@ -79,6 +79,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 )
                               ],
                             ),
+                          ),
+                          Center(
+                            child: Text("Change", style: TextStyle(
+                              fontWeight: FontWeight.w700
+                            ),),
                           )
                         ],
                       ),

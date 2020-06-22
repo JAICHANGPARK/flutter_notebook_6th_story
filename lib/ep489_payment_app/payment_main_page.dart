@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMainPage extends StatefulWidget {
@@ -44,7 +45,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     )),
-                child: Column(
+                child: ListView(
                   children: [
                     Container(
                       padding: EdgeInsets.all(16),
@@ -108,6 +109,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     ),
                     Container(
                       height: 64,
+                      margin: EdgeInsets.all(16),
                       decoration: BoxDecoration(
                           color: Colors.red
                       ),

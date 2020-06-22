@@ -120,7 +120,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           Text("Apply a promo code", style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black
-                          ),)
+                          ),),
+                          Spacer(),
+                          Text("Apply", style: TextStyle(),)
                         ],
                       ),
                     ),

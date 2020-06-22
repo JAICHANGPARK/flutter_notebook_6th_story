@@ -136,9 +136,45 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       ),
                     ),
                     Container(
+                      padding: EdgeInsets.all(16),
+                      margin: EdgeInsets.all(16),
                       height: 64,
-                      decoration: BoxDecoration(
-                          color: Colors.yellow
+                      decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.card_giftcard,
+                            color: Colors.red,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text.rich(TextSpan(children: [
+                                  TextSpan(
+                                    text: "Deliver at : ",
+                                  ),
+                                  TextSpan(
+                                      text: "Home",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ))
+                                ])),
+                                Text(
+                                  "Apple Pay",
+                                )
+                              ],
+                            ),
+                          ),
+                          Spacer(),
+                          Center(
+                            child: Text(
+                              "Change",
+                              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13, color: Colors.red),
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ],

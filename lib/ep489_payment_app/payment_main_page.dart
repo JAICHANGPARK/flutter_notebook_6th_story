@@ -55,7 +55,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       ),
                       child: Row(
                         children: [
-                          Icon(Icons.location_on, color: Colors.red,)
+                          Icon(Icons.location_on, color: Colors.red,),
+                          Column(
+                            children: [
+                              
+                            ],
+                          )
                         ],
                       ),
                     )

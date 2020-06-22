@@ -90,19 +90,17 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     ),
                     Container(
                       height: 260,
-                      decoration: BoxDecoration(
-                        color: Colors.blue
-                      ),
+                      decoration: BoxDecoration(color: Colors.blue),
                       child: Column(
                         children: [
                           Expanded(
-                            child:Placeholder(),
+                            child: Placeholder(),
                           ),
                           Expanded(
-                            child:Placeholder(),
+                            child: Placeholder(),
                           ),
                           Expanded(
-                            child:Placeholder(),
+                            child: Placeholder(),
                           ),
                         ],
                       ),
@@ -110,30 +108,32 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     Container(
                       height: 64,
                       margin: EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                          color: Colors.orange[100],
-                        borderRadius: BorderRadius.circular(16)
-                      ),padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(color: Colors.orange[100], borderRadius: BorderRadius.circular(16)),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
-                          Icon(Icons.local_play, color: Colors.red,),
-                          SizedBox(width: 12,),
-                          Text("Apply a promo code", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black
-                          ),),
+                          Icon(
+                            Icons.local_play,
+                            color: Colors.red,
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Text(
+                            "Apply a promo code",
+                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                          ),
                           Spacer(),
-                          Text("Apply", style: TextStyle(
-                            color: Colors.red
-                          ),)
+                          Text(
+                            "Apply",
+                            style: TextStyle(color: Colors.red),
+                          )
                         ],
                       ),
                     ),
                     Container(
                       height: 120,
-                      decoration: BoxDecoration(
-                          color: Colors.green
-                      ),
+                      decoration: BoxDecoration(color: Colors.green),
                     ),
                     Container(
                       padding: EdgeInsets.all(16),
@@ -154,8 +154,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 Text("Pay Using"),
                                 Text(
                                   "Apple Pay",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                               
                               ],
                             ),
                           ),

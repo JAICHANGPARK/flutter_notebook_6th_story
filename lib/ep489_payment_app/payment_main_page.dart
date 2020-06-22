@@ -151,19 +151,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text.rich(TextSpan(children: [
-                                  TextSpan(
-                                    text: "Deliver at : ",
-                                  ),
-                                  TextSpan(
-                                      text: "Home",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ))
-                                ])),
+                                Text("Pay Using"),
                                 Text(
                                   "Apple Pay",
-                                )
+                                ),
+                               
                               ],
                             ),
                           ),

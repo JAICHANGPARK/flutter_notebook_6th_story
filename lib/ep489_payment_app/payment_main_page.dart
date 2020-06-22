@@ -50,7 +50,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       margin: EdgeInsets.all(16),
                       height: 72,
                       decoration: BoxDecoration(
-                        color: Colors.orange[100]
+                        color: Colors.orange[100],
+                        borderRadius: BorderRadius.circular(16)
                       ),
                     )
                   ],

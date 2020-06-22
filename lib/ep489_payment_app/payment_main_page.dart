@@ -48,7 +48,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                   children: [
                     Container(
                       margin: EdgeInsets.all(16),
-                      height: 72,
+                      height: 64,
                       decoration: BoxDecoration(
                         color: Colors.orange[100],
                         borderRadius: BorderRadius.circular(16)
@@ -58,7 +58,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           Icon(Icons.location_on, color: Colors.red,),
                           Column(
                             children: [
-                              Text.rich(TextSpan())
+                              Text.rich(TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: "Deliver at : ",
+                                  ),
+                                  TextSpan(
+                                    text: "Home",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    )
+                                  )
+                                ]
+                              ))
                             ],
                           )
                         ],

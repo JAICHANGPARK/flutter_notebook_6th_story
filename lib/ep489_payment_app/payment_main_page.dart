@@ -58,7 +58,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           Icon(Icons.location_on, color: Colors.red,),
                           Column(
                             children: [
-                              
+                              Text.rich(TextSpan())
                             ],
                           )
                         ],

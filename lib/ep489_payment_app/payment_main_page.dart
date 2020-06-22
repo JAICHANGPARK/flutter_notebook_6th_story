@@ -47,6 +47,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                 child: Column(
                   children: [
                     Container(
+                      margin: EdgeInsets.all(16),
                       height: 72,
                       decoration: BoxDecoration(
                         color: Colors.orange[100]

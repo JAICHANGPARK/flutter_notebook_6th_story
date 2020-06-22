@@ -60,6 +60,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text.rich(TextSpan(
                                   children: [

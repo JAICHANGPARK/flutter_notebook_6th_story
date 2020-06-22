@@ -113,16 +113,19 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       decoration: BoxDecoration(
                           color: Colors.orange[100],
                         borderRadius: BorderRadius.circular(16)
-                      ),
+                      ),padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Row(
                         children: [
                           Icon(Icons.local_play, color: Colors.red,),
+                          SizedBox(width: 12,),
                           Text("Apply a promo code", style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black
                           ),),
                           Spacer(),
-                          Text("Apply", style: TextStyle(),)
+                          Text("Apply", style: TextStyle(
+                            color: Colors.red
+                          ),)
                         ],
                       ),
                     ),

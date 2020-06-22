@@ -44,7 +44,13 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     )),
-                child: Column()
+                child: Column(
+                  children: [
+                    Container(
+                      height: ,
+                    )
+                  ],
+                )
               ),
 
             )

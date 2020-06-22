@@ -114,6 +114,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           color: Colors.orange[100],
                         borderRadius: BorderRadius.circular(16)
                       ),
+                      child: Row(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                     Container(
                       height: 120,

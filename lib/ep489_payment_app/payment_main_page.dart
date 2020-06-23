@@ -109,6 +109,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   Expanded(
                                     flex: 8,
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Ocean Reach Oatmeal Stout"),
                                         Text("6 Pack"),

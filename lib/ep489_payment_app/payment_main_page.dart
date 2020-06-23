@@ -141,25 +141,28 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                         Row(
                                           children: [
                                             Container(
-                                              height: 32,
-                                              width: 32,
+                                              height: 28,
+                                              width: 28,
                                               decoration: BoxDecoration(
-                                                color: Colors.grey,
-                                                borderRadius: BorderRadius.circular(4)
-                                              ),
+                                                  color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                                               child: Center(
-                                                child: Icon(Icons.remove),
-                                                
+                                                child: Icon(
+                                                  Icons.remove,
+                                                  color: Colors.red,
+                                                ),
                                               ),
                                             ),
-
                                             Text("2"),
                                             Container(
-                                              height: 32,
-                                              width: 32,
+                                              height: 28,
+                                              width: 28,
                                               decoration: BoxDecoration(
-                                                  color: Colors.grey,
-                                                  borderRadius: BorderRadius.circular(4)
+                                                  color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.add,
+                                                  color: Colors.red,
+                                                ),
                                               ),
                                             )
                                           ],

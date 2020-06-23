@@ -101,7 +101,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   Expanded(
                                     flex: 1,
                                     child: Container(
-                                      
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   ),
                                   Expanded(

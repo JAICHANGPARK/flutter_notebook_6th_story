@@ -415,7 +415,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                         children: [
                           Row(
                             children: [
-                              Text("Item total"),
+                              Text("Item total", style: TextStyle(
+
+                                  fontWeight: FontWeight.bold
+                              ),),
                               Spacer(),
                               Text("\$", style: TextStyle(
                                 color: Colors.red,
@@ -429,7 +432,27 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           ),
                           Row(
                             children: [
-                              Text("Item total"),
+                              Text("Delivery charges", style: TextStyle(
+
+                                  fontWeight: FontWeight.bold
+                              ),),
+                              Spacer(),
+                              Text("\$", style: TextStyle(
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                              Text("2.00", style: TextStyle(
+
+                                  fontWeight: FontWeight.bold
+                              ),)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text("Item total", style: TextStyle(
+
+                                  fontWeight: FontWeight.bold
+                              ),),
                               Spacer(),
                               Text("\$", style: TextStyle(
                                   color: Colors.red,
@@ -443,21 +466,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                           ),
                           Row(
                             children: [
-                              Text("Item total"),
-                              Spacer(),
-                              Text("\$", style: TextStyle(
-                                  color: Colors.red,
+                              Text("To pay", style: TextStyle(
+fontSize: 20,
                                   fontWeight: FontWeight.bold
                               ),),
-                              Text("23.06", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),)
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text("To pay"),
                               Spacer(),
                               Text("\$", style: TextStyle(
                                   color: Colors.red,

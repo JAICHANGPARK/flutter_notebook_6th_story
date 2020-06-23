@@ -99,7 +99,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                    flex: 1,
+                                    flex: 2,
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white,
@@ -108,7 +108,11 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   ),
                                   Expanded(
                                     flex: 8,
-                                    child: Placeholder(),
+                                    child: Column(
+                                      children: [
+                                        
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
                                     flex: 3,

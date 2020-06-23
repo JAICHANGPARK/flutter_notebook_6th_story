@@ -126,9 +126,15 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                             children:[
                                               TextSpan(
                                                 text: "\$ ",
+                                                style: TextStyle(
+                                                  color: Colors.red,
+                                                )
                                               ),
                                               TextSpan(
-                                                text: "9.50"
+                                                text: "9.50",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold
+                                                )
                                               )
                                             ]
                                           ))

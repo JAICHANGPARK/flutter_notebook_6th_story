@@ -90,7 +90,6 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                     ),
                     Container(
                       height: 260,
-                      decoration: BoxDecoration(color: Colors.blue),
                       child: Column(
                         children: [
                           Expanded(
@@ -102,7 +101,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     flex: 2,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: Colors.green,
                                         borderRadius: BorderRadius.circular(8)
                                       ),
                                     ),

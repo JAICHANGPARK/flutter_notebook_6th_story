@@ -94,7 +94,16 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       child: Column(
                         children: [
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: Placeholder(),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                           Expanded(
                             child: Placeholder(),

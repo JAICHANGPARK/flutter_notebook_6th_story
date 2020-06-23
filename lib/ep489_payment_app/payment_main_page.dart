@@ -103,11 +103,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white,
+                                        borderRadius: BorderRadius.circular(8)
                                       ),
                                     ),
                                   ),
                                   Expanded(
-                                    flex: 8,
+                                    flex: 9,
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(

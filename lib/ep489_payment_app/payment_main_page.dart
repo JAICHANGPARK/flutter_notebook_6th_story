@@ -454,7 +454,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                "Remove",
+                                " Remove",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.red,
@@ -466,7 +466,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                "23.06",
+                                "1.00",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               )
                             ],

@@ -443,7 +443,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   color: Colors.red,
                                   fontWeight: FontWeight.bold
                               ),),
-                              Text("23.06")
+                              Text("23.06", style: TextStyle(
+                                
+                                  fontWeight: FontWeight.bold
+                              ),)
                             ],
                           ),
                           Row(

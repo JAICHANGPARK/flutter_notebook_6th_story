@@ -110,7 +110,13 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     flex: 8,
                                     child: Column(
                                       children: [
-                                        
+                                        Text("Ocean Reach Oatmeal Stout"),
+                                        Text("6 Pack"),
+                                        Text.rich(TextSpan(
+                                          children:[
+                                            
+                                          ]
+                                        ))
                                       ],
                                     ),
                                   ),

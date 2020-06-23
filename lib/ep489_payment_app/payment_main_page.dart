@@ -207,7 +207,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            "Ocean Reach Oatmeal Stout",
+                                            "Stone Peak Conditions",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),

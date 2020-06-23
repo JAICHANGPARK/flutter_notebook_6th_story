@@ -418,7 +418,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               Text("Item total"),
                               Spacer(),
                               Text("\$", style: TextStyle(
-                                color: Colors.red
+                                color: Colors.red,
+                                  fontWeight: FontWeight.bold
                               ),),
                               Text("23.06")
                             ],
@@ -428,7 +429,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               Text("Item total"),
                               Spacer(),
                               Text("\$", style: TextStyle(
-                                  color: Colors.red
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold
                               ),),
                               Text("23.06")
                             ],
@@ -438,7 +440,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               Text("Item total"),
                               Spacer(),
                               Text("\$", style: TextStyle(
-                                  color: Colors.red
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold
                               ),),
                               Text("23.06")
                             ],
@@ -448,7 +451,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               Text("To pay"),
                               Spacer(),
                               Text("\$", style: TextStyle(
-                                  color: Colors.red
+                                  color: Colors.red,
+                                fontWeight: FontWeight.bold
                               ),),
                               Text("26.06")
                             ],

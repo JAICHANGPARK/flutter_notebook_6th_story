@@ -100,10 +100,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   Expanded(
                                     flex: 2,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.green,
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
+                                      decoration:
+                                          BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   Expanded(
@@ -113,30 +111,25 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Ocean Reach Oatmeal Stout",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                          ),),
-                                          Text("6 Pack",style: TextStyle(
-                                            color: Colors.grey
-                                          ),),
+                                          Text(
+                                            "Ocean Reach Oatmeal Stout",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "6 Pack",
+                                            style: TextStyle(color: Colors.grey),
+                                          ),
                                           Spacer(),
-                                          Text.rich(TextSpan(
-                                            children:[
-                                              TextSpan(
+                                          Text.rich(TextSpan(children: [
+                                            TextSpan(
                                                 text: "\$ ",
                                                 style: TextStyle(
                                                   color: Colors.red,
-                                                )
-                                              ),
-                                              TextSpan(
-                                                text: "9.50",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold
-                                                )
-                                              )
-                                            ]
-                                          ))
+                                                )),
+                                            TextSpan(text: "9.50", style: TextStyle(fontWeight: FontWeight.bold))
+                                          ]))
                                         ],
                                       ),
                                     ),
@@ -147,8 +140,22 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Container(height: 32,width:
-                                              32,)
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                color: Colors.grey,
+                                                borderRadius: BorderRadius.circular(4)
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey,
+                                                  borderRadius: BorderRadius.circular(4)
+                                              ),
+                                            )
                                           ],
                                         )
                                       ],

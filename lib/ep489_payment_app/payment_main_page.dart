@@ -108,22 +108,26 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   ),
                                   Expanded(
                                     flex: 8,
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Ocean Reach Oatmeal Stout"),
-                                        Text("6 Pack"),
-                                        Text.rich(TextSpan(
-                                          children:[
-                                            TextSpan(
-                                              text: "\$ ",
-                                            ),
-                                            TextSpan(
-                                              text: "9.50"
-                                            )
-                                          ]
-                                        ))
-                                      ],
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Ocean Reach Oatmeal Stout"),
+                                          Text("6 Pack"),
+                                          Spacer(),
+                                          Text.rich(TextSpan(
+                                            children:[
+                                              TextSpan(
+                                                text: "\$ ",
+                                              ),
+                                              TextSpan(
+                                                text: "9.50"
+                                              )
+                                            ]
+                                          ))
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Expanded(

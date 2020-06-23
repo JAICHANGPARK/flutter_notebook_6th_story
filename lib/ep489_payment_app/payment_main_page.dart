@@ -421,18 +421,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                 color: Colors.red,
                                   fontWeight: FontWeight.bold
                               ),),
-                              Text("23.06")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text("Item total"),
-                              Spacer(),
-                              Text("\$", style: TextStyle(
-                                  color: Colors.red,
+                              Text("23.06", style: TextStyle(
+
                                   fontWeight: FontWeight.bold
-                              ),),
-                              Text("23.06")
+                              ),)
                             ],
                           ),
                           Row(
@@ -444,7 +436,21 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   fontWeight: FontWeight.bold
                               ),),
                               Text("23.06", style: TextStyle(
-                                
+
+                                  fontWeight: FontWeight.bold
+                              ),)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text("Item total"),
+                              Spacer(),
+                              Text("\$", style: TextStyle(
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold
+                              ),),
+                              Text("23.06", style: TextStyle(
+
                                   fontWeight: FontWeight.bold
                               ),)
                             ],
@@ -457,7 +463,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   color: Colors.red,
                                 fontWeight: FontWeight.bold
                               ),),
-                              Text("26.06")
+                              Text("26.06", style: TextStyle(
+
+                                  fontWeight: FontWeight.bold
+                              ),)
                             ],
                           )
                         ],

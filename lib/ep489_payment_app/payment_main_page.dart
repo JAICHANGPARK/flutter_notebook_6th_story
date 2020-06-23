@@ -95,7 +95,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                         children: [
                           Expanded(
                             child: Container(
-                              margin: EdgeInsets.all(16),
+                              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                               child: Row(
                                 children: [
                                   Expanded(

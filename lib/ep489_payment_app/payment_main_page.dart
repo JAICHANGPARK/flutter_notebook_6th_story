@@ -154,9 +154,12 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            Text("2",style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                            ),),
+                                            Text(
+                                              "2",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
                                             Container(
                                               height: 28,
                                               width: 28,
@@ -174,11 +177,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                         Text.rich(TextSpan(children: [
                                           TextSpan(
                                               text: "\$ ",
-                                              style: TextStyle(
-                                                color: Colors.red,
-                                                fontWeight: FontWeight.bold
-                                                  
-                                              )),
+                                              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
                                           TextSpan(text: "19.00", style: TextStyle(fontWeight: FontWeight.bold))
                                         ]))
                                       ],
@@ -189,10 +188,194 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             ),
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                      decoration:
+                                      BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 9,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Ocean Reach Oatmeal Stout",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "6 Pack",
+                                            style: TextStyle(color: Colors.grey),
+                                          ),
+                                          Spacer(),
+                                          Text.rich(TextSpan(children: [
+                                            TextSpan(
+                                                text: "\$ ",
+                                                style: TextStyle(
+                                                  color: Colors.red,
+                                                )),
+                                            TextSpan(text: "9.50", style: TextStyle(fontWeight: FontWeight.bold))
+                                          ]))
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Container(
+                                              height: 28,
+                                              width: 28,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.remove,
+                                                  color: Colors.red,
+                                                ),
+                                              ),
+                                            ),
+                                            Text(
+                                              "2",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 28,
+                                              width: 28,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.add,
+                                                  color: Colors.red,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Text.rich(TextSpan(children: [
+                                          TextSpan(
+                                              text: "\$ ",
+                                              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+                                          TextSpan(text: "19.00", style: TextStyle(fontWeight: FontWeight.bold))
+                                        ]))
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: Container(
+                              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                      decoration:
+                                      BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 9,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Budweiser",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Single",
+                                            style: TextStyle(color: Colors.grey),
+                                          ),
+                                          Spacer(),
+                                          Text.rich(TextSpan(children: [
+                                            TextSpan(
+                                                text: "\$ ",
+                                                style: TextStyle(
+                                                  color: Colors.red,
+                                                )),
+                                            TextSpan(text: "1.73", style: TextStyle(fontWeight: FontWeight.bold))
+                                          ]))
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Container(
+                                              height: 28,
+                                              width: 28,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.remove,
+                                                  color: Colors.red,
+                                                ),
+                                              ),
+                                            ),
+                                            Text(
+                                              "1",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 28,
+                                              width: 28,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.add,
+                                                  color: Colors.red,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Text.rich(TextSpan(children: [
+                                          TextSpan(
+                                              text: "\$ ",
+                                              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+                                          TextSpan(text: "1.73", style: TextStyle(fontWeight: FontWeight.bold))
+                                        ]))
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ),
                         ],
                       ),

@@ -137,6 +137,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                   Expanded(
                                     flex: 3,
                                     child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -169,7 +170,17 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                               ),
                                             )
                                           ],
-                                        )
+                                        ),
+                                        Text.rich(TextSpan(children: [
+                                          TextSpan(
+                                              text: "\$ ",
+                                              style: TextStyle(
+                                                color: Colors.red,
+                                                fontWeight: FontWeight.bold
+                                                  
+                                              )),
+                                          TextSpan(text: "19.00", style: TextStyle(fontWeight: FontWeight.bold))
+                                        ]))
                                       ],
                                     ),
                                   )

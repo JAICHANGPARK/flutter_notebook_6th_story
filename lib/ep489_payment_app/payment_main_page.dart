@@ -153,7 +153,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                                 ),
                                               ),
                                             ),
-                                            Text("2"),
+                                            Text("2",style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),),
                                             Container(
                                               height: 28,
                                               width: 28,

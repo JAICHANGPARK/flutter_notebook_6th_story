@@ -114,6 +114,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                         Text("6 Pack"),
                                         Text.rich(TextSpan(
                                           children:[
+                                            TextSpan(
+                                              text: "\$ ",
+                                            ),
                                             
                                           ]
                                         ))

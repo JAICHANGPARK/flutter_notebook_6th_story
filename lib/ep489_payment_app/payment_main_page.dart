@@ -147,7 +147,13 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                                 color: Colors.grey,
                                                 borderRadius: BorderRadius.circular(4)
                                               ),
+                                              child: Center(
+                                                child: Icon(Icons.remove),
+                                                
+                                              ),
                                             ),
+
+                                            Text("2"),
                                             Container(
                                               height: 32,
                                               width: 32,

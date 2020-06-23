@@ -417,7 +417,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             children: [
                               Text("Item total"),
                               Spacer(),
-                              Text("\$"),
+                              Text("\$", style: TextStyle(
+                                color: Colors.red
+                              ),),
                               Text("23.06")
                             ],
                           ),
@@ -425,7 +427,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             children: [
                               Text("Item total"),
                               Spacer(),
-                              Text("\$"),
+                              Text("\$", style: TextStyle(
+                                  color: Colors.red
+                              ),),
                               Text("23.06")
                             ],
                           ),
@@ -433,7 +437,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             children: [
                               Text("Item total"),
                               Spacer(),
-                              Text("\$"),
+                              Text("\$", style: TextStyle(
+                                  color: Colors.red
+                              ),),
                               Text("23.06")
                             ],
                           ),
@@ -441,7 +447,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                             children: [
                               Text("To pay"),
                               Spacer(),
-                              Text("\$"),
+                              Text("\$", style: TextStyle(
+                                  color: Colors.red
+                              ),),
                               Text("26.06")
                             ],
                           )

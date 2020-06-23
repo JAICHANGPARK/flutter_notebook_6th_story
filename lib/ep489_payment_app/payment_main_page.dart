@@ -119,7 +119,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                             fontWeight: FontWeight.bold,
                                           ),),
                                           Text("6 Pack",style: TextStyle(
-                                            
+                                            color: Colors.grey
                                           ),),
                                           Spacer(),
                                           Text.rich(TextSpan(

@@ -158,7 +158,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                               height: 28,
                                               width: 28,
                                               decoration: BoxDecoration(
-                                                  color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                                  color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
                                               child: Center(
                                                 child: Icon(
                                                   Icons.add,

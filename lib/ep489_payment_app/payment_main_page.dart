@@ -419,6 +419,30 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                               Text("\$"),
                               Text("23.06")
                             ],
+                          ),
+                          Row(
+                            children: [
+                              Text("Item total"),
+                              Spacer(),
+                              Text("\$"),
+                              Text("23.06")
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text("Item total"),
+                              Spacer(),
+                              Text("\$"),
+                              Text("23.06")
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text("To pay"),
+                              Spacer(),
+                              Text("\$"),
+                              Text("26.06")
+                            ],
                           )
                         ],
                       ),

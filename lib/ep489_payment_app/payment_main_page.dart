@@ -117,7 +117,9 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                             TextSpan(
                                               text: "\$ ",
                                             ),
-                                            
+                                            TextSpan(
+                                              text: "9.50"
+                                            )
                                           ]
                                         ))
                                       ],

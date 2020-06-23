@@ -196,7 +196,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     flex: 2,
                                     child: Container(
                                       decoration:
-                                      BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
+                                          BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   Expanded(
@@ -291,7 +291,7 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     flex: 2,
                                     child: Container(
                                       decoration:
-                                      BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
+                                          BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                                     ),
                                   ),
                                   Expanded(
@@ -415,70 +415,77 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                         children: [
                           Row(
                             children: [
-                              Text("Item total", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),),
+                              Text(
+                                "Item total",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
                               Spacer(),
-                              Text("\$", style: TextStyle(
-                                color: Colors.red,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                              Text("23.06", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),)
+                              Text(
+                                "\$",
+                                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "23.06",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
                             ],
                           ),
                           Row(
                             children: [
-                              Text("Delivery charges", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),),
+                              Text(
+                                "Delivery charges",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
                               Spacer(),
-                              Text("\$", style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                              Text("2.00", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),)
+                              Text(
+                                "\$",
+                                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "2.00",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
                             ],
                           ),
                           Row(
                             children: [
-                              Text("Item total", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),),
-                              Spacer(),
-                              Text("\$", style: TextStyle(
+                              Text(
+                                "Donate \$1.00 to needy ",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "Remove",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.red,
-                                  fontWeight: FontWeight.bold
-                              ),),
-                              Text("23.06", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),)
+                                ),
+                              ),
+                              Spacer(),
+                              Text(
+                                "\$",
+                                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "23.06",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
                             ],
                           ),
                           Row(
                             children: [
-                              Text("To pay", style: TextStyle(
-fontSize: 20,
-                                  fontWeight: FontWeight.bold
-                              ),),
+                              Text(
+                                "To pay",
+                                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
                               Spacer(),
-                              Text("\$", style: TextStyle(
-                                  color: Colors.red,
-                                fontWeight: FontWeight.bold
-                              ),),
-                              Text("26.06", style: TextStyle(
-
-                                  fontWeight: FontWeight.bold
-                              ),)
+                              Text(
+                                "\$",
+                                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "26.06",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
                             ],
                           )
                         ],

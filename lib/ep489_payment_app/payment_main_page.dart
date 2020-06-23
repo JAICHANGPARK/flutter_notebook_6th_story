@@ -411,6 +411,8 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                       decoration: BoxDecoration(color: Colors.green),
                       padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Row(
                             children: [

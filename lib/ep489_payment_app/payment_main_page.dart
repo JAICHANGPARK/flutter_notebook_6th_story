@@ -105,7 +105,10 @@ class _PaymentMainPageState extends State<PaymentMainPage> {
                                     flex: 8,
                                     child: Placeholder(),
                                   ),
-                                  
+                                  Expanded(
+                                    flex: 3,
+                                    child: Placeholder(),
+                                  )
                                 ],
                               ),
                             ),

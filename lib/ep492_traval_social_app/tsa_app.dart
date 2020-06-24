@@ -59,6 +59,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
                     top: BorderSide(color: Colors.grey[300])
                   )
                 ),
+                margin: EdgeInsets.only(right: 16),
                 padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,

@@ -26,7 +26,10 @@ class _TSMMainPageState extends State<TSMMainPage> {
             Expanded(
               flex: 1,
               child: Container(
-                margin: EdgeInsets.all(16),
+                margin: EdgeInsets.all(9),
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
               ),
             ),
             Expanded(

@@ -29,7 +29,8 @@ class _TSMMainPageState extends State<TSMMainPage> {
                 margin: EdgeInsets.all(9),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(color: Colors.grey)
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8)
                 ),
               ),
             ),

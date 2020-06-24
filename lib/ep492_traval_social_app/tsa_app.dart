@@ -53,17 +53,20 @@ class _TSMMainPageState extends State<TSMMainPage> {
             ),
             Expanded(
               flex: 8,
-              child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index){
-                return Container(
-                  width: MediaQuery.of(context).size.width - 24,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
-                );
-              }),
+              child: Container(
+                
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index){
+                  return Container(
+                    width: MediaQuery.of(context).size.width - 24,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                  );
+                }),
+              ),
             )
           ],
         ),

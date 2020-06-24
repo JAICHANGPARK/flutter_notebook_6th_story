@@ -24,7 +24,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
            Expanded(flex: 1, child: Placeholder(),),
             Expanded(flex: 2, child: Placeholder(),),
             Expanded(flex: 1, child: Placeholder(),),
-            Expanded(flex: 1, child: Placeholder(),)
+            Expanded(flex: 8, child: Placeholder(),)
 
           ],
         ),

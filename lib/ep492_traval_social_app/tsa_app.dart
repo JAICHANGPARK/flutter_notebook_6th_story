@@ -56,7 +56,10 @@ class _TSMMainPageState extends State<TSMMainPage> {
               child: ListView.builder(itemBuilder: (context, index){
                 return Container(
                   width: MediaQuery.of(context).size.width - 24,
-                  decoration: BoxDecoration(),
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(8)
+                  ),
                 );
               }),
             )

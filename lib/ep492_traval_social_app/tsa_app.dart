@@ -21,7 +21,11 @@ class _TSMMainPageState extends State<TSMMainPage> {
     return Scaffold(
         body: Column(
           children: [
-           
+           Expanded(flex: 1, child: Placeholder(),),
+            Expanded(flex: 2, child: Placeholder(),),
+            Expanded(flex: 1, child: Placeholder(),),
+            Expanded(flex: 1, child: Placeholder(),)
+
           ],
         ),
     );

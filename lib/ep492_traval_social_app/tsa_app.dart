@@ -15,7 +15,7 @@ class TSMMainPage extends StatefulWidget {
 }
 
 class _TSMMainPageState extends State<TSMMainPage> {
-  String name;
+  String? name;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

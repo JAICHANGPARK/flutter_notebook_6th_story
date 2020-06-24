@@ -21,7 +21,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
       backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Column(
-
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               flex: 1,

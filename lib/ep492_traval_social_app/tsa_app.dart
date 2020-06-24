@@ -28,7 +28,8 @@ class _TSMMainPageState extends State<TSMMainPage> {
               child: Container(
                 margin: EdgeInsets.all(9),
                 decoration: BoxDecoration(
-                  color: Colors.white
+                  color: Colors.white,
+                  border: Border.all(color: Colors.grey)
                 ),
               ),
             ),

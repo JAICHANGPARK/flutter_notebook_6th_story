@@ -32,6 +32,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
                   border: Border.all(color: Colors.grey[300]),
                   borderRadius: BorderRadius.circular(8),
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,

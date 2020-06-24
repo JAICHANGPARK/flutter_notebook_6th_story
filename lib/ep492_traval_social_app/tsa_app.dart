@@ -18,8 +18,10 @@ class _TSMMainPageState extends State<TSMMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Column(
+
           children: [
             Expanded(
               flex: 1,

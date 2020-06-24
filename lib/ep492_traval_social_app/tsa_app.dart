@@ -59,13 +59,14 @@ class _TSMMainPageState extends State<TSMMainPage> {
                     top: BorderSide(color: Colors.grey[300])
                   )
                 ),
-                margin: EdgeInsets.only(right: 16),
+
                 padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index){
                   return Container(
-                    width: MediaQuery.of(context).size.width - 24,
+                    margin: EdgeInsets.only(right: 12),
+                    width: MediaQuery.of(context).size.width - 32,
                     decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(8)

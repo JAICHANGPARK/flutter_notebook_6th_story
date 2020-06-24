@@ -54,7 +54,11 @@ class _TSMMainPageState extends State<TSMMainPage> {
             Expanded(
               flex: 8,
               child: Container(
-                
+                decoration: BoxDecoration(
+                  border: Border(
+                    top: BorderSide(color: Colors.grey[300])
+                  )
+                ),
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index){

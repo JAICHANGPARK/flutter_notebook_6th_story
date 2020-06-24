@@ -53,7 +53,12 @@ class _TSMMainPageState extends State<TSMMainPage> {
             ),
             Expanded(
               flex: 8,
-              child: Placeholder(),
+              child: ListView.builder(itemBuilder: (context, index){
+                return Container(
+                  width: MediaQuery.of(context).size.width - 24,
+                  decoration: BoxDecoration(),
+                );
+              }),
             )
           ],
         ),

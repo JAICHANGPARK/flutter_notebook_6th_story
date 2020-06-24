@@ -7,7 +7,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.9.0 <3.1.0"
+  sdk: ^2.9.0-18.0.dev.flutter-6b630c3719
 
 dependencies:
   flutter:

@@ -36,13 +36,10 @@ class _TSMMainPageState extends State<TSMMainPage> {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
                   decoration: InputDecoration(
-                    border: InputBorder.none,
-                    icon: Icon(Icons.search),
-                    hintText: "Search",
-                    hintStyle: TextStyle(
-                      fontWeight: FontWeight.bold
-                    )
-                  ),
+                      border: InputBorder.none,
+                      icon: Icon(Icons.search),
+                      hintText: "Search",
+                      hintStyle: TextStyle(fontWeight: FontWeight.bold)),
                 ),
               ),
             ),

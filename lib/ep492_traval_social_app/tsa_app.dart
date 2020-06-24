@@ -30,7 +30,13 @@ class _TSMMainPageState extends State<TSMMainPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(color: Colors.grey[300]),
-                  borderRadius: BorderRadius.circular(8)
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    icon: Icon(Icons.search)
+                  ),
                 ),
               ),
             ),

@@ -15,40 +15,31 @@ class TSMMainPage extends StatefulWidget {
 }
 
 class _TSMMainPageState extends State<TSMMainPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-             Expanded(flex: 1, child: Placeholder(),),
-              Expanded(flex: 2, child: Placeholder(),),
-              Expanded(flex: 1, child: Placeholder(),),
-              Expanded(flex: 8, child: Placeholder(),)
-
-            ],
-          ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 1,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 8,
+              child: Placeholder(),
+            )
+          ],
         ),
+      ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

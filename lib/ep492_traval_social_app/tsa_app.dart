@@ -36,7 +36,11 @@ class _TSMMainPageState extends State<TSMMainPage> {
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
-                    icon: Icon(Icons.search)
+                    icon: Icon(Icons.search),
+                    hintText: "Search",
+                    hintStyle: TextStyle(
+                      fontWeight: FontWeight.bold
+                    )
                   ),
                 ),
               ),

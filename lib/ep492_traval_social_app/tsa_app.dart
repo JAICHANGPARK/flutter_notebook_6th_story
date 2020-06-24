@@ -15,13 +15,13 @@ class TSMMainPage extends StatefulWidget {
 }
 
 class _TSMMainPageState extends State<TSMMainPage> {
-  String? name;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
           children: [
-            Text(name)
+           
           ],
         ),
     );

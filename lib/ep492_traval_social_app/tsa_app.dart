@@ -87,7 +87,18 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
               child: TabBar(
                 controller: _tabController,
                 tabs: [
-
+                Tab(
+                  text: "For you",
+                ),
+                  Tab(
+                    text: "For you",
+                  ),
+                  Tab(
+                    text: "For you",
+                  ),
+                  Tab(
+                    text: "For you",
+                  )
                 ],
               ),
             ),

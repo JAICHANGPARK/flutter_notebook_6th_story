@@ -93,7 +93,9 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                 controller: _tabController,
                 onTap: (value){},
                 indicatorColor: Colors.transparent,
-                
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.grey,
+
                 tabs: [
                   Tab(
                     text: "For you",

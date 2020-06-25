@@ -97,7 +97,7 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                 unselectedLabelColor: Colors.grey,
                 isScrollable: true,
                 labelStyle: TextStyle(
-                  fontSize: 18
+                  fontSize: 16
                 ),
 
                 tabs: [

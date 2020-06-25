@@ -50,6 +50,9 @@ class _TSMMainPageState extends State<TSMMainPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [Text("MONDAY, JUNE 8"), Text("Latest News")],
+                  ),
+                  CircleAvatar(
+                    radius: 24,
                   )
                 ],
               ),

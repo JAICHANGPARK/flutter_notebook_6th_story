@@ -117,7 +117,7 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
               ),
             ),
             Expanded(
-              flex: 8,
+              flex: 9,
               child: Container(
                 decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.grey[300]))),
                 padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),

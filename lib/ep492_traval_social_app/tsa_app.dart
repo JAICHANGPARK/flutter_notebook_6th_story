@@ -85,6 +85,7 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
             Expanded(
               flex: 1,
               child: TabBar(
+                controller: _tabController,
                 tabs: [
 
                 ],

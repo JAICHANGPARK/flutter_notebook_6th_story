@@ -54,25 +54,17 @@ class _TSMMainPageState extends State<TSMMainPage> {
             Expanded(
               flex: 8,
               child: Container(
-                decoration: BoxDecoration(
-                  border: Border(
-                    top: BorderSide(color: Colors.grey[300])
-                  )
-                ),
-
+                decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.grey[300]))),
                 padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index){
-                  return Container(
-                    margin: EdgeInsets.only(right: 12),
-                    width: MediaQuery.of(context).size.width - 32,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
-                  );
-                }),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        margin: EdgeInsets.only(right: 12),
+                        width: MediaQuery.of(context).size.width - 32,
+                        decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                      );
+                    }),
               ),
             )
           ],

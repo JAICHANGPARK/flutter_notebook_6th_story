@@ -49,9 +49,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-
-                    ],
+                    children: [Text("MONDAY, JUNE 8"), Text("Latest News")],
                   )
                 ],
               ),

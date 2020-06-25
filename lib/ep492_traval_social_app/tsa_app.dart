@@ -95,6 +95,7 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                 indicatorColor: Colors.transparent,
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
+                isScrollable: true,
 
                 tabs: [
                   Tab(

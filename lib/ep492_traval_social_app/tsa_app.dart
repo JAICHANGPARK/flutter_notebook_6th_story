@@ -46,6 +46,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
             Expanded(
               flex: 2,
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

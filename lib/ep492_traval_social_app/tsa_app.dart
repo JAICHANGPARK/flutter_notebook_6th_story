@@ -53,7 +53,19 @@ class _TSMMainPageState extends State<TSMMainPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [Text("MONDAY, JUNE 8"), Text("Latest News")],
+                      children: [
+                        Text("MONDAY, JUNE 8", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey
+                        ),),
+                        Text(
+                          "Latest News",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     ),
                     Spacer(),
                     CircleAvatar(

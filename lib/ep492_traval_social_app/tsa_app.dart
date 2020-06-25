@@ -14,7 +14,14 @@ class TSMMainPage extends StatefulWidget {
   _TSMMainPageState createState() => _TSMMainPageState();
 }
 
-class _TSMMainPageState extends State<TSMMainPage> {
+class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStateMixin{
+  TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(vsync: this, length: 4, );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,7 +86,7 @@ class _TSMMainPageState extends State<TSMMainPage> {
               flex: 1,
               child: TabBar(
                 tabs: [
-                  
+
                 ],
               ),
             ),

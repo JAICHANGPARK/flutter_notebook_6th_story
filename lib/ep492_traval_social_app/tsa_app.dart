@@ -14,14 +14,19 @@ class TSMMainPage extends StatefulWidget {
   _TSMMainPageState createState() => _TSMMainPageState();
 }
 
-class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStateMixin{
+class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStateMixin {
   TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabController = TabController(vsync: this, length: 4, );
+    _tabController = TabController(
+      vsync: this,
+      length: 4,
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,10 +66,10 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("MONDAY, JUNE 8", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey
-                        ),),
+                        Text(
+                          "MONDAY, JUNE 8",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                        ),
                         Text(
                           "Latest News",
                           style: TextStyle(
@@ -86,18 +91,21 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
               flex: 1,
               child: TabBar(
                 controller: _tabController,
+                onTap: (value){},
+                indicatorColor: Colors.transparent,
+                
                 tabs: [
-                Tab(
-                  text: "For you",
-                ),
                   Tab(
                     text: "For you",
                   ),
                   Tab(
-                    text: "For you",
+                    text: "For Editor's picks",
                   ),
                   Tab(
-                    text: "For you",
+                    text: "Top stories",
+                  ),
+                  Tab(
+                    text: "Booking",
                   )
                 ],
               ),

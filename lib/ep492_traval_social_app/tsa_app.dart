@@ -77,7 +77,11 @@ class _TSMMainPageState extends State<TSMMainPage> {
             ),
             Expanded(
               flex: 1,
-              child: Placeholder(),
+              child: TabBar(
+                tabs: [
+                  
+                ],
+              ),
             ),
             Expanded(
               flex: 8,

@@ -154,6 +154,20 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                               "Train Travel\nOn Track For\nSafety",
                               style: GoogleFonts.montserrat(
                                   fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
+                            ),
+                            Text("Read more"),
+                            Divider(color: Colors.grey,),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                  ),
+                                  child: Stack(),
+                                )
+                              ],
                             )
                           ],
                         ),

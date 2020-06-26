@@ -145,9 +145,12 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Center(
-                                child: Text("Travel", style: TextStyle(
-                                  color: Colors.white,
-                                ),),
+                                child: Text(
+                                  "Travel",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             ),
                             Text(
@@ -156,7 +159,9 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                   fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
                             ),
                             Text("Read more"),
-                            Divider(color: Colors.grey,),
+                            Divider(
+                              color: Colors.grey,
+                            ),
                             Row(
                               children: [
                                 Container(
@@ -166,9 +171,32 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                     color: Colors.white,
                                   ),
                                   child: Stack(),
-                                )
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Seoul, Republic of Korea",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text("Sep 16")
+                                      ],
+                                    )
+                                  ],
+                                ),
+
                               ],
-                            )
+                            ),
                           ],
                         ),
                       );
@@ -181,22 +209,3 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

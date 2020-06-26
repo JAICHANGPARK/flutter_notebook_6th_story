@@ -144,7 +144,9 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Center(
-                                child: Text("Travel"),
+                                child: Text("Travel", style: TextStyle(
+                                  color: Colors.white,
+                                ),),
                               ),
                             ),
                             Text(

@@ -117,6 +117,8 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
             Expanded(
               flex: 9,
               child: Container(
+                height: double.infinity,
+                width: double.infinity,
                 decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.grey[300]))),
                 padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),
                 child: ListView.builder(
@@ -162,29 +164,38 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                             Divider(
                               color: Colors.grey,
                             ),
-                            Container(
-                              width: double.infinity,
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 64,
-                                    width: 64,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                    ),
-                                    child: Stack(),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
+                                  child: Stack(
+                                    children: [Positioned(
+                                      left: 8,top: 0,right: 0,
+                                      bottom: 0,
+                                      child: Placeholder(),
+                                    ),
+                                    ],
+                                  ),
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                      child: Text(
                                         "Dreamwalker",
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
                                       ),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: Row(
                                         children: [
                                           Text(
                                             "Seoul, Republic of Korea",
@@ -192,16 +203,16 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                               color: Colors.white,
                                             ),
                                           ),
-                                          Text("Sep 16",style: TextStyle(
-                                            color: Colors.white,
-                                          ),)
                                         ],
-                                      )
-                                    ],
-                                  ),
-
-                                ],
-                              ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Spacer(),
+                                Text("Sep 16",style: TextStyle(
+                                  color: Colors.white,
+                                ),)
+                              ],
                             ),
                           ],
                         ),

@@ -122,7 +122,6 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-
                         margin: EdgeInsets.only(right: 12),
                         width: MediaQuery.of(context).size.width - 32,
                         decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8),
@@ -130,6 +129,12 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                           image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_960_720.jpg"),
                           fit: BoxFit.cover
                         )),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Spacer()
+                          ],
+                        ),
                       );
                     }),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TravelSocialMobileApp extends StatelessWidget {
   @override
@@ -132,7 +133,21 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Spacer()
+                            Spacer(),
+                            Container(
+                              height: 24,
+                              width: 48,
+                              decoration: BoxDecoration(
+                                color: Colors.pink,
+                              ),
+                            ),
+                            Text("Train Travel\nOn Track For\nSafety", style:
+                              GoogleFonts.montserrat(
+                                fontSize: 48,
+                                color: Colors.white
+                                  ,
+                                fontWeight: FontWeight.bold
+                              ),)
                           ],
                         ),
                       );
@@ -145,3 +160,16 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -91,15 +91,12 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
               flex: 1,
               child: TabBar(
                 controller: _tabController,
-                onTap: (value){},
+                onTap: (value) {},
                 indicatorColor: Colors.transparent,
                 labelColor: Colors.black,
                 unselectedLabelColor: Colors.grey,
                 isScrollable: true,
-                labelStyle: TextStyle(
-                  fontSize: 16
-                ),
-
+                labelStyle: TextStyle(fontSize: 16),
                 tabs: [
                   Tab(
                     text: "For you",
@@ -125,9 +122,14 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
+
                         margin: EdgeInsets.only(right: 12),
                         width: MediaQuery.of(context).size.width - 32,
-                        decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_960_720.jpg"),
+                          fit: BoxFit.cover
+                        )),
                       );
                     }),
               ),

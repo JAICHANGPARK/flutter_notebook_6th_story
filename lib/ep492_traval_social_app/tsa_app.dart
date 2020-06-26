@@ -125,29 +125,33 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                       return Container(
                         margin: EdgeInsets.only(right: 12),
                         width: MediaQuery.of(context).size.width - 32,
-                        decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_960_720.jpg"),
-                          fit: BoxFit.cover
-                        )),
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_960_720.jpg"),
+                                fit: BoxFit.cover)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Spacer(),
                             Container(
                               height: 24,
-                              width: 48,
+                              width: 64,
                               decoration: BoxDecoration(
                                 color: Colors.pink,
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: Center(
+                                child: Text("Travel"),
                               ),
                             ),
-                            Text("Train Travel\nOn Track For\nSafety", style:
-                              GoogleFonts.montserrat(
-                                fontSize: 48,
-                                color: Colors.white
-                                  ,
-                                fontWeight: FontWeight.bold
-                              ),)
+                            Text(
+                              "Train Travel\nOn Track For\nSafety",
+                              style: GoogleFonts.montserrat(
+                                  fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
+                            )
                           ],
                         ),
                       );
@@ -160,6 +164,12 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
     );
   }
 }
+
+
+
+
+
+
 
 
 

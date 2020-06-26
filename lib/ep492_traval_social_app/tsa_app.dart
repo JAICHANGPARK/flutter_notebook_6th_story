@@ -169,15 +169,31 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                 Container(
                                   height: 64,
                                   width: 64,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                  ),
+
                                   child: Stack(
-                                    children: [Positioned(
-                                      left: 8,top: 0,right: 0,
-                                      bottom: 0,
-                                      child: Placeholder(),
-                                    ),
+                                    children: [
+                                      Positioned(
+                                        left: 2,
+                                        top: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        left: 0,
+                                        bottom: 0,
+                                        child: Container(
+                                          height: 21,
+                                          width: 21,
+                                          decoration: BoxDecoration(color: Colors.red,
+                                          shape: BoxShape.circle),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
@@ -209,9 +225,12 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                   ],
                                 ),
                                 Spacer(),
-                                Text("Sep 16",style: TextStyle(
-                                  color: Colors.white,
-                                ),)
+                                Text(
+                                  "Sep 16",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
                               ],
                             ),
                           ],

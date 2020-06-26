@@ -188,9 +188,10 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                                         left: 0,
                                         bottom: 0,
                                         child: Container(
-                                          height: 21,
-                                          width: 21,
+                                          height: 24,
+                                          width: 24,
                                           decoration: BoxDecoration(color: Colors.red,
+                                          border: Border.all(color: Colors.white, width: 2),
                                           shape: BoxShape.circle),
                                         ),
                                       )

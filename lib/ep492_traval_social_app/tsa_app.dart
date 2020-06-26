@@ -162,40 +162,46 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                             Divider(
                               color: Colors.grey,
                             ),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 64,
-                                  width: 64,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                  ),
-                                  child: Stack(),
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Dreamwalker",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
+                            Container(
+                              width: double.infinity,
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
                                     ),
-                                    Row(
-                                      children: [
-                                        Text(
-                                          "Seoul, Republic of Korea",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
+                                    child: Stack(),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          color: Colors.white,
                                         ),
-                                        Text("Sep 16")
-                                      ],
-                                    )
-                                  ],
-                                ),
+                                      ),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            "Seoul, Republic of Korea",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Text("Sep 16",style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
+                                        ],
+                                      )
+                                    ],
+                                  ),
 
-                              ],
+                                ],
+                              ),
                             ),
                           ],
                         ),

@@ -124,6 +124,7 @@ class _TSMMainPageState extends State<TSMMainPage> with SingleTickerProviderStat
                     itemBuilder: (context, index) {
                       return Container(
                         margin: EdgeInsets.only(right: 12),
+                        padding: EdgeInsets.all(18),
                         width: MediaQuery.of(context).size.width - 32,
                         decoration: BoxDecoration(
                             color: Colors.red,

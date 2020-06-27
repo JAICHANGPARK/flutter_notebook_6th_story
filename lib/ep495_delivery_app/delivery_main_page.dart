@@ -35,6 +35,18 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   bottomRight: Radius.circular(36),
                 )
               ),
+              padding: EdgeInsets.all(24),
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Placeholder(),
+                  ),
+                  SizedBox(height: 24,),
+                  Expanded(
+                    child: Placeholder(),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(

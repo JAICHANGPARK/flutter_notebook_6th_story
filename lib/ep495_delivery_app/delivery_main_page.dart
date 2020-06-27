@@ -29,7 +29,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.blueGrey[100]
+                color: Colors.blueGrey[50],
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(24),
+                  bottomRight: Radius.circular(24),
+                )
               ),
             ),
           ),

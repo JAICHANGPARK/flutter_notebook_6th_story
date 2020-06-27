@@ -42,12 +42,20 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             right: 16,
             left: 16,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
                     color: Colors.red
+                  ),
+                ),
+                Container(
+                  height: 80,
+                  width: 120,
+                  decoration: BoxDecoration(
+                      color: Colors.red
                   ),
                 ),
                 Container(

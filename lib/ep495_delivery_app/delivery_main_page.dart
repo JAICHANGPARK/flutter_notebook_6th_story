@@ -19,7 +19,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[300],
       body: Stack(
         children: [
           Positioned(
@@ -29,7 +29,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.blueGrey[50],
+                color: Colors.blueGrey[100],
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(24),
                   bottomRight: Radius.circular(24),

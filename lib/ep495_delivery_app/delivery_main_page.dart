@@ -27,7 +27,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             left: 0,
             bottom: 120,
             right: 0,
-            child: Placeholder(),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.blueGrey[100]
+              ),
+            ),
           ),
 
         ],

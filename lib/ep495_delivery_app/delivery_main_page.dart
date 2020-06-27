@@ -31,8 +31,8 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               decoration: BoxDecoration(
                 color: Colors.blueGrey[100],
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(24),
-                  bottomRight: Radius.circular(24),
+                  bottomLeft: Radius.circular(36),
+                  bottomRight: Radius.circular(36),
                 )
               ),
             ),

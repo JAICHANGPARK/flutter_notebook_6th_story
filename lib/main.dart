@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep492_traval_social_app/tsa_app.dart';
+import 'ep495_delivery_app/delivery_main_page.dart';
 
 void main() {
-  runApp(TravelSocialMobileApp());
+  runApp(DeliveryApp());
 }

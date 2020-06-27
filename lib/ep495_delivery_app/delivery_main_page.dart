@@ -19,7 +19,18 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.blueGrey[50],
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            bottom: 120,
+            right: 0,
+            child: Placeholder(),
+          )
+        ],
+      ),
     );
   }
 }

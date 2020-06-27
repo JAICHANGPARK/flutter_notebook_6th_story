@@ -18,7 +18,9 @@ class DeliveryMainPage extends StatefulWidget {
 class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blueGrey[100],
+    );
   }
 }
 

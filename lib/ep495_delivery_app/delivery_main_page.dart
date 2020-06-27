@@ -37,6 +37,29 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               ),
             ),
           ),
+          Positioned(
+            bottom: 16,
+            right: 16,
+            left: 16,
+            child: Row(
+              children: [
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.red
+                  ),
+                ),
+                Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                      color: Colors.red
+                  ),
+                )
+              ],
+            ),
+          )
 
         ],
       ),

@@ -38,12 +38,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               padding: EdgeInsets.all(24),
               child: Column(
                 children: [
+                  SizedBox(height: 16,),
                   Expanded(
                     flex: 2,
                     child: Container(
-                      
                       decoration: BoxDecoration(
-
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(16),
                       ),

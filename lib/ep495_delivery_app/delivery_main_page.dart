@@ -67,16 +67,20 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   ],
                                 ),
                                 Text("Get access to", style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 23,
                                   color: Colors.indigo,
                                   fontWeight: FontWeight.bold
                                 ),),
-                                Text("premium features"),
+                                Text("premium features", style: TextStyle(
+                                    fontSize: 23,
+                                    color: Colors.indigo,
+                                    fontWeight: FontWeight.bold
+                                ),),
                                 Row(
                                   children: [
                                     Container(
-                                      height: 48,
-                                      width: 48,
+                                      height: 42,
+                                      width: 42,
                                       decoration: BoxDecoration(
                                         color: Colors.grey[200]
                                       ),

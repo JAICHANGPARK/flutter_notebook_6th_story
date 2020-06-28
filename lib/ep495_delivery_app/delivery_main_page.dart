@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DeliveryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -29,16 +28,17 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.blueGrey[100],
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(36),
-                  bottomRight: Radius.circular(36),
-                )
-              ),
+                  color: Colors.blueGrey[100],
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(36),
+                    bottomRight: Radius.circular(36),
+                  )),
               padding: EdgeInsets.all(24),
               child: Column(
                 children: [
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Expanded(
                     flex: 2,
                     child: Container(
@@ -60,45 +60,45 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Row(
                                   children: [
                                     Text("⚡️"),
-                                    Text(" 40% DISCOUNT",style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.deepOrangeAccent
-                                    ),)
+                                    Text(
+                                      " 40% DISCOUNT",
+                                      style: TextStyle(fontSize: 12, color: Colors.deepOrangeAccent),
+                                    )
                                   ],
                                 ),
-                                Text("Get access to", style: TextStyle(
-                                  fontSize: 23,
-                                  color: Colors.indigo,
-                                  fontWeight: FontWeight.bold
-                                ),),
-                                Text("premium features", style: TextStyle(
-                                    fontSize: 23,
-                                    color: Colors.indigo,
-                                    fontWeight: FontWeight.bold
-                                ),),
+                                Text(
+                                  "Get access to",
+                                  style: TextStyle(fontSize: 23, color: Colors.indigo, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  "premium features",
+                                  style: TextStyle(fontSize: 23, color: Colors.indigo, fontWeight: FontWeight.bold),
+                                ),
                                 Row(
                                   children: [
                                     Container(
                                       height: 42,
                                       width: 42,
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[200]
-                                      ),
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
                                     ),
-                                    SizedBox(width: 8,),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Container(
                                       height: 42,
                                       width: 42,
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[200]
-                                      ),
-                                    ), SizedBox(width: 8,),
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Container(
                                       height: 42,
                                       width: 42,
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[200]
-                                      ),
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
                                     ),
                                   ],
                                 ),
@@ -106,32 +106,33 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   height: 42,
                                   width: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.deepOrangeAccent,
-                                    borderRadius: BorderRadius.circular(7)
-                                  ),
+                                      color: Colors.deepOrangeAccent, borderRadius: BorderRadius.circular(7)),
                                   child: Center(
-                                    child: Text("Get access", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white
-                                    ),),
+                                    child: Text(
+                                      "Get access",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                    ),
                                   ),
                                 )
                               ],
-
                             ),
                           ),
                           Positioned(
                             right: -16,
                             bottom: 0,
                             top: 24,
-                            child: Image.network("https://cdn.pixabay.com/photo/2016/09/27/05/35/letter-1697605_960_720.png",
-                            color: Colors.deepOrangeAccent,),
+                            child: Image.network(
+                              "https://cdn.pixabay.com/photo/2016/09/27/05/35/letter-1697605_960_720.png",
+                              color: Colors.deepOrangeAccent,
+                            ),
                           )
                         ],
                       ),
                     ),
                   ),
-                  SizedBox(height: 24,),
+                  SizedBox(
+                    height: 24,
+                  ),
                   Expanded(
                     flex: 3,
                     child: Placeholder(),
@@ -153,75 +154,37 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
 //                  decoration: BoxDecoration(
 //                    color: Colors.red
 //                  ),
-                  child: Icon(Icons.credit_card, color: Colors.grey,),
+                  child: Icon(
+                    Icons.credit_card,
+                    color: Colors.grey,
+                  ),
                 ),
                 Container(
                   height: 72,
                   width: 100,
                   margin: EdgeInsets.all(7),
-                  decoration: BoxDecoration(
-                      color: Colors.deepOrangeAccent,
-                    borderRadius: BorderRadius.circular(8),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
-                        spreadRadius: 2,
-                        blurRadius: 4,
-                        offset: Offset(0, 4)
-                      ),
-                    ]
-                  ),
+                  decoration:
+                      BoxDecoration(color: Colors.deepOrangeAccent, borderRadius: BorderRadius.circular(8), boxShadow: [
+                    BoxShadow(
+                        color: Colors.black.withOpacity(0.2), spreadRadius: 2, blurRadius: 4, offset: Offset(0, 4)),
+                  ]),
                   child: Center(
-                    child: Icon(Icons.apps, color: Colors.white,),
+                    child: Icon(
+                      Icons.apps,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 Container(
                   height: 48,
                   width: 48,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                  decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(8)),
                 )
               ],
             ),
           )
-
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

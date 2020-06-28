@@ -46,6 +46,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(16),
                       ),
+                      child: Stack(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(height: 24,),

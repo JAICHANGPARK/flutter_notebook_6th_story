@@ -82,6 +82,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                       ),
                     ]
                   ),
+                  child: Center(
+                    child: Icon(Icons.apps, color: Colors.white,),
+                  ),
                 ),
                 Container(
                   height: 48,

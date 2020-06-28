@@ -40,7 +40,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                 children: [
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Container(),
                   ),
                   SizedBox(height: 24,),
                   Expanded(

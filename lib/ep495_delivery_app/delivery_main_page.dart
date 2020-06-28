@@ -66,9 +66,14 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Text("Get access to"),
                                 Text("premium features"),
-                                Container(
-                                  height: 48,
-                                  width: 48,
+                                Row(
+                                  children: [
+                                    Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(),
+                                    ),
+                                  ],
                                 )
                               ],
                             ),

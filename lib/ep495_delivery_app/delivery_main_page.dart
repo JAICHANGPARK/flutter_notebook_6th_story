@@ -66,7 +66,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     ),)
                                   ],
                                 ),
-                                Text("Get access to"),
+                                Text("Get access to", style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.indigo,
+                                  fontWeight: FontWeight.bold
+                                ),),
                                 Text("premium features"),
                                 Row(
                                   children: [

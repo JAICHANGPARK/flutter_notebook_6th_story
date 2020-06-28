@@ -48,7 +48,22 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                       ),
                       child: Stack(
                         children: [
-                          
+                          Positioned(
+                            top: 16,
+                            left: 16,
+                            bottom: 16,
+                            right: 0,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(""),
+                                    Text("40% DISCOUNT")
+                                  ],
+                                )
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     ),

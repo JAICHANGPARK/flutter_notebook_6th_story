@@ -71,7 +71,24 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     Container(
                                       height: 48,
                                       width: 48,
-                                      decoration: BoxDecoration(),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200]
+                                      ),
+                                    ),
+                                    SizedBox(width: 8,),
+                                    Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[200]
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 48,
+                                      width: 48,
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[200]
+                                      ),
                                     ),
                                   ],
                                 )

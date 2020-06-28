@@ -67,7 +67,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   child: Icon(Icons.credit_card, color: Colors.grey,),
                 ),
                 Container(
-                  height: 80,
+                  height: 72,
                   width: 100,
                   margin: EdgeInsets.all(7),
                   decoration: BoxDecoration(

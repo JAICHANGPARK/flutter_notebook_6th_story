@@ -19,7 +19,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[100],
       body: Stack(
         children: [
           Positioned(
@@ -61,15 +61,16 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                 Container(
                   height: 48,
                   width: 48,
-                  decoration: BoxDecoration(
-                    color: Colors.red
-                  ),
+//                  decoration: BoxDecoration(
+//                    color: Colors.red
+//                  ),
+                  child: Icon(Icons.credit_card, color: Colors.grey,),
                 ),
                 Container(
                   height: 80,
                   width: 100,
                   decoration: BoxDecoration(
-                      color: Colors.red
+                      color: Colors.deepOrangeAccent
                   ),
                 ),
                 Container(

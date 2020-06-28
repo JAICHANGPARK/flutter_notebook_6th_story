@@ -55,6 +55,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             right: 0,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Row(
                                   children: [
@@ -94,7 +95,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   ],
                                 ),
                                 Container(
-                                  height: 48,
+                                  height: 42,
                                   width: 160,
                                   decoration: BoxDecoration(
                                     color: Colors.deepOrangeAccent

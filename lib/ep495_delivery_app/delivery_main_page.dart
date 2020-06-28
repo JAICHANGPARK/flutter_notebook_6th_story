@@ -106,7 +106,13 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   height: 42,
                                   width: 160,
                                   decoration: BoxDecoration(
-                                    color: Colors.deepOrangeAccent
+                                    color: Colors.deepOrangeAccent,
+                                  ),
+                                  child: Center(
+                                    child: Text("Get access", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white
+                                    ),),
                                   ),
                                 )
                               ],

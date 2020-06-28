@@ -57,9 +57,18 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text(""),
-                                    Text("40% DISCOUNT")
+                                    Text("⚡️"),
+                                    Text(" 40% DISCOUNT",style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.deepOrangeAccent
+                                    ),)
                                   ],
+                                ),
+                                Text("Get access to"),
+                                Text("premium features"),
+                                Container(
+                                  height: 48,
+                                  width: 48,
                                 )
                               ],
                             ),

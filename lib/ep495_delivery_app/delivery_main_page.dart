@@ -39,10 +39,12 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               child: Column(
                 children: [
                   Expanded(
+                    flex: 2,
                     child: Placeholder(),
                   ),
                   SizedBox(height: 24,),
                   Expanded(
+                    flex: 3,
                     child: Placeholder(),
                   )
                 ],

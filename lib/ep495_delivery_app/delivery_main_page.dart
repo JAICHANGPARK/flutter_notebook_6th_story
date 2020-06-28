@@ -119,6 +119,13 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               ],
 
                             ),
+                          ),
+                          Positioned(
+                            right: -16,
+                            bottom: 0,
+                            top: 0,
+                            child: Image.network("https://cdn.pixabay.com/photo/2016/09/27/05/35/letter-1697605_960_720.png",
+                            color: Colors.deepOrangeAccent,),
                           )
                         ],
                       ),

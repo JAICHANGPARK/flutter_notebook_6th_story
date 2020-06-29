@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DeliveryApp extends StatelessWidget {
@@ -140,13 +141,13 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                        color: Colors.white,
                        borderRadius: BorderRadius.circular(16)
                      ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Expanded(
                             child: Container(
-
                               decoration: BoxDecoration(
-
+                                
                               ),
                             ),
                           ),

@@ -138,19 +138,14 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   Expanded(
                     flex: 3,
                     child: Container(
-                     decoration: BoxDecoration(
-                       color: Colors.white,
-                       borderRadius: BorderRadius.circular(16)
-                     ),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                       padding: EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.blueGrey[200],
-                                borderRadius: BorderRadius.circular(16)
-                              ),
+                              decoration:
+                                  BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(16)),
                             ),
                           ),
                           Expanded(
@@ -160,9 +155,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   child: Container(
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
-                                      color: Colors.orangeAccent,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                        color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
                                   ),
                                 ),
                                 Expanded(
@@ -173,24 +166,30 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Text("Dreamwalker",style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),),
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                         Text("3 years in service")
                                       ],
                                     ),
                                   ),
                                 ),
                                 Expanded(
-                                  child: CircularPercentIndicator(radius: 48,
+                                  child: CircularPercentIndicator(
+                                    radius: 48,
                                     percent: 0.9,
                                     progressColor: Colors.blue,
                                     center: Center(
-                                      child: Text("98%", style: TextStyle(
-                                        fontSize: 12,
-                                      ),),
+                                      child: Text(
+                                        "98%",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
                                     ),
-
                                   ),
                                 ),
                               ],

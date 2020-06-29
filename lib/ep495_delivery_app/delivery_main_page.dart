@@ -143,7 +143,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                       child: Column(
                         children: [
                           Expanded(
+
                             child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               decoration:
                                   BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(16)),
                               child: Center(

@@ -159,6 +159,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   child: Placeholder(),
                                 ),
                                 Expanded(
+                                  flex: 3,
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
                                   child: Placeholder(),
                                 ),
                               ],

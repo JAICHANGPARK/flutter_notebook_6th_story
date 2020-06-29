@@ -166,7 +166,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Expanded(
                                   child: CircularPercentIndicator(radius: 48,
                                     percent: 0.9,
-                                    center: Text("98%"),
+                                    center: Center(
+                                      child: Text("98%", style: TextStyle(
+                                        fontSize: 12
+                                      ),),
+                                    ),
 
                                   ),
                                 ),

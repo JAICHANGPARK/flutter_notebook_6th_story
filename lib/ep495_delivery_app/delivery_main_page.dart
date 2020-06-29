@@ -167,13 +167,16 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Expanded(
                                   flex: 3,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Text("Dreamwalker"),
-                                      Text("3 years in service")
-                                    ],
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("Dreamwalker"),
+                                        Text("3 years in service")
+                                      ],
+                                    ),
                                   ),
                                 ),
                                 Expanded(

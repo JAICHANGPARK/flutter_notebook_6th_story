@@ -173,7 +173,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Text("Dreamwalker"),
+                                        Text("Dreamwalker",style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),),
                                         Text("3 years in service")
                                       ],
                                     ),

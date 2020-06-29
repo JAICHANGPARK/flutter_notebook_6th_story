@@ -146,6 +146,12 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             child: Container(
                               decoration:
                                   BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(16)),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none
+                                ),
+                              )
+
                             ),
                           ),
                           Expanded(

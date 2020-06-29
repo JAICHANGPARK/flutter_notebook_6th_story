@@ -135,28 +135,32 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   ),
                   Expanded(
                     flex: 3,
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              
+                    child: Container(
+                      color: Colors.white,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+
+                              decoration: BoxDecoration(
+
+                              ),
                             ),
                           ),
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                        ),
-                        Expanded(
-                          child: Placeholder(),
-                        ),
-                      ],
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
                     ),
                   )
                 ],

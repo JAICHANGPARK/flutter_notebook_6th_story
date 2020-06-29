@@ -158,8 +158,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               children: [
                                 Expanded(
                                   child: Container(
+                                    margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
-                                      color: Colors.orangeAccent
+                                      color: Colors.orangeAccent,
                                     ),
                                   ),
                                 ),

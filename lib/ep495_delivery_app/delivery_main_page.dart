@@ -227,11 +227,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Expanded(
                                   child: CircularPercentIndicator(
                                     radius: 48,
-                                    percent: 0.9,
+                                    percent: 0.92,
                                     progressColor: Colors.blue,
                                     center: Center(
                                       child: Text(
-                                        "98%",
+                                        "92%",
                                         style: TextStyle(
                                           fontSize: 12,
                                         ),
@@ -243,10 +243,98 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             ),
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text("3 years in service")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: CircularPercentIndicator(
+                                    radius: 48,
+                                    percent: 0.91,
+                                    progressColor: Colors.blue,
+                                    center: Center(
+                                      child: Text(
+                                        "91%",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           Expanded(
-                            child: Placeholder(),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    margin: EdgeInsets.all(4),
+                                    decoration: BoxDecoration(
+                                        color: Colors.orangeAccent, borderRadius: BorderRadius.circular(8)),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text(
+                                          "Dreamwalker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text("3 years in service")
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: CircularPercentIndicator(
+                                    radius: 48,
+                                    percent: 0.88,
+                                    progressColor: Colors.blue,
+                                    center: Center(
+                                      child: Text(
+                                        "88%",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),

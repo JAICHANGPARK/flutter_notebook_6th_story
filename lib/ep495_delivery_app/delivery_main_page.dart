@@ -161,6 +161,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     margin: EdgeInsets.all(4),
                                     decoration: BoxDecoration(
                                       color: Colors.orangeAccent,
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                   ),
                                 ),

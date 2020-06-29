@@ -147,7 +147,8 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                           Expanded(
                             child: Container(
                               decoration: BoxDecoration(
-                                
+                                color: Colors.blueGrey[200],
+                                borderRadius: BorderRadius.circular(16)
                               ),
                             ),
                           ),

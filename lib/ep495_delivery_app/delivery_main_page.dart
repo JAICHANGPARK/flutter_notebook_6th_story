@@ -161,7 +161,14 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Expanded(
                                   flex: 3,
-                                  child: Placeholder(),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Text("Dreamwalker"),
+                                      Text("3 years in service")
+                                    ],
+                                  ),
                                 ),
                                 Expanded(
                                   child: CircularPercentIndicator(radius: 48,

@@ -138,6 +138,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                     child: Container(
                      decoration: BoxDecoration(
                        color: Colors.white,
+                       borderRadius: BorderRadius.circular(16)
                      ),
                       child: Column(
                         children: [

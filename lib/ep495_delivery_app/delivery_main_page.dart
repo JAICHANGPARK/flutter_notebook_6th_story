@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class DeliveryApp extends StatelessWidget {
   @override
@@ -163,7 +164,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   child: Placeholder(),
                                 ),
                                 Expanded(
-                                  child: Placeholder(),
+                                  child: CircularPercentIndicator(radius: 48,
+                                    percent: 0.9,
+                                    center: Text("98%"),
+
+                                  ),
                                 ),
                               ],
                             ),

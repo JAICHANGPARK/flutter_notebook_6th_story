@@ -137,8 +137,21 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                     flex: 3,
                     child: Column(
                       children: [
-
-                        
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
                       ],
                     ),
                   )

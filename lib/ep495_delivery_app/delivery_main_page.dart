@@ -184,9 +184,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Expanded(
                                   child: CircularPercentIndicator(radius: 48,
                                     percent: 0.9,
+                                    progressColor: Colors.blue,
                                     center: Center(
                                       child: Text("98%", style: TextStyle(
-                                        fontSize: 12
+                                        fontSize: 12,
                                       ),),
                                     ),
 

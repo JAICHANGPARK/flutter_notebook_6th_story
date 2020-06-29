@@ -136,7 +136,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   Expanded(
                     flex: 3,
                     child: Container(
-                      color: Colors.white,
+                     decoration: BoxDecoration(
+                       color: Colors.white,
+                     ),
                       child: Column(
                         children: [
                           Expanded(

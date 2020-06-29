@@ -138,7 +138,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                     child: Column(
                       children: [
                         Expanded(
-                          child: Placeholder(),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              
+                            ),
+                          ),
                         ),
                         Expanded(
                           child: Placeholder(),

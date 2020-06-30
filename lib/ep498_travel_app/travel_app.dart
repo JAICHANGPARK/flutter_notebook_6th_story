@@ -45,6 +45,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
               height: 210,
               child: Placeholder(),
             ),
+          ),
+          Center(
+            child: Text("TRIP LOVER",),
           )
 
         ],

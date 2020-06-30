@@ -56,10 +56,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 color: Colors.white)
               ),
               TextSpan(
-                text: "LO"
+                text: "LO", style: GoogleFonts.prompt(fontSize: 52,
+                  color: Colors.white)
               ),
-              TextSpan(text: "V"),
-              TextSpan(text: "ER"
+              TextSpan(text: "V", style: GoogleFonts.prompt(fontSize: 52,
+                  color: Colors.lightBlueAccent)),
+              TextSpan(text: "ER",
               )
             ])),
           )

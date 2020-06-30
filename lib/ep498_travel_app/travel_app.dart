@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TravelApp extends StatelessWidget {
   @override
@@ -47,7 +48,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
             ),
           ),
           Center(
-            child: Text("TRIP LOVER",),
+            child: Text.rich(TextSpan(children:
+            [
+              TextSpan(
+                text: "TRIP"
+              ),
+              TextSpan(
+                text: "LO"
+              ),
+              TextSpan(text: "V"),
+              TextSpan(text: "ER"
+              )
+            ])),
           )
 
         ],

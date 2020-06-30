@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep495_delivery_app/delivery_main_page.dart';
+
+import 'ep498_travel_app/travel_app.dart';
 
 void main() {
   runApp(TravelApp());

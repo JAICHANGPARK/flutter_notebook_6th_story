@@ -28,7 +28,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
             top:24,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.blue
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(24)
               ),
             ),
           )

@@ -61,7 +61,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ),
               TextSpan(text: "V", style: GoogleFonts.prompt(fontSize: 52,
                   color: Colors.lightBlueAccent)),
-              TextSpan(text: "ER",
+              TextSpan(text: "ER", style: GoogleFonts.prompt(fontSize: 52,
+                  color: Colors.white)
               )
             ])),
           )

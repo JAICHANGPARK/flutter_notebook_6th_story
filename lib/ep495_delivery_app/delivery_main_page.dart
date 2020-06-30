@@ -26,7 +26,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
           Positioned(
             top: 0,
             left: 0,
-            bottom: 120,
+            bottom: 110,
             right: 0,
             child: Container(
               decoration: BoxDecoration(

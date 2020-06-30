@@ -51,7 +51,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Text.rich(TextSpan(children:
             [
               TextSpan(
-                text: "TRIP"
+                text: "TRIP   ",
+                style: GoogleFonts.prompt(fontSize: 52,
+                color: Colors.white)
               ),
               TextSpan(
                 text: "LO"

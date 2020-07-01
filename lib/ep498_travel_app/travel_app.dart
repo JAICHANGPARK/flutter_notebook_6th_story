@@ -42,9 +42,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Container(
               height: 210,
               child: ListView.builder(
+                itemCount: 10,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index){
                 return Container(
+                  margin: EdgeInsets.only(right: 16),
                   width: MediaQuery.of(context).size.width - 64,
                   decoration: BoxDecoration(
                     color: Colors.white,

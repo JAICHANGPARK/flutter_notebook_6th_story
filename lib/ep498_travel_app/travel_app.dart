@@ -83,9 +83,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               children: [
                                 Icon(Icons.map),
                                 Text("20 Destinations")
-
                               ],
-                            )
+                            ),
+                            Spacer(),
+                            Row()
+                            
                           ],
                         ),
                       )

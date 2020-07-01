@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -141,7 +143,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
             child: Container(
               height: 84,
               decoration: BoxDecoration(),
-              child: BackdropFilter(),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(),
+              ),
             ),
           ),
           Center(

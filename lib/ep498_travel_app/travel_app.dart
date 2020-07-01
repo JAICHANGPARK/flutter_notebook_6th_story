@@ -59,10 +59,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         top: 0,
                         child: Container(
                           height: 64,
-
                           width: 120,
                           decoration: BoxDecoration(
-                            color: Colors.lightBlueAccent
+                            color: Colors.lightBlueAccent,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(16),
+                              topRight: Radius.circular(24)
+                            )
                           ),
                         ),
                       )

@@ -69,7 +69,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           ),
                           child: Center(child: Icon(Icons.arrow_forward, color: Colors.white,)),
                         ),
-                      )
+                      ),
+                      Positioned()
+
 
                     ],
                   ),

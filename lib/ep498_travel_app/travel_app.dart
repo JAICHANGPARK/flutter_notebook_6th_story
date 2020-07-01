@@ -135,7 +135,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
             ),
           ),
           Positioned(
-
+            top: 64,
+            left: 24,
+            right: 24,
+            child: Container(
+              height: 84,
+            ),
           ),
           Center(
             child: Text.rich(TextSpan(children: [

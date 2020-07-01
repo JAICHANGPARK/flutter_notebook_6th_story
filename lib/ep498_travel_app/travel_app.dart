@@ -76,11 +76,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         bottom: 16,
                         right: 16,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Newzealand"),
                             Row(
                               children: [
-                                
+                                Icon(Icons.map),
+                                Text("20 Destinations")
+
                               ],
                             )
                           ],

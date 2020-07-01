@@ -146,12 +146,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 borderRadius: BorderRadius.circular(16)
               ),
               child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 0.3, sigmaY: 0.2, ),
+                filter: ImageFilter.blur(sigmaX: 2, sigmaY: 0.2, ),
                 child: Container(
-
                   decoration: BoxDecoration(
                       color: Colors.black.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(16)
+                  ),
+                  child: Row(
+                    children: [
+                      Text("Azores, Portugal", style: TextStyle(
+                        color: Colors.grey
+                      ),)
+                    ],
                   ),
                 ),
               ),

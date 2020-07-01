@@ -23,6 +23,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
     return Scaffold(
       body: Stack(
         children: [
+
           Positioned(
             left: 16,
             right: 16,
@@ -35,6 +36,34 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   image: DecorationImage(
                       image: NetworkImage("https://cdn.pixabay.com/photo/2015/03/26/09/41/mountain-690104_960_720.jpg"),
                       fit: BoxFit.fitHeight)),
+            ),
+          ),
+          Positioned(
+            top: 64,
+            left: 24,
+            right: 24,
+            child: Container(
+              height: 64,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16)
+              ),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 2, sigmaY: 0.2, ),
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(16)
+                  ),
+                  child: Row(
+                    children: [
+                      Text("Azores, Portugal", style: TextStyle(
+                          color: Colors.grey
+                      ),)
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
           Positioned(
@@ -136,33 +165,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   }),
             ),
           ),
-          Positioned(
-            top: 64,
-            left: 24,
-            right: 24,
-            child: Container(
-              height: 64,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16)
-              ),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 2, sigmaY: 0.2, ),
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(16)
-                  ),
-                  child: Row(
-                    children: [
-                      Text("Azores, Portugal", style: TextStyle(
-                        color: Colors.grey
-                      ),)
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
+
           Center(
             child: Text.rich(TextSpan(children: [
               TextSpan(text: "TRIP  ", style: GoogleFonts.prompt(fontSize: 52, color: Colors.white)),

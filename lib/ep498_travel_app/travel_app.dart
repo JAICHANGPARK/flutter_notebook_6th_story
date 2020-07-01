@@ -126,12 +126,16 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 )
                               ],
                             ),
-                          )
+                          ),
+
                         ],
                       ),
                     );
                   }),
             ),
+          ),
+          Positioned(
+
           ),
           Center(
             child: Text.rich(TextSpan(children: [

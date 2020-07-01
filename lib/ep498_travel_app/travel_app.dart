@@ -59,7 +59,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         top: 0,
                         child: Container(
                           height: 64,
-                          width: 120,
+                          width: 100,
                           decoration: BoxDecoration(
                             color: Colors.lightBlueAccent,
                             borderRadius: BorderRadius.only(
@@ -67,6 +67,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               topRight: Radius.circular(24)
                             )
                           ),
+                          child: Center(child: Icon(Icons.arrow_forward, color: Colors.white,)),
                         ),
                       )
 

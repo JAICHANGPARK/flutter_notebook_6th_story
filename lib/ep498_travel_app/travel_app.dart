@@ -86,21 +86,24 @@ class _TravelHomePageState extends State<TravelHomePage> {
                               ],
                             ),
                             Spacer(),
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                ),
-                                Expanded(
-                                  child: Placeholder(),
-                                )
-                              ],
+                            Container(
+                              height: 64,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    child: Placeholder(),
+                                  )
+                                ],
+                              ),
                             )
 
                           ],

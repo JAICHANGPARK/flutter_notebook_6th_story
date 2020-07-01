@@ -140,6 +140,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
             right: 24,
             child: Container(
               height: 84,
+              decoration: BoxDecoration(),
+              child: BackdropFilter(),
             ),
           ),
           Center(

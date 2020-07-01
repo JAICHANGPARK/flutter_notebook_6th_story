@@ -42,10 +42,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
             top: 64,
             left: 24,
             right: 24,
+            height: 54,
+            width: double.infinity,
             child: Container(
-              height: 54,
-              width: double.infinity,
-             
+
+
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 2, sigmaY: 0.2, ),
                 child: Container(

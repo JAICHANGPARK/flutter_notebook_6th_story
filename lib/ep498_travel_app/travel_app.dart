@@ -46,7 +46,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               itemBuilder: (context, index){
                 return Container(
                   decoration: BoxDecoration(
-                    color:
+                    color: Colors.white
                   ),
                   child: Column(
                     children: [

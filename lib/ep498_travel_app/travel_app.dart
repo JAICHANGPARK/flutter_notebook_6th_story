@@ -87,7 +87,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                             ),
                             Spacer(),
                             Container(
-                              height: 64,
+                              height: 72,
                               child: Row(
                                 children: [
                                   Expanded(

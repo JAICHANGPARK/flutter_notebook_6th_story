@@ -41,9 +41,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
             right: 0,
             child: Container(
               height: 210,
-              child: ListView.builder(itemBuilder: (context, index){
-                return Card(
-                  color: Colors.white,
+              child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index){
+                return Container(
+                  decoration: BoxDecoration(
+                    color:
+                  ),
+                  child: Column(
+                    children: [
+
+                    ],
+                  ),
                 );
               }),
             ),

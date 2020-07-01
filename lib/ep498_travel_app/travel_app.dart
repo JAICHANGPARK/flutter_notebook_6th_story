@@ -70,7 +70,22 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           child: Center(child: Icon(Icons.arrow_forward, color: Colors.white,)),
                         ),
                       ),
-                      Positioned()
+                      Positioned(
+                        top: 16,
+                        left: 16,
+                        bottom: 16,
+                        right: 16,
+                        child: Column(
+                          children: [
+                            Text("Newzealand"),
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
+                          ],
+                        ),
+                      )
 
 
                     ],

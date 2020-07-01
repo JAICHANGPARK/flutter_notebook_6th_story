@@ -52,8 +52,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(24)
                   ),
-                  child: Column(
+                  child: Stack(
                     children: [
+                      Positioned()
 
                     ],
                   ),

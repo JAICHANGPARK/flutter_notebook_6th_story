@@ -47,7 +47,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 return Container(
                   width: MediaQuery.of(context).size.width - 64,
                   decoration: BoxDecoration(
-                    color: Colors.white
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24)
                   ),
                   child: Column(
                     children: [

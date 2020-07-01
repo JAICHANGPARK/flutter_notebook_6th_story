@@ -45,6 +45,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index){
                 return Container(
+                  width: MediaQuery.of(context).size.width - 64,
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),

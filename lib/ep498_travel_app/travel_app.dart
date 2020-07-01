@@ -59,7 +59,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                         top: 0,
                         child: Container(
                           height: 64,
-                          decoration: BoxDecoration(),
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlueAccent
+                          ),
                         ),
                       )
 

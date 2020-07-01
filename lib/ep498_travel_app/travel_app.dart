@@ -144,7 +144,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
               height: 84,
               decoration: BoxDecoration(),
               child: BackdropFilter(
-                filter: ImageFilter.blur(),
+                filter: ImageFilter.blur(sigmaX: 0.0, sigmaY: 0.0, ),
+                child: Container(
+                  color: Colors.black.withOpacity(0.4),
+                ),
               ),
             ),
           ),

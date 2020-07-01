@@ -54,7 +54,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   ),
                   child: Stack(
                     children: [
-                      Positioned()
+                      Positioned(
+                        right: 0,
+                        top: 0,
+                        child: Container(
+                          height: 64,
+                          decoration: BoxDecoration(),
+                        ),
+                      )
 
                     ],
                   ),

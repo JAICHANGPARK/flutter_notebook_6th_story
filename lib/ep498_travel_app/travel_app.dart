@@ -83,7 +83,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                 Row(
                                   children: [Icon(Icons.map,
                                   size: 18,
-                                  color: Colors.grey,), Text("20 Destinations")],
+                                  color: Colors.grey,), Text("20 Destinations",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),)],
                                 ),
                                 Spacer(),
                                 Container(

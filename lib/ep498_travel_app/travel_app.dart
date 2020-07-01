@@ -56,10 +56,12 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       borderRadius: BorderRadius.circular(16)
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Azores, Portugal", style: TextStyle(
                           color: Colors.grey
-                      ),)
+                      ),),
+                      Icon(Icons.search, color: Colors.white,)
                     ],
                   ),
                 ),

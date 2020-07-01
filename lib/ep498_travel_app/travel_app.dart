@@ -115,8 +115,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     ),
                                   ),
                                   Expanded(
-                                    child: Placeholder(),
-                                  )
+                                    child: Container(
+                                      margin: EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                        color: Colors.lightBlue[100],
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
